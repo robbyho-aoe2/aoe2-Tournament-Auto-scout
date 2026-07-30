@@ -1,0 +1,32 @@
+name: Update tournament data
+
+on:
+  schedule:
+    # Sundays 06:00 UTC. Tournaments don't happen daily, so weekly is plenty -
+    # bump this or use workflow_dispatch below if something's happening live.
+    - cron: "0 6 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Liquipedia data
+        run: python scripts/fetch_liquipedia_data.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tournaments.json data/matches.json data/_skip_cache.json
+          git diff --staged --quiet || git commit -m "Update tournament data"
+          git push

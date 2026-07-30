@@ -1,0 +1,37 @@
+{
+  "_readme": "Map -> map-type lookup, used to bucket each game the way the 'Hera S-tier dominance' analysis video does: closed (defended start), semi-open (wallable, no defenses), open (hard to wall), chaotic (close spawns / early map-control fight), hybrid (land+water), water, nomad (no starting TC). This is NOT sourced from Liquipedia (they only tag Land/Water/Hybrid) - it's hand-curated and only covers maps I'm confident about. Maps not listed here come through the pipeline as mapType: null and get printed by the script so you can add them - you know the current tournament map pools far better than I do, so please correct/extend freely.",
+  "types": ["closed", "semi-open", "open", "chaotic", "hybrid", "water", "nomad"],
+
+  "Arena": "closed",
+  "Black Forest": "closed",
+  "Fortress": "closed",
+
+  "Arabia": "semi-open",
+  "Ghost Lake": "semi-open",
+  "Golden Pit": "semi-open",
+  "Golden Swamp": "semi-open",
+  "Continental": "semi-open",
+  "Gold Rush": "semi-open",
+  "Bypass": "semi-open",
+
+  "Land Madness": "open",
+  "Steppe": "open",
+  "Slopes": "open",
+
+  "Hideout": "chaotic",
+  "Four Lakes": "chaotic",
+
+  "Cross": "hybrid",
+  "Copenhagen": "hybrid",
+  "Bay": "hybrid",
+  "Yucatan": "hybrid",
+  "Coastal": "hybrid",
+  "High Tides": "hybrid",
+
+  "Islands": "water",
+  "Migration": "water",
+  "Mudflow": "water",
+
+  "Nomad": "nomad",
+  "Nomad Chaos": "nomad"
+}
