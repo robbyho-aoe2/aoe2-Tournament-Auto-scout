@@ -229,6 +229,7 @@ header{
 .pv-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text3);margin:18px 0 8px;}
 .pv-table{width:100%;border-collapse:collapse;font-size:12px;}
 .pv-table th{text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);padding:6px 8px;border-bottom:1px solid var(--border);}
+.pv-table th.num{text-align:right;}
 .pv-table td{padding:7px 8px;border-bottom:1px solid var(--border);color:var(--text2);}
 .pv-table tr:last-child td{border-bottom:none;}
 .pv-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
@@ -299,6 +300,10 @@ header{
 <!-- ══════════════════════ PLAYERS VIEW ══════════════════════ -->
 <div id="players-view" style="display:none;">
 
+  <div class="fg" style="margin-bottom:8px;">
+    <span class="fg-label">Tier</span>
+    <div id="browse-tier-pills" style="display:flex;gap:5px;flex-wrap:wrap;"></div>
+  </div>
   <div class="p-search-wrap">
     <input id="player-search-input" type="text" placeholder="Search or browse players…" autocomplete="off">
   </div>
@@ -628,19 +633,32 @@ document.getElementById('search-input').addEventListener('input', e => {
 // ================================================================
 //  PLAYERS VIEW
 // ================================================================
-function uniquePlayerNames() {
+// Both scoped by tier and counting only decided (winner set) games, so the
+// number on a browse pill always matches what selecting that player shows.
+function uniquePlayerNames(tier) {
   const set = new Set();
-  GAMES.forEach(g => { if (g.player1) set.add(g.player1); if (g.player2) set.add(g.player2); });
+  GAMES.forEach(g => {
+    if (!g.winner) return;
+    if (tier && tier !== 'all' && g.tier !== tier) return;
+    if (g.player1) set.add(g.player1);
+    if (g.player2) set.add(g.player2);
+  });
   return [...set];
 }
 
-function gameCountByPlayer() {
+function gameCountByPlayer(tier) {
   const counts = {};
   GAMES.forEach(g => {
+    if (!g.winner) return;
+    if (tier && tier !== 'all' && g.tier !== tier) return;
     if (g.player1) counts[g.player1] = (counts[g.player1] || 0) + 1;
     if (g.player2) counts[g.player2] = (counts[g.player2] || 0) + 1;
   });
   return counts;
+}
+
+function uniqueTiers() {
+  return [...new Set(GAMES.map(g => g.tier).filter(Boolean))].sort();
 }
 
 function civForPlayer(g, name)   { return g.player1 === name ? g.civ1 : g.civ2; }
@@ -656,11 +674,22 @@ function playerGames(name) {
 // ── browsable player grid (main search) — 1 row collapsed, ~4 rows + scroll when expanded ──
 const playerSearchInput = document.getElementById('player-search-input');
 let playerBrowseExpanded = false;
+let browseTierFilter = 'all';
+
+function renderBrowseTierPills() {
+  const el = document.getElementById('browse-tier-pills');
+  const tiers = uniqueTiers();
+  el.innerHTML = [['all', 'All'], ...tiers.map(t => [t, t])].map(([val, label]) =>
+    `<button class="pill${val === browseTierFilter ? ' on' : ''}" onclick="setBrowseTier('${val}')">${esc(label)}</button>`
+  ).join('');
+}
+function setBrowseTier(tier) { browseTierFilter = tier; renderPlayerBrowse(); }
 
 function renderPlayerBrowse() {
+  renderBrowseTierPills();
   const q = playerSearchInput.value.trim().toLowerCase();
-  const counts = gameCountByPlayer();
-  let names = uniquePlayerNames();
+  const counts = gameCountByPlayer(browseTierFilter);
+  let names = uniquePlayerNames(browseTierFilter);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
   names.sort((a, b) => (counts[b] || 0) - (counts[a] || 0));
 
@@ -681,7 +710,7 @@ playerSearchInput.addEventListener('input', renderPlayerBrowse);
 function selectPlayer(name) {
   activePlayerName = name;
   activeOpponentName = null;
-  playerFilters = { tier: 'all', mapType: 'all', map: 'all' };
+  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all' };
   opponentBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
   document.getElementById('player-empty').style.display = 'none';

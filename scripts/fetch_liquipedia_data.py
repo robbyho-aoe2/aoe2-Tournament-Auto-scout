@@ -102,6 +102,51 @@ def category_members(category):
     return titles
 
 
+NAME_CACHE_PATH = DATA_DIR / "_name_cache.json"
+_name_cache = None
+
+
+def load_name_cache():
+    if not NAME_CACHE_PATH.exists():
+        return {}
+    try:
+        return json.loads(NAME_CACHE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_name_cache(cache):
+    NAME_CACHE_PATH.write_text(
+        json.dumps(cache, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8"
+    )
+
+
+def resolve_player_name(name):
+    """Canonicalize a player name via Liquipedia's own redirect system -
+    e.g. the page 'Mr Yo' redirects to 'Yo' (a documented former handle for
+    the same pro). Different tournament pages/eras tag the same person
+    under whatever name was current at the time, so without this a
+    player's record gets silently split across every handle they've ever
+    competed under. Cached persistently since most names aren't redirects
+    and repeat across many games."""
+    global _name_cache
+    if _name_cache is None:
+        _name_cache = load_name_cache()
+    if not name:
+        return name
+    if name in _name_cache:
+        return _name_cache[name]
+    try:
+        data = api_query(titles=name, redirects=1)
+        redirects = data.get("query", {}).get("redirects")
+        canonical = redirects[0]["to"] if redirects else name
+    except Exception:
+        canonical = name
+    _name_cache[name] = canonical
+    save_name_cache(_name_cache)
+    return canonical
+
+
 EXCLUDE_TITLE_PATTERN = re.compile(r"qualifier|show ?match(es)?", re.IGNORECASE)
 
 
@@ -145,13 +190,17 @@ NUMERIC_TIER = {"1": "S-Tier", "2": "A-Tier", "3": "B-Tier", "4": "C-Tier", "5":
 
 def normalize_tier(raw):
     """Some tournament pages store |liquipediatier= as a bare number (1=S,
-    2=A, ...) instead of the 'S-Tier' text - both forms show up across the
-    wiki's template history. Normalize to the text form either way."""
+    2=A, ...), and casing of the text form ('C-tier' vs 'C-Tier') isn't
+    consistent either across the wiki's template history. Normalize to a
+    single canonical 'X-Tier' form."""
     raw = raw.strip()
     if raw in NUMERIC_TIER:
         return NUMERIC_TIER[raw]
-    if raw and "-Tier" not in raw and "Tier" not in raw:
-        return raw + "-Tier"
+    if not raw:
+        return raw
+    letter = raw[0].upper()
+    if letter in "SABCD":
+        return f"{letter}-Tier"
     return raw
 
 
@@ -286,7 +335,8 @@ def parse_tournament(title, wikitext):
         if len(opponents) != 2:
             continue  # skip team / bye / malformed matches
         opp_kv = [parse_template_kv(o, "SoloOpponent") for o in opponents]
-        p1, p2 = opponent_name(opp_kv[0]), opponent_name(opp_kv[1])
+        p1 = resolve_player_name(opponent_name(opp_kv[0]))
+        p2 = resolve_player_name(opponent_name(opp_kv[1]))
         if not p1 or not p2:
             continue
 
@@ -409,8 +459,28 @@ def is_permanent(entry):
 
 
 def write_outputs(pages, cache):
-    tournaments = [cache[p]["tournament"] for p in pages if p in cache and cache[p]["tournament"]]
-    all_games = [g for p in pages if p in cache and cache[p]["tournament"] for g in cache[p]["games"]]
+    # re-resolve names and re-normalize tier here too, not just at parse
+    # time - cache entries written before these existed/were fixed still
+    # have raw values baked in, and this is the one place all of them pass
+    # through before being published, regardless of when they were fetched.
+    tournaments = []
+    all_games = []
+    for p in pages:
+        entry = cache.get(p)
+        if not entry or not entry["tournament"]:
+            continue
+        t = dict(entry["tournament"])
+        t["tier"] = normalize_tier(t["tier"])
+        for key in ("first", "second", "third"):
+            if t.get(key):
+                t[key] = resolve_player_name(t[key])
+        tournaments.append(t)
+        for g in entry["games"]:
+            g2 = dict(g)
+            g2["player1"] = resolve_player_name(g["player1"])
+            g2["player2"] = resolve_player_name(g["player2"])
+            g2["tier"] = normalize_tier(g["tier"])
+            all_games.append(g2)
 
     DATA_DIR.mkdir(exist_ok=True)
     generated_at = datetime.now(timezone.utc).isoformat()
