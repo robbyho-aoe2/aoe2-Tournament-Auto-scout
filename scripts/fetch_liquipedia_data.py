@@ -332,57 +332,124 @@ def parse_tournament(title, wikitext):
 
     for round_num, match_block in find_match_blocks_with_round(wikitext):
         opponents = find_templates(match_block, "SoloOpponent")
-        if len(opponents) != 2:
-            continue  # skip team / bye / malformed matches
-        opp_kv = [parse_template_kv(o, "SoloOpponent") for o in opponents]
-        p1 = resolve_player_name(opponent_name(opp_kv[0]))
-        p2 = resolve_player_name(opponent_name(opp_kv[1]))
-        if not p1 or not p2:
-            continue
+        team_opponents = find_templates(match_block, "TeamOpponent")
 
-        map_blocks = find_templates(match_block, "Map")
-        stripped = match_block
-        for sub in opponents + map_blocks:
-            stripped = stripped.replace(sub, "", 1)
-        match_date = infobox_field(stripped, "date")
-
-        # Per-map winner is the only reliably-populated result field across
-        # tournament pages/eras - top-level |finished= and |winner= are often
-        # left blank even on long-completed matches (e.g. Hidden Cup V), and
-        # winner values other than '1'/'2' (e.g. 'skip' for an unplayed map
-        # in a shortened bo7) mean "not decided", not a third outcome.
-        p1_map_wins = p2_map_wins = 0
-        for mb in map_blocks:
-            mkv = parse_template_kv(mb, "Map")
-            map_name = mkv.get("map", "").strip()
-            if not map_name:
+        if len(opponents) == 2:
+            opp_kv = [parse_template_kv(o, "SoloOpponent") for o in opponents]
+            p1 = resolve_player_name(opponent_name(opp_kv[0]))
+            p2 = resolve_player_name(opponent_name(opp_kv[1]))
+            if not p1 or not p2:
                 continue
-            winner = mkv.get("winner", "").strip()
-            if winner not in ("1", "2"):
-                winner = None
-            elif winner == "1":
-                p1_map_wins += 1
-            else:
-                p2_map_wins += 1
-            games.append({
-                "tournament": name,
-                "tier": tier,
-                "date": match_date or sdate,
-                "round": round_num,
-                "player1": p1,
-                "player2": p2,
-                "civ1": resolve_civ(mkv.get("civs1")),
-                "civ2": resolve_civ(mkv.get("civs2")),
-                "map": map_name,
-                "mapType": map_types.get(map_name),
-                "winner": winner,
-            })
+            map_blocks = find_templates(match_block, "Map")
+            stripped = match_block
+            for sub in opponents + map_blocks:
+                stripped = stripped.replace(sub, "", 1)
+            match_date = infobox_field(stripped, "date")
 
-        if p1_map_wins != p2_map_wins:  # match decided, inferred from map tally
-            match_winner = "1" if p1_map_wins > p2_map_wins else "2"
-            if round_num >= max_round_seen:
-                max_round_seen = round_num
-                finals.append((round_num, p1, p2, match_winner))
+            # Per-map winner is the only reliably-populated result field
+            # across tournament pages/eras - top-level |finished= and
+            # |winner= are often left blank even on long-completed matches
+            # (e.g. Hidden Cup V), and winner values other than '1'/'2'
+            # (e.g. 'skip' for an unplayed map in a shortened bo7) mean
+            # "not decided", not a third outcome.
+            p1_map_wins = p2_map_wins = 0
+            for mb in map_blocks:
+                mkv = parse_template_kv(mb, "Map")
+                map_name = mkv.get("map", "").strip()
+                if not map_name:
+                    continue
+                winner = mkv.get("winner", "").strip()
+                if winner not in ("1", "2"):
+                    winner = None
+                elif winner == "1":
+                    p1_map_wins += 1
+                else:
+                    p2_map_wins += 1
+                games.append({
+                    "tournament": name,
+                    "tier": tier,
+                    "date": match_date or sdate,
+                    "round": round_num,
+                    "format": "1v1",
+                    "player1": p1,
+                    "player2": p2,
+                    "team1": None,
+                    "team2": None,
+                    "civ1": resolve_civ(mkv.get("civs1")),
+                    "civ2": resolve_civ(mkv.get("civs2")),
+                    "map": map_name,
+                    "mapType": map_types.get(map_name),
+                    "winner": winner,
+                })
+
+            if p1_map_wins != p2_map_wins:  # match decided, inferred from map tally
+                match_winner = "1" if p1_map_wins > p2_map_wins else "2"
+                if round_num >= max_round_seen:
+                    max_round_seen = round_num
+                    finals.append((round_num, p1, p2, match_winner))
+
+        elif len(team_opponents) == 2:
+            # Team formats (2v2/3v3/4v4) use {{TeamOpponent|template=<team
+            # name>}} instead of {{SoloOpponent}} - individual identities
+            # only show up per-map, as comma-separated players1/civs1 lists
+            # in {{Map|...}}, since who actually played a given map can
+            # vary within a match (substitutions). One row is emitted per
+            # (player, map) from each side, tagged format='team' with no
+            # single individual opponent - "winner" is always relative to
+            # that row's own player1, same convention as 1v1 rows.
+            team_kv = [parse_template_kv(o, "TeamOpponent") for o in team_opponents]
+            team1 = team_kv[0].get("template") or team_kv[0].get("name") or "Team 1"
+            team2 = team_kv[1].get("template") or team_kv[1].get("name") or "Team 2"
+            map_blocks = find_templates(match_block, "Map")
+            stripped = match_block
+            for sub in team_opponents + map_blocks:
+                stripped = stripped.replace(sub, "", 1)
+            match_date = infobox_field(stripped, "date")
+
+            team1_map_wins = team2_map_wins = 0
+            for mb in map_blocks:
+                mkv = parse_template_kv(mb, "Map")
+                map_name = mkv.get("map", "").strip()
+                winner = mkv.get("winner", "").strip()
+                if not map_name or winner not in ("1", "2"):
+                    continue  # no per-player pairing worth keeping for an undecided map
+                if winner == "1":
+                    team1_map_wins += 1
+                else:
+                    team2_map_wins += 1
+                players1 = [s.strip() for s in mkv.get("players1", "").split(",") if s.strip()]
+                players2 = [s.strip() for s in mkv.get("players2", "").split(",") if s.strip()]
+                civs1 = [s.strip() for s in mkv.get("civs1", "").split(",")]
+                civs2 = [s.strip() for s in mkv.get("civs2", "").split(",")]
+                for side, players, civs, own_team, opp_team in (
+                    ("1", players1, civs1, team1, team2),
+                    ("2", players2, civs2, team2, team1),
+                ):
+                    for idx, raw_name in enumerate(players):
+                        games.append({
+                            "tournament": name,
+                            "tier": tier,
+                            "date": match_date or sdate,
+                            "round": round_num,
+                            "format": "team",
+                            "player1": resolve_player_name(raw_name),
+                            "player2": None,
+                            "team1": own_team,
+                            "team2": opp_team,
+                            "civ1": resolve_civ(civs[idx]) if idx < len(civs) else None,
+                            "civ2": None,
+                            "map": map_name,
+                            "mapType": map_types.get(map_name),
+                            "winner": "1" if winner == side else "2",
+                        })
+
+            if team1_map_wins != team2_map_wins:
+                match_winner = "1" if team1_map_wins > team2_map_wins else "2"
+                if round_num >= max_round_seen:
+                    max_round_seen = round_num
+                    finals.append((round_num, team1, team2, match_winner))
+        else:
+            continue  # bye / malformed / unrecognized opponent template
 
     first = second = third = ""
     if finals:
@@ -392,6 +459,9 @@ def parse_tournament(title, wikitext):
         second = p2 if w == "1" else p1
         # best-effort only: no reliable 3rd-place detection without deeper
         # bracket-shape parsing, left blank rather than guessed.
+
+    formats_seen = {g["format"] for g in games}
+    format_type = "mixed" if len(formats_seen) > 1 else (formats_seen.pop() if formats_seen else "unknown")
 
     tournament = {
         "id": title,
@@ -404,6 +474,7 @@ def parse_tournament(title, wikitext):
         "currency": "USD",
         "organizer": organizer,
         "format": fmt,
+        "formatType": format_type,
         "type": online_lan,
         "region": country,
         "players": int(player_number) if player_number.isdigit() else None,
