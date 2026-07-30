@@ -184,23 +184,29 @@ header{
 .spinner{width:28px;height:28px;border:2px solid var(--border2);border-top-color:var(--amber);border-radius:50%;animation:spin .8s linear infinite;display:inline-block;}
 
 /* ── Player search ── */
-.p-search-wrap{position:relative;margin-bottom:14px;max-width:420px;}
+.p-search-wrap{position:relative;margin-bottom:8px;max-width:420px;}
 #player-search-input{
   width:100%;height:38px;background:var(--surf2);border:1px solid var(--border);
   border-radius:var(--radius);padding:0 14px;color:var(--text);font-size:14px;outline:none;
 }
 #player-search-input:focus{border-color:var(--amber);}
 #player-search-input::placeholder{color:var(--text3);}
-.p-dropdown{
-  display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;
-  background:var(--surf2);border:1px solid var(--border2);border-radius:var(--radius);
-  max-height:260px;overflow-y:auto;z-index:100;box-shadow:0 16px 40px rgba(0,0,0,.7);
+
+/* ── Browsable pill grid (players list, opponent list) — 1 row collapsed,
+     up to ~4 rows + scroll when expanded ── */
+.p-browse-grid{display:flex;flex-wrap:wrap;gap:6px;max-height:33px;overflow:hidden;}
+.p-browse-grid.expanded{max-height:150px;overflow-y:auto;padding-right:2px;}
+.p-browse-toggle{font-size:11px;color:var(--text3);background:none;border:none;cursor:pointer;padding:5px 0 0;}
+.p-browse-toggle:hover{color:var(--amberL);}
+.p-pill{
+  font-size:12px;padding:4px 11px;border-radius:20px;
+  background:var(--surf2);border:1px solid var(--border);color:var(--text2);
+  cursor:pointer;transition:.12s;white-space:nowrap;flex-shrink:0;
 }
-.p-dropdown.vis{display:block;}
-.p-drop-item{padding:9px 14px;cursor:pointer;font-size:13px;border-bottom:1px solid var(--border);color:var(--text);}
-.p-drop-item:last-child{border-bottom:none;}
-.p-drop-item:hover{background:var(--surf);}
-.p-drop-item .p-drop-n{color:var(--text3);font-size:11px;margin-left:6px;}
+.p-pill:hover{border-color:var(--amber);color:var(--amberL);}
+.p-pill.on{background:var(--amber);color:#1a0a00;border-color:var(--amber);font-weight:700;}
+.p-pill .p-pill-n{opacity:.65;font-size:10px;margin-left:5px;}
+.p-browse-empty{font-size:12px;color:var(--text3);padding:5px 0;}
 
 /* ── Player view ── */
 #player-content{display:none;}
@@ -294,11 +300,12 @@ header{
 <div id="players-view" style="display:none;">
 
   <div class="p-search-wrap">
-    <input id="player-search-input" type="text" placeholder="Search a player (e.g. Hera, TheViper, Liereyy)…" autocomplete="off">
-    <div id="player-dropdown" class="p-dropdown"></div>
+    <input id="player-search-input" type="text" placeholder="Search or browse players…" autocomplete="off">
   </div>
+  <div id="player-browse-grid" class="p-browse-grid"></div>
+  <button id="player-browse-toggle" class="p-browse-toggle" onclick="togglePlayerBrowse()">Show more ▾</button>
 
-  <div id="player-empty" class="empty">Search a pro above to see their tournament match history — filterable by tier, map, map type, and opponent.</div>
+  <div id="player-empty" class="empty">Pick a pro above to see their tournament match history — filterable by tier, map, map type, and opponent.</div>
 
   <div id="player-content">
     <div class="pv-header">
@@ -310,12 +317,13 @@ header{
       <div class="pv-frow"><span class="pv-flabel">Tier</span><div id="pv-tier-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map Type</span><div id="pv-maptype-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map</span><div id="pv-map-pills"></div></div>
-      <div class="pv-frow">
-        <span class="pv-flabel">Opponent</span>
-        <span class="pv-opp-wrap">
-          <input id="pv-opponent-input" class="pv-opp-input" type="text" placeholder="Filter to one opponent…" autocomplete="off">
-          <div id="pv-opponent-dropdown" class="p-dropdown" style="max-width:220px;"></div>
-        </span>
+      <div class="pv-frow" style="align-items:flex-start;">
+        <span class="pv-flabel" style="margin-top:6px;">Opponent</span>
+        <div style="flex:1;min-width:200px;">
+          <input id="pv-opponent-input" class="pv-opp-input" type="text" placeholder="Search or browse opponents…" style="width:100%;max-width:260px;margin-bottom:6px;" autocomplete="off">
+          <div id="pv-opponent-grid" class="p-browse-grid"></div>
+          <button id="pv-opponent-toggle" class="p-browse-toggle" onclick="toggleOpponentBrowse()">Show more ▾</button>
+        </div>
         <button class="pv-back" id="pv-opponent-clear" style="display:none;" onclick="clearOpponent()">clear</button>
       </div>
     </div>
@@ -466,6 +474,7 @@ function setMode(m) {
   document.getElementById('mode-btn-players').classList.toggle('active', m === 'players');
   document.getElementById('tournaments-view').style.display = m === 'tournaments' ? '' : 'none';
   document.getElementById('players-view').style.display = m === 'players' ? '' : 'none';
+  if (m === 'players') renderPlayerBrowse();
 }
 
 
@@ -644,37 +653,40 @@ function playerGames(name) {
   return GAMES.filter(g => (g.player1 === name || g.player2 === name) && g.winner);
 }
 
-// ── search dropdown (main player search) ──
+// ── browsable player grid (main search) — 1 row collapsed, ~4 rows + scroll when expanded ──
 const playerSearchInput = document.getElementById('player-search-input');
-const playerDropdown = document.getElementById('player-dropdown');
+let playerBrowseExpanded = false;
 
-playerSearchInput.addEventListener('input', () => {
+function renderPlayerBrowse() {
   const q = playerSearchInput.value.trim().toLowerCase();
-  if (!q) { playerDropdown.classList.remove('vis'); return; }
   const counts = gameCountByPlayer();
-  const matches = uniquePlayerNames()
-    .filter(n => n.toLowerCase().includes(q))
-    .sort((a, b) => (counts[b] || 0) - (counts[a] || 0))
-    .slice(0, 12);
-  if (!matches.length) { playerDropdown.classList.remove('vis'); return; }
-  playerDropdown.innerHTML = matches.map(n =>
-    `<div class="p-drop-item" onclick="selectPlayer('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-drop-n">${counts[n]} games</span></div>`
-  ).join('');
-  playerDropdown.classList.add('vis');
-});
-document.addEventListener('click', e => {
-  if (!e.target.closest('.p-search-wrap')) playerDropdown.classList.remove('vis');
-});
+  let names = uniquePlayerNames();
+  if (q) names = names.filter(n => n.toLowerCase().includes(q));
+  names.sort((a, b) => (counts[b] || 0) - (counts[a] || 0));
+
+  const grid = document.getElementById('player-browse-grid');
+  grid.innerHTML = names.length
+    ? names.map(n =>
+        `<button class="p-pill${n === activePlayerName ? ' on' : ''}" onclick="selectPlayer('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
+      ).join('')
+    : `<span class="p-browse-empty">No players match.</span>`;
+  grid.classList.toggle('expanded', playerBrowseExpanded);
+
+  const toggle = document.getElementById('player-browse-toggle');
+  toggle.textContent = playerBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} players ▾`;
+}
+function togglePlayerBrowse() { playerBrowseExpanded = !playerBrowseExpanded; renderPlayerBrowse(); }
+playerSearchInput.addEventListener('input', renderPlayerBrowse);
 
 function selectPlayer(name) {
   activePlayerName = name;
   activeOpponentName = null;
   playerFilters = { tier: 'all', mapType: 'all', map: 'all' };
-  playerSearchInput.value = name;
-  playerDropdown.classList.remove('vis');
+  opponentBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
   document.getElementById('player-empty').style.display = 'none';
   document.getElementById('player-content').classList.add('vis');
+  renderPlayerBrowse();
   renderPlayerView();
 }
 
@@ -684,36 +696,46 @@ function clearPlayer() {
   playerSearchInput.value = '';
   document.getElementById('player-empty').style.display = '';
   document.getElementById('player-content').classList.remove('vis');
+  renderPlayerBrowse();
 }
 
-// ── opponent sub-search ──
+// ── browsable opponent grid — same pattern, restricted to actual opponents of the active player ──
 const oppInput = document.getElementById('pv-opponent-input');
-const oppDropdown = document.getElementById('pv-opponent-dropdown');
-oppInput.addEventListener('input', () => {
+let opponentBrowseExpanded = false;
+
+function renderOpponentBrowse() {
+  const grid = document.getElementById('pv-opponent-grid');
+  const toggle = document.getElementById('pv-opponent-toggle');
+  if (!activePlayerName) { grid.innerHTML = ''; toggle.textContent = ''; return; }
+
   const q = oppInput.value.trim().toLowerCase();
-  if (!q || !activePlayerName) { oppDropdown.classList.remove('vis'); return; }
-  const opponents = [...new Set(playerGames(activePlayerName).map(g => opponentOf(g, activePlayerName)))];
-  const matches = opponents.filter(n => n.toLowerCase().includes(q)).slice(0, 10);
-  if (!matches.length) { oppDropdown.classList.remove('vis'); return; }
-  oppDropdown.innerHTML = matches.map(n =>
-    `<div class="p-drop-item" onclick="selectOpponent('${n.replace(/'/g, "\\'")}')">${esc(n)}</div>`
-  ).join('');
-  oppDropdown.classList.add('vis');
-});
-document.addEventListener('click', e => {
-  if (!e.target.closest('.pv-opp-wrap')) oppDropdown.classList.remove('vis');
-});
+  const counts = {};
+  playerGames(activePlayerName).forEach(g => {
+    const o = opponentOf(g, activePlayerName);
+    counts[o] = (counts[o] || 0) + 1;
+  });
+  let names = Object.keys(counts);
+  if (q) names = names.filter(n => n.toLowerCase().includes(q));
+  names.sort((a, b) => counts[b] - counts[a]);
+
+  grid.innerHTML = names.length
+    ? names.map(n =>
+        `<button class="p-pill${n === activeOpponentName ? ' on' : ''}" onclick="selectOpponent('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
+      ).join('')
+    : `<span class="p-browse-empty">No opponents match.</span>`;
+  grid.classList.toggle('expanded', opponentBrowseExpanded);
+  toggle.textContent = opponentBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} opponents ▾`;
+}
+function toggleOpponentBrowse() { opponentBrowseExpanded = !opponentBrowseExpanded; renderOpponentBrowse(); }
+oppInput.addEventListener('input', renderOpponentBrowse);
 
 function selectOpponent(name) {
   activeOpponentName = name;
-  oppInput.value = name;
-  oppDropdown.classList.remove('vis');
   document.getElementById('pv-opponent-clear').style.display = '';
   renderPlayerView();
 }
 function clearOpponent() {
   activeOpponentName = null;
-  oppInput.value = '';
   document.getElementById('pv-opponent-clear').style.display = 'none';
   renderPlayerView();
 }
@@ -749,6 +771,7 @@ function pillRow(containerId, options, activeVal, kind) {
 function renderPlayerView() {
   const name = activePlayerName;
   document.getElementById('pv-name').textContent = name;
+  renderOpponentBrowse();
 
   const base = playerGames(name);
 

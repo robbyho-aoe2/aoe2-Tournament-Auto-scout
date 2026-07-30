@@ -26,7 +26,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 API = "https://liquipedia.net/ageofempires/api.php"
@@ -34,7 +34,7 @@ USER_AGENT = "AoE2TournamentAutoScout/1.0 (robbyho@gmail.com) https://github.com
 
 # ── Scope of the historical backfill. Widen TIERS or push SINCE_DATE back
 #    whenever you want more history - just costs more 30s-spaced parse calls. ──
-TIERS = ["S-Tier"]
+TIERS = ["S-Tier", "A-Tier", "B-Tier", "C-Tier"]
 SINCE_DATE = "2023-01-01"
 
 QUERY_INTERVAL = 2.0
@@ -364,73 +364,56 @@ def parse_tournament(title, wikitext):
     return tournament, games
 
 
-SKIP_CACHE_PATH = DATA_DIR / "_skip_cache.json"
+CACHE_PATH = DATA_DIR / "_page_cache.json"
+
+# Adding A/B/C-Tier brings the candidate pool to ~1,400+ pages; at one
+# action=parse call per 30s that's many hours - more than a single GitHub
+# Actions job is allowed to run (6h hard limit). Cap how many pages get
+# fetched per invocation; the cache below makes this safe to stop and
+# resume across runs without losing progress or redoing work.
+MAX_PAGES_PER_RUN = 500
 
 
-def load_skip_cache():
-    """Pages already confirmed (in a prior run) to be the wrong game or older
-    than SINCE_DATE. Category:S-Tier Tournaments spans 25 years of AoE2
-    history, so without this every run - including every future weekly
-    cron run - would re-spend a 30s parse call on ~100+ old pages just to
-    throw them away again. Invalidated automatically if SINCE_DATE changes."""
-    if not SKIP_CACHE_PATH.exists():
-        return set()
+def load_cache():
+    """page title -> {"tournament": {...}|None, "games": [...]}. A page
+    whose tournament has clearly ended (>3 days ago) is treated as
+    permanent and never re-fetched again - completed results don't change.
+    Out-of-scope pages (tournament is None) are always permanent under the
+    current SINCE_DATE. Invalidated automatically if SINCE_DATE changes."""
+    if not CACHE_PATH.exists():
+        return {}
     try:
-        cache = json.loads(SKIP_CACHE_PATH.read_text(encoding="utf-8"))
+        raw = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
-        return set()
-    if cache.get("since_date") != SINCE_DATE:
-        return set()
-    return set(cache.get("pages", []))
+        return {}
+    if raw.get("since_date") != SINCE_DATE:
+        return {}
+    return raw.get("pages", {})
 
 
-def save_skip_cache(skip_pages):
-    SKIP_CACHE_PATH.write_text(
-        json.dumps({"since_date": SINCE_DATE, "pages": sorted(skip_pages)}, indent=2),
+def save_cache(cache):
+    CACHE_PATH.write_text(
+        json.dumps({"since_date": SINCE_DATE, "pages": cache}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
 
-def main():
-    print("Discovering tournament pages...")
-    pages = discover_tournament_pages()
-    skip_cache = load_skip_cache()
-    todo = [p for p in pages if p not in skip_cache]
-    print(f"Found {len(pages)} candidate page(s), {len(skip_cache)} already known to be out of scope, {len(todo)} to fetch.")
+def is_permanent(entry):
+    if entry.get("tournament") is None:
+        return True
+    end = (entry["tournament"].get("end") or entry["tournament"].get("start") or "")
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", end):
+        return False
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=3)).date().isoformat()
+    return end < cutoff
 
-    tournaments = []
-    all_games = []
-    unclassified_maps = set()
-    newly_skipped = set()
 
-    for i, page in enumerate(todo, 1):
-        print(f"[{i}/{len(todo)}] Fetching {page} ...")
-        wikitext = api_parse_wikitext(page)
-        if wikitext is None:
-            print(f"  -> could not fetch, skipping")
-            continue
-        tournament, games = parse_tournament(page, wikitext)
-        if tournament is None:
-            print(f"  -> skipped (wrong game or before {SINCE_DATE})")
-            newly_skipped.add(page)
-            continue
-        tournaments.append(tournament)
-        all_games.extend(games)
-        for g in games:
-            if g["mapType"] is None:
-                unclassified_maps.add(g["map"])
-        print(f"  -> {tournament['name']}: {len(games)} game(s)")
-
-    save_skip_cache(skip_cache | newly_skipped)
-
-    if unclassified_maps:
-        print("\nMaps with no entry in data/map_types.json (mapType will be null):")
-        for m in sorted(unclassified_maps):
-            print(f"  - {m}")
+def write_outputs(pages, cache):
+    tournaments = [cache[p]["tournament"] for p in pages if p in cache and cache[p]["tournament"]]
+    all_games = [g for p in pages if p in cache and cache[p]["tournament"] for g in cache[p]["games"]]
 
     DATA_DIR.mkdir(exist_ok=True)
     generated_at = datetime.now(timezone.utc).isoformat()
-
     (DATA_DIR / "tournaments.json").write_text(
         json.dumps({"generatedAt": generated_at, "tournaments": tournaments}, indent=2, ensure_ascii=False),
         encoding="utf-8",
@@ -439,7 +422,53 @@ def main():
         json.dumps({"generatedAt": generated_at, "games": all_games}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
+    return tournaments, all_games
+
+
+def main():
+    print("Discovering tournament pages...")
+    pages = discover_tournament_pages()
+    cache = load_cache()
+
+    needs_fetch = [p for p in pages if p not in cache or not is_permanent(cache[p])]
+    never_seen = [p for p in needs_fetch if p not in cache]
+    stale = [p for p in needs_fetch if p in cache]
+    todo = (never_seen + stale)[:MAX_PAGES_PER_RUN]  # discover new tournaments before refreshing known ones
+
+    print(f"{len(pages)} candidate page(s), {len(cache)} cached (permanent results skipped), "
+          f"{len(needs_fetch)} need fetching ({len(never_seen)} new, {len(stale)} refresh) - "
+          f"processing {len(todo)} this run (cap={MAX_PAGES_PER_RUN}).")
+
+    unclassified_maps = set()
+    for i, page in enumerate(todo, 1):
+        print(f"[{i}/{len(todo)}] Fetching {page} ...")
+        wikitext = api_parse_wikitext(page)
+        if wikitext is None:
+            print("  -> could not fetch, will retry next run")
+            continue
+        tournament, games = parse_tournament(page, wikitext)
+        cache[page] = {"tournament": tournament, "games": games}
+        if tournament is None:
+            print(f"  -> out of scope (wrong game or before {SINCE_DATE})")
+        else:
+            for g in games:
+                if g["mapType"] is None:
+                    unclassified_maps.add(g["map"])
+            print(f"  -> {tournament['name']}: {len(games)} game(s)")
+        if i % 5 == 0 or i == len(todo):
+            save_cache(cache)  # checkpoint - safe to interrupt/timeout at any point
+
+    if unclassified_maps:
+        print("\nMaps with no entry in data/map_types.json (mapType will be null):")
+        for m in sorted(unclassified_maps):
+            print(f"  - {m}")
+
+    tournaments, all_games = write_outputs(pages, cache)
     print(f"\nWrote {len(tournaments)} tournament(s) and {len(all_games)} game(s).")
+
+    remaining = len(needs_fetch) - len(todo)
+    if remaining > 0:
+        print(f"{remaining} page(s) still need fetching - the next run (scheduled or manual) will continue from here.")
 
 
 if __name__ == "__main__":

@@ -15,15 +15,17 @@ Live at: https://robbyho-aoe2.github.io/aoe2-Tournament-Auto-scout/
 Everything is scoped by two constants at the top of `scripts/fetch_liquipedia_data.py`:
 
 ```python
-TIERS = ["S-Tier"]
+TIERS = ["S-Tier", "A-Tier", "B-Tier", "C-Tier"]
 SINCE_DATE = "2023-01-01"
 ```
 
-Add `"A-Tier"` etc. to `TIERS` or push `SINCE_DATE` back to pull in more history. Changing either invalidates `data/_skip_cache.json` automatically (it re-scans everything once, then caches again).
+Drop tiers you don't want or push `SINCE_DATE` back to pull in more history. Changing either invalidates `data/_page_cache.json` automatically (it re-scans everything once, then caches again).
 
-### `data/_skip_cache.json`
+### `data/_page_cache.json`
 
-`Category:S-Tier Tournaments` spans the AoE2 wiki's entire ~25-year history, but Liquipedia's API only allows one `action=parse` call every 30 seconds. Without caching, every run — including every future weekly cron run — would burn ~70 minutes re-fetching and discarding the same ~120 pre-2023 pages. This file remembers "already checked, out of scope" pages so only genuinely new/in-scope tournaments get re-fetched on subsequent runs. Safe to delete if you ever want a full clean re-scan.
+Every fetched page is cached here keyed by page title. Once a tournament's end date is more than 3 days in the past, its entry is treated as **permanent** and never re-fetched again — completed results don't change, so there's no reason to keep spending a 30s `action=parse` call on it every run. Only genuinely new pages and still-in-progress/upcoming tournaments get re-fetched on subsequent runs. Out-of-scope pages (wrong game, or before `SINCE_DATE`) are permanent too. Safe to delete if you ever want a full clean re-scan.
+
+With all four tiers enabled, the candidate pool is ~1,400+ pages — at one page per 30s that's several hours, more than a single GitHub Actions job is allowed to run (6h cap). `MAX_PAGES_PER_RUN` in the script (default 500) caps how much a single invocation fetches, checkpointing the cache every 5 pages so a run can be safely interrupted or time out without losing progress. The very first backfill after widening scope will take multiple runs to fully catch up — either wait for the weekly schedule, or manually re-run the Action (Actions tab → "Update tournament data" → Run workflow) a few times in a row to speed it up. After that initial catch-up, weekly runs stay fast since almost everything is permanently cached.
 
 ### `data/map_types.json`
 
