@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>AoE2 Tournament Tracker</title>
+<style>
+/* ── Design tokens — same family as Auto Scout for visual consistency ── */
+:root{
+  --bg:#0f0d0b; --surf:#1c1814; --surf2:#242018; --border:#332c24; --border2:#4a3f30;
+  --amber:#c8922a; --amberL:#f0b458; --amberBg:rgba(200,146,42,.1);
+  --text:#ede5d8; --text2:#a8967e; --text3:#6b5840;
+  --green:#4ade80; --greenBg:rgba(74,222,128,.07); --greenBd:rgba(74,222,128,.25);
+  --red:#f87171; --redBg:rgba(248,113,113,.07); --redBd:rgba(248,113,113,.25);
+  --blue:#60a5fa; --purple:#a78bfa; --blueBg:rgba(96,165,250,.12); --purpleBg:rgba(167,139,250,.12);
+  --cyan:#22d3ee; --orange:#fb923c; --teal:#34d399; --pink:#f472b6; --yellow:#fbbf24;
+  --gold:#ffd700;
+  --radius:9px;
+}
+
+/* ── Tier colours ── */
+.tier-S  { color:var(--gold);   background:rgba(255,215,0,.08);   border-color:rgba(255,215,0,.3); }
+.tier-A  { color:var(--blue);   background:var(--blueBg);          border-color:rgba(96,165,250,.3); }
+.tier-B  { color:var(--purple); background:var(--purpleBg);        border-color:rgba(167,139,250,.3); }
+.tier-C  { color:var(--teal);   background:rgba(52,211,153,.08);   border-color:rgba(52,211,153,.3); }
+.tier-D  { color:var(--text3);  background:transparent;            border-color:var(--border); }
+.tier-Qualifier { color:var(--orange); background:rgba(251,146,60,.08); border-color:rgba(251,146,60,.3); }
+
+/* ── Status ── */
+.st-live      { color:var(--green); background:var(--greenBg); border-color:var(--greenBd); }
+.st-upcoming  { color:var(--blue);  background:var(--blueBg);  border-color:rgba(96,165,250,.3); }
+.st-completed { color:var(--text3); background:transparent;    border-color:var(--border); }
+
+@keyframes pulse  { 0%,100%{opacity:1;} 50%{opacity:.35;} }
+@keyframes spin   { to{transform:rotate(360deg);} }
+
+.live-dot {
+  display:inline-block; width:6px; height:6px; border-radius:50%;
+  background:var(--green); animation:pulse 1.4s ease-in-out infinite;
+  margin-right:5px; vertical-align:middle;
+}
+
+/* ── Reset / base ── */
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;min-height:100vh;}
+#app{max-width:1100px;margin:0 auto;padding:16px 16px 100px;}
+
+/* ── Header ── */
+header{
+  background:var(--surf);border:1px solid var(--border);border-radius:14px;
+  padding:14px 20px;margin-bottom:12px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.h-icon{font-size:28px;flex-shrink:0;}
+.h-text{flex:1;}
+.h-title{font-size:19px;font-weight:700;color:var(--amberL);letter-spacing:-.01em;}
+.h-sub{font-size:12px;color:var(--text3);margin-top:2px;}
+.h-badge{
+  font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;
+  background:var(--amberBg);color:var(--amber);border:1px solid rgba(200,146,42,.3);
+  flex-shrink:0;
+}
+.h-badge.live-badge{
+  background:var(--greenBg);color:var(--green);border-color:var(--greenBd);
+}
+
+/* ── Filter bar ── */
+.filter-bar{
+  background:var(--surf);border:1px solid var(--border);border-radius:12px;
+  padding:10px 14px;margin-bottom:10px;
+  display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+}
+.fg{display:flex;gap:5px;align-items:center;flex-wrap:wrap;}
+.fg-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text3);margin-right:2px;}
+.pill{
+  font-size:12px;padding:4px 11px;border-radius:20px;
+  background:var(--surf2);border:1px solid var(--border);color:var(--text2);
+  cursor:pointer;transition:.12s;
+}
+.pill:hover{border-color:var(--amber);color:var(--amberL);}
+.pill.on{background:var(--amber);color:#1a0a00;border-color:var(--amber);font-weight:700;}
+.pill.tier-S.on,.pill.tier-A.on,.pill.tier-B.on,.pill.tier-C.on{background:transparent;font-weight:700;}
+.pill.tier-S.on{border-color:var(--gold);color:var(--gold);}
+.pill.tier-A.on{border-color:var(--blue);color:var(--blue);}
+.pill.tier-B.on{border-color:var(--purple);color:var(--purple);}
+.pill.tier-C.on{border-color:var(--teal);color:var(--teal);}
+
+/* search */
+.search-wrap{flex:1;min-width:140px;}
+#search-input{
+  width:100%;height:34px;background:var(--surf2);border:1px solid var(--border);
+  border-radius:var(--radius);padding:0 12px;color:var(--text);font-size:14px;outline:none;
+}
+#search-input:focus{border-color:var(--amber);}
+#search-input::placeholder{color:var(--text3);}
+
+/* ── Toolbar row ── */
+.toolbar{
+  display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;
+}
+.tool-btn{
+  height:32px;padding:0 13px;background:var(--surf);border:1px solid var(--border);
+  border-radius:var(--radius);color:var(--text2);cursor:pointer;font-size:12px;
+}
+.tool-btn:hover{border-color:var(--amber);color:var(--amberL);}
+.tool-btn.primary{color:var(--amberL);border-color:rgba(200,146,42,.3);}
+#data-note{font-size:11px;color:var(--text3);flex:1;}
+#status-bar{font-size:12px;color:var(--text3);}
+
+/* ── Grid ── */
+#grid{display:flex;flex-direction:column;gap:7px;}
+
+/* ── Tournament card ── */
+.t-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:11px;
+  padding:13px 15px;cursor:pointer;transition:.12s;
+}
+.t-card:hover{border-color:var(--border2);}
+.t-card.active{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber);}
+.t-card.is-live{border-color:rgba(74,222,128,.2);}
+.t-card.is-live:hover{border-color:var(--greenBd);}
+
+.card-top{display:flex;align-items:flex-start;gap:9px;margin-bottom:8px;}
+.tier-badge{
+  font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;border:1px solid;
+  white-space:nowrap;flex-shrink:0;margin-top:2px;
+}
+.t-name{font-size:14px;font-weight:700;color:var(--text);flex:1;line-height:1.3;}
+.st-badge{
+  font-size:10px;font-weight:700;padding:2px 8px;border-radius:6px;border:1px solid;
+  white-space:nowrap;flex-shrink:0;display:flex;align-items:center;
+}
+
+.card-meta{display:flex;flex-wrap:wrap;gap:5px 14px;font-size:12px;color:var(--text2);}
+.meta-i{display:flex;align-items:center;gap:4px;}
+.meta-ic{font-size:11px;opacity:.7;}
+
+.card-divider{border:none;border-top:1px solid var(--border);margin:9px 0 8px;}
+.podium-row{display:flex;flex-wrap:wrap;gap:5px;}
+.p-chip{font-size:11px;padding:2px 8px;border-radius:5px;background:var(--surf2);border:1px solid var(--border);color:var(--text2);}
+.p-chip.p1{background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.3);color:var(--gold);}
+.p-chip.p2{background:var(--blueBg);border-color:rgba(96,165,250,.25);color:var(--blue);}
+.p-chip.p3{background:var(--purpleBg);border-color:rgba(167,139,250,.25);color:var(--purple);}
+
+/* ── Detail panel ── */
+#detail{
+  display:none;background:var(--surf);border:1px solid var(--border);border-radius:12px;
+  padding:20px;margin-top:8px;position:relative;
+}
+#detail.vis{display:block;}
+.close-btn{
+  position:absolute;top:14px;right:14px;background:none;border:none;
+  color:var(--text3);font-size:22px;cursor:pointer;line-height:1;padding:2px 6px;
+}
+.close-btn:hover{color:var(--text);}
+.d-name{font-size:20px;font-weight:700;color:var(--amberL);margin-bottom:6px;}
+.d-badges{display:flex;gap:6px;align-items:center;margin-bottom:14px;flex-wrap:wrap;}
+.d-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+@media(min-width:600px){.d-grid{grid-template-columns:repeat(4,1fr);}}
+.d-stat{background:var(--surf2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;}
+.d-stat-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:4px;}
+.d-stat-val{font-size:15px;font-weight:700;color:var(--amberL);}
+.d-stat-val.sm{font-size:12px;}
+.d-section{
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--text3);border-top:1px solid var(--border);padding-top:12px;margin:12px 0 8px;
+}
+.d-players{display:flex;flex-wrap:wrap;gap:6px;}
+.d-player{font-size:12px;padding:4px 10px;border-radius:7px;background:var(--surf2);border:1px solid var(--border);color:var(--text2);}
+.d-player.p1{background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.3);color:var(--gold);}
+.d-player.p2{background:var(--blueBg);border-color:rgba(96,165,250,.3);color:var(--blue);}
+.d-player.p3{background:var(--purpleBg);border-color:rgba(167,139,250,.3);color:var(--purple);}
+.lp-link{
+  display:inline-flex;align-items:center;gap:6px;margin-top:14px;
+  font-size:12px;color:var(--blue);text-decoration:none;
+  border-bottom:1px solid rgba(96,165,250,.35);
+}
+.lp-link:hover{color:var(--amberL);border-color:rgba(200,146,42,.5);}
+
+/* ── Empty / spinner ── */
+.empty{text-align:center;padding:48px 16px;font-size:13px;color:var(--text3);}
+.spinner{width:28px;height:28px;border:2px solid var(--border2);border-top-color:var(--amber);border-radius:50%;animation:spin .8s linear infinite;display:inline-block;}
+
+/* ── Paste panel ── */
+#paste-panel{
+  background:var(--surf);border:1px solid var(--border);border-radius:12px;
+  padding:16px;margin-top:14px;
+}
+#paste-panel.hidden{display:none;}
+.panel-hdr{font-size:13px;font-weight:600;color:var(--amberL);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.panel-hdr-sub{font-size:12px;color:var(--text3);}
+#paste-area{
+  width:100%;min-height:120px;background:var(--surf2);border:1px solid var(--border);
+  border-radius:8px;padding:10px 12px;color:var(--text);font-size:12px;font-family:monospace;
+  outline:none;resize:vertical;margin-bottom:8px;
+}
+#paste-area:focus{border-color:var(--amber);}
+#paste-area::placeholder{color:var(--text3);}
+.paste-actions{display:flex;gap:8px;align-items:center;}
+.paste-err{font-size:12px;color:var(--red);}
+
+/* ── Script panel ── */
+details.script-panel{
+  background:var(--surf);border:1px solid var(--border);border-radius:12px;
+  padding:12px 16px;margin-top:10px;
+}
+details.script-panel summary{
+  cursor:pointer;font-size:13px;font-weight:600;color:var(--amberL);
+  list-style:none;user-select:none;
+}
+details.script-panel summary::-webkit-details-marker{display:none;}
+details.script-panel summary:hover{color:var(--amber);}
+.script-note{font-size:12px;color:var(--text2);margin:10px 0 8px;line-height:1.6;}
+.script-note code{color:var(--amberL);font-family:monospace;font-size:11px;}
+pre.code-block{
+  background:var(--surf2);border:1px solid var(--border);border-radius:8px;
+  padding:14px;font-size:11px;color:var(--text2);overflow-x:auto;
+  line-height:1.6;white-space:pre;
+}
+.copy-btn{
+  font-size:11px;padding:3px 10px;background:var(--surf);border:1px solid var(--border);
+  border-radius:6px;color:var(--amberL);cursor:pointer;float:right;margin-left:8px;margin-bottom:4px;
+}
+.copy-btn:hover{border-color:var(--amber);}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- ── Header ── -->
+<header>
+  <div class="h-icon">🏆</div>
+  <div class="h-text">
+    <div class="h-title">AoE2 Tournament Tracker</div>
+    <div class="h-sub">Powered by Liquipedia · Age of Empires II</div>
+  </div>
+  <div id="src-badge" class="h-badge">MOCK DATA</div>
+</header>
+
+<!-- ── Filters ── -->
+<div class="filter-bar">
+  <div class="fg">
+    <span class="fg-label">Status</span>
+    <button class="pill on" data-f="status" data-v="all">All</button>
+    <button class="pill" data-f="status" data-v="live">🔴 Live</button>
+    <button class="pill" data-f="status" data-v="upcoming">Upcoming</button>
+    <button class="pill" data-f="status" data-v="completed">Completed</button>
+  </div>
+  <div class="fg">
+    <span class="fg-label">Tier</span>
+    <button class="pill on" data-f="tier" data-v="all">All</button>
+    <button class="pill tier-S" data-f="tier" data-v="S">S</button>
+    <button class="pill tier-A" data-f="tier" data-v="A">A</button>
+    <button class="pill tier-B" data-f="tier" data-v="B">B</button>
+    <button class="pill tier-C" data-f="tier" data-v="C">C</button>
+  </div>
+  <div class="search-wrap">
+    <input id="search-input" type="text" placeholder="Search tournaments, players, regions…">
+  </div>
+</div>
+
+<!-- ── Toolbar ── -->
+<div class="toolbar">
+  <button class="tool-btn primary" onclick="showMockData()">↻ Mock Data</button>
+  <button class="tool-btn" onclick="togglePaste()">📋 Paste Live Data</button>
+  <div id="data-note">Using placeholder data — click "Paste Live Data" after running the fetch script below</div>
+</div>
+
+<div id="status-bar">—</div>
+
+<!-- ── Paste live data panel ── -->
+<div id="paste-panel" class="hidden">
+  <div class="panel-hdr">
+    📋 Paste Liquipedia API Response
+    <span class="panel-hdr-sub">(JSON from the Python script below)</span>
+  </div>
+  <textarea id="paste-area" placeholder='Paste your JSON here…  { "query": { "results": { … } } }'></textarea>
+  <div class="paste-actions">
+    <button class="tool-btn primary" onclick="parsePasted()">Load Data</button>
+    <button class="tool-btn" onclick="togglePaste()">Cancel</button>
+    <span id="paste-err" class="paste-err"></span>
+  </div>
+</div>
+
+<!-- ── Tournament grid ── -->
+<div id="grid" style="margin-top:10px;">
+  <div class="empty"><div class="spinner"></div><div style="margin-top:12px;">Loading…</div></div>
+</div>
+
+<!-- ── Detail panel ── -->
+<div id="detail">
+  <button class="close-btn" onclick="closeDetail()">×</button>
+  <div id="detail-content"></div>
+</div>
+
+<!-- ── Python fetch script ── -->
+<details class="script-panel" style="margin-top:14px;">
+  <summary>⚙️ Python Fetch Script — Pull Live Data from Liquipedia</summary>
+  <div class="script-note">
+    Run this from your own machine (not Claude's sandbox — Liquipedia blocks server-side requests without a real User-Agent).
+    The script respects Liquipedia's rate limits (1 req/2s). After it runs, paste the JSON output into the panel above.
+    <br><br>
+    <strong>Setup:</strong> <code>pip install requests</code> then run the script.
+    Replace the User-Agent email with your own contact info as Liquipedia requires.
+  </div>
+  <button class="copy-btn" onclick="copyScript()">Copy script</button>
+  <pre class="code-block" id="py-script">
+import requests
+import json
+import time
+
+# ── Liquipedia requires a descriptive User-Agent with contact info ──
+HEADERS = {
+    "User-Agent": "AoE2TournamentTracker/1.0 (your-email@example.com) personal-research-tool",
+    "Accept-Encoding": "gzip",
+}
+
+BASE_URL = "https://liquipedia.net/ageofempires/api.php"
+
+PRINTOUTS = [
+    "Liquipedia tier",
+    "Start date",
+    "End date",
+    "Prize pool",
+    "Prize pool currency",
+    "Region",
+    "Type",
+    "First place",
+    "Second place",
+    "Third place",
+    "Number of participants",
+    "Organizer",
+]
+
+def fetch_tournaments(limit=50, offset=0, start_after="2025-01-01"):
+    params = {
+        "action": "askargs",
+        "format": "json",
+        "conditions": f"[[Category:Tournaments]][[Game::Age of Empires II]][[Start date::>{start_after}]]",
+        "printouts": "|".join(PRINTOUTS),
+        "parameters": f"sort=Start date|order=desc|limit={limit}|offset={offset}",
+    }
+    # action=askargs: max 1 request per 2 seconds — enforced, bans issued for violations
+    time.sleep(2)
+    response = requests.get(BASE_URL, params=params, headers=HEADERS, timeout=15)
+    response.raise_for_status()
+    return response.json()
+
+def fetch_all(max_results=100, start_after="2025-01-01"):
+    all_results = {}
+    offset = 0
+    limit = 50
+    while offset < max_results:
+        print(f"Fetching offset={offset}…")
+        batch = fetch_tournaments(limit=min(limit, max_results - offset), offset=offset, start_after=start_after)
+        results = batch.get("query", {}).get("results", {})
+        if not results:
+            break
+        all_results.update(results)
+        if len(results) < limit:
+            break
+        offset += limit
+
+    return {"query": {"results": all_results}}
+
+# ── Run ──
+print("Fetching AoE2 tournaments from Liquipedia…")
+data = fetch_all(max_results=100, start_after="2025-01-01")
+count = len(data["query"]["results"])
+print(f"Fetched {count} tournaments.")
+
+# ── Save and print ──
+with open("liquipedia_aoe2_tournaments.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print("Saved to liquipedia_aoe2_tournaments.json")
+print("\n── PASTE THIS INTO THE TRACKER ──")
+print(json.dumps(data))
+  </pre>
+</details>
+
+</div><!-- #app -->
+
+<script>
+// ================================================================
+//  MOCK DATA
+//  Timestamps relative to today = July 30, 2026 = 1785369600
+//  COMPLETED  →  end < 1785369600
+//  LIVE       →  start < 1785369600 AND end > 1785369600
+//  UPCOMING   →  start > 1785369600
+// ================================================================
+const MOCK = {
+  query: { results: {
+
+    // ── LIVE ───────────────────────────────────────────
+    "King of the Desert 7": {
+      fullurl: "https://liquipedia.net/ageofempires/King_of_the_Desert/7",
+      displaytitle: "King of the Desert 7",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "A-Tier" }],
+        "Start date":             [{ timestamp: "1785110400" }],  // Jul 27
+        "End date":               [{ timestamp: "1785542400" }],  // Aug 1
+        "Prize pool":             [10000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Middle East" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [24],
+        "Organizer":              [{ fulltext: "Hamza" }],
+      }
+    },
+    "AoE2 DE Masters Summer 2026": {
+      fullurl: "https://liquipedia.net/ageofempires/AoE2_DE_Masters/Summer_2026",
+      displaytitle: "AoE2 DE Masters Summer 2026",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "A-Tier" }],
+        "Start date":             [{ timestamp: "1785283200" }],  // Jul 29
+        "End date":               [{ timestamp: "1785628800" }],  // Aug 2
+        "Prize pool":             [5000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [16],
+        "Organizer":              [{ fulltext: "Microsoft" }],
+      }
+    },
+
+    // ── UPCOMING ─────────────────────────────────────
+    "Nations Cup 2026": {
+      fullurl: "https://liquipedia.net/ageofempires/Nations_Cup/2026",
+      displaytitle: "Nations Cup 2026",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "A-Tier" }],
+        "Start date":             [{ timestamp: "1785888000" }],  // Aug 5
+        "End date":               [{ timestamp: "1787875200" }],  // Aug 28
+        "Prize pool":             [15000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [48],
+        "Organizer":              [{ fulltext: "Nili_AoE" }],
+      }
+    },
+    "Hidden Cup 5": {
+      fullurl: "https://liquipedia.net/ageofempires/Hidden_Cup/5",
+      displaytitle: "Hidden Cup 5",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "S-Tier" }],
+        "Start date":             [{ timestamp: "1786752000" }],  // Aug 15
+        "End date":               [{ timestamp: "1787356800" }],  // Aug 22
+        "Prize pool":             [25000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [16],
+        "Organizer":              [{ fulltext: "T90Official" }],
+      }
+    },
+    "Arabia 1v1 Cup Season 3": {
+      fullurl: "https://liquipedia.net/ageofempires/Arabia_Cup/S3",
+      displaytitle: "Arabia 1v1 Cup Season 3",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "B-Tier" }],
+        "Start date":             [{ timestamp: "1787184000" }],  // Aug 20
+        "End date":               [{ timestamp: "1787443200" }],  // Aug 23
+        "Prize pool":             [3000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Americas" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [64],
+        "Organizer":              [{ fulltext: "TheMaximusPrime" }],
+      }
+    },
+    "Riyadh Masters 2026": {
+      fullurl: "https://liquipedia.net/ageofempires/Riyadh_Masters/2026",
+      displaytitle: "Riyadh Masters 2026",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "S-Tier" }],
+        "Start date":             [{ timestamp: "1788566400" }],  // Sep 5
+        "End date":               [{ timestamp: "1788912000" }],  // Sep 9
+        "Prize pool":             [500000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "LAN" }],
+        "First place":            [],
+        "Second place":           [],
+        "Third place":            [],
+        "Number of participants": [12],
+        "Organizer":              [{ fulltext: "ESL / FACEIT" }],
+      }
+    },
+
+    // ── COMPLETED ────────────────────────────────────
+    "Red Bull Wololo Legacy": {
+      fullurl: "https://liquipedia.net/ageofempires/Red_Bull_Wololo/Legacy",
+      displaytitle: "Red Bull Wololo Legacy",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "S-Tier" }],
+        "Start date":             [{ timestamp: "1778803200" }],  // May 15
+        "End date":               [{ timestamp: "1779235200" }],  // May 20
+        "Prize pool":             [100000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "LAN" }],
+        "First place":            [{ fulltext: "TheViper" }],
+        "Second place":           [{ fulltext: "Liereyy" }],
+        "Third place":            [{ fulltext: "Hera" }],
+        "Number of participants": [16],
+        "Organizer":              [{ fulltext: "Red Bull" }],
+      }
+    },
+    "World's Edge Championship S2": {
+      fullurl: "https://liquipedia.net/ageofempires/Worlds_Edge_Championship/S2",
+      displaytitle: "World's Edge Championship S2",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "A-Tier" }],
+        "Start date":             [{ timestamp: "1775347200" }],  // Apr 5
+        "End date":               [{ timestamp: "1776816000" }],  // Apr 22
+        "Prize pool":             [20000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Global" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [{ fulltext: "Hera" }],
+        "Second place":           [{ fulltext: "TheViper" }],
+        "Third place":            [{ fulltext: "DauT" }],
+        "Number of participants": [8],
+        "Organizer":              [{ fulltext: "World's Edge" }],
+      }
+    },
+    "Escape Gaming Cup 3": {
+      fullurl: "https://liquipedia.net/ageofempires/Escape_Gaming_Cup/3",
+      displaytitle: "Escape Gaming Cup 3",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "B-Tier" }],
+        "Start date":             [{ timestamp: "1780876800" }],  // Jun 8
+        "End date":               [{ timestamp: "1781222400" }],  // Jun 12
+        "Prize pool":             [2000],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Europe" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [{ fulltext: "Villese" }],
+        "Second place":           [{ fulltext: "Nicov" }],
+        "Third place":            [{ fulltext: "JorDan_AoE" }],
+        "Number of participants": [32],
+        "Organizer":              [{ fulltext: "Escape Gaming" }],
+      }
+    },
+    "MuSA Cup 2026": {
+      fullurl: "https://liquipedia.net/ageofempires/MuSA_Cup/2026",
+      displaytitle: "MuSA Cup 2026",
+      printouts: {
+        "Liquipedia tier":        [{ fulltext: "C-Tier" }],
+        "Start date":             [{ timestamp: "1783814400" }],  // Jul 12
+        "End date":               [{ timestamp: "1783987200" }],  // Jul 14
+        "Prize pool":             [500],
+        "Prize pool currency":    ["USD"],
+        "Region":                 [{ fulltext: "Southeast Asia" }],
+        "Type":                   [{ fulltext: "Online" }],
+        "First place":            [{ fulltext: "ZeroEmpires" }],
+        "Second place":           [{ fulltext: "MbL40C" }],
+        "Third place":            [],
+        "Number of participants": [16],
+        "Organizer":              [{ fulltext: "MuSA" }],
+      }
+    },
+
+  }}
+};
+
+
+// ================================================================
+//  STATE
+// ================================================================
+let tournaments = [];
+let fStatus = 'all';
+let fTier   = 'all';
+let searchQ = '';
+let activeId = null;
+let usingLive = false;
+
+
+// ================================================================
+//  PARSE — handles both mock shape & real Liquipedia SMW JSON
+// ================================================================
+function parseTournaments(raw) {
+  const results = raw?.query?.results || {};
+  const NOW = Date.now() / 1000;
+
+  return Object.entries(results).map(([key, val]) => {
+    const p = val.printouts || {};
+
+    const getTs  = k => parseInt(p[k]?.[0]?.timestamp || '0', 10);
+    const getTxt = k => {
+      const v = p[k]?.[0];
+      if (!v) return '';
+      if (typeof v === 'string') return v;
+      return v.fulltext || v.full_name || '';
+    };
+    const getNum = k => {
+      const v = p[k]?.[0];
+      if (typeof v === 'number') return v;
+      return null;
+    };
+    const getStr = k => {
+      const v = p[k]?.[0];
+      return typeof v === 'string' ? v : null;
+    };
+
+    const start = getTs('Start date');
+    const end   = getTs('End date');
+
+    // Status: if end is unknown, use start + 3 days as fallback
+    const endEst = end || (start ? start + 259200 : 0);
+    let status;
+    if (endEst && NOW > endEst + 43200)   status = 'completed'; // 12h grace after end
+    else if (start && NOW < start)         status = 'upcoming';
+    else                                   status = 'live';
+
+    const tierRaw = getTxt('Liquipedia tier');
+    const tier = tierRaw.replace('-Tier', '').replace('Qualifier', 'Qualifier') || 'D';
+
+    const prize    = getNum('Prize pool');
+    const currency = getStr('Prize pool currency') || getTxt('Prize pool currency') || 'USD';
+
+    return {
+      id: key,
+      name: val.displaytitle || key,
+      url: val.fullurl || '#',
+      tier, start, end, status, prize, currency,
+      region:    getTxt('Region'),
+      type:      getTxt('Type'),
+      players:   getNum('Number of participants'),
+      organizer: getTxt('Organizer'),
+      p1: getTxt('First place'),
+      p2: getTxt('Second place'),
+      p3: getTxt('Third place'),
+    };
+  }).sort((a, b) => {
+    const o = { live: 0, upcoming: 1, completed: 2 };
+    if (o[a.status] !== o[b.status]) return o[a.status] - o[b.status];
+    if (a.status === 'upcoming')  return a.start - b.start;   // soonest first
+    if (a.status === 'completed') return b.end - a.end;       // most recent first
+    return a.start - b.start;
+  });
+}
+
+
+// ================================================================
+//  FORMAT HELPERS
+// ================================================================
+function fmtPrize(prize, currency) {
+  if (!prize) return '—';
+  const sym = currency === 'EUR' ? '€' : '$';
+  if (prize >= 1_000_000) return sym + (prize / 1_000_000).toFixed(1) + 'M';
+  if (prize >= 1_000)     return sym + (prize / 1_000).toFixed(0) + 'K';
+  return sym + prize;
+}
+
+function fmtDateRange(start, end) {
+  if (!start) return '—';
+  const s = new Date(start * 1000);
+  const e = end ? new Date(end * 1000) : null;
+  const mo = { month: 'short', day: 'numeric' };
+  const moyr = { ...mo, year: 'numeric' };
+  if (!e) return s.toLocaleDateString('en-US', moyr);
+  if (s.getFullYear() !== e.getFullYear())
+    return `${s.toLocaleDateString('en-US', mo)} – ${e.toLocaleDateString('en-US', moyr)}`;
+  if (s.getMonth() !== e.getMonth())
+    return `${s.toLocaleDateString('en-US', mo)} – ${e.toLocaleDateString('en-US', moyr)}`;
+  return `${s.toLocaleDateString('en-US', mo)} – ${e.toLocaleDateString('en-US', moyr)}`;
+}
+
+function tierClass(t) {
+  const m = { S:'tier-S', A:'tier-A', B:'tier-B', C:'tier-C', D:'tier-D', Qualifier:'tier-Qualifier' };
+  return m[t] || 'tier-D';
+}
+function stClass(s) { return { live:'st-live', upcoming:'st-upcoming', completed:'st-completed' }[s] || ''; }
+function stLabel(s) {
+  if (s === 'live')      return '<span class="live-dot"></span>LIVE';
+  if (s === 'upcoming')  return 'UPCOMING';
+  return 'COMPLETED';
+}
+
+
+// ================================================================
+//  RENDER GRID
+// ================================================================
+function filtered() {
+  return tournaments.filter(t => {
+    if (fStatus !== 'all' && t.status !== fStatus) return false;
+    if (fTier   !== 'all' && t.tier   !== fTier)   return false;
+    if (searchQ) {
+      const q = searchQ.toLowerCase();
+      if (!t.name.toLowerCase().includes(q) &&
+          !(t.region || '').toLowerCase().includes(q) &&
+          !(t.organizer || '').toLowerCase().includes(q) &&
+          !(t.p1 || '').toLowerCase().includes(q) &&
+          !(t.p2 || '').toLowerCase().includes(q) &&
+          !(t.p3 || '').toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function renderGrid() {
+  const list = filtered();
+  document.getElementById('status-bar').textContent =
+    `${list.length} tournament${list.length === 1 ? '' : 's'}` +
+    (fStatus !== 'all' || fTier !== 'all' || searchQ ? ' (filtered)' : '');
+
+  const grid = document.getElementById('grid');
+  if (!list.length) {
+    grid.innerHTML = `<div class="empty">No tournaments match your filters.</div>`;
+    return;
+  }
+
+  grid.innerHTML = list.map(t => {
+    const isActive = t.id === activeId;
+    const hasPodium = t.p1 || t.p2 || t.p3;
+    const podium = hasPodium
+      ? `<hr class="card-divider"><div class="podium-row">
+           ${t.p1 ? `<span class="p-chip p1">🥇 ${t.p1}</span>` : ''}
+           ${t.p2 ? `<span class="p-chip p2">🥈 ${t.p2}</span>` : ''}
+           ${t.p3 ? `<span class="p-chip p3">🥉 ${t.p3}</span>` : ''}
+         </div>` : '';
+
+    return `
+<div class="t-card${t.status === 'live' ? ' is-live' : ''}${isActive ? ' active' : ''}"
+     data-id="${t.id.replace(/"/g,'&quot;')}" onclick="selectCard(this)">
+  <div class="card-top">
+    <span class="tier-badge ${tierClass(t.tier)}">${t.tier}-Tier</span>
+    <span class="t-name">${t.name}</span>
+    <span class="st-badge ${stClass(t.status)}">${stLabel(t.status)}</span>
+  </div>
+  <div class="card-meta">
+    <span class="meta-i"><span class="meta-ic">📅</span>${fmtDateRange(t.start, t.end)}</span>
+    ${t.prize   ? `<span class="meta-i"><span class="meta-ic">💰</span>${fmtPrize(t.prize, t.currency)}</span>` : ''}
+    ${t.region  ? `<span class="meta-i"><span class="meta-ic">🌍</span>${t.region}</span>` : ''}
+    ${t.type    ? `<span class="meta-i"><span class="meta-ic">${t.type === 'LAN' ? '🎮' : '🌐'}</span>${t.type}</span>` : ''}
+    ${t.players ? `<span class="meta-i"><span class="meta-ic">👥</span>${t.players} players</span>` : ''}
+  </div>
+  ${podium}
+</div>`;
+  }).join('');
+}
+
+
+// ================================================================
+//  DETAIL PANEL
+// ================================================================
+function selectCard(el) {
+  const id = el.dataset.id;
+  if (activeId === id) { closeDetail(); return; }
+  activeId = id;
+  renderGrid();
+
+  const t = tournaments.find(x => x.id === id);
+  if (!t) return;
+
+  const podiumHTML = [
+    t.p1 ? `<span class="d-player p1">🥇 ${t.p1}</span>` : '',
+    t.p2 ? `<span class="d-player p2">🥈 ${t.p2}</span>` : '',
+    t.p3 ? `<span class="d-player p3">🥉 ${t.p3}</span>` : '',
+  ].filter(Boolean).join('');
+
+  document.getElementById('detail-content').innerHTML = `
+    <div class="d-name">${t.name}</div>
+    <div class="d-badges">
+      <span class="tier-badge ${tierClass(t.tier)}" style="font-size:11px;">${t.tier}-Tier</span>
+      <span class="st-badge ${stClass(t.status)}" style="font-size:11px;">${stLabel(t.status)}</span>
+      ${t.organizer ? `<span style="font-size:12px;color:var(--text3);">by <span style="color:var(--text2)">${t.organizer}</span></span>` : ''}
+    </div>
+    <div class="d-grid">
+      <div class="d-stat">
+        <div class="d-stat-lbl">Prize Pool</div>
+        <div class="d-stat-val">${fmtPrize(t.prize, t.currency)}</div>
+      </div>
+      <div class="d-stat">
+        <div class="d-stat-lbl">Dates</div>
+        <div class="d-stat-val sm">${fmtDateRange(t.start, t.end)}</div>
+      </div>
+      <div class="d-stat">
+        <div class="d-stat-lbl">Region</div>
+        <div class="d-stat-val sm">${t.region || '—'}</div>
+      </div>
+      <div class="d-stat">
+        <div class="d-stat-lbl">Format</div>
+        <div class="d-stat-val sm">${t.type || '—'} · ${t.players || '?'} players</div>
+      </div>
+    </div>
+    ${podiumHTML
+      ? `<div class="d-section">Podium</div><div class="d-players">${podiumHTML}</div>`
+      : t.status !== 'completed'
+        ? `<div class="d-section">Results</div><div style="font-size:12px;color:var(--text3);">Results pending — tournament in progress or upcoming.</div>`
+        : ''
+    }
+    <a class="lp-link" href="${t.url}" target="_blank" rel="noopener">View full page on Liquipedia →</a>
+  `;
+
+  const panel = document.getElementById('detail');
+  panel.classList.add('vis');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closeDetail() {
+  activeId = null;
+  document.getElementById('detail').classList.remove('vis');
+  renderGrid();
+}
+
+
+// ================================================================
+//  FILTERS
+// ================================================================
+document.querySelectorAll('[data-f]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const group = btn.dataset.f, val = btn.dataset.v;
+    document.querySelectorAll(`[data-f="${group}"]`).forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    if (group === 'status') fStatus = val;
+    if (group === 'tier')   fTier   = val;
+    renderGrid();
+  });
+});
+
+document.getElementById('search-input').addEventListener('input', e => {
+  searchQ = e.target.value.trim();
+  renderGrid();
+});
+
+
+// ================================================================
+//  DATA LOADING
+// ================================================================
+function showMockData() {
+  tournaments = parseTournaments(MOCK);
+  usingLive = false;
+  document.getElementById('src-badge').textContent = 'MOCK DATA';
+  document.getElementById('src-badge').className = 'h-badge';
+  document.getElementById('data-note').textContent =
+    'Using placeholder data — click "Paste Live Data" after running the fetch script below';
+  renderGrid();
+}
+
+function togglePaste() {
+  const panel = document.getElementById('paste-panel');
+  panel.classList.toggle('hidden');
+  if (!panel.classList.contains('hidden'))
+    document.getElementById('paste-area').focus();
+}
+
+function parsePasted() {
+  const raw = document.getElementById('paste-area').value.trim();
+  const errEl = document.getElementById('paste-err');
+  errEl.textContent = '';
+  if (!raw) { errEl.textContent = 'Nothing pasted yet.'; return; }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch(e) {
+    errEl.textContent = `JSON parse error: ${e.message}`;
+    return;
+  }
+
+  const count = Object.keys(parsed?.query?.results || {}).length;
+  if (!count) {
+    errEl.textContent = 'No results found in JSON. Expected { query: { results: { … } } }';
+    return;
+  }
+
+  tournaments = parseTournaments(parsed);
+  usingLive = true;
+  document.getElementById('src-badge').textContent = `LIVE · ${count} tournaments`;
+  document.getElementById('src-badge').className = 'h-badge live-badge';
+  document.getElementById('data-note').textContent =
+    `Live Liquipedia data loaded — ${count} tournaments, fetched ${new Date().toLocaleTimeString()}`;
+  document.getElementById('paste-panel').classList.add('hidden');
+  document.getElementById('paste-area').value = '';
+  renderGrid();
+}
+
+
+// ================================================================
+//  COPY SCRIPT
+// ================================================================
+function copyScript() {
+  const text = document.getElementById('py-script').textContent.trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy script', 2000);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  });
+}
+
+
+// ================================================================
+//  INIT
+// ================================================================
+showMockData();
+</script>
+</body>
+</html>
