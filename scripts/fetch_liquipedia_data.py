@@ -29,6 +29,15 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+# Tournament/player names routinely include non-ASCII characters (Vietnamese,
+# accented Latin, etc). Windows' console defaults to a legacy codepage (cp1252)
+# that can't encode most of them, which crashes any print() containing one -
+# and since this script normally runs piped through `tee`, that crash's exit
+# code gets masked by tee's own (0), making the run look like it succeeded
+# when it actually died after a handful of pages. Force UTF-8 stdout so this
+# can't happen regardless of the terminal's default encoding.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 API = "https://liquipedia.net/ageofempires/api.php"
 USER_AGENT = "AoE2TournamentAutoScout/1.0 (robbyho@gmail.com) https://github.com/robbyho-aoe2/aoe2-Tournament-Auto-scout"
 
