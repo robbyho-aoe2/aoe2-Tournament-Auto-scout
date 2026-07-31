@@ -233,6 +233,8 @@ header{
 .pv-table td, .pv-table th{white-space:nowrap;}
 .pv-table th{text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);padding:6px 8px;border-bottom:1px solid var(--border);}
 .pv-table th.num{text-align:right;}
+.pv-table th.pv-sortable{cursor:pointer;user-select:none;}
+.pv-table th.pv-sortable:hover{color:var(--amberL);}
 .pv-table td{padding:7px 8px;border-bottom:1px solid var(--border);color:var(--text2);}
 .pv-table tr:last-child td{border-bottom:none;}
 .pv-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
@@ -818,6 +820,8 @@ function selectPlayer(name) {
   activeTeammateName = null;
   playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter };
   civTableMode = 'mine';
+  civSort = { col: 'games', dir: 'desc' };
+  mapTypeSort = { col: 'games', dir: 'desc' };
   opponentBrowseExpanded = false;
   teammateBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
@@ -951,6 +955,60 @@ function pillRow(containerId, options, activeVal, kind) {
   ).join('');
 }
 
+// ── sortable stat tables (civ / map-type breakdowns) ──
+// row shape: {label, games, wins, losses, winPct, oppPct?, civPct?}
+let civSort = { col: 'games', dir: 'desc' };
+let mapTypeSort = { col: 'games', dir: 'desc' };
+function toggledSort(sortState, col) {
+  return sortState.col === col
+    ? { col, dir: sortState.dir === 'desc' ? 'asc' : 'desc' }
+    : { col, dir: 'desc' };
+}
+function setCivSort(col) { civSort = toggledSort(civSort, col); renderPlayerView(); }
+function setMapTypeSort(col) { mapTypeSort = toggledSort(mapTypeSort, col); renderPlayerView(); }
+
+function sortRowObjs(rows, sortState) {
+  const dir = sortState.dir === 'asc' ? 1 : -1;
+  return [...rows].sort((a, b) => {
+    const av = a[sortState.col], bv = b[sortState.col];
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;  // rows missing a stat (e.g. no 1v1 games) always sort last
+    if (bv == null) return -1;
+    if (typeof av === 'string') return av.localeCompare(bv) * dir;
+    return (av - bv) * dir;
+  });
+}
+
+function sortableCellHTML(row, key) {
+  if (key === 'label') return esc(row.label);
+  if (key === 'games') return `${row.wins}-${row.losses}`;
+  if (key === 'winPct') return `<span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${row.winPct}%"></span></span>${row.winPct}%`;
+  const v = row[key];
+  return v != null ? v + '%' : '—';
+}
+
+// cols: array of [rowKey, headerLabel, sortable]
+function renderSortableTable(tableId, sortState, setSortFnName, rows, cols) {
+  const table = document.getElementById(tableId);
+  if (!rows.length) {
+    table.innerHTML = `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+    return;
+  }
+  const sorted = sortRowObjs(rows, sortState);
+  const thead = cols.map(([key, label, sortable]) => {
+    const cls = key === 'label' ? '' : 'num';
+    const arrow = sortState.col === key ? (sortState.dir === 'desc' ? ' ▾' : ' ▴') : '';
+    const classAttr = `${cls}${sortable ? (cls ? ' pv-sortable' : 'pv-sortable') : ''}`;
+    const onclick = sortable ? ` onclick="${setSortFnName}('${key}')"` : '';
+    return `<th${classAttr ? ` class="${classAttr}"` : ''}${onclick}>${esc(label)}${arrow}</th>`;
+  }).join('');
+  const tbody = sorted.map(r => `<tr>${cols.map(([key]) => {
+    const cls = key === 'label' ? '' : 'num';
+    return `<td${cls ? ` class="${cls}"` : ''}>${sortableCellHTML(r, key)}</td>`;
+  }).join('')}</tr>`).join('');
+  table.innerHTML = `<thead><tr>${thead}</tr></thead><tbody>${tbody}</tbody>`;
+}
+
 function renderPlayerView() {
   const name = activePlayerName;
   document.getElementById('pv-name').textContent = name;
@@ -1037,56 +1095,44 @@ function renderPlayerView() {
     `<button class="pill${val === civTableMode ? ' on' : ''}" style="font-size:11px;padding:3px 9px;" onclick="setCivTableMode('${val}')">${esc(label)}</button>`
   ).join('');
 
-  if (civTableMode === 'opponent') {
-    const oppCivGroups = {};
-    filteredGames.forEach(g => {
-      const civ = opponentCivOf(g, name);
-      if (!civ) return; // team-format rows have no single opponent civ
-      oppCivGroups[civ] = oppCivGroups[civ] || [];
-      oppCivGroups[civ].push(g);
-    });
-    const oppCivRows = Object.entries(oppCivGroups).sort((a, b) => b[1].length - a[1].length);
-    document.getElementById('pv-civ-table').innerHTML = oppCivRows.length ? `
-      <thead><tr><th>Opponent Civ</th><th class="num">Games</th><th class="num">Win Rate</th></tr></thead>
-      <tbody>${oppCivRows.map(([civ, gs]) => {
-        const wr = winRate(gs, name);
-        return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
-          <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td></tr>`;
-      }).join('')}</tbody>
-    ` : `<tbody><tr><td>No 1v1 games match the current filters.</td></tr></tbody>`;
-  } else {
-    const civRows = Object.entries(civGroups).sort((a, b) => b[1].length - a[1].length);
-    document.getElementById('pv-civ-table').innerHTML = civRows.length ? `
-      <thead><tr><th>Civilization</th><th class="num">Games</th><th class="num">Win Rate</th><th class="num">Opp. Strength</th><th class="num">Opp. Civ Strength</th></tr></thead>
-      <tbody>${civRows.map(([civ, gs]) => {
-        const wr = winRate(gs, name);
-        const oppS = strengthOfField(name, gs, oppWinPool, (g, p) => opponentOf(g, p));
-        const civS = strengthOfField(name, gs, civWinPool, (g, p) => opponentCivOf(g, p));
-        return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
-          <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td>
-          <td class="num">${oppS ? oppS.pct + '%' : '—'}</td>
-          <td class="num">${civS ? civS.pct + '%' : '—'}</td></tr>`;
-      }).join('')}</tbody>
-    ` : `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
-  }
+  const civKeyFn = civTableMode === 'opponent' ? opponentCivOf : civForPlayer;
+  const civTableGroups = {};
+  filteredGames.forEach(g => {
+    const civ = civKeyFn(g, name);
+    if (!civ) return; // team-format rows have no single opponent/opponent-civ
+    civTableGroups[civ] = civTableGroups[civ] || [];
+    civTableGroups[civ].push(g);
+  });
+  const civRowObjs = Object.entries(civTableGroups).map(([label, gs]) => {
+    const wr = winRate(gs, name);
+    const oppS = strengthOfField(name, gs, oppWinPool, (g, p) => opponentOf(g, p));
+    const civS = strengthOfField(name, gs, civWinPool, (g, p) => opponentCivOf(g, p));
+    return { label, games: wr.total, wins: wr.wins, losses: wr.total - wr.wins, winPct: wr.pct, oppPct: oppS ? oppS.pct : null, civPct: civS ? civS.pct : null };
+  });
+  renderSortableTable('pv-civ-table', civSort, 'setCivSort', civRowObjs, [
+    ['label', civTableMode === 'opponent' ? 'Opponent Civ' : 'Civilization', false],
+    ['games', 'Games', true],
+    ['winPct', civTableMode === 'opponent' ? "Player's Win Rate vs Civ" : 'Win Rate', true],
+    ['oppPct', 'Opp. Strength', true],
+    ['civPct', 'Opp. Civ Strength', true],
+  ]);
 
   // map type table
-  const mtCounts = {};
+  const mtGroups = {};
   filteredGames.forEach(g => {
     const mt = g.mapType || 'unclassified';
-    mtCounts[mt] = mtCounts[mt] || { games: 0, wins: 0 };
-    mtCounts[mt].games++;
-    if (playerWonGame(g, name)) mtCounts[mt].wins++;
+    mtGroups[mt] = mtGroups[mt] || [];
+    mtGroups[mt].push(g);
   });
-  const mtRows = Object.entries(mtCounts).sort((a, b) => b[1].games - a[1].games);
-  document.getElementById('pv-maptype-table').innerHTML = mtRows.length ? `
-    <thead><tr><th>Map Type</th><th class="num">Games</th><th class="num">Win Rate</th></tr></thead>
-    <tbody>${mtRows.map(([mt, s]) => {
-      const pct = Math.round((s.wins / s.games) * 100);
-      return `<tr><td>${esc(mapTypeLabels[mt] || mt)}</td><td class="num">${s.wins}-${s.games - s.wins}</td>
-        <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${pct}%"></span></span>${pct}%</td></tr>`;
-    }).join('')}</tbody>
-  ` : `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+  const mtRowObjs = Object.entries(mtGroups).map(([mt, gs]) => {
+    const wr = winRate(gs, name);
+    return { label: mapTypeLabels[mt] || mt, games: wr.total, wins: wr.wins, losses: wr.total - wr.wins, winPct: wr.pct };
+  });
+  renderSortableTable('pv-maptype-table', mapTypeSort, 'setMapTypeSort', mtRowObjs, [
+    ['label', 'Map Type', false],
+    ['games', 'Games', true],
+    ['winPct', 'Win Rate', true],
+  ]);
 }
 
 
