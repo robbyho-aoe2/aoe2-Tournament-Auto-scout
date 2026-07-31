@@ -250,7 +250,7 @@ header{
   <div class="h-icon">🏆</div>
   <div class="h-text">
     <div class="h-title">AoE2 Tournament Auto Scout</div>
-    <div class="h-sub">Powered by Liquipedia · Age of Empires II · data refreshes weekly via <a href="https://github.com/robbyho-aoe2/aoe2-Tournament-Auto-scout" target="_blank" rel="noopener">GitHub Actions</a> <span id="h-since"></span></div>
+    <div class="h-sub">by <a href="https://www.youtube.com/@Fastcastleandchill" target="_blank" rel="noopener">Fast Castle and Chill</a> · Powered by Liquipedia · Age of Empires II · data refreshes weekly via <a href="https://github.com/robbyho-aoe2/aoe2-Tournament-Auto-scout" target="_blank" rel="noopener">GitHub Actions</a> <span id="h-since"></span></div>
   </div>
   <div id="src-badge" class="h-badge">LOADING</div>
 </header>
@@ -362,7 +362,7 @@ header{
     </div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-civ-table"></table></div>
 
-    <div class="pv-section-hdr">By Map Type</div>
+    <div class="pv-section-hdr">By Map Type <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);">(S/A-Tier only)</span></div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-maptype-table"></table></div>
   </div>
 
@@ -692,6 +692,7 @@ function gameCountByPlayer(tier, format) {
 }
 
 const TIER_ORDER = ['S-Tier', 'A-Tier', 'B-Tier', 'C-Tier', 'D-Tier'];
+const MAPTYPE_TIERS = ['S-Tier', 'A-Tier']; // map_types.json only covers the classic S/A-Tier pool
 function tierSort(a, b) {
   const ia = TIER_ORDER.indexOf(a), ib = TIER_ORDER.indexOf(b);
   if (ia === -1 && ib === -1) return a.localeCompare(b);
@@ -988,10 +989,10 @@ function sortableCellHTML(row, key) {
 }
 
 // cols: array of [rowKey, headerLabel, sortable]
-function renderSortableTable(tableId, sortState, setSortFnName, rows, cols) {
+function renderSortableTable(tableId, sortState, setSortFnName, rows, cols, emptyMessage) {
   const table = document.getElementById(tableId);
   if (!rows.length) {
-    table.innerHTML = `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+    table.innerHTML = `<tbody><tr><td>${emptyMessage || 'No games match the current filters.'}</td></tr></tbody>`;
     return;
   }
   const sorted = sortRowObjs(rows, sortState);
@@ -1033,8 +1034,14 @@ function renderPlayerView() {
   const tiers = [...new Set(base.map(g => g.tier).filter(Boolean))].sort(tierSort);
   pillRow('pv-tier-pills', [['all', 'All'], ...tiers.map(t => [t, t])], playerFilters.tier, 'tier');
 
+  // Map Type classification only covers the ~30-map "classic" competitive
+  // pool (matches the S/A-Tier scene); B/C-Tier community tournaments pull
+  // in hundreds of custom map packs that would just show up as a wall of
+  // "Unclassified" otherwise, so Map Type is scoped to S/A-Tier games only
+  // regardless of the active Tier filter.
   const mapTypeLabels = { closed:'Closed', 'semi-open':'Semi-Open', open:'Open', chaotic:'Chaotic', hybrid:'Hybrid', water:'Water', nomad:'Nomad', unclassified:'Unclassified' };
-  const mapTypes = [...new Set(base.map(g => g.mapType || 'unclassified'))]
+  const mapTypeEligible = base.filter(g => MAPTYPE_TIERS.includes(g.tier));
+  const mapTypes = [...new Set(mapTypeEligible.map(g => g.mapType || 'unclassified'))]
     .sort((a, b) => Object.keys(mapTypeLabels).indexOf(a) - Object.keys(mapTypeLabels).indexOf(b));
   pillRow('pv-maptype-pills', [['all', 'All'], ...mapTypes.map(t => [t, mapTypeLabels[t] || t])], playerFilters.mapType, 'mapType');
 
@@ -1117,9 +1124,9 @@ function renderPlayerView() {
     ['civPct', 'Opp. Civ Strength', true],
   ]);
 
-  // map type table
+  // map type table - S/A-Tier only, same reasoning as the filter pills above
   const mtGroups = {};
-  filteredGames.forEach(g => {
+  filteredGames.filter(g => MAPTYPE_TIERS.includes(g.tier)).forEach(g => {
     const mt = g.mapType || 'unclassified';
     mtGroups[mt] = mtGroups[mt] || [];
     mtGroups[mt].push(g);
@@ -1132,7 +1139,7 @@ function renderPlayerView() {
     ['label', 'Map Type', false],
     ['games', 'Games', true],
     ['winPct', 'Win Rate', true],
-  ]);
+  ], 'No S/A-Tier games match the current filters.');
 }
 
 
