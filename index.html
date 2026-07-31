@@ -87,6 +87,7 @@ header{
 }
 .pill:hover{border-color:var(--amber);color:var(--amberL);}
 .pill.on{background:var(--amber);color:#1a0a00;border-color:var(--amber);font-weight:700;}
+.pill.disabled{opacity:.35;cursor:default;pointer-events:none;}
 .pill.tier-S.on,.pill.tier-A.on,.pill.tier-B.on,.pill.tier-C.on{background:transparent;font-weight:700;}
 .pill.tier-S.on{border-color:var(--gold);color:var(--gold);}
 .pill.tier-A.on{border-color:var(--blue);color:var(--blue);}
@@ -752,6 +753,18 @@ function scopedGames() {
   });
 }
 
+// Same as scopedGames() but only applies the tier/format filters, not
+// map/mapType - used to build the *universe* of Map/Map Type pill options
+// so picking one doesn't shrink the option list out from under itself.
+function scopedGamesByTierFormat() {
+  return GAMES.filter(g => {
+    if (!g.winner) return false;
+    if (playerFilters.format !== 'all' && g.format !== playerFilters.format) return false;
+    if (playerFilters.tier   !== 'all' && g.tier !== playerFilters.tier) return false;
+    return true;
+  });
+}
+
 function strengthOfField(name, games, pool, fieldFn) {
   let sumPct = 0, n = 0;
   games.forEach(g => {
@@ -956,6 +969,20 @@ function pillRow(containerId, options, activeVal, kind) {
   ).join('');
 }
 
+// Like pillRow, but shows the full fixed universe of options always -
+// ones the player has no games for (not in availableSet) render greyed
+// out and unclickable instead of just disappearing, so the filter looks
+// the same regardless of which player you're viewing.
+function pillRowWithAvailability(containerId, options, activeVal, kind, availableSet) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = options.map(([val, label]) => {
+    const available = val === 'all' || availableSet.has(val);
+    const cls = `pill${val === activeVal ? ' on' : ''}${available ? '' : ' disabled'}`;
+    const onclick = available ? ` onclick="setPvFilter('${kind}','${val}')"` : '';
+    return `<button class="${cls}"${onclick}>${esc(label)}</button>`;
+  }).join('');
+}
+
 // ── sortable stat tables (civ / map-type breakdowns) ──
 // row shape: {label, games, wins, losses, winPct, oppPct?, civPct?}
 let civSort = { col: 'games', dir: 'desc' };
@@ -1041,14 +1068,16 @@ function renderPlayerView() {
   // regardless of the active Tier filter.
   const mapTypeLabels = { closed:'Closed', 'semi-open':'Semi-Open', open:'Open', chaotic:'Chaotic', hybrid:'Hybrid', water:'Water', nomad:'Nomad', unclassified:'Unclassified' };
   const mapTypeEligible = base.filter(g => MAPTYPE_TIERS.includes(g.tier));
-  const mapTypes = [...new Set(mapTypeEligible.map(g => g.mapType || 'unclassified'))]
-    .sort((a, b) => Object.keys(mapTypeLabels).indexOf(a) - Object.keys(mapTypeLabels).indexOf(b));
-  pillRow('pv-maptype-pills', [['all', 'All'], ...mapTypes.map(t => [t, mapTypeLabels[t] || t])], playerFilters.mapType, 'mapType');
+  const availableMapTypes = new Set(mapTypeEligible.map(g => g.mapType || 'unclassified'));
+  const allMapTypes = Object.keys(mapTypeLabels); // fixed universe, always shown
+  pillRowWithAvailability('pv-maptype-pills', [['all', 'All'], ...allMapTypes.map(t => [t, mapTypeLabels[t]])], playerFilters.mapType, 'mapType', availableMapTypes);
 
-  const mapCounts = {};
-  base.forEach(g => { mapCounts[g.map] = (mapCounts[g.map] || 0) + 1; });
-  const topMaps = Object.entries(mapCounts).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([m]) => m);
-  pillRow('pv-map-pills', [['all', 'All'], ...topMaps.map(m => [m, m])], playerFilters.map, 'map');
+  const universeGames = scopedGamesByTierFormat();
+  const universeMapCounts = {};
+  universeGames.forEach(g => { universeMapCounts[g.map] = (universeMapCounts[g.map] || 0) + 1; });
+  const universeTopMaps = Object.entries(universeMapCounts).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([m]) => m);
+  const availableMaps = new Set(base.map(g => g.map));
+  pillRowWithAvailability('pv-map-pills', [['all', 'All'], ...universeTopMaps.map(m => [m, m])], playerFilters.map, 'map', availableMaps);
 
   const filteredGames = applyPlayerFilters(base);
   const wr = winRate(filteredGames, name);
