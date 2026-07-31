@@ -228,7 +228,9 @@ header{
 .pv-h2h{font-size:12px;color:var(--text2);background:var(--surf2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;margin-bottom:14px;}
 .pv-h2h b{color:var(--amberL);}
 .pv-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text3);margin:18px 0 8px;}
+.pv-table-wrap{overflow-x:auto;}
 .pv-table{width:100%;border-collapse:collapse;font-size:12px;}
+.pv-table td, .pv-table th{white-space:nowrap;}
 .pv-table th{text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);padding:6px 8px;border-bottom:1px solid var(--border);}
 .pv-table th.num{text-align:right;}
 .pv-table td{padding:7px 8px;border-bottom:1px solid var(--border);color:var(--text2);}
@@ -302,6 +304,10 @@ header{
 <div id="players-view" style="display:none;">
 
   <div class="fg" style="margin-bottom:8px;">
+    <span class="fg-label">Format</span>
+    <div id="browse-format-pills" style="display:flex;gap:5px;flex-wrap:wrap;"></div>
+  </div>
+  <div class="fg" style="margin-bottom:8px;">
     <span class="fg-label">Tier</span>
     <div id="browse-tier-pills" style="display:flex;gap:5px;flex-wrap:wrap;"></div>
   </div>
@@ -340,10 +346,10 @@ header{
     <div class="d-grid" id="pv-stats"></div>
 
     <div class="pv-section-hdr">By Civilization</div>
-    <table class="pv-table" id="pv-civ-table"></table>
+    <div class="pv-table-wrap"><table class="pv-table" id="pv-civ-table"></table></div>
 
     <div class="pv-section-hdr">By Map Type</div>
-    <table class="pv-table" id="pv-maptype-table"></table>
+    <div class="pv-table-wrap"><table class="pv-table" id="pv-maptype-table"></table></div>
   </div>
 
 </div>
@@ -637,22 +643,24 @@ document.getElementById('search-input').addEventListener('input', e => {
 // ================================================================
 // Both scoped by tier and counting only decided (winner set) games, so the
 // number on a browse pill always matches what selecting that player shows.
-function uniquePlayerNames(tier) {
+function uniquePlayerNames(tier, format) {
   const set = new Set();
   GAMES.forEach(g => {
     if (!g.winner) return;
     if (tier && tier !== 'all' && g.tier !== tier) return;
+    if (format && format !== 'all' && g.format !== format) return;
     if (g.player1) set.add(g.player1);
     if (g.player2) set.add(g.player2);
   });
   return [...set];
 }
 
-function gameCountByPlayer(tier) {
+function gameCountByPlayer(tier, format) {
   const counts = {};
   GAMES.forEach(g => {
     if (!g.winner) return;
     if (tier && tier !== 'all' && g.tier !== tier) return;
+    if (format && format !== 'all' && g.format !== format) return;
     if (g.player1) counts[g.player1] = (counts[g.player1] || 0) + 1;
     if (g.player2) counts[g.player2] = (counts[g.player2] || 0) + 1;
   });
@@ -736,6 +744,8 @@ function strengthOfField(name, games, pool, fieldFn) {
 const playerSearchInput = document.getElementById('player-search-input');
 let playerBrowseExpanded = true;
 let browseTierFilter = 'all';
+let browseFormatFilter = 'all';
+const BROWSE_FORMAT_LABELS = { '1v1': '1v1', team: 'Team (2v2/3v3/4v4)' };
 
 function renderBrowseTierPills() {
   const el = document.getElementById('browse-tier-pills');
@@ -746,11 +756,21 @@ function renderBrowseTierPills() {
 }
 function setBrowseTier(tier) { browseTierFilter = tier; renderPlayerBrowse(); }
 
+function renderBrowseFormatPills() {
+  const el = document.getElementById('browse-format-pills');
+  const formats = [...new Set(GAMES.map(g => g.format).filter(Boolean))];
+  el.innerHTML = [['all', 'All'], ...formats.map(f => [f, BROWSE_FORMAT_LABELS[f] || f])].map(([val, label]) =>
+    `<button class="pill${val === browseFormatFilter ? ' on' : ''}" onclick="setBrowseFormat('${val}')">${esc(label)}</button>`
+  ).join('');
+}
+function setBrowseFormat(format) { browseFormatFilter = format; renderPlayerBrowse(); }
+
 function renderPlayerBrowse() {
   renderBrowseTierPills();
+  renderBrowseFormatPills();
   const q = playerSearchInput.value.trim().toLowerCase();
-  const counts = gameCountByPlayer(browseTierFilter);
-  let names = uniquePlayerNames(browseTierFilter);
+  const counts = gameCountByPlayer(browseTierFilter, browseFormatFilter);
+  let names = uniquePlayerNames(browseTierFilter, browseFormatFilter);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
   names.sort((a, b) => (counts[b] || 0) - (counts[a] || 0));
 
@@ -771,7 +791,7 @@ playerSearchInput.addEventListener('input', renderPlayerBrowse);
 function selectPlayer(name) {
   activePlayerName = name;
   activeOpponentName = null;
-  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: 'all' };
+  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter };
   opponentBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
   document.getElementById('player-empty').style.display = 'none';
@@ -891,14 +911,13 @@ function renderPlayerView() {
   const tournamentsWon = tournaments.filter(t => t.p1 === name).length;
   const tournamentsEntered = new Set(base.map(g => g.tournament)).size;
 
-  const civCounts = {};
+  const civGroups = {};
   filteredGames.forEach(g => {
     const civ = civForPlayer(g, name) || 'Unknown';
-    civCounts[civ] = civCounts[civ] || { games: 0, wins: 0 };
-    civCounts[civ].games++;
-    if (playerWonGame(g, name)) civCounts[civ].wins++;
+    civGroups[civ] = civGroups[civ] || [];
+    civGroups[civ].push(g);
   });
-  const topCiv = Object.entries(civCounts).sort((a, b) => b[1].games - a[1].games)[0];
+  const topCiv = Object.entries(civGroups).sort((a, b) => b[1].length - a[1].length)[0];
 
   const scoped = scopedGames();
   const oppWinPool = buildWinPool(scoped, g => g.player1, g => g.player2);
@@ -910,7 +929,7 @@ function renderPlayerView() {
     <div class="d-stat"><div class="d-stat-lbl">Win Rate</div><div class="d-stat-val">${wr.total ? wr.pct + '%' : '—'}</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Games</div><div class="d-stat-val">${wr.wins}-${wr.total - wr.wins}</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Tournaments Won</div><div class="d-stat-val">${tournamentsWon} <span style="font-size:11px;color:var(--text3);font-weight:400;">/ ${tournamentsEntered} entered</span></div></div>
-    <div class="d-stat"><div class="d-stat-lbl">Top Civ</div><div class="d-stat-val sm">${topCiv ? esc(topCiv[0]) + ` (${topCiv[1].games})` : '—'}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Top Civ</div><div class="d-stat-val sm">${topCiv ? esc(topCiv[0]) + ` (${topCiv[1].length})` : '—'}</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Opponent Strength</div><div class="d-stat-val">${oppStrength ? oppStrength.pct + '%' : '—'}</div><div class="d-stat-note">avg. win rate of opponents faced (1v1)</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Opponent Civ Strength</div><div class="d-stat-val">${civStrength ? civStrength.pct + '%' : '—'}</div><div class="d-stat-note">avg. win rate of civs faced (1v1)</div></div>
   `;
@@ -934,13 +953,17 @@ function renderPlayerView() {
   }
 
   // civ table
-  const civRows = Object.entries(civCounts).sort((a, b) => b[1].games - a[1].games);
+  const civRows = Object.entries(civGroups).sort((a, b) => b[1].length - a[1].length);
   document.getElementById('pv-civ-table').innerHTML = civRows.length ? `
-    <thead><tr><th>Civilization</th><th class="num">Games</th><th class="num">Win Rate</th></tr></thead>
-    <tbody>${civRows.map(([civ, s]) => {
-      const pct = Math.round((s.wins / s.games) * 100);
-      return `<tr><td>${esc(civ)}</td><td class="num">${s.wins}-${s.games - s.wins}</td>
-        <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${pct}%"></span></span>${pct}%</td></tr>`;
+    <thead><tr><th>Civilization</th><th class="num">Games</th><th class="num">Win Rate</th><th class="num">Opp. Strength</th><th class="num">Opp. Civ Strength</th></tr></thead>
+    <tbody>${civRows.map(([civ, gs]) => {
+      const wr = winRate(gs, name);
+      const oppS = strengthOfField(name, gs, oppWinPool, (g, p) => opponentOf(g, p));
+      const civS = strengthOfField(name, gs, civWinPool, (g, p) => opponentCivOf(g, p));
+      return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
+        <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td>
+        <td class="num">${oppS ? oppS.pct + '%' : '—'}</td>
+        <td class="num">${civS ? civS.pct + '%' : '—'}</td></tr>`;
     }).join('')}</tbody>
   ` : `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
 

@@ -174,15 +174,22 @@ CIV_LOOKUP = {
     'bur': 'Burmese', 'byz': 'Byzantines', 'cel': 'Celts', 'chi': 'Chinese',
     'cms': 'Cumans', 'cum': 'Cumans', 'dra': 'Dravidians', 'eth': 'Ethiopians',
     'fra': 'Franks', 'geo': 'Georgians', 'got': 'Goths', 'gur': 'Gurjaras',
-    'hin': 'Hindustanis', 'hun': 'Huns', 'inc': 'Incas', 'ind': 'Indians',
+    'hin': 'Hindustanis', 'hun': 'Huns', 'inc': 'Inca', 'ind': 'Indians',
     'ita': 'Italians', 'jap': 'Japanese', 'khm': 'Khmer', 'kor': 'Koreans',
     'lit': 'Lithuanians', 'mag': 'Magyars', 'mly': 'Malay', 'mal': 'Malians',
-    'mli': 'Malians', 'may': 'Mayans', 'mon': 'Mongols', 'per': 'Persians',
+    'mli': 'Malians', 'may': 'Maya', 'mon': 'Mongols', 'per': 'Persians',
     'pol': 'Poles', 'por': 'Portuguese', 'rom': 'Romans', 'sar': 'Saracens',
     'sic': 'Sicilians', 'sla': 'Slavs', 'slav': 'Slavs', 'spa': 'Spanish',
     'tat': 'Tatars', 'teu': 'Teutons', 'tur': 'Turks', 'vie': 'Vietnamese',
-    'viet': 'Vietnamese', 'vik': 'Vikings',
+    'viet': 'Vietnamese', 'vik': 'Vikings', 'khi': 'Khitans', 'jur': 'Jurchens',
 }
+
+# Corrections for civ names already baked into cached game rows (as text,
+# not codes) - applied at write time so already-fetched data self-heals
+# without needing to re-fetch anything. Add here first if the game name
+# for a civ turns out to be wrong; only mirror into CIV_LOOKUP above once
+# confirmed, since that changes what NEW fetches resolve going forward.
+CIV_RENAME = {'Incas': 'Inca', 'Mayans': 'Maya', 'Khi': 'Khitans', 'Jur': 'Jurchens'}
 
 
 NUMERIC_TIER = {"1": "S-Tier", "2": "A-Tier", "3": "B-Tier", "4": "C-Tier", "5": "D-Tier"}
@@ -549,8 +556,17 @@ def write_outputs(pages, cache):
         for g in entry["games"]:
             g2 = dict(g)
             g2["player1"] = resolve_player_name(g["player1"])
-            g2["player2"] = resolve_player_name(g["player2"])
+            g2["player2"] = resolve_player_name(g["player2"]) if g.get("player2") else None
             g2["tier"] = normalize_tier(g["tier"])
+            # rows cached before the format/team1/team2 fields existed
+            # predate team-match support entirely, so they're always 1v1
+            g2.setdefault("format", "1v1" if g.get("player2") else "team")
+            g2.setdefault("team1", None)
+            g2.setdefault("team2", None)
+            if g2.get("civ1") in CIV_RENAME:
+                g2["civ1"] = CIV_RENAME[g2["civ1"]]
+            if g2.get("civ2") in CIV_RENAME:
+                g2["civ2"] = CIV_RENAME[g2["civ2"]]
             all_games.append(g2)
 
     DATA_DIR.mkdir(exist_ok=True)
