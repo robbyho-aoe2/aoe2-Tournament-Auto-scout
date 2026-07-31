@@ -24,6 +24,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -56,7 +57,7 @@ _last_query_ts = 0.0
 _last_parse_ts = 0.0
 
 
-def _throttled_get(params, interval, last_ts_holder):
+def _throttled_get(params, interval, last_ts_holder, retries=3):
     elapsed = time.monotonic() - last_ts_holder[0]
     if elapsed < interval:
         time.sleep(interval - elapsed)
@@ -65,11 +66,24 @@ def _throttled_get(params, interval, last_ts_holder):
         "User-Agent": USER_AGENT,
         "Accept-Encoding": "gzip",
     })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        raw = resp.read()
-        if resp.headers.get("Content-Encoding") == "gzip":
-            import gzip
-            raw = gzip.decompress(raw)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            raw = resp.read()
+            if resp.headers.get("Content-Encoding") == "gzip":
+                import gzip
+                raw = gzip.decompress(raw)
+    except urllib.error.HTTPError as e:
+        # 429s happen occasionally even with correct client-side throttling
+        # (their server-side limiter can trigger on shorter/cumulative
+        # windows) - back off and retry rather than losing the whole run
+        # over one transient hit. Respects their own Retry-After if given.
+        if e.code == 429 and retries > 0:
+            wait = int(e.headers.get("Retry-After", 60))
+            print(f"  (rate limited, waiting {wait}s before retry...)")
+            time.sleep(wait)
+            last_ts_holder[0] = time.monotonic()
+            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1)
+        raise
     last_ts_holder[0] = time.monotonic()
     return json.loads(raw.decode("utf-8"))
 

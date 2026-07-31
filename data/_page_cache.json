@@ -424324,6 +424324,46 @@
     "Escape Champions League/Americas/2v2": {
       "tournament": null,
       "games": []
+    },
+    "Escape Champions League/Americas/4v4": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/East Asia/2v2": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/East Asia/4v4": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Europe East/1v1": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Europe East/4v4": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Europe West/1v1": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Europe West/3v3": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Middle East/1v1": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/Middle East/3v3": {
+      "tournament": null,
+      "games": []
+    },
+    "Escape Champions League/SouthEast Asia/3v3": {
+      "tournament": null,
+      "games": []
     }
   }
 }
