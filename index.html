@@ -248,7 +248,7 @@ header{
   <div class="h-icon">🏆</div>
   <div class="h-text">
     <div class="h-title">AoE2 Tournament Auto Scout</div>
-    <div class="h-sub">Powered by Liquipedia · Age of Empires II · data refreshes weekly via <a href="https://github.com/robbyho-aoe2/aoe2-Tournament-Auto-scout" target="_blank" rel="noopener">GitHub Actions</a></div>
+    <div class="h-sub">Powered by Liquipedia · Age of Empires II · data refreshes weekly via <a href="https://github.com/robbyho-aoe2/aoe2-Tournament-Auto-scout" target="_blank" rel="noopener">GitHub Actions</a> <span id="h-since"></span></div>
   </div>
   <div id="src-badge" class="h-badge">LOADING</div>
 </header>
@@ -339,6 +339,15 @@ header{
         </div>
         <button class="pv-back" id="pv-opponent-clear" style="display:none;" onclick="clearOpponent()">clear</button>
       </div>
+      <div class="pv-frow" style="align-items:flex-start;">
+        <span class="pv-flabel" style="margin-top:6px;">Teammate</span>
+        <div style="flex:1;min-width:200px;">
+          <input id="pv-teammate-input" class="pv-opp-input" type="text" placeholder="Search or browse teammates…" style="width:100%;max-width:260px;margin-bottom:6px;" autocomplete="off">
+          <div id="pv-teammate-grid" class="p-browse-grid"></div>
+          <button id="pv-teammate-toggle" class="p-browse-toggle" onclick="toggleTeammateBrowse()">Show more ▾</button>
+        </div>
+        <button class="pv-back" id="pv-teammate-clear" style="display:none;" onclick="clearTeammate()">clear</button>
+      </div>
     </div>
 
     <div id="pv-h2h" class="pv-h2h" style="display:none;"></div>
@@ -373,6 +382,7 @@ let activeId = null;
 
 let activePlayerName = null;
 let activeOpponentName = null;
+let activeTeammateName = null;
 let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all' };
 
 
@@ -392,10 +402,15 @@ async function loadData() {
     tournaments = normalizeTournaments(tData.tournaments || []);
     GAMES = mData.games || [];
     dataGeneratedAt = tData.generatedAt || mData.generatedAt || null;
+    const sinceDate = tData.sinceDate || mData.sinceDate || null;
 
     const badge = document.getElementById('src-badge');
     badge.textContent = `${tournaments.length} TOURNAMENTS`;
     badge.className = 'h-badge live-badge';
+    const sinceLabel = sinceDate
+      ? new Date(sinceDate + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+      : null;
+    if (sinceLabel) document.getElementById('h-since').textContent = `· covers tournaments from ${sinceLabel} onward`;
     document.getElementById('data-note').textContent = dataGeneratedAt
       ? `Data generated ${new Date(dataGeneratedAt).toLocaleString()} · ${GAMES.length} games across ${tournaments.length} tournaments`
       : `${GAMES.length} games across ${tournaments.length} tournaments`;
@@ -459,7 +474,9 @@ function fmtDateRange(start, end) {
   if (!start) return '—';
   const s = new Date(start * 1000);
   const e = end ? new Date(end * 1000) : null;
-  const mo = { month: 'short', day: 'numeric' };
+  // dates are stored as UTC midnight for a given calendar day - format in
+  // UTC too, otherwise a viewer behind UTC sees everything shifted a day early
+  const mo = { month: 'short', day: 'numeric', timeZone: 'UTC' };
   const moyr = { ...mo, year: 'numeric' };
   if (!e) return s.toLocaleDateString('en-US', moyr);
   return `${s.toLocaleDateString('en-US', mo)} – ${e.toLocaleDateString('en-US', moyr)}`;
@@ -745,7 +762,9 @@ const playerSearchInput = document.getElementById('player-search-input');
 let playerBrowseExpanded = true;
 let browseTierFilter = 'all';
 let browseFormatFilter = 'all';
-const BROWSE_FORMAT_LABELS = { '1v1': '1v1', team: 'Team (2v2/3v3/4v4)' };
+const FORMAT_ORDER = ['1v1', 'team'];
+const FORMAT_LABELS = { '1v1': '1v1', team: 'Team' };
+function formatSort(a, b) { return FORMAT_ORDER.indexOf(a) - FORMAT_ORDER.indexOf(b); }
 
 function renderBrowseTierPills() {
   const el = document.getElementById('browse-tier-pills');
@@ -758,8 +777,8 @@ function setBrowseTier(tier) { browseTierFilter = tier; renderPlayerBrowse(); }
 
 function renderBrowseFormatPills() {
   const el = document.getElementById('browse-format-pills');
-  const formats = [...new Set(GAMES.map(g => g.format).filter(Boolean))];
-  el.innerHTML = [['all', 'All'], ...formats.map(f => [f, BROWSE_FORMAT_LABELS[f] || f])].map(([val, label]) =>
+  const formats = [...new Set(GAMES.map(g => g.format).filter(Boolean))].sort(formatSort);
+  el.innerHTML = [['all', 'All'], ...formats.map(f => [f, FORMAT_LABELS[f] || f])].map(([val, label]) =>
     `<button class="pill${val === browseFormatFilter ? ' on' : ''}" onclick="setBrowseFormat('${val}')">${esc(label)}</button>`
   ).join('');
 }
@@ -791,9 +810,12 @@ playerSearchInput.addEventListener('input', renderPlayerBrowse);
 function selectPlayer(name) {
   activePlayerName = name;
   activeOpponentName = null;
+  activeTeammateName = null;
   playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter };
   opponentBrowseExpanded = false;
+  teammateBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
+  document.getElementById('pv-teammate-input').value = '';
   document.getElementById('player-empty').style.display = 'none';
   document.getElementById('player-content').classList.add('vis');
   renderPlayerBrowse();
@@ -803,6 +825,7 @@ function selectPlayer(name) {
 function clearPlayer() {
   activePlayerName = null;
   activeOpponentName = null;
+  activeTeammateName = null;
   playerSearchInput.value = '';
   document.getElementById('player-empty').style.display = '';
   document.getElementById('player-content').classList.remove('vis');
@@ -851,6 +874,47 @@ function clearOpponent() {
   renderPlayerView();
 }
 
+// ── browsable teammate grid — same pattern as opponent, but restricted to
+// actual teammates from this player's team-format games ──
+const teammateInput = document.getElementById('pv-teammate-input');
+let teammateBrowseExpanded = false;
+
+function renderTeammateBrowse() {
+  const grid = document.getElementById('pv-teammate-grid');
+  const toggle = document.getElementById('pv-teammate-toggle');
+  if (!activePlayerName) { grid.innerHTML = ''; toggle.textContent = ''; return; }
+
+  const q = teammateInput.value.trim().toLowerCase();
+  const counts = {};
+  playerGames(activePlayerName).forEach(g => {
+    (g.teammates || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; });
+  });
+  let names = Object.keys(counts);
+  if (q) names = names.filter(n => n.toLowerCase().includes(q));
+  names.sort((a, b) => counts[b] - counts[a]);
+
+  grid.innerHTML = names.length
+    ? names.map(n =>
+        `<button class="p-pill${n === activeTeammateName ? ' on' : ''}" onclick="selectTeammate('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
+      ).join('')
+    : `<span class="p-browse-empty">No teammates match.</span>`;
+  grid.classList.toggle('expanded', teammateBrowseExpanded);
+  toggle.textContent = teammateBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} teammates ▾`;
+}
+function toggleTeammateBrowse() { teammateBrowseExpanded = !teammateBrowseExpanded; renderTeammateBrowse(); }
+teammateInput.addEventListener('input', renderTeammateBrowse);
+
+function selectTeammate(name) {
+  activeTeammateName = name;
+  document.getElementById('pv-teammate-clear').style.display = '';
+  renderPlayerView();
+}
+function clearTeammate() {
+  activeTeammateName = null;
+  document.getElementById('pv-teammate-clear').style.display = 'none';
+  renderPlayerView();
+}
+
 function setPvFilter(kind, value) {
   playerFilters[kind] = value;
   renderPlayerView();
@@ -863,6 +927,7 @@ function applyPlayerFilters(games) {
     if (playerFilters.mapType !== 'all' && (g.mapType || 'unclassified') !== playerFilters.mapType) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
     if (activeOpponentName && opponentOf(g, activePlayerName) !== activeOpponentName) return false;
+    if (activeTeammateName && !(g.teammates || []).includes(activeTeammateName)) return false;
     return true;
   });
 }
@@ -884,13 +949,13 @@ function renderPlayerView() {
   const name = activePlayerName;
   document.getElementById('pv-name').textContent = name;
   renderOpponentBrowse();
+  renderTeammateBrowse();
 
   const base = playerGames(name);
 
   // pill options derived from what this player actually has data for
-  const formatLabels = { '1v1': '1v1', team: 'Team (2v2/3v3/4v4)' };
-  const formats = [...new Set(base.map(g => g.format).filter(Boolean))];
-  pillRow('pv-format-pills', [['all', 'All'], ...formats.map(f => [f, formatLabels[f] || f])], playerFilters.format, 'format');
+  const formats = [...new Set(base.map(g => g.format).filter(Boolean))].sort(formatSort);
+  pillRow('pv-format-pills', [['all', 'All'], ...formats.map(f => [f, FORMAT_LABELS[f] || f])], playerFilters.format, 'format');
 
   const tiers = [...new Set(base.map(g => g.tier).filter(Boolean))].sort(tierSort);
   pillRow('pv-tier-pills', [['all', 'All'], ...tiers.map(t => [t, t])], playerFilters.tier, 'tier');

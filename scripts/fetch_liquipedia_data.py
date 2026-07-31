@@ -380,6 +380,7 @@ def parse_tournament(title, wikitext):
                     "format": "1v1",
                     "player1": p1,
                     "player2": p2,
+                    "teammates": [],
                     "team1": None,
                     "team2": None,
                     "civ1": resolve_civ(mkv.get("civs1")),
@@ -433,6 +434,7 @@ def parse_tournament(title, wikitext):
                     ("2", players2, civs2, team2, team1),
                 ):
                     for idx, raw_name in enumerate(players):
+                        teammates = [resolve_player_name(p) for j, p in enumerate(players) if j != idx]
                         games.append({
                             "tournament": name,
                             "tier": tier,
@@ -441,6 +443,7 @@ def parse_tournament(title, wikitext):
                             "format": "team",
                             "player1": resolve_player_name(raw_name),
                             "player2": None,
+                            "teammates": teammates,
                             "team1": own_team,
                             "team2": opp_team,
                             "civ1": resolve_civ(civs[idx]) if idx < len(civs) else None,
@@ -563,6 +566,7 @@ def write_outputs(pages, cache):
             g2.setdefault("format", "1v1" if g.get("player2") else "team")
             g2.setdefault("team1", None)
             g2.setdefault("team2", None)
+            g2["teammates"] = [resolve_player_name(t) for t in g.get("teammates", [])]
             if g2.get("civ1") in CIV_RENAME:
                 g2["civ1"] = CIV_RENAME[g2["civ1"]]
             if g2.get("civ2") in CIV_RENAME:
@@ -572,11 +576,11 @@ def write_outputs(pages, cache):
     DATA_DIR.mkdir(exist_ok=True)
     generated_at = datetime.now(timezone.utc).isoformat()
     (DATA_DIR / "tournaments.json").write_text(
-        json.dumps({"generatedAt": generated_at, "tournaments": tournaments}, indent=2, ensure_ascii=False),
+        json.dumps({"generatedAt": generated_at, "sinceDate": SINCE_DATE, "tournaments": tournaments}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
     (DATA_DIR / "matches.json").write_text(
-        json.dumps({"generatedAt": generated_at, "games": all_games}, indent=2, ensure_ascii=False),
+        json.dumps({"generatedAt": generated_at, "sinceDate": SINCE_DATE, "games": all_games}, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
     return tournaments, all_games
