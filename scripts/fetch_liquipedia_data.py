@@ -190,7 +190,17 @@ CIV_LOOKUP = {
     'pol': 'Poles', 'por': 'Portuguese', 'rom': 'Romans', 'sar': 'Saracens',
     'sic': 'Sicilians', 'sla': 'Slavs', 'slav': 'Slavs', 'spa': 'Spanish',
     'tat': 'Tatars', 'teu': 'Teutons', 'tur': 'Turks', 'vie': 'Vietnamese',
-    'viet': 'Vietnamese', 'vik': 'Vikings', 'khi': 'Khitans', 'jur': 'Jurchens',
+    'viet': 'Vietnamese', 'vik': 'Vikings', 'viking': 'Vikings',
+    # Three Kingdoms DLC
+    'khi': 'Khitans', 'jur': 'Jurchens', 'wei': 'Wei', 'wu': 'Wu', 'shu': 'Shu',
+    # The Last Chieftains DLC
+    'map': 'Mapuche', 'mui': 'Muisca', 'tup': 'Tupi',
+    # Chronicles: Battle for Greece / Alexander the Great
+    'ath': 'Athenians', 'ach': 'Achaemenids', 'spartans': 'Spartans',
+    # typos seen on individual tournament pages (single-letter slips against
+    # the real code - byz/spa/tat - each only ever seen once so far, kept
+    # separate from the confirmed entries above)
+    'cmss': 'Cumans', 'biz': 'Byzantines', 'esp': 'Spanish', 'tar': 'Tatars',
 }
 
 # Corrections for civ names already baked into cached game rows (as text,
@@ -198,7 +208,14 @@ CIV_LOOKUP = {
 # without needing to re-fetch anything. Add here first if the game name
 # for a civ turns out to be wrong; only mirror into CIV_LOOKUP above once
 # confirmed, since that changes what NEW fetches resolve going forward.
-CIV_RENAME = {'Incas': 'Inca', 'Mayans': 'Maya', 'Khi': 'Khitans', 'Jur': 'Jurchens'}
+CIV_RENAME = {
+    'Incas': 'Inca', 'Mayans': 'Maya', 'Khi': 'Khitans', 'Jur': 'Jurchens',
+    'Map': 'Mapuche', 'Mui': 'Muisca', 'Tup': 'Tupi',
+    'Ath': 'Athenians', 'Ach': 'Achaemenids',
+    'Burgudians': 'Burgundians', 'Viking': 'Vikings', 'Cmss': 'Cumans',
+    'Biz': 'Byzantines', 'Esp': 'Spanish', 'Tar': 'Tatars',
+    'Azt<!--Azt? Please Re-Check Different Website-->': 'Aztecs',
+}
 
 
 NUMERIC_TIER = {"1": "S-Tier", "2": "A-Tier", "3": "B-Tier", "4": "C-Tier", "5": "D-Tier"}
@@ -300,9 +317,12 @@ def parse_template_kv(block, name):
     for part in inner.group(1).split("|"):
         if "=" in part:
             k, v = part.split("=", 1)
-            kv[k.strip()] = v.strip()
+            # editors sometimes leave inline wiki comments on a field value,
+            # e.g. civs1=Azt<!--Azt? Please Re-Check Different Website--> -
+            # strip them here so they don't leak into the resolved value.
+            kv[k.strip()] = clean_field(v)
         elif part.strip():
-            kv["_pos"].append(part.strip())
+            kv["_pos"].append(clean_field(part))
     return kv
 
 
