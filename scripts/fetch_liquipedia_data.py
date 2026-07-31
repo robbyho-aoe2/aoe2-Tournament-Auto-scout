@@ -429,7 +429,7 @@ def parse_tournament(title, wikitext):
                     "civ1": resolve_civ(mkv.get("civs1")),
                     "civ2": resolve_civ(mkv.get("civs2")),
                     "map": map_name,
-                    "mapType": map_types.get(map_name),
+                    "mapTypes": map_types.get(map_name, []),
                     "winner": winner,
                 })
 
@@ -492,7 +492,7 @@ def parse_tournament(title, wikitext):
                             "civ1": resolve_civ(civs[idx]) if idx < len(civs) else None,
                             "civ2": None,
                             "map": map_name,
-                            "mapType": map_types.get(map_name),
+                            "mapTypes": map_types.get(map_name, []),
                             "winner": "1" if winner == side else "2",
                         })
 
@@ -589,6 +589,8 @@ def write_outputs(pages, cache):
     # through before being published, regardless of when they were fetched.
     tournaments = []
     all_games = []
+    map_types = load_map_types()  # re-applied here too - editing map_types.json
+    # should retroactively reclassify already-cached games, not just new fetches
     for p in pages:
         entry = cache.get(p)
         if not entry or not entry["tournament"]:
@@ -614,6 +616,7 @@ def write_outputs(pages, cache):
                 g2["civ1"] = CIV_RENAME[g2["civ1"]]
             if g2.get("civ2") in CIV_RENAME:
                 g2["civ2"] = CIV_RENAME[g2["civ2"]]
+            g2["mapTypes"] = map_types.get(g2["map"], [])
             all_games.append(g2)
 
     DATA_DIR.mkdir(exist_ok=True)
@@ -656,14 +659,14 @@ def main():
             print(f"  -> out of scope (wrong game or before {SINCE_DATE})")
         else:
             for g in games:
-                if g["mapType"] is None:
+                if not g["mapTypes"]:
                     unclassified_maps.add(g["map"])
             print(f"  -> {tournament['name']}: {len(games)} game(s)")
         if i % 5 == 0 or i == len(todo):
             save_cache(cache)  # checkpoint - safe to interrupt/timeout at any point
 
     if unclassified_maps:
-        print("\nMaps with no entry in data/map_types.json (mapType will be null):")
+        print("\nMaps with no entry in data/map_types.json (mapTypes will be empty):")
         for m in sorted(unclassified_maps):
             print(f"  - {m}")
 

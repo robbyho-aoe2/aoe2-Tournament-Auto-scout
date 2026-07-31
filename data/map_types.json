@@ -1,37 +1,400 @@
 {
   "_readme": "Map -> map-type lookup, used to bucket each game the way the 'Hera S-tier dominance' analysis video does: closed (defended start), semi-open (wallable, no defenses), open (hard to wall), chaotic (close spawns / early map-control fight), hybrid (land+water), water, nomad (no starting TC). This is NOT sourced from Liquipedia (they only tag Land/Water/Hybrid) - it's hand-curated and only covers maps I'm confident about. Maps not listed here come through the pipeline as mapType: null and get printed by the script so you can add them - you know the current tournament map pools far better than I do, so please correct/extend freely.",
-  "types": ["closed", "semi-open", "open", "chaotic", "hybrid", "water", "nomad"],
-
-  "Arena": "closed",
-  "Black Forest": "closed",
-  "Fortress": "closed",
-
-  "Arabia": "semi-open",
-  "Ghost Lake": "semi-open",
-  "Golden Pit": "semi-open",
-  "Golden Swamp": "semi-open",
-  "Continental": "semi-open",
-  "Gold Rush": "semi-open",
-  "Bypass": "semi-open",
-
-  "Land Madness": "open",
-  "Steppe": "open",
-  "Slopes": "open",
-
-  "Hideout": "chaotic",
-  "Four Lakes": "chaotic",
-
-  "Cross": "hybrid",
-  "Copenhagen": "hybrid",
-  "Bay": "hybrid",
-  "Yucatan": "hybrid",
-  "Coastal": "hybrid",
-  "High Tides": "hybrid",
-
-  "Islands": "water",
-  "Migration": "water",
-  "Mudflow": "water",
-
-  "Nomad": "nomad",
-  "Nomad Chaos": "nomad"
+  "types": [
+    "closed",
+    "semi-open",
+    "open",
+    "chaotic",
+    "hybrid",
+    "water",
+    "nomad"
+  ],
+  "Acclivity": [
+    "open"
+  ],
+  "Acropolis": [
+    "open"
+  ],
+  "African Clearing": [
+    "nomad"
+  ],
+  "Aftermath": [
+    "closed"
+  ],
+  "Amazon Tunnel": [
+    "closed"
+  ],
+  "Arabia": [
+    "open"
+  ],
+  "Archipelago": [
+    "water"
+  ],
+  "Arena": [
+    "closed"
+  ],
+  "Atacama": [
+    "open"
+  ],
+  "Baltic": [
+    "hybrid"
+  ],
+  "Bay": [
+    "hybrid"
+  ],
+  "Black Forest": [
+    "closed"
+  ],
+  "Bog Islands": [
+    "hybrid"
+  ],
+  "Bogland": [
+    "open"
+  ],
+  "Border Dispute": [
+    "chaotic"
+  ],
+  "Budapest": [
+    "chaotic"
+  ],
+  "Bypass": [
+    "semi-open"
+  ],
+  "Canals": [
+    "hybrid"
+  ],
+  "Capricious": [
+    "chaotic"
+  ],
+  "Cenotes": [
+    "open"
+  ],
+  "Chaos Pit": [
+    "chaotic"
+  ],
+  "City of Lakes": [
+    "hybrid"
+  ],
+  "Cliffbound": [
+    "chaotic"
+  ],
+  "Coastal": [
+    "hybrid"
+  ],
+  "Coastal Forest": [
+    "hybrid",
+    "open"
+  ],
+  "Continental": [
+    "hybrid",
+    "semi-open"
+  ],
+  "Copenhagen": [
+    "hybrid"
+  ],
+  "Crater Lake": [
+    "hybrid"
+  ],
+  "Cross": [
+    "hybrid"
+  ],
+  "Crossroads": [
+    "open"
+  ],
+  "Crownwood": [
+    "open"
+  ],
+  "Dingos": [
+    "hybrid"
+  ],
+  "Dunesprings": [
+    "hybrid"
+  ],
+  "Enclosed": [
+    "closed"
+  ],
+  "Eruption": [
+    "open"
+  ],
+  "Fortified Clearing": [
+    "closed"
+  ],
+  "Fortress": [
+    "closed"
+  ],
+  "Four Lakes": [
+    "chaotic",
+    "hybrid",
+    "open"
+  ],
+  "Frigid Lake": [
+    "hybrid"
+  ],
+  "Ghost Lake": [
+    "open",
+    "semi-open"
+  ],
+  "Glacis": [
+    "closed",
+    "hybrid"
+  ],
+  "Glade": [
+    "open"
+  ],
+  "Gold Rush": [
+    "open",
+    "semi-open"
+  ],
+  "Golden Pit": [
+    "open",
+    "semi-open"
+  ],
+  "Golden Stream": [
+    "hybrid",
+    "open"
+  ],
+  "Golden Swamp": [
+    "hybrid",
+    "open",
+    "semi-open"
+  ],
+  "Graupel": [
+    "hybrid",
+    "open"
+  ],
+  "Graveyards": [
+    "open"
+  ],
+  "Greenland": [
+    "hybrid",
+    "open"
+  ],
+  "Haboob": [
+    "open"
+  ],
+  "Hamburger": [
+    "hybrid"
+  ],
+  "Hideout": [
+    "chaotic",
+    "closed"
+  ],
+  "High Tides": [
+    "hybrid"
+  ],
+  "Highland": [
+    "open"
+  ],
+  "Hill Fort": [
+    "closed"
+  ],
+  "Islands": [
+    "water"
+  ],
+  "Isthmus": [
+    "hybrid",
+    "open"
+  ],
+  "Karsts": [
+    "open"
+  ],
+  "Kawasan": [
+    "open"
+  ],
+  "Kilimanjaro": [
+    "open"
+  ],
+  "Land Madness": [
+    "open"
+  ],
+  "Land Nomad": [
+    "nomad"
+  ],
+  "Loch Ness": [
+    "hybrid"
+  ],
+  "Lombardia": [
+    "open"
+  ],
+  "Lowland": [
+    "open"
+  ],
+  "Mangrove Jungle": [
+    "hybrid",
+    "open"
+  ],
+  "Marketplace": [
+    "open"
+  ],
+  "Mediterranean": [
+    "hybrid",
+    "open"
+  ],
+  "MegaRandom": [
+    "chaotic"
+  ],
+  "Michi": [
+    "closed"
+  ],
+  "Migration": [
+    "hybrid",
+    "water"
+  ],
+  "Mired": [
+    "nomad",
+    "open"
+  ],
+  "Mongolia": [
+    "open"
+  ],
+  "Morass": [
+    "open"
+  ],
+  "Mountain Dunes": [
+    "open"
+  ],
+  "Mountain Pass": [
+    "nomad",
+    "open"
+  ],
+  "Mountain Range": [
+    "open"
+  ],
+  "Mountain Ridge": [
+    "open"
+  ],
+  "Mudflow": [
+    "water"
+  ],
+  "Murkwood": [
+    "hybrid",
+    "nomad"
+  ],
+  "Nile Delta": [
+    "hybrid",
+    "nomad"
+  ],
+  "Nomad": [
+    "hybrid",
+    "nomad"
+  ],
+  "Nomad Chaos": [
+    "nomad"
+  ],
+  "Northern Isles": [
+    "water"
+  ],
+  "Oasis": [
+    "open"
+  ],
+  "Pacific Islands": [
+    "water"
+  ],
+  "Paradise Island": [
+    "hybrid",
+    "open"
+  ],
+  "Pilgrims": [
+    "hybrid",
+    "nomad"
+  ],
+  "Prairie": [
+    "open"
+  ],
+  "QS Runestones": [
+    "open"
+  ],
+  "Ring Fortress": [
+    "closed"
+  ],
+  "River Divide": [
+    "hybrid"
+  ],
+  "Rivers": [
+    "hybrid",
+    "open"
+  ],
+  "Runestones": [
+    "open"
+  ],
+  "Sacred Springs": [
+    "open"
+  ],
+  "Salt Marsh": [
+    "hybrid"
+  ],
+  "Sandbank": [
+    "hybrid"
+  ],
+  "Scandinavia": [
+    "hybrid",
+    "open"
+  ],
+  "Seasons": [
+    "chaotic"
+  ],
+  "Seize The Mountain": [
+    "hybrid"
+  ],
+  "Serengeti": [
+    "open"
+  ],
+  "Sherwood Forest": [
+    "open"
+  ],
+  "Shipwreck": [
+    "hybrid",
+    "nomad"
+  ],
+  "Shoals": [
+    "hybrid",
+    "open"
+  ],
+  "Shrubland": [
+    "open"
+  ],
+  "Slopes": [
+    "open"
+  ],
+  "Socotra": [
+    "chaotic"
+  ],
+  "Steppe": [
+    "nomad",
+    "open"
+  ],
+  "Stranded": [
+    "hybrid",
+    "nomad"
+  ],
+  "Team Glaciers": [
+    "closed",
+    "hybrid"
+  ],
+  "Team Islands": [
+    "water"
+  ],
+  "Team Moats": [
+    "closed",
+    "hybrid"
+  ],
+  "The Passage": [
+    "water"
+  ],
+  "Valley": [
+    "open"
+  ],
+  "Vulpine": [
+    "open"
+  ],
+  "Wade": [
+    "open"
+  ],
+  "Wolf Hill": [
+    "chaotic"
+  ],
+  "Yucatan": [
+    "hybrid",
+    "open"
+  ]
 }

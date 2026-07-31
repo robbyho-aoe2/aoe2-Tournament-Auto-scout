@@ -708,6 +708,13 @@ function uniqueTiers() {
 function civForPlayer(g, name)     { return g.player1 === name ? g.civ1 : g.civ2; }
 function opponentOf(g, name)       { return g.player1 === name ? g.player2 : g.player1; }
 function opponentCivOf(g, name)    { return g.player1 === name ? g.civ2 : g.civ1; }
+
+// a map can belong to more than one type (e.g. Nomad is both nomad and
+// hybrid) - g.mapTypes is an array; 'unclassified' means the array is empty
+function gameHasMapType(g, type) {
+  if (type === 'unclassified') return !g.mapTypes || g.mapTypes.length === 0;
+  return !!(g.mapTypes && g.mapTypes.includes(type));
+}
 function playerWonGame(g, name)  {
   return (g.player1 === name && g.winner === '1') || (g.player2 === name && g.winner === '2');
 }
@@ -747,7 +754,7 @@ function scopedGames() {
     if (!g.winner) return false;
     if (playerFilters.format  !== 'all' && g.format !== playerFilters.format) return false;
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
-    if (playerFilters.mapType !== 'all' && (g.mapType || 'unclassified') !== playerFilters.mapType) return false;
+    if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
     return true;
   });
@@ -948,7 +955,7 @@ function applyPlayerFilters(games) {
   return games.filter(g => {
     if (playerFilters.format  !== 'all' && g.format !== playerFilters.format) return false;
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
-    if (playerFilters.mapType !== 'all' && (g.mapType || 'unclassified') !== playerFilters.mapType) return false;
+    if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
     if (activeOpponentName && opponentOf(g, activePlayerName) !== activeOpponentName) return false;
     if (activeTeammateName && !(g.teammates || []).includes(activeTeammateName)) return false;
@@ -1068,7 +1075,11 @@ function renderPlayerView() {
   // regardless of the active Tier filter.
   const mapTypeLabels = { closed:'Closed', 'semi-open':'Semi-Open', open:'Open', chaotic:'Chaotic', hybrid:'Hybrid', water:'Water', nomad:'Nomad', unclassified:'Unclassified' };
   const mapTypeEligible = base.filter(g => MAPTYPE_TIERS.includes(g.tier));
-  const availableMapTypes = new Set(mapTypeEligible.map(g => g.mapType || 'unclassified'));
+  const availableMapTypes = new Set();
+  mapTypeEligible.forEach(g => {
+    if (g.mapTypes && g.mapTypes.length) g.mapTypes.forEach(t => availableMapTypes.add(t));
+    else availableMapTypes.add('unclassified');
+  });
   const allMapTypes = Object.keys(mapTypeLabels); // fixed universe, always shown
   pillRowWithAvailability('pv-maptype-pills', [['all', 'All'], ...allMapTypes.map(t => [t, mapTypeLabels[t]])], playerFilters.mapType, 'mapType', availableMapTypes);
 
@@ -1114,7 +1125,7 @@ function renderPlayerView() {
     const oppFilters = { ...playerFilters };
     const oppAll = playerGames(activeOpponentName).filter(g => {
       if (oppFilters.tier !== 'all' && g.tier !== oppFilters.tier) return false;
-      if (oppFilters.mapType !== 'all' && (g.mapType || 'unclassified') !== oppFilters.mapType) return false;
+      if (oppFilters.mapType !== 'all' && !gameHasMapType(g, oppFilters.mapType)) return false;
       if (oppFilters.map !== 'all' && g.map !== oppFilters.map) return false;
       return true;
     });
@@ -1153,12 +1164,17 @@ function renderPlayerView() {
     ['civPct', 'Opp. Civ Strength', true],
   ]);
 
-  // map type table - S/A-Tier only, same reasoning as the filter pills above
+  // map type table - S/A-Tier only, same reasoning as the filter pills above.
+  // A game with more than one type (e.g. Nomad = nomad+hybrid) counts
+  // toward every applicable row, so row totals can sum to more than the
+  // overall game count - that's expected with overlapping categories.
   const mtGroups = {};
   filteredGames.filter(g => MAPTYPE_TIERS.includes(g.tier)).forEach(g => {
-    const mt = g.mapType || 'unclassified';
-    mtGroups[mt] = mtGroups[mt] || [];
-    mtGroups[mt].push(g);
+    const types = (g.mapTypes && g.mapTypes.length) ? g.mapTypes : ['unclassified'];
+    types.forEach(mt => {
+      mtGroups[mt] = mtGroups[mt] || [];
+      mtGroups[mt].push(g);
+    });
   });
   const mtRowObjs = Object.entries(mtGroups).map(([mt, gs]) => {
     const wr = winRate(gs, name);
