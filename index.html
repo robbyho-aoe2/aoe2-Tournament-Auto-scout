@@ -339,7 +339,7 @@ header{
         </div>
         <button class="pv-back" id="pv-opponent-clear" style="display:none;" onclick="clearOpponent()">clear</button>
       </div>
-      <div class="pv-frow" style="align-items:flex-start;">
+      <div class="pv-frow" id="pv-teammate-row" style="align-items:flex-start;">
         <span class="pv-flabel" style="margin-top:6px;">Teammate</span>
         <div style="flex:1;min-width:200px;">
           <input id="pv-teammate-input" class="pv-opp-input" type="text" placeholder="Search or browse teammates…" style="width:100%;max-width:260px;margin-bottom:6px;" autocomplete="off">
@@ -354,7 +354,10 @@ header{
 
     <div class="d-grid" id="pv-stats"></div>
 
-    <div class="pv-section-hdr">By Civilization</div>
+    <div class="pv-section-hdr" style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+      <span>By Civilization</span>
+      <div id="civ-table-toggle" style="display:flex;gap:5px;text-transform:none;letter-spacing:normal;"></div>
+    </div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-civ-table"></table></div>
 
     <div class="pv-section-hdr">By Map Type</div>
@@ -384,6 +387,8 @@ let activePlayerName = null;
 let activeOpponentName = null;
 let activeTeammateName = null;
 let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all' };
+let civTableMode = 'mine'; // 'mine' | 'opponent'
+function setCivTableMode(mode) { civTableMode = mode; renderPlayerView(); }
 
 
 // ================================================================
@@ -812,6 +817,7 @@ function selectPlayer(name) {
   activeOpponentName = null;
   activeTeammateName = null;
   playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter };
+  civTableMode = 'mine';
   opponentBrowseExpanded = false;
   teammateBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
@@ -957,6 +963,15 @@ function renderPlayerView() {
   const formats = [...new Set(base.map(g => g.format).filter(Boolean))].sort(formatSort);
   pillRow('pv-format-pills', [['all', 'All'], ...formats.map(f => [f, FORMAT_LABELS[f] || f])], playerFilters.format, 'format');
 
+  // teammates only make sense for team-format games
+  if (playerFilters.format === '1v1') {
+    document.getElementById('pv-teammate-row').style.display = 'none';
+    activeTeammateName = null; // avoid a filter staying active with no way to see/clear it
+    document.getElementById('pv-teammate-clear').style.display = 'none';
+  } else {
+    document.getElementById('pv-teammate-row').style.display = '';
+  }
+
   const tiers = [...new Set(base.map(g => g.tier).filter(Boolean))].sort(tierSort);
   pillRow('pv-tier-pills', [['all', 'All'], ...tiers.map(t => [t, t])], playerFilters.tier, 'tier');
 
@@ -1017,20 +1032,43 @@ function renderPlayerView() {
     h2h.style.display = 'none';
   }
 
-  // civ table
-  const civRows = Object.entries(civGroups).sort((a, b) => b[1].length - a[1].length);
-  document.getElementById('pv-civ-table').innerHTML = civRows.length ? `
-    <thead><tr><th>Civilization</th><th class="num">Games</th><th class="num">Win Rate</th><th class="num">Opp. Strength</th><th class="num">Opp. Civ Strength</th></tr></thead>
-    <tbody>${civRows.map(([civ, gs]) => {
-      const wr = winRate(gs, name);
-      const oppS = strengthOfField(name, gs, oppWinPool, (g, p) => opponentOf(g, p));
-      const civS = strengthOfField(name, gs, civWinPool, (g, p) => opponentCivOf(g, p));
-      return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
-        <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td>
-        <td class="num">${oppS ? oppS.pct + '%' : '—'}</td>
-        <td class="num">${civS ? civS.pct + '%' : '—'}</td></tr>`;
-    }).join('')}</tbody>
-  ` : `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+  // civ table - toggle between "my civ" (default) and "opponent civ" grouping
+  document.getElementById('civ-table-toggle').innerHTML = [['mine', 'My Civ'], ['opponent', 'Opponent Civ']].map(([val, label]) =>
+    `<button class="pill${val === civTableMode ? ' on' : ''}" style="font-size:11px;padding:3px 9px;" onclick="setCivTableMode('${val}')">${esc(label)}</button>`
+  ).join('');
+
+  if (civTableMode === 'opponent') {
+    const oppCivGroups = {};
+    filteredGames.forEach(g => {
+      const civ = opponentCivOf(g, name);
+      if (!civ) return; // team-format rows have no single opponent civ
+      oppCivGroups[civ] = oppCivGroups[civ] || [];
+      oppCivGroups[civ].push(g);
+    });
+    const oppCivRows = Object.entries(oppCivGroups).sort((a, b) => b[1].length - a[1].length);
+    document.getElementById('pv-civ-table').innerHTML = oppCivRows.length ? `
+      <thead><tr><th>Opponent Civ</th><th class="num">Games</th><th class="num">Win Rate</th></tr></thead>
+      <tbody>${oppCivRows.map(([civ, gs]) => {
+        const wr = winRate(gs, name);
+        return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
+          <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td></tr>`;
+      }).join('')}</tbody>
+    ` : `<tbody><tr><td>No 1v1 games match the current filters.</td></tr></tbody>`;
+  } else {
+    const civRows = Object.entries(civGroups).sort((a, b) => b[1].length - a[1].length);
+    document.getElementById('pv-civ-table').innerHTML = civRows.length ? `
+      <thead><tr><th>Civilization</th><th class="num">Games</th><th class="num">Win Rate</th><th class="num">Opp. Strength</th><th class="num">Opp. Civ Strength</th></tr></thead>
+      <tbody>${civRows.map(([civ, gs]) => {
+        const wr = winRate(gs, name);
+        const oppS = strengthOfField(name, gs, oppWinPool, (g, p) => opponentOf(g, p));
+        const civS = strengthOfField(name, gs, civWinPool, (g, p) => opponentCivOf(g, p));
+        return `<tr><td>${esc(civ)}</td><td class="num">${wr.wins}-${wr.total - wr.wins}</td>
+          <td class="num"><span class="pv-bar-wrap"><span class="pv-bar-fill" style="width:${wr.pct}%"></span></span>${wr.pct}%</td>
+          <td class="num">${oppS ? oppS.pct + '%' : '—'}</td>
+          <td class="num">${civS ? civS.pct + '%' : '—'}</td></tr>`;
+      }).join('')}</tbody>
+    ` : `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+  }
 
   // map type table
   const mtCounts = {};
