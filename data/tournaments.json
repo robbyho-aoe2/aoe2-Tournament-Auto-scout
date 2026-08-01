@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T16:03:04.512624+00:00",
+  "generatedAt": "2026-08-01T19:16:32.459809+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -5032,7 +5032,7 @@
       "url": "https://liquipedia.net/ageofempires/Liga_Invernal_CL",
       "tier": "C-Tier",
       "start": "2026-06-08",
-      "end": "2026-07-31",
+      "end": "2026-08-09",
       "prize": null,
       "currency": "USD",
       "organizer": "Tatán",
@@ -9349,7 +9349,7 @@
       "url": "https://liquipedia.net/ageofempires/Workshop_Wars",
       "tier": "B-Tier",
       "start": "2026-07-06",
-      "end": "2026-08-02",
+      "end": "2026-08-30",
       "prize": 719,
       "currency": "USD",
       "organizer": "Practice Squad",
@@ -9358,8 +9358,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "Overtaken",
-      "second": "Matze",
+      "first": "Argh",
+      "second": "Honeybadger",
       "third": ""
     },
     {
