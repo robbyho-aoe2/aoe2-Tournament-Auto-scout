@@ -145,17 +145,24 @@ header{
 .p-chip.p2{background:var(--blueBg);border-color:rgba(96,165,250,.25);color:var(--blue);}
 .p-chip.p3{background:var(--purpleBg);border-color:rgba(167,139,250,.25);color:var(--purple);}
 
-/* ── Detail panel ── */
-#detail{
-  display:none;background:var(--surf);border:1px solid var(--border);border-radius:12px;
-  padding:20px;margin-top:8px;position:relative;
+/* ── Inline tournament detail (expands within the card itself) ── */
+.t-card-detail{
+  margin-top:12px;padding-top:14px;border-top:1px solid var(--border);
+  position:relative;cursor:default;
 }
-#detail.vis{display:block;}
 .close-btn{
-  position:absolute;top:14px;right:14px;background:none;border:none;
+  position:absolute;top:-4px;right:-4px;background:none;border:none;
   color:var(--text3);font-size:22px;cursor:pointer;line-height:1;padding:2px 6px;
 }
 .close-btn:hover{color:var(--text);}
+.match-row{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-size:12px;padding:6px 0;border-bottom:1px solid var(--border);
+}
+.match-row:last-child{border-bottom:none;}
+.match-round{color:var(--text3);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;flex-shrink:0;width:90px;}
+.match-score{flex:1;text-align:left;color:var(--text2);}
+.match-score b{color:var(--amberL);}
 .d-name{font-size:20px;font-weight:700;color:var(--amberL);margin-bottom:6px;}
 .d-badges{display:flex;gap:6px;align-items:center;margin-bottom:14px;flex-wrap:wrap;}
 .d-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
@@ -295,12 +302,6 @@ header{
     <div class="empty"><div class="spinner"></div><div style="margin-top:12px;">Loading…</div></div>
   </div>
 
-  <!-- ── Detail panel ── -->
-  <div id="detail">
-    <button class="close-btn" onclick="closeDetail()">×</button>
-    <div id="detail-content"></div>
-  </div>
-
 </div>
 
 <!-- ══════════════════════ PLAYERS VIEW ══════════════════════ -->
@@ -365,6 +366,9 @@ header{
 
     <div class="pv-section-hdr">By Map Type <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);">(S/A-Tier only)</span></div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-maptype-table"></table></div>
+
+    <div class="pv-section-hdr">By Opponent <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);">(1v1 only)</span></div>
+    <div class="pv-table-wrap"><table class="pv-table" id="pv-byopponent-table"></table></div>
   </div>
 
 </div>
@@ -574,36 +578,57 @@ function renderGrid() {
     ${t.players ? `<span class="meta-i"><span class="meta-ic">👥</span>${t.players} players</span>` : ''}
   </div>
   ${podium}
+  ${isActive ? renderTournamentDetail(t) : ''}
 </div>`;
   }).join('');
 }
 
 
 // ================================================================
-//  DETAIL PANEL
+//  DETAIL (expands inline within the clicked card)
 // ================================================================
-function selectCard(el) {
-  const id = el.dataset.id;
-  if (activeId === id) { closeDetail(); return; }
-  activeId = id;
-  renderGrid();
+// Reconstructs match scorelines from the individual game rows - groups by
+// (round, side pair) and tallies map wins per side. Best-effort: round
+// numbers come from the bracket key on Liquipedia's page and aren't
+// always present (varies by bracket template), so this can't promise a
+// full/ordered bracket, just "here's what we can reconstruct."
+function tournamentMatches(t) {
+  const games = GAMES.filter(g => g.tournament === t.name && g.winner);
+  const groups = {};
+  games.forEach(g => {
+    const isTeam = g.format === 'team';
+    const sideA = isTeam ? g.team1 : g.player1;
+    const sideB = isTeam ? g.team2 : g.player2;
+    if (!sideA || !sideB) return;
+    const key = g.round + '|' + sideA + '|' + sideB;
+    groups[key] = groups[key] || { round: g.round, sideA, sideB, winsA: 0, winsB: 0 };
+    if (g.winner === '1') groups[key].winsA++; else groups[key].winsB++;
+  });
+  return Object.values(groups).sort((a, b) => b.round - a.round);
+}
 
-  const t = tournaments.find(x => x.id === id);
-  if (!t) return;
-
+function renderTournamentDetail(t) {
   const podiumHTML = [
     t.p1 ? `<span class="d-player p1">🥇 ${esc(t.p1)}</span>` : '',
     t.p2 ? `<span class="d-player p2">🥈 ${esc(t.p2)}</span>` : '',
     t.p3 ? `<span class="d-player p3">🥉 ${esc(t.p3)}</span>` : '',
   ].filter(Boolean).join('');
 
-  document.getElementById('detail-content').innerHTML = `
-    <div class="d-name">${esc(t.name)}</div>
-    <div class="d-badges">
-      <span class="tier-badge ${tierClass(t.tier)}" style="font-size:11px;">${esc(t.tier)}-Tier</span>
-      <span class="st-badge ${stClass(t.status)}" style="font-size:11px;">${stLabel(t.status)}</span>
-      ${t.organizer ? `<span style="font-size:12px;color:var(--text3);">by <span style="color:var(--text2)">${esc(t.organizer)}</span></span>` : ''}
-    </div>
+  const matches = tournamentMatches(t).slice(0, 6);
+  const matchesHTML = matches.length ? `
+    <div class="d-section">Key Matches</div>
+    ${matches.map(m => {
+      const aWon = m.winsA > m.winsB;
+      return `<div class="match-row">
+        <span class="match-round">${m.round ? 'Round ' + m.round : 'Match'}</span>
+        <span class="match-score">${aWon ? `<b>${esc(m.sideA)}</b>` : esc(m.sideA)} ${m.winsA}-${m.winsB} ${!aWon ? `<b>${esc(m.sideB)}</b>` : esc(m.sideB)}</span>
+      </div>`;
+    }).join('')}
+  ` : '';
+
+  return `
+  <div class="t-card-detail" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="closeDetail()">×</button>
     <div class="d-grid">
       <div class="d-stat">
         <div class="d-stat-lbl">Prize Pool</div>
@@ -622,23 +647,26 @@ function selectCard(el) {
         <div class="d-stat-val sm">${esc(t.type) || '—'} · ${t.players || '?'} players</div>
       </div>
     </div>
+    ${t.organizer ? `<div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Organized by <span style="color:var(--text2)">${esc(t.organizer)}</span></div>` : ''}
     ${podiumHTML
       ? `<div class="d-section">Podium</div><div class="d-players">${podiumHTML}</div>`
       : t.status !== 'completed'
         ? `<div class="d-section">Results</div><div style="font-size:12px;color:var(--text3);">Results pending — tournament in progress or upcoming.</div>`
         : ''
     }
-    <a class="lp-link" href="${t.url}" target="_blank" rel="noopener">View full page on Liquipedia →</a>
-  `;
+    ${matchesHTML}
+    <a class="lp-link" href="${t.url}" target="_blank" rel="noopener">View full bracket on Liquipedia →</a>
+  </div>`;
+}
 
-  const panel = document.getElementById('detail');
-  panel.classList.add('vis');
-  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+function selectCard(el) {
+  const id = el.dataset.id;
+  activeId = (activeId === id) ? null : id;
+  renderGrid();
 }
 
 function closeDetail() {
   activeId = null;
-  document.getElementById('detail').classList.remove('vis');
   renderGrid();
 }
 
@@ -843,6 +871,7 @@ function selectPlayer(name) {
   civTableMode = 'mine';
   civSort = { col: 'games', dir: 'desc' };
   mapTypeSort = { col: 'games', dir: 'desc' };
+  opponentSort = { col: 'games', dir: 'desc' };
   opponentBrowseExpanded = false;
   teammateBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
@@ -994,6 +1023,7 @@ function pillRowWithAvailability(containerId, options, activeVal, kind, availabl
 // row shape: {label, games, wins, losses, winPct, oppPct?, civPct?}
 let civSort = { col: 'games', dir: 'desc' };
 let mapTypeSort = { col: 'games', dir: 'desc' };
+let opponentSort = { col: 'games', dir: 'desc' };
 function toggledSort(sortState, col) {
   return sortState.col === col
     ? { col, dir: sortState.dir === 'desc' ? 'asc' : 'desc' }
@@ -1001,6 +1031,7 @@ function toggledSort(sortState, col) {
 }
 function setCivSort(col) { civSort = toggledSort(civSort, col); renderPlayerView(); }
 function setMapTypeSort(col) { mapTypeSort = toggledSort(mapTypeSort, col); renderPlayerView(); }
+function setOpponentSort(col) { opponentSort = toggledSort(opponentSort, col); renderPlayerView(); }
 
 function sortRowObjs(rows, sortState) {
   const dir = sortState.dir === 'asc' ? 1 : -1;
@@ -1185,6 +1216,27 @@ function renderPlayerView() {
     ['games', 'Games', true],
     ['winPct', 'Win Rate', true],
   ], 'No S/A-Tier games match the current filters.');
+
+  // by-opponent table - 1v1 only, team-format rows have no single opponent
+  const oppGroups = {};
+  filteredGames.forEach(g => {
+    if (!g.player2) return;
+    const opp = opponentOf(g, name);
+    oppGroups[opp] = oppGroups[opp] || [];
+    oppGroups[opp].push(g);
+  });
+  const oppRowObjs = Object.entries(oppGroups).map(([opp, gs]) => {
+    const wr = winRate(gs, name);
+    const oppOverall = oppWinPool[opp];
+    const oppPct = (oppOverall && oppOverall.total) ? Math.round((oppOverall.wins / oppOverall.total) * 100) : null;
+    return { label: opp, games: wr.total, wins: wr.wins, losses: wr.total - wr.wins, winPct: wr.pct, oppPct };
+  });
+  renderSortableTable('pv-byopponent-table', opponentSort, 'setOpponentSort', oppRowObjs, [
+    ['label', 'Opponent', false],
+    ['games', 'Games', true],
+    ['winPct', 'Win Rate', true],
+    ['oppPct', "Opponent's Win Rate", true],
+  ], 'No 1v1 games match the current filters.');
 }
 
 
