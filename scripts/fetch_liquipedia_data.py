@@ -84,6 +84,17 @@ def _throttled_get(params, interval, last_ts_holder, retries=3):
             last_ts_holder[0] = time.monotonic()
             return _throttled_get(params, interval, last_ts_holder, retries=retries - 1)
         raise
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        # transient network blips (DNS hiccup, connection timeout, brief
+        # drop) shouldn't cost hours of progress either - same retry
+        # treatment as a 429, just a fixed shorter backoff since there's no
+        # Retry-After to honor here.
+        if retries > 0:
+            print(f"  (network error: {e}; waiting 30s before retry...)")
+            time.sleep(30)
+            last_ts_holder[0] = time.monotonic()
+            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1)
+        raise
     last_ts_holder[0] = time.monotonic()
     return json.loads(raw.decode("utf-8"))
 
