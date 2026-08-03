@@ -2,9 +2,8 @@ name: Update tournament data
 
 on:
   schedule:
-    # Sundays 06:00 UTC. Tournaments don't happen daily, so weekly is plenty -
-    # bump this or use workflow_dispatch below if something's happening live.
-    - cron: "0 6 * * 0"
+    # Nightly at 06:00 UTC.
+    - cron: "0 6 * * *"
   workflow_dispatch: {}
 
 permissions:
