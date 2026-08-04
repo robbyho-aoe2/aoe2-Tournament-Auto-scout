@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T11:23:30.226874+00:00",
+  "generatedAt": "2026-08-04T12:45:49.686898+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -85,8 +85,8 @@
       "end": "2026-08-22",
       "prize": null,
       "currency": "USD",
-      "organizer": "AoE2Turk",
-      "format": "2v2, Single Elimination",
+      "organizer": "AOE2Turk",
+      "format": "2v2, Round Robin & Single Elimination",
       "formatType": "unknown",
       "type": "Online",
       "region": "Turkey",
@@ -922,7 +922,7 @@
       "url": "https://liquipedia.net/ageofempires/AoE2_Specialist_Cup/2/Stronghold",
       "tier": "B-Tier",
       "start": "2026-05-15",
-      "end": "2026-08-02",
+      "end": "2026-08-03",
       "prize": 350,
       "currency": "USD",
       "organizer": "Xardas_AoE",
@@ -931,8 +931,8 @@
       "type": "Online",
       "region": "World",
       "players": 40,
-      "first": "DauT",
-      "second": "Running",
+      "first": "FreakinAndy",
+      "second": "DauT",
       "third": ""
     },
     {
@@ -2555,8 +2555,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -8110,7 +8110,7 @@
       "region": "World",
       "players": 12,
       "first": "HazZy",
-      "second": "MaJoR_Kd",
+      "second": "Maldhar",
       "third": ""
     },
     {
@@ -9358,8 +9358,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "Argh",
-      "second": "Honeybadger",
+      "first": "DauT",
+      "second": "Overtaken",
       "third": ""
     },
     {
