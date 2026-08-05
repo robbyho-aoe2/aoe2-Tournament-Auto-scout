@@ -522,6 +522,12 @@ function setMode(m) {
   if (m === 'players') renderPlayerBrowse();
 }
 
+function goToPlayer(name) {
+  setMode('players');
+  selectPlayer(name);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 
 // ================================================================
 //  RENDER GRID (Tournaments view)
@@ -647,7 +653,7 @@ function renderTournamentDetail(t) {
   const playersHTML = players.length ? `
     <div class="d-section">Players (${players.length})</div>
     <div class="d-players">
-      ${players.map(p => `<a class="d-player" href="${liquipediaPageUrl(p)}" target="_blank" rel="noopener">${esc(p)}</a>`).join('')}
+      ${players.map(p => `<a class="d-player" href="javascript:void(0)" onclick="goToPlayer('${p.replace(/'/g, "\\'")}')">${esc(p)}</a>`).join('')}
     </div>
   ` : '';
 
