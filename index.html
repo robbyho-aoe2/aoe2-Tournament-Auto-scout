@@ -177,7 +177,8 @@ header{
   color:var(--text3);border-top:1px solid var(--border);padding-top:12px;margin:12px 0 8px;
 }
 .d-players{display:flex;flex-wrap:wrap;gap:6px;}
-.d-player{font-size:12px;padding:4px 10px;border-radius:7px;background:var(--surf2);border:1px solid var(--border);color:var(--text2);}
+.d-player{font-size:12px;padding:4px 10px;border-radius:7px;background:var(--surf2);border:1px solid var(--border);color:var(--text2);text-decoration:none;display:inline-block;}
+a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 .d-player.p1{background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.3);color:var(--gold);}
 .d-player.p2{background:var(--blueBg);border-color:rgba(96,165,250,.3);color:var(--blue);}
 .d-player.p3{background:var(--purpleBg);border-color:rgba(167,139,250,.3);color:var(--purple);}
@@ -260,7 +261,7 @@ header{
   <div class="h-icon">🏆</div>
   <div class="h-text">
     <div class="h-title">AoE2 Tournament Auto Scout</div>
-    <div class="h-sub">by <a href="https://www.youtube.com/@Fastcastleandchill" target="_blank" rel="noopener">Fast Castle and Chill</a> · Powered by Liquipedia · Age of Empires II · data refreshes weekly <span id="h-since"></span></div>
+    <div class="h-sub">by <a href="https://www.youtube.com/@Fastcastleandchill" target="_blank" rel="noopener">Fast Castle and Chill</a> · Powered by Liquipedia · Age of Empires II · updates daily · <a href="https://robbyho-aoe2.github.io/civ-lookup/index.html" target="_blank" rel="noopener">AoE2 Auto Scout</a> <span id="h-since"></span></div>
   </div>
   <div id="src-badge" class="h-badge">LOADING</div>
 </header>
@@ -609,6 +610,20 @@ function tournamentMatches(t) {
   return Object.values(groups).sort((a, b) => b.round - a.round);
 }
 
+function liquipediaPlayerUrl(name) {
+  return 'https://liquipedia.net/ageofempires/' + encodeURIComponent(name.replace(/ /g, '_'));
+}
+
+function tournamentPlayers(t) {
+  const names = new Set();
+  GAMES.filter(g => g.tournament === t.name).forEach(g => {
+    if (g.player1) names.add(g.player1);
+    if (g.player2) names.add(g.player2);
+    (g.teammates || []).forEach(n => names.add(n));
+  });
+  return Array.from(names).sort((a, b) => a.localeCompare(b));
+}
+
 function renderTournamentDetail(t) {
   const podiumHTML = [
     t.p1 ? `<span class="d-player p1">🥇 ${esc(t.p1)}</span>` : '',
@@ -616,9 +631,9 @@ function renderTournamentDetail(t) {
     t.p3 ? `<span class="d-player p3">🥉 ${esc(t.p3)}</span>` : '',
   ].filter(Boolean).join('');
 
-  const matches = tournamentMatches(t).slice(0, 6);
+  const matches = tournamentMatches(t).slice(0, 8);
   const matchesHTML = matches.length ? `
-    <div class="d-section">Key Matches</div>
+    <div class="d-section">Recent Matches</div>
     ${matches.map(m => {
       const aWon = m.winsA > m.winsB;
       return `<div class="match-row">
@@ -626,6 +641,14 @@ function renderTournamentDetail(t) {
         <span class="match-score">${aWon ? `<b>${esc(m.sideA)}</b>` : esc(m.sideA)} ${m.winsA}-${m.winsB} ${!aWon ? `<b>${esc(m.sideB)}</b>` : esc(m.sideB)}</span>
       </div>`;
     }).join('')}
+  ` : '';
+
+  const players = tournamentPlayers(t);
+  const playersHTML = players.length ? `
+    <div class="d-section">Players (${players.length})</div>
+    <div class="d-players">
+      ${players.map(p => `<a class="d-player" href="${liquipediaPlayerUrl(p)}" target="_blank" rel="noopener">${esc(p)}</a>`).join('')}
+    </div>
   ` : '';
 
   return `
@@ -657,6 +680,7 @@ function renderTournamentDetail(t) {
         : ''
     }
     ${matchesHTML}
+    ${playersHTML}
     <a class="lp-link" href="${t.url}" target="_blank" rel="noopener">View full bracket on Liquipedia →</a>
   </div>`;
 }
