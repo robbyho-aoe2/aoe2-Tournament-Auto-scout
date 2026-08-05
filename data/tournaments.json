@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T12:45:49.686898+00:00",
+  "generatedAt": "2026-08-05T12:41:48.558289+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -5018,12 +5018,12 @@
       "currency": "USD",
       "organizer": "Holkan Nuukuli",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Mexico",
       "players": 10,
-      "first": "",
-      "second": "",
+      "first": "SoyLaHostia",
+      "second": "Daniboyaoe",
       "third": ""
     },
     {
@@ -8554,7 +8554,7 @@
       "name": "The League: Division 2",
       "url": "https://liquipedia.net/ageofempires/The_League/Division_2",
       "tier": "A-Tier",
-      "start": "2026-08-13",
+      "start": "2026-08-07",
       "end": "2026-09-18",
       "prize": 16500,
       "currency": "USD",
@@ -8750,12 +8750,12 @@
       "currency": "USD",
       "organizer": "Masmorra",
       "format": "1v1, Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 4,
-      "first": "",
-      "second": "",
+      "first": "FreakinAndy",
+      "second": "Liereyy",
       "third": ""
     },
     {
@@ -9358,8 +9358,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "DauT",
-      "second": "Overtaken",
+      "first": "Overtaken",
+      "second": "DauT",
       "third": ""
     },
     {
