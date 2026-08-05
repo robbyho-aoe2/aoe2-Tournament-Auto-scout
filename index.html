@@ -610,7 +610,7 @@ function tournamentMatches(t) {
   return Object.values(groups).sort((a, b) => b.round - a.round);
 }
 
-function liquipediaPlayerUrl(name) {
+function liquipediaPageUrl(name) {
   return 'https://liquipedia.net/ageofempires/' + encodeURIComponent(name.replace(/ /g, '_'));
 }
 
@@ -647,7 +647,7 @@ function renderTournamentDetail(t) {
   const playersHTML = players.length ? `
     <div class="d-section">Players (${players.length})</div>
     <div class="d-players">
-      ${players.map(p => `<a class="d-player" href="${liquipediaPlayerUrl(p)}" target="_blank" rel="noopener">${esc(p)}</a>`).join('')}
+      ${players.map(p => `<a class="d-player" href="${liquipediaPageUrl(p)}" target="_blank" rel="noopener">${esc(p)}</a>`).join('')}
     </div>
   ` : '';
 
@@ -672,7 +672,8 @@ function renderTournamentDetail(t) {
         <div class="d-stat-val sm">${esc(t.type) || '—'} · ${t.players || '?'} players</div>
       </div>
     </div>
-    ${t.organizer ? `<div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Organized by <span style="color:var(--text2)">${esc(t.organizer)}</span></div>` : ''}
+    ${t.organizer ? `<div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Organized by <a href="${liquipediaPageUrl(t.organizer)}" target="_blank" rel="noopener" style="color:var(--text2);">${esc(t.organizer)}</a></div>` : ''}
+    ${playersHTML}
     ${podiumHTML
       ? `<div class="d-section">Podium</div><div class="d-players">${podiumHTML}</div>`
       : t.status !== 'completed'
@@ -680,7 +681,6 @@ function renderTournamentDetail(t) {
         : ''
     }
     ${matchesHTML}
-    ${playersHTML}
     <a class="lp-link" href="${t.url}" target="_blank" rel="noopener">View full bracket on Liquipedia →</a>
   </div>`;
 }
