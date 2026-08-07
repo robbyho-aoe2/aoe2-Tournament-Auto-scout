@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T12:45:48.812791+00:00",
+  "generatedAt": "2026-08-07T09:51:45.967932+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -2546,7 +2546,7 @@
       "url": "https://liquipedia.net/ageofempires/Cronicas_de_guerra",
       "tier": "B-Tier",
       "start": "2026-06-29",
-      "end": "2026-08-09",
+      "end": "2026-08-08",
       "prize": 300,
       "currency": "USD",
       "organizer": "Dark Legion",
@@ -7576,7 +7576,7 @@
       "prize": null,
       "currency": "USD",
       "organizer": "hadiraja12",
-      "format": "4v4, Round Robin",
+      "format": "3v3, Round Robin",
       "formatType": "unknown",
       "type": "Online",
       "region": "World",
@@ -8754,7 +8754,7 @@
       "type": "Online",
       "region": "World",
       "players": 4,
-      "first": "FreakinAndy",
+      "first": "Liereyy",
       "second": "Lewis",
       "third": ""
     },
@@ -9358,8 +9358,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "Overtaken",
-      "second": "DauT",
+      "first": "FreakinAndy",
+      "second": "Argh",
       "third": ""
     },
     {
