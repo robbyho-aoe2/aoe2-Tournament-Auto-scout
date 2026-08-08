@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:51:45.967932+00:00",
+  "generatedAt": "2026-08-08T08:21:17.808505+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -3601,7 +3601,7 @@
       "region": "World",
       "players": 32,
       "first": "Barles",
-      "second": "StonePleaseAoE",
+      "second": "Running",
       "third": ""
     },
     {
@@ -5032,7 +5032,7 @@
       "url": "https://liquipedia.net/ageofempires/Liga_Invernal_CL",
       "tier": "C-Tier",
       "start": "2026-06-08",
-      "end": "2026-08-09",
+      "end": "2026-08-04",
       "prize": null,
       "currency": "USD",
       "organizer": "Tatán",
@@ -5042,7 +5042,7 @@
       "region": "World",
       "players": 12,
       "first": "Biel",
-      "second": "Caguamas",
+      "second": "AboKeiTo",
       "third": ""
     },
     {
@@ -6054,7 +6054,7 @@
       "url": "https://liquipedia.net/ageofempires/Pete’s_Serengeti_tourney",
       "tier": "C-Tier",
       "start": "2026-06-08",
-      "end": "TBA",
+      "end": "2026-08-06",
       "prize": null,
       "currency": "USD",
       "organizer": "ptee",
@@ -6064,7 +6064,7 @@
       "region": "World",
       "players": 11,
       "first": "emalius2",
-      "second": "harooooo",
+      "second": "Tomo Žeznati",
       "third": ""
     },
     {
@@ -8560,7 +8560,7 @@
       "currency": "USD",
       "organizer": "Daniela_AoE",
       "format": "3v3, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "team",
       "type": "Online/Offline",
       "region": "World",
       "players": null,
@@ -8755,7 +8755,7 @@
       "region": "World",
       "players": 4,
       "first": "Liereyy",
-      "second": "Lewis",
+      "second": "FreakinAndy",
       "third": ""
     },
     {
