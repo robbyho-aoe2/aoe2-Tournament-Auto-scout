@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T08:21:17.808505+00:00",
+  "generatedAt": "2026-08-09T07:21:02.844282+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -2555,8 +2555,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -3600,8 +3600,8 @@
       "type": "Online",
       "region": "World",
       "players": 32,
-      "first": "Barles",
-      "second": "Running",
+      "first": "Lucho",
+      "second": "Barles",
       "third": ""
     },
     {
