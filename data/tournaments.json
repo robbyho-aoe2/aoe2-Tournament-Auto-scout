@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T07:21:02.844282+00:00",
+  "generatedAt": "2026-08-10T08:09:24.268438+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -6519,8 +6519,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -8109,7 +8109,7 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "HazZy",
+      "first": "MaJoR_Kd",
       "second": "Maldhar",
       "third": ""
     },
@@ -8564,8 +8564,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "",
-      "second": "",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
