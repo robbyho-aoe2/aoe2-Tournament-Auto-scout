@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T07:32:00.280139+00:00",
+  "generatedAt": "2026-08-12T07:55:42.530967+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -767,6 +767,25 @@
       "players": 60,
       "first": "TaToH",
       "second": "ACCM",
+      "third": ""
+    },
+    {
+      "id": "AoE Authority Open Cup/1",
+      "name": "AoE Authority Open Cup: Season 1",
+      "url": "https://liquipedia.net/ageofempires/AoE_Authority_Open_Cup/1",
+      "tier": "C-Tier",
+      "start": "2026-09-01",
+      "end": "2026-09-28",
+      "prize": 85,
+      "currency": "USD",
+      "organizer": "AoE Authority",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
       "third": ""
     },
     {
@@ -2652,6 +2671,25 @@
       "players": 25,
       "first": "Frost_9",
       "second": "FreakinAndy",
+      "third": ""
+    },
+    {
+      "id": "DS League",
+      "name": "DS League",
+      "url": "https://liquipedia.net/ageofempires/DS_League",
+      "tier": "B-Tier",
+      "start": "2026-08-17",
+      "end": "2026-10-25",
+      "prize": 650,
+      "currency": "USD",
+      "organizer": "DarkSidE",
+      "format": "1v1, Round Robin",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 10,
+      "first": "",
+      "second": "",
       "third": ""
     },
     {
@@ -5013,7 +5051,7 @@
       "url": "https://liquipedia.net/ageofempires/Liga_Interna_HK",
       "tier": "C-Tier",
       "start": "2026-06-15",
-      "end": "2026-08-16",
+      "end": "2026-08-30",
       "prize": 500,
       "currency": "USD",
       "organizer": "Holkan Nuukuli",
@@ -8109,8 +8147,8 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "MaJoR_Kd",
-      "second": "Maldhar",
+      "first": "kelar",
+      "second": "MaJoR_Kd",
       "third": ""
     },
     {
@@ -9358,8 +9396,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "FreakinAndy",
-      "second": "Argh",
+      "first": "OLADUSHEK",
+      "second": "Thofou05",
       "third": ""
     },
     {
