@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:58:21.992742+00:00",
+  "generatedAt": "2026-08-14T07:56:26.202085+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -1672,6 +1672,25 @@
       "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Primera_División",
       "tier": "B-Tier",
       "start": "2026-12-04",
+      "end": "2026-12-13",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Mercado del Age",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Argentina",
+      "players": 10,
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    {
+      "id": "Campeonato Argentino AoE/1/Segunda División",
+      "name": "Campeonato Argentino AoE 2026: Segunda División",
+      "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Segunda_División",
+      "tier": "C-Tier",
+      "start": "2026-08-10",
       "end": "2026-12-13",
       "prize": null,
       "currency": "USD",
@@ -8598,12 +8617,12 @@
       "currency": "USD",
       "organizer": "Daniela_AoE",
       "format": "3v3, Round Robin & Double Elimination",
-      "formatType": "unknown",
+      "formatType": "team",
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "",
-      "second": "",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
