@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T07:56:26.202085+00:00",
+  "generatedAt": "2026-08-15T07:04:18.867748+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -1696,12 +1696,12 @@
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Argentina",
       "players": 10,
-      "first": "",
-      "second": "",
+      "first": "ElMiller",
+      "second": "Tatengue",
       "third": ""
     },
     {
@@ -8621,8 +8621,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
