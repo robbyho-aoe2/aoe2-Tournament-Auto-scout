@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:04:18.867748+00:00",
+  "generatedAt": "2026-08-16T07:05:07.066389+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -6595,8 +6595,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -8177,7 +8177,7 @@
       "tier": "B-Tier",
       "start": "2026-07-20",
       "end": "2026-09-06",
-      "prize": null,
+      "prize": 700,
       "currency": "USD",
       "organizer": "Xardas_AoE",
       "format": "1v1, Round Robin & Single Elimination",
@@ -8621,8 +8621,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -9434,8 +9434,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "OLADUSHEK",
-      "second": "Thofou05",
+      "first": "Overtaken",
+      "second": "DuDuZhu",
       "third": ""
     },
     {
