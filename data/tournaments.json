@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T07:05:07.066389+00:00",
+  "generatedAt": "2026-08-17T07:22:52.420725+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -8285,6 +8285,25 @@
       "third": ""
     },
     {
+      "id": "The Bastion/2",
+      "name": "The Bastion: Season 2",
+      "url": "https://liquipedia.net/ageofempires/The_Bastion/2",
+      "tier": "B-Tier",
+      "start": "2026-09-14",
+      "end": "2026-11-30",
+      "prize": 500,
+      "currency": "USD",
+      "organizer": "BEING ESPORTS",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Germany",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    {
       "id": "The Brotherhood Of Empire Wars",
       "name": "The Brotherhood Of Empire Wars",
       "url": "https://liquipedia.net/ageofempires/The_Brotherhood_Of_Empire_Wars",
@@ -8640,8 +8659,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -9168,12 +9187,12 @@
       "currency": "USD",
       "organizer": "Marintho",
       "format": "1v1, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "R4v3N",
+      "second": "JonSlow",
       "third": ""
     },
     {
