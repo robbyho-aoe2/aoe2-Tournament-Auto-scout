@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T07:09:45.241776+00:00",
+  "generatedAt": "2026-08-19T07:10:16.167567+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -7615,12 +7615,12 @@
       "currency": "USD",
       "organizer": "hadiraja12",
       "format": "1v1",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "",
-      "second": "",
+      "first": "Puttsson",
+      "second": "Frost_9",
       "third": ""
     },
     {
