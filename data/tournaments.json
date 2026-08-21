@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T07:12:04.602707+00:00",
+  "generatedAt": "2026-08-21T07:12:05.712959+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -6595,8 +6595,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -8640,8 +8640,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -9453,8 +9453,8 @@
       "type": "Online",
       "region": "World",
       "players": 20,
-      "first": "Overtaken",
-      "second": "DuDuZhu",
+      "first": "FreakinAndy",
+      "second": "OLADUSHEK",
       "third": ""
     },
     {
