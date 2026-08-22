@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:12:05.712959+00:00",
+  "generatedAt": "2026-08-22T07:06:10.149662+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -8640,8 +8640,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -9191,8 +9191,8 @@
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "Lamo",
-      "second": "NuclearPasta",
+      "first": "IAnTaGoNiStI",
+      "second": "Target331",
       "third": ""
     },
     {
@@ -9444,7 +9444,7 @@
       "url": "https://liquipedia.net/ageofempires/Workshop_Wars",
       "tier": "B-Tier",
       "start": "2026-07-06",
-      "end": "2026-08-30",
+      "end": "2026-08-23",
       "prize": 719,
       "currency": "USD",
       "organizer": "Practice Squad",
