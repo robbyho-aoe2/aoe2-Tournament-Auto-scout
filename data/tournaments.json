@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T07:06:10.149662+00:00",
+  "generatedAt": "2026-08-23T07:07:30.385556+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -82,17 +82,17 @@
       "url": "https://liquipedia.net/ageofempires/2v2_Huşaşmifer_Kupası",
       "tier": "B-Tier",
       "start": "2026-08-08",
-      "end": "2026-08-22",
+      "end": "2026-09-06",
       "prize": null,
       "currency": "USD",
       "organizer": "AOE2Turk",
       "format": "2v2, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "team",
       "type": "Online",
       "region": "Turkey",
       "players": null,
-      "first": "",
-      "second": "",
+      "first": "Team 1",
+      "second": "Team 2",
       "third": ""
     },
     {
@@ -5878,6 +5878,25 @@
       "third": ""
     },
     {
+      "id": "Nomad League: Relocated/2",
+      "name": "Nomad League: Relocated - Season 2",
+      "url": "https://liquipedia.net/ageofempires/Nomad_League:_Relocated/2",
+      "tier": "C-Tier",
+      "start": "2026-08-24",
+      "end": "2026-11-15",
+      "prize": 100,
+      "currency": "USD",
+      "organizer": "Low Elo Legion",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    {
       "id": "Nomad Rivals I",
       "name": "Nomad Rivals I",
       "url": "https://liquipedia.net/ageofempires/Nomad_Rivals_I",
@@ -7212,7 +7231,7 @@
       "tier": "B-Tier",
       "start": "2026-09-28",
       "end": "TBA",
-      "prize": 500,
+      "prize": 750,
       "currency": "USD",
       "organizer": "Xardas_AoE",
       "format": "1v1, Single Elimination",
@@ -7619,8 +7638,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Puttsson",
-      "second": "Frost_9",
+      "first": "Spaden",
+      "second": "Davve02",
       "third": ""
     },
     {
@@ -8185,8 +8204,8 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "kelar",
-      "second": "MaJoR_Kd",
+      "first": "FreakinAndy",
+      "second": "kelar",
       "third": ""
     },
     {
@@ -8640,8 +8659,8 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -8656,7 +8675,7 @@
       "organizer": "Daniela_AoE",
       "format": "3v3, Round Robin & Single Elimination",
       "formatType": "team",
-      "type": "Online/Offline",
+      "type": "Online",
       "region": "World",
       "players": null,
       "first": "Team 2",
