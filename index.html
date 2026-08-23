@@ -335,8 +335,18 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
     <div class="pv-filters">
       <div class="pv-frow"><span class="pv-flabel">Format</span><div id="pv-format-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Tier</span><div id="pv-tier-pills"></div></div>
+      <div class="pv-frow"><span class="pv-flabel">Since</span><div id="pv-year-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map Type</span><div id="pv-maptype-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map</span><div id="pv-map-pills"></div></div>
+      <div class="pv-frow" style="align-items:flex-start;">
+        <span class="pv-flabel" style="margin-top:6px;">Tournament</span>
+        <div style="flex:1;min-width:200px;">
+          <input id="pv-tournament-input" class="pv-opp-input" type="text" placeholder="Search or browse tournaments…" style="width:100%;max-width:260px;margin-bottom:6px;" autocomplete="off">
+          <div id="pv-tournament-grid" class="p-browse-grid"></div>
+          <button id="pv-tournament-toggle" class="p-browse-toggle" onclick="toggleTournamentBrowse()">Show more ▾</button>
+        </div>
+        <button class="pv-back" id="pv-tournament-clear" style="display:none;" onclick="clearTournament()">clear</button>
+      </div>
       <div class="pv-frow" style="align-items:flex-start;">
         <span class="pv-flabel" style="margin-top:6px;">Opponent</span>
         <div style="flex:1;min-width:200px;">
@@ -360,6 +370,9 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
     <div id="pv-h2h" class="pv-h2h" style="display:none;"></div>
 
     <div class="d-grid" id="pv-stats"></div>
+
+    <div class="pv-section-hdr">Recent Games</div>
+    <div class="pv-table-wrap"><table class="pv-table" id="pv-recent-table"></table></div>
 
     <div class="pv-section-hdr" style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
       <span>By Civilization</span>
@@ -396,7 +409,8 @@ let activeId = null;
 let activePlayerName = null;
 let activeOpponentName = null;
 let activeTeammateName = null;
-let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all' };
+let activeTournamentName = null;
+let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all', year: 'all' };
 let civTableMode = 'mine'; // 'mine' | 'opponent'
 function setCivTableMode(mode) { civTableMode = mode; renderPlayerView(); }
 
@@ -779,6 +793,30 @@ function playerWonGame(g, name)  {
   return (g.player1 === name && g.winner === '1') || (g.player2 === name && g.winner === '2');
 }
 
+// g.date is raw Liquipedia wikitext ("Dec 27, 2023 - 19:00 {{abbr/GMT}}") or,
+// when the per-match date wasn't found, a plain ISO tournament start date
+// ("2023-07-30") - year extraction just needs the 4-digit year, not a full
+// parse, so a couple of small regexes cover both shapes cleanly.
+function gameYear(g) {
+  const d = g.date || '';
+  let m = d.match(/,\s*(\d{4})/);
+  if (m) return m[1];
+  m = d.match(/^(\d{4})-/);
+  return m ? m[1] : null;
+}
+
+// Best-effort timestamp for sorting "Recent Games" - same messy date
+// string as above, cleaned up just enough for Date.parse to handle it.
+// A small number of dates omit the year entirely (Liquipedia elides it
+// when redundant with the tournament's own year); those sort wherever
+// Date.parse guesses, which is an acceptable rough edge for ~0.05% of rows.
+function parseGameDate(g) {
+  const raw = (g.date || '').replace(/\{\{.*?\}\}/g, '').trim();
+  const cleaned = raw.replace(/\s*-\s*(\d{1,2}:\d{2})$/, ', $1');
+  const ts = Date.parse(cleaned);
+  return isNaN(ts) ? null : ts;
+}
+
 function playerGames(name) {
   return GAMES.filter(g => (g.player1 === name || g.player2 === name) && g.winner);
 }
@@ -809,6 +847,14 @@ function buildWinPool(games, key1Fn, key2Fn) {
   return pool;
 }
 
+// year filter is a "since" threshold (>=), not an exact-year match - e.g.
+// picking "2025" means "2025 and onward", matching how it reads in the UI.
+function passesYearFilter(g) {
+  if (playerFilters.year === 'all') return true;
+  const y = gameYear(g);
+  return !!y && Number(y) >= Number(playerFilters.year);
+}
+
 function scopedGames() {
   return GAMES.filter(g => {
     if (!g.winner) return false;
@@ -816,11 +862,12 @@ function scopedGames() {
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
     if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
+    if (!passesYearFilter(g)) return false;
     return true;
   });
 }
 
-// Same as scopedGames() but only applies the tier/format filters, not
+// Same as scopedGames() but only applies the tier/format/year filters, not
 // map/mapType - used to build the *universe* of Map/Map Type pill options
 // so picking one doesn't shrink the option list out from under itself.
 function scopedGamesByTierFormat() {
@@ -828,6 +875,7 @@ function scopedGamesByTierFormat() {
     if (!g.winner) return false;
     if (playerFilters.format !== 'all' && g.format !== playerFilters.format) return false;
     if (playerFilters.tier   !== 'all' && g.tier !== playerFilters.tier) return false;
+    if (!passesYearFilter(g)) return false;
     return true;
   });
 }
@@ -899,15 +947,19 @@ function selectPlayer(name) {
   activePlayerName = name;
   activeOpponentName = null;
   activeTeammateName = null;
-  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter };
+  activeTournamentName = null;
+  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter, year: 'all' };
   civTableMode = 'mine';
   civSort = { col: 'games', dir: 'desc' };
   mapTypeSort = { col: 'games', dir: 'desc' };
   opponentSort = { col: 'games', dir: 'desc' };
   opponentBrowseExpanded = false;
   teammateBrowseExpanded = false;
+  tournamentBrowseExpanded = false;
   document.getElementById('pv-opponent-input').value = '';
   document.getElementById('pv-teammate-input').value = '';
+  document.getElementById('pv-tournament-input').value = '';
+  document.getElementById('pv-tournament-clear').style.display = 'none';
   document.getElementById('player-empty').style.display = 'none';
   document.getElementById('player-content').classList.add('vis');
   renderPlayerBrowse();
@@ -918,6 +970,7 @@ function clearPlayer() {
   activePlayerName = null;
   activeOpponentName = null;
   activeTeammateName = null;
+  activeTournamentName = null;
   playerSearchInput.value = '';
   document.getElementById('player-empty').style.display = '';
   document.getElementById('player-content').classList.remove('vis');
@@ -1007,6 +1060,45 @@ function clearTeammate() {
   renderPlayerView();
 }
 
+// ── browsable tournament grid — same pattern as opponent/teammate, lets you
+// drill into "how did this player do at tournament X specifically" ──
+const tournamentInput = document.getElementById('pv-tournament-input');
+let tournamentBrowseExpanded = false;
+
+function renderTournamentBrowse() {
+  const grid = document.getElementById('pv-tournament-grid');
+  const toggle = document.getElementById('pv-tournament-toggle');
+  if (!activePlayerName) { grid.innerHTML = ''; toggle.textContent = ''; return; }
+
+  const q = tournamentInput.value.trim().toLowerCase();
+  const counts = {};
+  playerGames(activePlayerName).forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
+  let names = Object.keys(counts);
+  if (q) names = names.filter(n => n.toLowerCase().includes(q));
+  names.sort((a, b) => counts[b] - counts[a]);
+
+  grid.innerHTML = names.length
+    ? names.map(n =>
+        `<button class="p-pill${n === activeTournamentName ? ' on' : ''}" onclick="selectTournament('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
+      ).join('')
+    : `<span class="p-browse-empty">No tournaments match.</span>`;
+  grid.classList.toggle('expanded', tournamentBrowseExpanded);
+  toggle.textContent = tournamentBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} tournaments ▾`;
+}
+function toggleTournamentBrowse() { tournamentBrowseExpanded = !tournamentBrowseExpanded; renderTournamentBrowse(); }
+tournamentInput.addEventListener('input', renderTournamentBrowse);
+
+function selectTournament(name) {
+  activeTournamentName = name;
+  document.getElementById('pv-tournament-clear').style.display = '';
+  renderPlayerView();
+}
+function clearTournament() {
+  activeTournamentName = null;
+  document.getElementById('pv-tournament-clear').style.display = 'none';
+  renderPlayerView();
+}
+
 function setPvFilter(kind, value) {
   playerFilters[kind] = value;
   renderPlayerView();
@@ -1018,8 +1110,10 @@ function applyPlayerFilters(games) {
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
     if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
+    if (!passesYearFilter(g)) return false;
     if (activeOpponentName && opponentOf(g, activePlayerName) !== activeOpponentName) return false;
     if (activeTeammateName && !(g.teammates || []).includes(activeTeammateName)) return false;
+    if (activeTournamentName && g.tournament !== activeTournamentName) return false;
     return true;
   });
 }
@@ -1107,11 +1201,50 @@ function renderSortableTable(tableId, sortState, setSortFnName, rows, cols, empt
   table.innerHTML = `<thead><tr>${thead}</tr></thead><tbody>${tbody}</tbody>`;
 }
 
+function tournamentByName(name) { return tournaments.find(t => t.name === name); }
+
+function fmtGameDate(g) {
+  const ts = parseGameDate(g);
+  return ts ? new Date(ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) : '—';
+}
+
+// Concrete evidence behind the aggregate stats above - "what did this
+// player's last N games under the current filters actually look like",
+// so a win-rate number isn't the only thing you have to go on.
+function renderRecentGames(games, name) {
+  const table = document.getElementById('pv-recent-table');
+  const sorted = [...games].sort((a, b) => (parseGameDate(b) || 0) - (parseGameDate(a) || 0)).slice(0, 15);
+  if (!sorted.length) {
+    table.innerHTML = `<tbody><tr><td>No games match the current filters.</td></tr></tbody>`;
+    return;
+  }
+  const rows = sorted.map(g => {
+    const won = playerWonGame(g, name);
+    const civ = civForPlayer(g, name);
+    const oppLabel = g.format === 'team' ? g.team2 : opponentOf(g, name);
+    const oppCiv = g.format === 'team' ? null : opponentCivOf(g, name);
+    const t = tournamentByName(g.tournament);
+    const tourneyCell = t ? `<a href="${t.url}" target="_blank" rel="noopener">${esc(g.tournament)}</a>` : esc(g.tournament);
+    const oppCell = oppLabel ? `<a href="javascript:void(0)" onclick="goToPlayer('${oppLabel.replace(/'/g, "\\'")}')">${esc(oppLabel)}</a>` : '—';
+    return `<tr>
+      <td>${fmtGameDate(g)}</td>
+      <td>${tourneyCell}</td>
+      <td class="num">${g.round || '—'}</td>
+      <td>${esc(civ || '—')}</td>
+      <td>${oppCell}${oppCiv ? ` <span style="color:var(--text3);">(${esc(oppCiv)})</span>` : ''}</td>
+      <td>${esc(g.map)}</td>
+      <td class="num" style="color:${won ? 'var(--green)' : 'var(--red)'};font-weight:700;">${won ? 'W' : 'L'}</td>
+    </tr>`;
+  }).join('');
+  table.innerHTML = `<thead><tr><th>Date</th><th>Tournament</th><th class="num">Round</th><th>Civ</th><th>Opponent</th><th>Map</th><th class="num">Result</th></tr></thead><tbody>${rows}</tbody>`;
+}
+
 function renderPlayerView() {
   const name = activePlayerName;
   document.getElementById('pv-name').textContent = name;
   renderOpponentBrowse();
   renderTeammateBrowse();
+  renderTournamentBrowse();
 
   const base = playerGames(name);
 
@@ -1131,6 +1264,12 @@ function renderPlayerView() {
   const tiers = [...new Set(base.map(g => g.tier).filter(Boolean))].sort(tierSort);
   pillRow('pv-tier-pills', [['all', 'All'], ...tiers.map(t => [t, t])], playerFilters.tier, 'tier');
 
+  // "Since" is a >= threshold, not an exact-year match - lets you drop old
+  // results out of a comparison (e.g. exclude a 2023 hot streak) instead of
+  // isolating a single year.
+  const years = [...new Set(base.map(g => gameYear(g)).filter(Boolean))].sort((a, b) => Number(a) - Number(b));
+  pillRow('pv-year-pills', [['all', 'All'], ...years.map(y => [y, y + '+'])], playerFilters.year, 'year');
+
   // Map Type classification only covers the ~30-map "classic" competitive
   // pool (matches the S/A-Tier scene); B/C-Tier community tournaments pull
   // in hundreds of custom map packs that would just show up as a wall of
@@ -1146,10 +1285,19 @@ function renderPlayerView() {
   const allMapTypes = Object.keys(mapTypeLabels); // fixed universe, always shown
   pillRowWithAvailability('pv-maptype-pills', [['all', 'All'], ...allMapTypes.map(t => [t, mapTypeLabels[t]])], playerFilters.mapType, 'mapType', availableMapTypes);
 
-  const universeGames = scopedGamesByTierFormat();
+  // When a Map Type is selected, narrow the Map pill universe down to just
+  // the maps that carry that type - this is how you answer "what maps are
+  // actually in the Semi-Open category" from the UI, and it's the same
+  // pill-reflects-selection behavior the regular Auto Scout uses. With
+  // Map Type = All, fall back to the top 14 most-played maps overall so
+  // the row doesn't become an unwieldy wall of every map ever seen.
+  const universeGames = scopedGamesByTierFormat()
+    .filter(g => playerFilters.mapType === 'all' || gameHasMapType(g, playerFilters.mapType));
   const universeMapCounts = {};
   universeGames.forEach(g => { universeMapCounts[g.map] = (universeMapCounts[g.map] || 0) + 1; });
-  const universeTopMaps = Object.entries(universeMapCounts).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([m]) => m);
+  let universeMapEntries = Object.entries(universeMapCounts).sort((a, b) => b[1] - a[1]);
+  if (playerFilters.mapType === 'all') universeMapEntries = universeMapEntries.slice(0, 14);
+  const universeTopMaps = universeMapEntries.map(([m]) => m);
   const availableMaps = new Set(base.map(g => g.map));
   pillRowWithAvailability('pv-map-pills', [['all', 'All'], ...universeTopMaps.map(m => [m, m])], playerFilters.map, 'map', availableMaps);
 
@@ -1181,6 +1329,8 @@ function renderPlayerView() {
     <div class="d-stat"><div class="d-stat-lbl">Opponent Strength</div><div class="d-stat-val">${oppStrength ? oppStrength.pct + '%' : '—'}</div><div class="d-stat-note">avg. win rate of opponents faced (1v1)</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Opponent Civ Strength</div><div class="d-stat-val">${civStrength ? civStrength.pct + '%' : '—'}</div><div class="d-stat-note">avg. win rate of civs faced (1v1)</div></div>
   `;
+
+  renderRecentGames(filteredGames, name);
 
   // head-to-head
   const h2h = document.getElementById('pv-h2h');
