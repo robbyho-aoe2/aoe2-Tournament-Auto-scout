@@ -1010,6 +1010,20 @@ function clearPlayer() {
   renderPlayerBrowse();
 }
 
+// Tournament -> Opponent -> Teammate is a precedence chain: each picker's
+// options/counts are scoped by the base filters plus whichever of the
+// earlier pickers already has a selection, so e.g. picking a tournament
+// narrows the Opponent list to opponents actually faced there, and picking
+// an opponent on top of that narrows Teammate the same way. A picker never
+// applies its own active selection to its own option list.
+function gamesForTournamentPicker() { return applyBaseFilters(playerGames(activePlayerName)); }
+function gamesForOpponentPicker() {
+  return gamesForTournamentPicker().filter(g => !activeTournamentName || g.tournament === activeTournamentName);
+}
+function gamesForTeammatePicker() {
+  return gamesForOpponentPicker().filter(g => !activeOpponentName || opponentOf(g, activePlayerName) === activeOpponentName);
+}
+
 // ── browsable opponent grid — same pattern, restricted to actual opponents of the active player ──
 const oppInput = document.getElementById('pv-opponent-input');
 let opponentBrowseExpanded = false;
@@ -1021,19 +1035,27 @@ function renderOpponentBrowse() {
 
   const q = oppInput.value.trim().toLowerCase();
   const counts = {};
-  playerGames(activePlayerName).forEach(g => {
+  gamesForOpponentPicker().forEach(g => {
     const o = opponentOf(g, activePlayerName);
     if (!o) return; // team-format rows have no single individual opponent
     counts[o] = (counts[o] || 0) + 1;
   });
+
+  if (activeOpponentName && !counts[activeOpponentName]) {
+    activeOpponentName = null;
+    document.getElementById('pv-opponent-clear').style.display = 'none';
+  }
+
   let names = Object.keys(counts);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
   names.sort((a, b) => counts[b] - counts[a]);
 
   grid.innerHTML = names.length
-    ? names.map(n =>
-        `<button class="p-pill${n === activeOpponentName ? ' on' : ''}" onclick="selectOpponent('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
-      ).join('')
+    ? names.map(n => {
+        const isActive = n === activeOpponentName;
+        const onclick = isActive ? 'clearOpponent()' : `selectOpponent('${n.replace(/'/g, "\\'")}')`;
+        return `<button class="p-pill${isActive ? ' on' : ''}" onclick="${onclick}">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`;
+      }).join('')
     : `<span class="p-browse-empty">No opponents match.</span>`;
   grid.classList.toggle('expanded', opponentBrowseExpanded);
   toggle.textContent = opponentBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} opponents ▾`;
@@ -1064,17 +1086,25 @@ function renderTeammateBrowse() {
 
   const q = teammateInput.value.trim().toLowerCase();
   const counts = {};
-  playerGames(activePlayerName).forEach(g => {
+  gamesForTeammatePicker().forEach(g => {
     (g.teammates || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; });
   });
+
+  if (activeTeammateName && !counts[activeTeammateName]) {
+    activeTeammateName = null;
+    document.getElementById('pv-teammate-clear').style.display = 'none';
+  }
+
   let names = Object.keys(counts);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
   names.sort((a, b) => counts[b] - counts[a]);
 
   grid.innerHTML = names.length
-    ? names.map(n =>
-        `<button class="p-pill${n === activeTeammateName ? ' on' : ''}" onclick="selectTeammate('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
-      ).join('')
+    ? names.map(n => {
+        const isActive = n === activeTeammateName;
+        const onclick = isActive ? 'clearTeammate()' : `selectTeammate('${n.replace(/'/g, "\\'")}')`;
+        return `<button class="p-pill${isActive ? ' on' : ''}" onclick="${onclick}">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`;
+      }).join('')
     : `<span class="p-browse-empty">No teammates match.</span>`;
   grid.classList.toggle('expanded', teammateBrowseExpanded);
   toggle.textContent = teammateBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} teammates ▾`;
@@ -1105,7 +1135,7 @@ function renderTournamentBrowse() {
 
   const q = tournamentInput.value.trim().toLowerCase();
   const counts = {};
-  applyBaseFilters(playerGames(activePlayerName)).forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
+  gamesForTournamentPicker().forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
   let names = Object.keys(counts);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
 
@@ -1142,9 +1172,11 @@ function renderTournamentBrowse() {
   grid.innerHTML = names.length
     ? years.map(y => `
         <div class="p-browse-year">${esc(y)}</div>
-        ${groups[y].map(n =>
-          `<button class="p-pill${n === activeTournamentName ? ' on' : ''}" onclick="selectTournament('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
-        ).join('')}
+        ${groups[y].map(n => {
+          const isActive = n === activeTournamentName;
+          const onclick = isActive ? 'clearTournament()' : `selectTournament('${n.replace(/'/g, "\\'")}')`;
+          return `<button class="p-pill${isActive ? ' on' : ''}" onclick="${onclick}">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`;
+        }).join('')}
       `).join('')
     : `<span class="p-browse-empty">No tournaments match.</span>`;
   grid.classList.toggle('expanded', tournamentBrowseExpanded);
@@ -1317,9 +1349,12 @@ function renderRecentGames(games, name) {
 function renderPlayerView() {
   const name = activePlayerName;
   document.getElementById('pv-name').textContent = name;
+  // order matters: Tournament -> Opponent -> Teammate is a precedence
+  // chain (each one's auto-clear-if-invalid check depends on the ones
+  // before it already having settled this render's final selection)
+  renderTournamentBrowse();
   renderOpponentBrowse();
   renderTeammateBrowse();
-  renderTournamentBrowse();
 
   const base = playerGames(name);
 
