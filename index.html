@@ -339,7 +339,8 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
     <div class="pv-filters">
       <div class="pv-frow"><span class="pv-flabel">Format</span><div id="pv-format-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Tier</span><div id="pv-tier-pills"></div></div>
-      <div class="pv-frow"><span class="pv-flabel">Since</span><div id="pv-year-pills"></div></div>
+      <div class="pv-frow"><span class="pv-flabel">From</span><div id="pv-yearfrom-pills"></div></div>
+      <div class="pv-frow"><span class="pv-flabel">To</span><div id="pv-yearto-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map Type</span><div id="pv-maptype-pills"></div></div>
       <div class="pv-frow"><span class="pv-flabel">Map</span><div id="pv-map-pills"></div></div>
       <div class="pv-frow" style="align-items:flex-start;">
@@ -414,7 +415,7 @@ let activePlayerName = null;
 let activeOpponentName = null;
 let activeTeammateName = null;
 let activeTournamentName = null;
-let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all', year: 'all' };
+let playerFilters = { tier: 'all', mapType: 'all', map: 'all', format: 'all', yearFrom: null, yearTo: null };
 let civTableMode = 'mine'; // 'mine' | 'opponent'
 function setCivTableMode(mode) { civTableMode = mode; renderPlayerView(); }
 
@@ -880,12 +881,14 @@ function buildWinPool(games, key1Fn, key2Fn) {
   return pool;
 }
 
-// year filter is a "since" threshold (>=), not an exact-year match - e.g.
-// picking "2025" means "2025 and onward", matching how it reads in the UI.
-function passesYearFilter(g) {
-  if (playerFilters.year === 'all') return true;
+// From/To year range, inclusive on both ends. yearFrom/yearTo start out
+// null and get clamped to the player's actual min/max year on first
+// render (see renderPlayerView), so the default is effectively "their
+// whole history" without needing a separate 'all' sentinel.
+function passesYearRangeFilter(g) {
+  if (!playerFilters.yearFrom || !playerFilters.yearTo) return true;
   const y = gameYear(g);
-  return !!y && Number(y) >= Number(playerFilters.year);
+  return !!y && Number(y) >= Number(playerFilters.yearFrom) && Number(y) <= Number(playerFilters.yearTo);
 }
 
 function scopedGames() {
@@ -895,7 +898,7 @@ function scopedGames() {
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
     if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
-    if (!passesYearFilter(g)) return false;
+    if (!passesYearRangeFilter(g)) return false;
     return true;
   });
 }
@@ -908,7 +911,7 @@ function scopedGamesByTierFormat() {
     if (!g.winner) return false;
     if (playerFilters.format !== 'all' && g.format !== playerFilters.format) return false;
     if (playerFilters.tier   !== 'all' && g.tier !== playerFilters.tier) return false;
-    if (!passesYearFilter(g)) return false;
+    if (!passesYearRangeFilter(g)) return false;
     return true;
   });
 }
@@ -981,7 +984,7 @@ function selectPlayer(name) {
   activeOpponentName = null;
   activeTeammateName = null;
   activeTournamentName = null;
-  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter, year: 'all' };
+  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter, yearFrom: null, yearTo: null };
   civTableMode = 'mine';
   civSort = { col: 'games', dir: 'desc' };
   mapTypeSort = { col: 'games', dir: 'desc' };
@@ -1211,7 +1214,7 @@ function applyBaseFilters(games) {
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
     if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
-    if (!passesYearFilter(g)) return false;
+    if (!passesYearRangeFilter(g)) return false;
     return true;
   });
 }
@@ -1235,6 +1238,26 @@ function pillRow(containerId, options, activeVal, kind) {
   const el = document.getElementById(containerId);
   el.innerHTML = options.map(([val, label]) =>
     `<button class="pill${val === activeVal ? ' on' : ''}" onclick="setPvFilter('${kind}','${val}')">${esc(label)}</button>`
+  ).join('');
+}
+
+// From/To year pills push each other out of the way rather than allowing
+// an inverted range (From after To) - moving From past the current To
+// drags To along with it, and vice versa.
+function setYearFrom(y) {
+  playerFilters.yearFrom = y;
+  if (Number(playerFilters.yearTo) < Number(y)) playerFilters.yearTo = y;
+  renderPlayerView();
+}
+function setYearTo(y) {
+  playerFilters.yearTo = y;
+  if (Number(playerFilters.yearFrom) > Number(y)) playerFilters.yearFrom = y;
+  renderPlayerView();
+}
+function renderYearRangePills(containerId, years, activeVal, setFnName) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = years.map(y =>
+    `<button class="pill${y === activeVal ? ' on' : ''}" onclick="${setFnName}('${y}')">${esc(y)}</button>`
   ).join('');
 }
 
@@ -1374,11 +1397,16 @@ function renderPlayerView() {
   const tiers = [...new Set(base.map(g => g.tier).filter(Boolean))].sort(tierSort);
   pillRow('pv-tier-pills', [['all', 'All'], ...tiers.map(t => [t, t])], playerFilters.tier, 'tier');
 
-  // "Since" is a >= threshold, not an exact-year match - lets you drop old
-  // results out of a comparison (e.g. exclude a 2023 hot streak) instead of
-  // isolating a single year.
+  // From/To year range - defaults to the player's full span (e.g.
+  // 2023-2026) but each end is independently pickable, so "just 2024-2025"
+  // is a normal selection, not a special case.
   const years = [...new Set(base.map(g => gameYear(g)).filter(Boolean))].sort((a, b) => Number(a) - Number(b));
-  pillRow('pv-year-pills', [['all', 'All'], ...years.map(y => [y, y + '+'])], playerFilters.year, 'year');
+  if (years.length) {
+    if (!playerFilters.yearFrom || !years.includes(playerFilters.yearFrom)) playerFilters.yearFrom = years[0];
+    if (!playerFilters.yearTo || !years.includes(playerFilters.yearTo)) playerFilters.yearTo = years[years.length - 1];
+  }
+  renderYearRangePills('pv-yearfrom-pills', years, playerFilters.yearFrom, 'setYearFrom');
+  renderYearRangePills('pv-yearto-pills', years, playerFilters.yearTo, 'setYearTo');
 
   // Map Type classification only covers the ~30-map "classic" competitive
   // pool (matches the S/A-Tier scene); B/C-Tier community tournaments pull
