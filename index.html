@@ -217,6 +217,8 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 .p-pill.on{background:var(--amber);color:#1a0a00;border-color:var(--amber);font-weight:700;}
 .p-pill .p-pill-n{opacity:.65;font-size:10px;margin-left:5px;}
 .p-browse-empty{font-size:12px;color:var(--text3);padding:5px 0;}
+.p-browse-year{width:100%;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin:6px 0 1px;}
+.p-browse-year:first-child{margin-top:0;}
 
 /* ── Player view ── */
 #player-content{display:none;}
@@ -1075,12 +1077,36 @@ function renderTournamentBrowse() {
   playerGames(activePlayerName).forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
   let names = Object.keys(counts);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
-  names.sort((a, b) => counts[b] - counts[a]);
+
+  // grouped by the tournament's own start year (newest year first), and
+  // within a year by start date descending - not by game count, so the
+  // list reads as a timeline rather than a "most played" ranking
+  const groups = {};
+  names.forEach(n => {
+    const t = tournamentByName(n);
+    const year = (t && t.start) ? new Date(t.start * 1000).getUTCFullYear() : 'Unknown';
+    (groups[year] = groups[year] || []).push(n);
+  });
+  const years = Object.keys(groups).sort((a, b) => {
+    if (a === 'Unknown') return 1;
+    if (b === 'Unknown') return -1;
+    return Number(b) - Number(a);
+  });
+  years.forEach(y => {
+    groups[y].sort((a, b) => {
+      const sa = (tournamentByName(a) || {}).start || 0;
+      const sb = (tournamentByName(b) || {}).start || 0;
+      return sb - sa;
+    });
+  });
 
   grid.innerHTML = names.length
-    ? names.map(n =>
-        `<button class="p-pill${n === activeTournamentName ? ' on' : ''}" onclick="selectTournament('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
-      ).join('')
+    ? years.map(y => `
+        <div class="p-browse-year">${esc(y)}</div>
+        ${groups[y].map(n =>
+          `<button class="p-pill${n === activeTournamentName ? ' on' : ''}" onclick="selectTournament('${n.replace(/'/g, "\\'")}')">${esc(n)}<span class="p-pill-n">${counts[n]}</span></button>`
+        ).join('')}
+      `).join('')
     : `<span class="p-browse-empty">No tournaments match.</span>`;
   grid.classList.toggle('expanded', tournamentBrowseExpanded);
   toggle.textContent = tournamentBrowseExpanded ? 'Show less ▴' : `Show all ${names.length} tournaments ▾`;
