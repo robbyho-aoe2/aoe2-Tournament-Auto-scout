@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T07:07:30.385556+00:00",
+  "generatedAt": "2026-08-24T07:28:34.207730+00:00",
   "sinceDate": "2023-01-01",
   "tournaments": [
     {
@@ -91,8 +91,8 @@
       "type": "Online",
       "region": "Turkey",
       "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
+      "first": "Team 2",
+      "second": "Team 1",
       "third": ""
     },
     {
@@ -1572,6 +1572,25 @@
       "third": ""
     },
     {
+      "id": "CZ/SK AoE Liga/3v3",
+      "name": "CZ/SK AoE Liga: 3v3",
+      "url": "https://liquipedia.net/ageofempires/CZ/SK_AoE_Liga/3v3",
+      "tier": "C-Tier",
+      "start": "2026-09-15",
+      "end": "2026-11-30",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "SponQbob",
+      "format": "3v3, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Czech Republic",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    {
       "id": "Cake Cup/1",
       "name": "Cake Cup",
       "url": "https://liquipedia.net/ageofempires/Cake_Cup/1",
@@ -2968,7 +2987,7 @@
       "prize": null,
       "currency": "USD",
       "organizer": "leonromaaoe",
-      "format": "1v1, Round robin",
+      "format": "1v1, Round Robin",
       "formatType": "unknown",
       "type": "Offline",
       "region": "Spain",
@@ -5098,8 +5117,8 @@
       "type": "Online",
       "region": "Mexico",
       "players": 10,
-      "first": "SoyLaHostia",
-      "second": "Daniboyaoe",
+      "first": "Eren",
+      "second": "Puerco_Black",
       "third": ""
     },
     {
@@ -8000,6 +8019,25 @@
       "third": ""
     },
     {
+      "id": "TC LAN",
+      "name": "TC LAN",
+      "url": "https://liquipedia.net/ageofempires/TC_LAN",
+      "tier": "B-Tier",
+      "start": "2026-10-05",
+      "end": "2026-10-31",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Uxmal Esports",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online/Offline",
+      "region": "Mexico",
+      "players": 64,
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    {
       "id": "TOURNOI 3V3",
       "name": "TOURNOI 3V3",
       "url": "https://liquipedia.net/ageofempires/TOURNOI_3V3",
@@ -9473,7 +9511,7 @@
       "region": "World",
       "players": 20,
       "first": "FreakinAndy",
-      "second": "OLADUSHEK",
+      "second": "Overtaken",
       "third": ""
     },
     {
