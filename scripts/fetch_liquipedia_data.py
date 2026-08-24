@@ -162,7 +162,23 @@ def resolve_player_name(name):
     under whatever name was current at the time, so without this a
     player's record gets silently split across every handle they've ever
     competed under. Cached persistently since most names aren't redirects
-    and repeat across many games."""
+    and repeat across many games.
+
+    Also honors MediaWiki's own title normalization (distinct from
+    redirects): page titles always force-capitalize their first letter,
+    so a wikitext mention like 'ciskhan' queries as the same page as
+    'Ciskhan' even with no redirect involved - the API reports this via a
+    top-level 'normalized' key, separate from 'redirects'. Skipping it
+    previously left lowercase-first-letter spellings uncorrected, quietly
+    splitting a handful of players' records across two casings of the
+    same name (verified directly against the live API, not guessed).
+
+    Important: MediaWiki normalizes title casing syntactically even when
+    no page exists at that title at all (e.g. querying 'abc' normalizes
+    to 'Abc' and reports it as 'missing') - most raw names in this data
+    are community handles with no Liquipedia page whatsoever, so blindly
+    trusting normalization would fabricate a capitalization for them.
+    The resolved title is only trusted when the page actually exists."""
     global _name_cache
     if _name_cache is None:
         _name_cache = load_name_cache()
@@ -170,10 +186,20 @@ def resolve_player_name(name):
         return name
     if name in _name_cache:
         return _name_cache[name]
+    canonical = name
     try:
         data = api_query(titles=name, redirects=1)
-        redirects = data.get("query", {}).get("redirects")
-        canonical = redirects[0]["to"] if redirects else name
+        query = data.get("query", {})
+        candidate = name
+        normalized = query.get("normalized")
+        if normalized:
+            candidate = normalized[0]["to"]
+        redirects = query.get("redirects")
+        if redirects:
+            candidate = redirects[0]["to"]
+        page = next(iter(query.get("pages", {}).values()), None)
+        if page is not None and "missing" not in page:
+            canonical = candidate
     except Exception:
         canonical = name
     _name_cache[name] = canonical
