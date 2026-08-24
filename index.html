@@ -1105,9 +1105,17 @@ function renderTournamentBrowse() {
 
   const q = tournamentInput.value.trim().toLowerCase();
   const counts = {};
-  playerGames(activePlayerName).forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
+  applyBaseFilters(playerGames(activePlayerName)).forEach(g => { counts[g.tournament] = (counts[g.tournament] || 0) + 1; });
   let names = Object.keys(counts);
   if (q) names = names.filter(n => n.toLowerCase().includes(q));
+
+  // if the active Format/Tier/etc. filters no longer leave any games in the
+  // currently-selected tournament, drop the selection instead of leaving it
+  // active with nothing to show for it
+  if (activeTournamentName && !counts[activeTournamentName]) {
+    activeTournamentName = null;
+    document.getElementById('pv-tournament-clear').style.display = 'none';
+  }
 
   // grouped by the tournament's own start year (newest year first), and
   // within a year by start date descending - not by game count, so the
@@ -1161,13 +1169,23 @@ function setPvFilter(kind, value) {
   renderPlayerView();
 }
 
-function applyPlayerFilters(games) {
+// The Format/Tier/Since/Map Type/Map filters - the ones that sit "above"
+// the browsable Tournament/Opponent/Teammate pickers - shared so the
+// Tournament picker's options/counts stay consistent with them instead of
+// always reflecting the player's entire unfiltered history.
+function applyBaseFilters(games) {
   return games.filter(g => {
     if (playerFilters.format  !== 'all' && g.format !== playerFilters.format) return false;
     if (playerFilters.tier    !== 'all' && g.tier !== playerFilters.tier) return false;
     if (playerFilters.mapType !== 'all' && !gameHasMapType(g, playerFilters.mapType)) return false;
     if (playerFilters.map     !== 'all' && g.map !== playerFilters.map) return false;
     if (!passesYearFilter(g)) return false;
+    return true;
+  });
+}
+
+function applyPlayerFilters(games) {
+  return applyBaseFilters(games).filter(g => {
     if (activeOpponentName && opponentOf(g, activePlayerName) !== activeOpponentName) return false;
     if (activeTeammateName && !(g.teammates || []).includes(activeTeammateName)) return false;
     if (activeTournamentName && g.tournament !== activeTournamentName) return false;
