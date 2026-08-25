@@ -207,6 +207,14 @@ def resolve_player_name(name):
     return canonical
 
 
+def apply_player_rename(name):
+    """Manual identity merges (see PLAYER_RENAME below) for spelling/
+    punctuation variants resolve_player_name() can't prove are the same
+    page. Always call after resolve_player_name(), same pairing as
+    CIV_RENAME after resolve_civ()."""
+    return PLAYER_RENAME.get(name, name) if name else name
+
+
 EXCLUDE_TITLE_PATTERN = re.compile(r"qualifier|show ?match(es)?", re.IGNORECASE)
 
 
@@ -267,6 +275,185 @@ CIV_RENAME = {
     'Biz': 'Byzantines', 'Esp': 'Spanish', 'Tar': 'Tatars',
     'Azt<!--Azt? Please Re-Check Different Website-->': 'Aztecs',
 }
+
+# Manually-confirmed player identity merges that resolve_player_name() can't
+# catch on its own - these are spelling/punctuation variants of the same
+# handle (extra underscore, missing space, stray punctuation, a typo'd
+# letter) with no Liquipedia redirect connecting them, so there's no
+# authoritative source to resolve them automatically. Reviewed by hand
+# against each pair's actual game counts before merging - a few close
+# look-alikes were deliberately left out (e.g. two different players who
+# both happen to end in "DMV", and two CJK-decorated handles that could be
+# nicknames of an existing player or could be someone else entirely).
+PLAYER_RENAME = {
+    '_FJ_001': 'FJ_001',
+    '_hugo': 'hugo',
+    '_Lui_': 'Lui',
+    '_Peon': 'Peon',
+    '.#sILVER': '#sILVER',
+    '12tirador': '12Tirador',
+    'Abundzuehalt': 'abundzuehalt',
+    'aleksanderg': 'aleksanderG',
+    'Alfons Dober': 'alfons_dober',
+    'Alfons_dober': 'alfons_dober',
+    'Alfons_Dober': 'alfons_dober',
+    'ASDF': 'asdf',
+    'Bazing hood': 'Bazing Hood',
+    'Bazing_Hood': 'Bazing Hood',
+    'bbb': 'BBB',
+    'benja23': 'Benja23',
+    'benpat': 'Benpat',
+    'Big Conigz': 'big Conigz',
+    'Bigdragon360': 'BigDragon 360',
+    'BoyWonder_': 'BoyWonder',
+    'Bread Pudding with Bum Sauce': 'Bread Pudding With Bum Sauce',
+    'Bugee': 'Bug ee',
+    'CarefulTulip69': 'Carefultulip69',
+    'Champsdugros': 'champsdugros',
+    'Cherry Wonka': 'CherryWonka',
+    'Chowde#7264': 'Chowde7264',
+    'chrisyboo': 'Chrisyboo',
+    'Ciruelitaruby': 'ciruelitaruby',
+    'CJ the Strategos': 'CJthestrategos',
+    'Claut ONe': 'Claut One',
+    'Claut_One': 'Claut One',
+    'Colem': 'colem',
+    'cryin': 'CRYIN',
+    'DAI': 'Dai',
+    'Dark Knight': 'DarK KnighT',
+    'DarkJosh89': 'Darkjosh89',
+    'Darth masala': 'Darth Masala',
+    'Dbs elm': 'Dbs Elm',
+    'DBS Elm': 'Dbs Elm',
+    'Delay_': 'delay',
+    'Denchik Ne Lohx': 'Denchik_Ne_lohx',
+    'Denchik_ne_lohx': 'Denchik_Ne_lohx',
+    'Denchik_Ne_Lohx': 'Denchik_Ne_lohx',
+    'Develement': 'develement',
+    'DFX': 'Dfx',
+    'DM_The_Death': 'DM The Death',
+    'Dog9you': 'dog9you',
+    'DT_Hero': 'DT_hero',
+    'e1stea': 'e1sTea',
+    'ebbu': 'Ebbu',
+    'Egenem17': 'egenem17',
+    'El Chairo': 'EL CHAIRO',
+    'El_Docente': 'El Docente',
+    'elbanovic': 'Elbanovic',
+    'Elpinardo': 'elpinardo',
+    'EME FraVB': 'EME FraVb',
+    'ErKamayuk': 'erKamayuk',
+    'Esjb': 'esjb',
+    'favre_4_ever': 'Favre4ever',
+    'favre4ever': 'Favre4ever',
+    'Felipe besitos ricos': 'Felipe Besitos Ricos',
+    'FelipeBesitosRicos': 'Felipe Besitos Ricos',
+    'Finrod Felegund': 'FinrodFelegund',
+    'Fish': 'FISH',
+    'Frazis': 'frazis',
+    'Fresh to Death': 'Fresh To Death',
+    'Funny Liquid': 'Funny_Liquid',
+    'Funny__Liquid': 'Funny_Liquid',
+    'funny_liquid': 'Funny_Liquid',
+    'Furkan': 'FURKAN',
+    'Gaelife': 'GaeLife',
+    'God Grill': 'god grill',
+    'Godsprisoner': 'GodsPrisoner',
+    'Good grill': 'good grill',
+    'goodboi': 'Goodboi',
+    'GrannyPumpkinz': 'Granny Pumpkinz',
+    'Hank': 'hank',
+    'hannah_': 'hannah',
+    'Helicol': 'helicol',
+    'Hoi': 'hoi',
+    'huggieg': 'Huggieg',
+    'hunsumir': 'Hunsumir',
+    'IamTeTas': 'IamTeTaS',
+    'ILoveOrangeJelly': 'iloveorangejelly',
+    'Imfury_': 'Imfury',
+    'Inkisidor_': 'Inkisidor',
+    'IrishmanDan': 'Irishman Dan',
+    'Italian Lawyer': 'Italianlawyer',
+    'jääpala': 'Jääpala',
+    'kamrat qp': 'kamrat_qp',
+    'Killer Storm': 'KillerStorm',
+    'Killer_Storm_': 'KillerStorm',
+    'KnightLifeAoc': 'KnightLifeAoC',
+    'KnightLifeAOC': 'KnightLifeAoC',
+    'Kovdatryhard': 'KovDaTryHard',
+    'Leogrampy': 'leogrampy',
+    'Li-78': 'Li 78',
+    'Lord Turfux': 'Lord_Turfux',
+    'Lord_turfux': 'Lord_Turfux',
+    'lorecs': 'Lorecs',
+    'M4rco': 'm4rco',
+    'Macluffy': 'macluffy',
+    'Mateo Magadán': 'Mateo Magadán',
+    'MING': 'Ming',
+    'MLG Sniper17#449': 'MLG Sniper17449',
+    'mohtal': 'Mohtal',
+    'Mojrim': 'MoJRiM',
+    'Moon': 'MOON',
+    'Mr pi': 'Mr.pi',
+    'MTEXplore': 'MTExplore',
+    'next_lever': 'Next_lever',
+    'nomadplayer': 'Nomadplayer',
+    'NomadPlayer': 'Nomadplayer',
+    'Nono12': 'nono12',
+    'Nuneaton Alpo': 'Nuneaton ALPO',
+    'Ny4Jyn': 'Ny4JyN',
+    'Obeluscipher': 'ObelusCipher',
+    'Odemeister': 'odemeister',
+    'Oliver Khan': 'Oliver_Khan',
+    'Onkyox': 'onkyox',
+    'Oso_CT': 'OSO_CT',
+    'Overcomecloud74': 'OvercomeCloud74',
+    'Pau795': 'pau795',
+    'Piezod': 'PiezoD',
+    'Quin Daizier': 'QuinDaizier',
+    'RedCalypso': 'Red Calypso',
+    'redphosphoru': 'Redphosphoru',
+    'Ryanp1001': 'ryanp1001',
+    'saladin': 'SalaDin',
+    'Saladin': 'SalaDin',
+    'SalvaDope': 'salva.dope',
+    'Sapientfez': 'SapientFez',
+    'shixo.#': 'ShiXo.',
+    'ShutAzarquay': 'Shutazarquay',
+    'Sidewire': 'sidewire',
+    'Silverstar': 'silverstar',
+    'siNisTeR': 'SiNisTeR',
+    'SiNySTer': 'SiNySTeR',
+    'SlateRs': 'SlateRS',
+    'Spaciousbunion5': 'SpaciousBunion5',
+    'Streetpete': 'streetpete',
+    'TaeYoon': 'Taeyoon',
+    'TAKII13': 'Takii13',
+    'TheBeatleman': 'The Beatleman',
+    'thedissapointedinvader': 'Thedissapointedinvader',
+    'TheDissapointedInvader': 'Thedissapointedinvader',
+    'TheMole': 'theMole',
+    'tifux': 'Tifux',
+    'Turtle tank#3344': 'Turtle tank3344',
+    'Turtle Tank3344': 'Turtle tank3344',
+    'ullah1999': 'Ullah1999',
+    'Uykusuz Taha': 'Uykusuz_Taha',
+    'VELEZ_Y_VINO': 'VELEZ Y VINO',
+    'violetania': 'Violet Ania',
+    'Vlad von carstein': 'VladVonCarstein',
+    'Volcanloup': 'VolcanLoup',
+    'VVarPath': 'VVaR_PaTh',
+    'weski': 'Weski',
+    'Whitewidow52': 'whitewidow52',
+    'Willdbeast': 'willdbeast',
+    'William da Gama': 'William Da Gama',
+    'Woaf': 'woaF',
+    'Wolf_Silver': 'Wolf Silver',
+    'wza': 'Wza',
+    'yomi': 'Yomi',
+    'Zarc': 'ZARC',
+}
+
 
 
 NUMERIC_TIER = {"1": "S-Tier", "2": "A-Tier", "3": "B-Tier", "4": "C-Tier", "5": "D-Tier"}
@@ -636,19 +823,19 @@ def write_outputs(pages, cache):
         t["tier"] = normalize_tier(t["tier"])
         for key in ("first", "second", "third"):
             if t.get(key):
-                t[key] = resolve_player_name(t[key])
+                t[key] = apply_player_rename(resolve_player_name(t[key]))
         tournaments.append(t)
         for g in entry["games"]:
             g2 = dict(g)
-            g2["player1"] = resolve_player_name(g["player1"])
-            g2["player2"] = resolve_player_name(g["player2"]) if g.get("player2") else None
+            g2["player1"] = apply_player_rename(resolve_player_name(g["player1"]))
+            g2["player2"] = apply_player_rename(resolve_player_name(g["player2"])) if g.get("player2") else None
             g2["tier"] = normalize_tier(g["tier"])
             # rows cached before the format/team1/team2 fields existed
             # predate team-match support entirely, so they're always 1v1
             g2.setdefault("format", "1v1" if g.get("player2") else "team")
             g2.setdefault("team1", None)
             g2.setdefault("team2", None)
-            g2["teammates"] = [resolve_player_name(t) for t in g.get("teammates", [])]
+            g2["teammates"] = [apply_player_rename(resolve_player_name(t)) for t in g.get("teammates", [])]
             if g2.get("civ1") in CIV_RENAME:
                 g2["civ1"] = CIV_RENAME[g2["civ1"]]
             if g2.get("civ2") in CIV_RENAME:
