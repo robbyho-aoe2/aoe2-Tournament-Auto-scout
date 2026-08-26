@@ -981,10 +981,12 @@ playerSearchInput.addEventListener('input', renderPlayerBrowse);
 
 function selectPlayer(name) {
   activePlayerName = name;
-  activeOpponentName = null;
-  activeTeammateName = null;
-  activeTournamentName = null;
-  playerFilters = { tier: browseTierFilter, mapType: 'all', map: 'all', format: browseFormatFilter, yearFrom: null, yearTo: null };
+  // Format/Tier/From-To/Map Type/Map (playerFilters) and the Tournament/
+  // Opponent/Teammate selections deliberately carry over when switching
+  // players - e.g. comparing Hera vs Liereyy on S-Tier/Semi-Open shouldn't
+  // reset that setup just for clicking a different name. Each picker's own
+  // auto-clear-if-invalid check (in render*Browse) already handles the
+  // case where a carried-over selection doesn't apply to the new player.
   civTableMode = 'mine';
   civSort = { col: 'games', dir: 'desc' };
   mapTypeSort = { col: 'games', dir: 'desc' };
@@ -995,7 +997,6 @@ function selectPlayer(name) {
   document.getElementById('pv-opponent-input').value = '';
   document.getElementById('pv-teammate-input').value = '';
   document.getElementById('pv-tournament-input').value = '';
-  document.getElementById('pv-tournament-clear').style.display = 'none';
   document.getElementById('player-empty').style.display = 'none';
   document.getElementById('player-content').classList.add('vis');
   renderPlayerBrowse();
