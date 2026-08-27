@@ -275,6 +275,7 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
   <div class="mode-toggle">
     <button class="mode-btn active" id="mode-btn-tournaments" onclick="setMode('tournaments')">🏆 Tournaments</button>
     <button class="mode-btn" id="mode-btn-players" onclick="setMode('players')">🔎 Players</button>
+    <button class="mode-btn" id="mode-btn-stats" onclick="setMode('stats')">📊 Stats</button>
   </div>
   <div id="data-note"></div>
 </div>
@@ -391,6 +392,25 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
     <div class="pv-section-hdr">By Opponent <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);">(1v1 only)</span></div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-byopponent-table"></table></div>
   </div>
+
+</div>
+
+<!-- ══════════════════════ STATS VIEW ══════════════════════ -->
+<div id="stats-view" style="display:none;">
+
+  <div class="d-grid" id="stats-overview"></div>
+
+  <div class="pv-section-hdr">Tournaments by Tier</div>
+  <div class="pv-table-wrap"><table class="pv-table" id="stats-tier-table"></table></div>
+
+  <div class="pv-section-hdr">Prize Pool by Year</div>
+  <div class="pv-table-wrap"><table class="pv-table" id="stats-year-table"></table></div>
+
+  <div class="pv-section-hdr" style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+    <span>Most Tournament Wins</span>
+    <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);font-size:12px;">Team-format placeholders ("Team 1"/"Team 2") excluded</span>
+  </div>
+  <div class="pv-table-wrap"><table class="pv-table" id="stats-wins-table"></table></div>
 
 </div>
 
@@ -536,9 +556,12 @@ function setMode(m) {
   mode = m;
   document.getElementById('mode-btn-tournaments').classList.toggle('active', m === 'tournaments');
   document.getElementById('mode-btn-players').classList.toggle('active', m === 'players');
+  document.getElementById('mode-btn-stats').classList.toggle('active', m === 'stats');
   document.getElementById('tournaments-view').style.display = m === 'tournaments' ? '' : 'none';
   document.getElementById('players-view').style.display = m === 'players' ? '' : 'none';
+  document.getElementById('stats-view').style.display = m === 'stats' ? '' : 'none';
   if (m === 'players') renderPlayerBrowse();
+  if (m === 'stats') renderStatsView();
 }
 
 function goToPlayer(name) {
@@ -578,6 +601,74 @@ function goToOrganizer(name) {
   activeId = null;
   renderGrid();
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+// ================================================================
+//  STATS VIEW — site-wide totals, not scoped to any one player
+// ================================================================
+function renderStatsView() {
+  const totalPrize = tournaments.reduce((s, t) => s + (t.prize || 0), 0);
+  const years = tournaments.filter(t => t.start).map(t => new Date(t.start * 1000).getUTCFullYear());
+  const yearRange = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
+
+  document.getElementById('stats-overview').innerHTML = `
+    <div class="d-stat"><div class="d-stat-lbl">Tournaments Tracked</div><div class="d-stat-val">${tournaments.length.toLocaleString()}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Games Recorded</div><div class="d-stat-val">${GAMES.length.toLocaleString()}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Total Prize Pool</div><div class="d-stat-val">${fmtPrize(totalPrize, 'USD')}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Years Covered</div><div class="d-stat-val sm">${yearRange}</div></div>
+  `;
+
+  // ── Tournaments by Tier ──
+  const TIER_KEYS = ['S', 'A', 'B', 'C'];
+  const tierRows = TIER_KEYS.map(tier => {
+    const ts = tournaments.filter(t => t.tier === tier);
+    return { tier, count: ts.length, prize: ts.reduce((s, t) => s + (t.prize || 0), 0) };
+  });
+  document.getElementById('stats-tier-table').innerHTML = `
+    <thead><tr><th>Tier</th><th class="num">Tournaments</th><th class="num">Prize Pool</th></tr></thead>
+    <tbody>
+      ${tierRows.map(r => `<tr><td>${r.tier}-Tier</td><td class="num">${r.count}</td><td class="num">${fmtPrize(r.prize, 'USD')}</td></tr>`).join('')}
+      <tr><td><b>Total</b></td><td class="num"><b>${tournaments.length}</b></td><td class="num"><b>${fmtPrize(totalPrize, 'USD')}</b></td></tr>
+    </tbody>`;
+
+  // ── Prize Pool by Year ──
+  const yearGroups = {};
+  tournaments.forEach(t => {
+    if (!t.start) return;
+    const y = new Date(t.start * 1000).getUTCFullYear();
+    yearGroups[y] = yearGroups[y] || { count: 0, prize: 0 };
+    yearGroups[y].count++;
+    yearGroups[y].prize += (t.prize || 0);
+  });
+  const sortedYears = Object.keys(yearGroups).sort((a, b) => Number(b) - Number(a));
+  document.getElementById('stats-year-table').innerHTML = `
+    <thead><tr><th>Year</th><th class="num">Tournaments</th><th class="num">Prize Pool</th></tr></thead>
+    <tbody>${sortedYears.map(y => `<tr><td>${y}</td><td class="num">${yearGroups[y].count}</td><td class="num">${fmtPrize(yearGroups[y].prize, 'USD')}</td></tr>`).join('')}</tbody>`;
+
+  // ── Most Tournament Wins ── generic team-format placeholders ("Team 1"/
+  // "Team 2", used when a bracket template never resolved a real team
+  // name) are excluded since they aren't a real identity to rank.
+  // Players with exactly 1 win are left off too - with 167 different
+  // tournament winners overall, a full list would mostly be a long tail
+  // of one-offs rather than a meaningful leaderboard.
+  const PLACEHOLDER_TEAMS = new Set(['Team 1', 'Team 2']);
+  const winsByPlayer = {};
+  tournaments.forEach(t => {
+    if (t.status !== 'completed' || !t.p1 || PLACEHOLDER_TEAMS.has(t.p1)) return;
+    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0 };
+    if (w[t.tier] !== undefined) w[t.tier]++;
+    w.total++;
+  });
+  const winsRows = Object.entries(winsByPlayer).filter(([, w]) => w.total >= 2).sort((a, b) => b[1].total - a[1].total);
+  document.getElementById('stats-wins-table').innerHTML = winsRows.length ? `
+    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th></tr></thead>
+    <tbody>${winsRows.map(([name, w]) => `<tr>
+      <td><a href="javascript:void(0)" onclick="goToPlayer('${name.replace(/'/g, "\\'")}')">${esc(name)}</a></td>
+      <td class="num">${w.S || ''}</td><td class="num">${w.A || ''}</td><td class="num">${w.B || ''}</td><td class="num">${w.C || ''}</td>
+      <td class="num"><b>${w.total}</b></td>
+    </tr>`).join('')}</tbody>
+  ` : `<tbody><tr><td>No data.</td></tr></tbody>`;
 }
 
 
