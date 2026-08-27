@@ -251,6 +251,8 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 .pv-table a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(96,165,250,.3);}
 .pv-table a:hover{color:var(--amberL);border-color:rgba(200,146,42,.5);}
 .pv-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.pv-table td.wins-list{white-space:normal;max-width:460px;color:var(--text3);}
+.pv-table td.wins-list a{margin-right:2px;}
 .pv-bar-wrap{display:inline-block;width:62px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;vertical-align:middle;margin-right:8px;}
 .pv-bar-fill{height:100%;background:var(--amber);}
 </style>
@@ -659,19 +661,42 @@ function renderStatsView() {
   const winsByPlayer = {};
   tournaments.forEach(t => {
     if (t.status !== 'completed' || !t.p1 || PLACEHOLDER_TEAMS.has(t.p1)) return;
-    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0 };
+    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0, wins: [] };
     if (w[t.tier] !== undefined) w[t.tier]++;
     w.total++;
+    w.wins.push(t);
   });
+  Object.values(winsByPlayer).forEach(w => w.wins.sort((a, b) => b.start - a.start));
   const winsRows = Object.entries(winsByPlayer).filter(([, w]) => w.total >= 2).sort((a, b) => b[1].total - a[1].total);
   document.getElementById('stats-wins-table').innerHTML = winsRows.length ? `
-    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th></tr></thead>
-    <tbody>${winsRows.map(([name, w]) => `<tr>
+    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th>Tournaments Won</th></tr></thead>
+    <tbody>${winsRows.map(([name, w], i) => `<tr>
       <td><a href="javascript:void(0)" onclick="goToPlayer('${name.replace(/'/g, "\\'")}')">${esc(name)}</a></td>
       <td class="num">${w.S || ''}</td><td class="num">${w.A || ''}</td><td class="num">${w.B || ''}</td><td class="num">${w.C || ''}</td>
       <td class="num"><b>${w.total}</b></td>
+      <td class="wins-list">${winsListHTML(w.wins, `stats-wins-${i}`)}</td>
     </tr>`).join('')}</tbody>
   ` : `<tbody><tr><td>No data.</td></tr></tbody>`;
+}
+
+// Most winners have too many tournaments to list flat without making the
+// row unreadable (Hera alone has 20+), so only the first few show by
+// default with a "+N more" toggle for the rest - same idea as the
+// browsable pill grids elsewhere, just inline in a table cell.
+function winsListHTML(wins, rowId) {
+  const tourneyLink = t => `<a href="javascript:void(0)" onclick="goToTournament('${t.name.replace(/'/g, "\\'")}')">${esc(t.name)}</a>`;
+  const shown = wins.slice(0, 3).map(tourneyLink).join(', ');
+  const rest = wins.slice(3);
+  if (!rest.length) return shown;
+  return `${shown}, <span id="${rowId}-rest" style="display:none;">${rest.map(tourneyLink).join(', ')}</span>` +
+    `<a href="javascript:void(0)" id="${rowId}-toggle" data-count="${rest.length}" onclick="toggleWinsList('${rowId}')">+${rest.length} more</a>`;
+}
+function toggleWinsList(rowId) {
+  const rest = document.getElementById(rowId + '-rest');
+  const toggle = document.getElementById(rowId + '-toggle');
+  const expanding = rest.style.display === 'none';
+  rest.style.display = expanding ? 'inline' : 'none';
+  toggle.textContent = expanding ? 'show less' : `+${toggle.dataset.count} more`;
 }
 
 
