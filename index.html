@@ -403,6 +403,12 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 <!-- ══════════════════════ STATS VIEW ══════════════════════ -->
 <div id="stats-view" style="display:none;">
 
+  <div class="pv-filters" style="margin-bottom:16px;">
+    <div class="pv-frow"><span class="pv-flabel">Tier</span><div id="stats-tier-pills"></div></div>
+    <div class="pv-frow"><span class="pv-flabel">From</span><div id="stats-yearfrom-pills"></div></div>
+    <div class="pv-frow"><span class="pv-flabel">To</span><div id="stats-yearto-pills"></div></div>
+  </div>
+
   <div class="d-grid" id="stats-overview"></div>
 
   <div class="pv-section-hdr">Tournaments by Tier</div>
@@ -612,34 +618,79 @@ function goToOrganizer(name) {
 // ================================================================
 //  STATS VIEW — site-wide totals, not scoped to any one player
 // ================================================================
+let statsFilters = { tier: 'all', yearFrom: null, yearTo: null };
+
+function setStatsFilter(kind, value) {
+  statsFilters[kind] = value;
+  renderStatsView();
+}
+function setStatsYearFrom(y) {
+  statsFilters.yearFrom = y;
+  if (Number(statsFilters.yearTo) < Number(y)) statsFilters.yearTo = y;
+  renderStatsView();
+}
+function setStatsYearTo(y) {
+  statsFilters.yearTo = y;
+  if (Number(statsFilters.yearFrom) > Number(y)) statsFilters.yearFrom = y;
+  renderStatsView();
+}
+
 function renderStatsView() {
-  const totalPrize = tournaments.reduce((s, t) => s + (t.prize || 0), 0);
-  const years = tournaments.filter(t => t.start).map(t => new Date(t.start * 1000).getUTCFullYear());
+  const TIER_KEYS = ['S', 'A', 'B', 'C'];
+  pillRow('stats-tier-pills', [['all', 'All'], ...TIER_KEYS.map(t => [t, t])], statsFilters.tier, 'tier', 'setStatsFilter');
+
+  // From/To defaults to the full tracked range, same "carries a real
+  // range, not an 'all' sentinel" approach as the player page's filter.
+  const allYears = [...new Set(tournaments.filter(t => t.start).map(t => String(new Date(t.start * 1000).getUTCFullYear())))].sort((a, b) => Number(a) - Number(b));
+  if (allYears.length) {
+    if (!statsFilters.yearFrom || !allYears.includes(statsFilters.yearFrom)) statsFilters.yearFrom = allYears[0];
+    if (!statsFilters.yearTo || !allYears.includes(statsFilters.yearTo)) statsFilters.yearTo = allYears[allYears.length - 1];
+  }
+  renderYearRangePills('stats-yearfrom-pills', allYears, statsFilters.yearFrom, 'setStatsYearFrom');
+  renderYearRangePills('stats-yearto-pills', allYears, statsFilters.yearTo, 'setStatsYearTo');
+
+  // Every section below reads from this one filtered set, so Tier/From/To
+  // consistently scope the whole page rather than just one table.
+  const scopedTournaments = tournaments.filter(t => {
+    if (statsFilters.tier !== 'all' && t.tier !== statsFilters.tier) return false;
+    if (t.start) {
+      const y = new Date(t.start * 1000).getUTCFullYear();
+      if (y < Number(statsFilters.yearFrom) || y > Number(statsFilters.yearTo)) return false;
+    }
+    return true;
+  });
+  const scopedGamesForStats = GAMES.filter(g => {
+    if (statsFilters.tier !== 'all' && g.tier !== statsFilters.tier + '-Tier') return false;
+    const y = gameYear(g);
+    return !y || (Number(y) >= Number(statsFilters.yearFrom) && Number(y) <= Number(statsFilters.yearTo));
+  });
+
+  const totalPrize = scopedTournaments.reduce((s, t) => s + (t.prize || 0), 0);
+  const years = scopedTournaments.filter(t => t.start).map(t => new Date(t.start * 1000).getUTCFullYear());
   const yearRange = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
 
   document.getElementById('stats-overview').innerHTML = `
-    <div class="d-stat"><div class="d-stat-lbl">Tournaments Tracked</div><div class="d-stat-val">${tournaments.length.toLocaleString()}</div></div>
-    <div class="d-stat"><div class="d-stat-lbl">Games Recorded</div><div class="d-stat-val">${GAMES.length.toLocaleString()}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Tournaments Tracked</div><div class="d-stat-val">${scopedTournaments.length.toLocaleString()}</div></div>
+    <div class="d-stat"><div class="d-stat-lbl">Games Recorded</div><div class="d-stat-val">${scopedGamesForStats.length.toLocaleString()}</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Total Prize Pool</div><div class="d-stat-val">${fmtPrize(totalPrize, 'USD')}</div></div>
     <div class="d-stat"><div class="d-stat-lbl">Years Covered</div><div class="d-stat-val sm">${yearRange}</div></div>
   `;
 
   // ── Tournaments by Tier ──
-  const TIER_KEYS = ['S', 'A', 'B', 'C'];
   const tierRows = TIER_KEYS.map(tier => {
-    const ts = tournaments.filter(t => t.tier === tier);
+    const ts = scopedTournaments.filter(t => t.tier === tier);
     return { tier, count: ts.length, prize: ts.reduce((s, t) => s + (t.prize || 0), 0) };
   });
   document.getElementById('stats-tier-table').innerHTML = `
     <thead><tr><th>Tier</th><th class="num">Tournaments</th><th class="num">Prize Pool</th></tr></thead>
     <tbody>
       ${tierRows.map(r => `<tr><td>${r.tier}-Tier</td><td class="num">${r.count}</td><td class="num">${fmtPrize(r.prize, 'USD')}</td></tr>`).join('')}
-      <tr><td><b>Total</b></td><td class="num"><b>${tournaments.length}</b></td><td class="num"><b>${fmtPrize(totalPrize, 'USD')}</b></td></tr>
+      <tr><td><b>Total</b></td><td class="num"><b>${scopedTournaments.length}</b></td><td class="num"><b>${fmtPrize(totalPrize, 'USD')}</b></td></tr>
     </tbody>`;
 
   // ── Prize Pool by Year ──
   const yearGroups = {};
-  tournaments.forEach(t => {
+  scopedTournaments.forEach(t => {
     if (!t.start) return;
     const y = new Date(t.start * 1000).getUTCFullYear();
     yearGroups[y] = yearGroups[y] || { count: 0, prize: 0 };
@@ -656,24 +707,28 @@ function renderStatsView() {
   // name) are excluded since they aren't a real identity to rank.
   // Players with exactly 1 win are left off too - with 167 different
   // tournament winners overall, a full list would mostly be a long tail
-  // of one-offs rather than a meaningful leaderboard.
+  // of one-offs rather than a meaningful leaderboard. Sorted by winnings,
+  // not win count, since that's what "most tournament wins" ends up
+  // meaning in practice once prize money is on the table.
   const PLACEHOLDER_TEAMS = new Set(['Team 1', 'Team 2']);
   const winsByPlayer = {};
-  tournaments.forEach(t => {
+  scopedTournaments.forEach(t => {
     if (t.status !== 'completed' || !t.p1 || PLACEHOLDER_TEAMS.has(t.p1)) return;
-    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0, wins: [] };
+    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0, prize: 0, wins: [] };
     if (w[t.tier] !== undefined) w[t.tier]++;
     w.total++;
+    w.prize += (t.prize || 0);
     w.wins.push(t);
   });
   Object.values(winsByPlayer).forEach(w => w.wins.sort((a, b) => b.start - a.start));
-  const winsRows = Object.entries(winsByPlayer).filter(([, w]) => w.total >= 2).sort((a, b) => b[1].total - a[1].total);
+  const winsRows = Object.entries(winsByPlayer).filter(([, w]) => w.total >= 2).sort((a, b) => b[1].prize - a[1].prize);
   document.getElementById('stats-wins-table').innerHTML = winsRows.length ? `
-    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th>Tournaments Won</th></tr></thead>
+    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th class="num">Winnings</th><th>Tournaments Won</th></tr></thead>
     <tbody>${winsRows.map(([name, w], i) => `<tr>
       <td><a href="javascript:void(0)" onclick="goToPlayer('${name.replace(/'/g, "\\'")}')">${esc(name)}</a></td>
       <td class="num">${w.S || ''}</td><td class="num">${w.A || ''}</td><td class="num">${w.B || ''}</td><td class="num">${w.C || ''}</td>
       <td class="num"><b>${w.total}</b></td>
+      <td class="num">${fmtPrize(w.prize, 'USD')}</td>
       <td class="wins-list">${winsListHTML(w.wins, `stats-wins-${i}`)}</td>
     </tr>`).join('')}</tbody>
   ` : `<tbody><tr><td>No data.</td></tr></tbody>`;
@@ -1354,10 +1409,11 @@ function winRate(games, name) {
   return { wins, total, pct: total ? Math.round((wins / total) * 100) : 0 };
 }
 
-function pillRow(containerId, options, activeVal, kind) {
+function pillRow(containerId, options, activeVal, kind, setFnName) {
   const el = document.getElementById(containerId);
+  const fn = setFnName || 'setPvFilter';
   el.innerHTML = options.map(([val, label]) =>
-    `<button class="pill${val === activeVal ? ' on' : ''}" onclick="setPvFilter('${kind}','${val}')">${esc(label)}</button>`
+    `<button class="pill${val === activeVal ? ' on' : ''}" onclick="${fn}('${kind}','${val}')">${esc(label)}</button>`
   ).join('');
 }
 
