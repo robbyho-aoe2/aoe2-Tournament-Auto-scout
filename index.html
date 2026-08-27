@@ -377,6 +377,9 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 
     <div class="d-grid" id="pv-stats"></div>
 
+    <div class="pv-section-hdr" id="pv-wins-hdr">Tournament Wins</div>
+    <div class="pv-table-wrap"><table class="pv-table" id="pv-wins-table"></table></div>
+
     <div class="pv-section-hdr">Recent Games</div>
     <div class="pv-table-wrap"><table class="pv-table" id="pv-recent-table"></table></div>
 
@@ -1430,6 +1433,26 @@ function fmtGameDate(g) {
   return ts ? new Date(ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) : '—';
 }
 
+// Answers "which tournament was that win" for the Tournaments Won stat
+// tile above - same idea as the Stats page's wins leaderboard, but for
+// one player's own actual list instead of just a count.
+function renderTournamentWins(wonTournaments) {
+  document.getElementById('pv-wins-hdr').innerHTML =
+    `Tournament Wins <span style="text-transform:none;letter-spacing:normal;font-weight:400;color:var(--text3);">(${wonTournaments.length})</span>`;
+  const table = document.getElementById('pv-wins-table');
+  if (!wonTournaments.length) {
+    table.innerHTML = `<tbody><tr><td>No tournament wins match the current filters.</td></tr></tbody>`;
+    return;
+  }
+  const rows = wonTournaments.map(t => `<tr>
+    <td><a href="javascript:void(0)" onclick="goToTournament('${t.name.replace(/'/g, "\\'")}')">${esc(t.name)}</a></td>
+    <td><span class="tier-badge ${tierClass(t.tier)}">${t.tier}-Tier</span></td>
+    <td>${fmtDateRange(t.start, t.end)}</td>
+    <td class="num">${fmtPrize(t.prize, t.currency)}</td>
+  </tr>`).join('');
+  table.innerHTML = `<thead><tr><th>Tournament</th><th>Tier</th><th>Date</th><th class="num">Prize</th></tr></thead><tbody>${rows}</tbody>`;
+}
+
 // Concrete evidence behind the aggregate stats above - "what did this
 // player's last N games under the current filters actually look like",
 // so a win-rate number isn't the only thing you have to go on.
@@ -1534,7 +1557,18 @@ function renderPlayerView() {
   const filteredGames = applyPlayerFilters(base);
   const wr = winRate(filteredGames, name);
 
-  const tournamentsWon = tournaments.filter(t => t.p1 === name).length;
+  // Scoped to Tier/Since like the rest of the stats, so "3 S-Tier wins"
+  // above and the actual list below always agree with each other.
+  const wonTournaments = tournaments.filter(t => {
+    if (t.p1 !== name) return false;
+    if (playerFilters.tier !== 'all' && (t.tier + '-Tier') !== playerFilters.tier) return false;
+    if (playerFilters.yearFrom && playerFilters.yearTo && t.start) {
+      const y = new Date(t.start * 1000).getUTCFullYear();
+      if (y < Number(playerFilters.yearFrom) || y > Number(playerFilters.yearTo)) return false;
+    }
+    return true;
+  }).sort((a, b) => b.start - a.start);
+  const tournamentsWon = wonTournaments.length;
   const tournamentsEntered = new Set(base.map(g => g.tournament)).size;
 
   const civGroups = {};
@@ -1560,6 +1594,7 @@ function renderPlayerView() {
     <div class="d-stat"><div class="d-stat-lbl">Opponent Civ Strength</div><div class="d-stat-val">${civStrength ? civStrength.pct + '%' : '—'}</div><div class="d-stat-note">avg. win rate of civs faced (1v1)</div></div>
   `;
 
+  renderTournamentWins(wonTournaments);
   renderRecentGames(filteredGames, name);
 
   // head-to-head
