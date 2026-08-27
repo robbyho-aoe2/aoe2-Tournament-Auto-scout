@@ -253,6 +253,14 @@ a.d-player:hover{border-color:rgba(200,146,42,.5);color:var(--amberL);}
 .pv-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
 .pv-table td.wins-list{white-space:normal;max-width:460px;color:var(--text3);}
 .pv-table td.wins-list a{margin-right:2px;}
+.pv-table td.wins-list a.tier-S{color:var(--gold);}
+.pv-table td.wins-list a.tier-A{color:var(--blue);}
+.pv-table td.wins-list a.tier-B{color:var(--purple);}
+.pv-table td.wins-list a.tier-C{color:var(--teal);}
+.pv-table td.wins-list a.tier-S:hover,
+.pv-table td.wins-list a.tier-A:hover,
+.pv-table td.wins-list a.tier-B:hover,
+.pv-table td.wins-list a.tier-C:hover{color:var(--amberL);}
 .pv-bar-wrap{display:inline-block;width:62px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;vertical-align:middle;margin-right:8px;}
 .pv-bar-fill{height:100%;background:var(--amber);}
 </style>
@@ -739,7 +747,7 @@ function renderStatsView() {
 // default with a "+N more" toggle for the rest - same idea as the
 // browsable pill grids elsewhere, just inline in a table cell.
 function winsListHTML(wins, rowId) {
-  const tourneyLink = t => `<a href="javascript:void(0)" onclick="goToTournament('${t.name.replace(/'/g, "\\'")}')">${esc(t.name)}</a>`;
+  const tourneyLink = t => `<a class="tier-${t.tier}" href="javascript:void(0)" onclick="goToTournament('${t.name.replace(/'/g, "\\'")}')">${esc(t.name)}</a>`;
   const shown = wins.slice(0, 3).map(tourneyLink).join(', ');
   const rest = wins.slice(3);
   if (!rest.length) return shown;
