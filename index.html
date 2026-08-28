@@ -753,11 +753,12 @@ function renderStatsView() {
   const winsRows = Object.entries(winsByPlayer)
     .filter(([, w]) => w.total >= 2)
     .sort((a, b) => (totalEarningsByPlayer[b[0]] || 0) - (totalEarningsByPlayer[a[0]] || 0));
+  const TIER_COLOR = { S: 'var(--gold)', A: 'var(--blue)', B: 'var(--purple)', C: 'var(--teal)' };
   document.getElementById('stats-wins-table').innerHTML = winsRows.length ? `
-    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th class="num">Entered</th><th class="num">Winnings</th><th>Tournaments Won</th></tr></thead>
+    <thead><tr><th>Player</th><th class="num" style="color:${TIER_COLOR.S}">S</th><th class="num" style="color:${TIER_COLOR.A}">A</th><th class="num" style="color:${TIER_COLOR.B}">B</th><th class="num" style="color:${TIER_COLOR.C}">C</th><th class="num">Wins</th><th class="num">Entered</th><th class="num">Winnings</th><th>Tournaments Won</th></tr></thead>
     <tbody>${winsRows.map(([name, w], i) => `<tr>
       <td><a href="javascript:void(0)" onclick="goToPlayer('${name.replace(/'/g, "\\'")}')">${esc(name)}</a></td>
-      <td class="num">${w.S || ''}</td><td class="num">${w.A || ''}</td><td class="num">${w.B || ''}</td><td class="num">${w.C || ''}</td>
+      <td class="num" style="color:${TIER_COLOR.S}">${w.S || ''}</td><td class="num" style="color:${TIER_COLOR.A}">${w.A || ''}</td><td class="num" style="color:${TIER_COLOR.B}">${w.B || ''}</td><td class="num" style="color:${TIER_COLOR.C}">${w.C || ''}</td>
       <td class="num"><b>${w.total}</b></td>
       <td class="num">${tournamentsEnteredByPlayer[name] ? tournamentsEnteredByPlayer[name].size : '—'}</td>
       <td class="num">${fmtPrize(totalEarningsByPlayer[name] || 0, 'USD')}</td>
