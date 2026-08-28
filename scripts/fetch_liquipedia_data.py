@@ -45,7 +45,7 @@ USER_AGENT = "AoE2TournamentAutoScout/1.0 (robbyho@gmail.com) https://github.com
 # ── Scope of the historical backfill. Widen TIERS or push SINCE_DATE back
 #    whenever you want more history - just costs more 30s-spaced parse calls. ──
 TIERS = ["S-Tier", "A-Tier", "B-Tier", "C-Tier"]
-SINCE_DATE = "2023-01-01"
+SINCE_DATE = "2020-01-01"
 
 QUERY_INTERVAL = 2.0
 PARSE_INTERVAL = 30.0
@@ -573,6 +573,121 @@ def infobox_field(region, field):
     return clean_field(m.group(1)) if m else ""
 
 
+def block_field(block, field):
+    """Like infobox_field(), but for a single-line {{Template|k=v}} block
+    rather than the multi-line infobox head - stops before a closing '}}'
+    too, not just '|'/newline, since there's no trailing newline to do
+    that job here (e.g. {{Slot|percentage=50}} would otherwise capture
+    '50}}' as the value)."""
+    m = re.search(r"\|\s*" + re.escape(field) + r"\s*=\s*([^\n|}]*)", block)
+    return clean_field(m.group(1)) if m else ""
+
+
+def parse_solo_prize_pool(wikitext):
+    """{player_name: total_usd} from a {{SoloPrizePool}} template - every
+    placement's actual payout, not just the tournament winner's. A Slot's
+    own usdprize is a fallback for an Opponent with none of its own (ties
+    sharing one slot sometimes only list one shared amount)."""
+    blocks = find_templates(wikitext, "SoloPrizePool")
+    if not blocks:
+        return {}
+    result = {}
+    for slot_block in find_templates(blocks[0], "Slot"):
+        slot_prize = block_field(slot_block, "usdprize")
+        for opp_block in find_templates(slot_block, "Opponent"):
+            kv = parse_template_kv(opp_block, "Opponent")
+            name = resolve_player_name(opponent_name(kv))
+            amount_str = kv.get("usdprize") or slot_prize
+            if not name or not amount_str:
+                continue
+            try:
+                amount = float(amount_str)
+            except ValueError:
+                continue
+            result[name] = result.get(name, 0) + amount
+    return result
+
+
+def parse_team_prize_pool(wikitext, total_prize, games):
+    """{player_name: total_usd} from a {{TeamPrizePool}}. The wiki only
+    records each team's own share - a flat usdprize or a percentage of the
+    tournament's total pool - never a per-player breakdown. Per an explicit
+    decision (not a default assumption on our part - there's no way to
+    derive a real split from the data), a team's amount is divided evenly
+    across whichever players from that team actually appear in this
+    tournament's own game log.
+
+    Two different layouts show up across tournament pages: newer ones put
+    a Slot's own usdprize/percentage right alongside its Opponents (same
+    shape as SoloPrizePool); older ones spell the reward out as its own
+    "legend" Slot (no Opponents) immediately followed by one or more plain
+    Opponent-only Slots that share it - handled here by pairing legend
+    Slots with content Slots positionally, in the order they appear."""
+    blocks = find_templates(wikitext, "TeamPrizePool")
+    if not blocks:
+        return {}
+    team_rosters = {}
+    for g in games:
+        team = g.get("team1")
+        if not team:
+            continue
+        roster = team_rosters.setdefault(team, set())
+        if g.get("player1"):
+            roster.add(g["player1"])
+        roster.update(g.get("teammates") or [])
+
+    def slot_reward(slot_block):
+        usd = block_field(slot_block, "usdprize")
+        if usd:
+            try:
+                return float(usd)
+            except ValueError:
+                return None
+        pct = block_field(slot_block, "percentage")
+        if pct and total_prize:
+            try:
+                return float(pct) / 100 * total_prize
+            except ValueError:
+                return None
+        return None
+
+    result = {}
+    # FIFO queue of [reward, remaining_count] - a legend's count=N means it
+    # covers the next N content Slots, not just one (e.g. count=2 for a
+    # 12.5% tier covering two separately-listed 3rd/4th-place ties).
+    pending = []
+    for slot_block in find_templates(blocks[0], "Slot"):
+        opp_blocks = find_templates(slot_block, "Opponent")
+        own_reward = slot_reward(slot_block)
+        if not opp_blocks:
+            count_str = block_field(slot_block, "count")
+            try:
+                count = int(count_str) if count_str else 1
+            except ValueError:
+                count = 1
+            pending.append([own_reward, count])
+            continue
+        reward = own_reward
+        if reward is None and pending:
+            reward = pending[0][0]
+            pending[0][1] -= 1
+            if pending[0][1] <= 0:
+                pending.pop(0)
+        if reward is None:
+            continue
+        share_per_team = reward / len(opp_blocks)  # tied teams split the placement's reward
+        for opp_block in opp_blocks:
+            kv = parse_template_kv(opp_block, "Opponent")
+            team_name = opponent_name(kv)
+            roster = team_rosters.get(team_name) if team_name else None
+            if not roster:
+                continue  # team never appears in the parsed game log - can't attribute
+            share_per_player = share_per_team / len(roster)
+            for player in roster:
+                result[player] = result.get(player, 0) + share_per_player
+    return result
+
+
 def parse_tournament(title, wikitext):
     head_end = wikitext.find("\n==")
     head = wikitext[:head_end] if head_end != -1 else wikitext[:4000]
@@ -672,9 +787,13 @@ def parse_tournament(title, wikitext):
             # (player, map) from each side, tagged format='team' with no
             # single individual opponent - "winner" is always relative to
             # that row's own player1, same convention as 1v1 rows.
+            # {{TeamOpponent|Team Valas}} (positional, via opponent_name()'s
+            # _pos fallback) is just as common as the keyed template=/name=
+            # form - missing it silently dropped every real team identity
+            # to the generic "Team 1"/"Team 2" placeholder.
             team_kv = [parse_template_kv(o, "TeamOpponent") for o in team_opponents]
-            team1 = team_kv[0].get("template") or team_kv[0].get("name") or "Team 1"
-            team2 = team_kv[1].get("template") or team_kv[1].get("name") or "Team 2"
+            team1 = team_kv[0].get("template") or opponent_name(team_kv[0]) or "Team 1"
+            team2 = team_kv[1].get("template") or opponent_name(team_kv[1]) or "Team 2"
             map_blocks = find_templates(match_block, "Map")
             stripped = match_block
             for sub in team_opponents + map_blocks:
@@ -740,6 +859,11 @@ def parse_tournament(title, wikitext):
     formats_seen = {g["format"] for g in games}
     format_type = "mixed" if len(formats_seen) > 1 else (formats_seen.pop() if formats_seen else "unknown")
 
+    prize_int = int(prize) if prize.isdigit() else None
+    # per-placement payouts, not just whoever won - see the two parser
+    # docstrings for how solo vs. team prize pools differ
+    prize_by_player = parse_solo_prize_pool(wikitext) or parse_team_prize_pool(wikitext, prize_int, games)
+
     tournament = {
         "id": title,
         "name": name,
@@ -747,7 +871,7 @@ def parse_tournament(title, wikitext):
         "tier": tier,
         "start": sdate,
         "end": edate,
-        "prize": int(prize) if prize.isdigit() else None,
+        "prize": prize_int,
         "currency": "USD",
         "organizer": organizer,
         "format": fmt,
@@ -758,6 +882,7 @@ def parse_tournament(title, wikitext):
         "first": first,
         "second": second,
         "third": third,
+        "prizeByPlayer": prize_by_player,
     }
     return tournament, games
 
@@ -776,17 +901,26 @@ def load_cache():
     """page title -> {"tournament": {...}|None, "games": [...]}. A page
     whose tournament has clearly ended (>3 days ago) is treated as
     permanent and never re-fetched again - completed results don't change.
-    Out-of-scope pages (tournament is None) are always permanent under the
-    current SINCE_DATE. Invalidated automatically if SINCE_DATE changes."""
+    Out-of-scope pages (tournament is None) are permanent under the
+    SINCE_DATE that was active when they were checked.
+
+    If SINCE_DATE has since moved (normally earlier, to backfill more
+    history - see the comment above TIERS/SINCE_DATE), only those
+    out-of-scope entries are dropped so they get re-evaluated against the
+    new window; anything already parsed as a real tournament stays cached
+    as-is; page content and category membership don't depend on
+    SINCE_DATE, only the date-cutoff verdict does. This avoids re-fetching
+    the entire multi-day backfill just to widen the window."""
     if not CACHE_PATH.exists():
         return {}
     try:
         raw = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
+    pages = raw.get("pages", {})
     if raw.get("since_date") != SINCE_DATE:
-        return {}
-    return raw.get("pages", {})
+        pages = {p: e for p, e in pages.items() if e.get("tournament") is not None}
+    return pages
 
 
 def save_cache(cache):
@@ -824,6 +958,20 @@ def write_outputs(pages, cache):
         for key in ("first", "second", "third"):
             if t.get(key):
                 t[key] = apply_player_rename(resolve_player_name(t[key]))
+
+        # Tournaments not yet re-fetched under the per-placement prize
+        # parser have no prizeByPlayer at all - fall back to the old
+        # whole-pool-to-the-winner approximation so earnings don't just
+        # disappear mid-backfill; it self-corrects as each page is re-fetched.
+        prize_by_player = t.get("prizeByPlayer") or {}
+        if not prize_by_player and t.get("first") and t.get("prize"):
+            prize_by_player = {t["first"]: t["prize"]}
+        merged_prize = {}
+        for player, amount in prize_by_player.items():
+            canon = apply_player_rename(resolve_player_name(player))
+            merged_prize[canon] = merged_prize.get(canon, 0) + amount
+        t["prizeByPlayer"] = merged_prize
+
         tournaments.append(t)
         for g in entry["games"]:
             g2 = dict(g)
