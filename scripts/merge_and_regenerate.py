@@ -29,7 +29,11 @@ def merge_json_file(path, is_wrapped):
     if is_wrapped:
         origin_pages = origin_data.get("pages", {})
         local_pages = local_data.get("pages", {})
-        merged = {"since_date": local_data.get("since_date"), "pages": {**origin_pages, **local_pages}}
+        merged = {
+            "since_date": local_data.get("since_date"),
+            "prize_parser_version": local_data.get("prize_parser_version"),
+            "pages": {**origin_pages, **local_pages},
+        }
     else:
         merged = {**origin_data, **local_data}
     Path(path).write_text(

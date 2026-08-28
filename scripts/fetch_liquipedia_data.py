@@ -47,6 +47,14 @@ USER_AGENT = "AoE2TournamentAutoScout/1.0 (robbyho@gmail.com) https://github.com
 TIERS = ["S-Tier", "A-Tier", "B-Tier", "C-Tier"]
 SINCE_DATE = "2020-01-01"
 
+# Prize-pool parsing (parse_solo_prize_pool/parse_team_prize_pool) only runs
+# at fetch time - the raw wikitext isn't cached, so a bug fix there can't
+# self-heal retroactively in write_outputs() the way name/tier fixes do.
+# Bump this whenever that parsing logic changes meaningfully; load_cache()
+# then forces a re-fetch of every already-parsed tournament (not just
+# out-of-scope ones) so the fix actually reaches already-cached data.
+PRIZE_PARSER_VERSION = 2
+
 QUERY_INTERVAL = 2.0
 PARSE_INTERVAL = 30.0
 
@@ -526,6 +534,29 @@ def find_templates(text, name):
     return out
 
 
+def top_level_templates(blocks):
+    """Filters a find_templates() result down to blocks that aren't nested
+    inside another block in the same list. Needed for prize pool Opponent
+    templates specifically: a lastvs={{Opponent|...}} attribute (who this
+    entrant last played) is itself a full {{Opponent}} template, so a
+    plain scan of a Slot can't tell it apart from a genuine sibling
+    co-winner - it's fully contained within its parent's captured text,
+    which is exactly what distinguishes it from one."""
+    return [b for b in blocks if not any(b != other and b in other for other in blocks)]
+
+
+def parse_money(s):
+    """usdprize=3,000 (comma thousands-separator) breaks float() outright -
+    silently dropping that placement's earnings rather than raising, which
+    is worse. Strip formatting before parsing."""
+    if not s:
+        return None
+    try:
+        return float(s.replace(",", "").strip())
+    except ValueError:
+        return None
+
+
 def find_match_blocks_with_round(text):
     """Like find_templates(text, 'Match') but also returns the round number
     encoded in the preceding bracket key, e.g. '|R3M2={{Match ...}}' -> 3.
@@ -594,15 +625,11 @@ def parse_solo_prize_pool(wikitext):
     result = {}
     for slot_block in find_templates(blocks[0], "Slot"):
         slot_prize = block_field(slot_block, "usdprize")
-        for opp_block in find_templates(slot_block, "Opponent"):
+        for opp_block in top_level_templates(find_templates(slot_block, "Opponent")):
             kv = parse_template_kv(opp_block, "Opponent")
             name = resolve_player_name(opponent_name(kv))
-            amount_str = kv.get("usdprize") or slot_prize
-            if not name or not amount_str:
-                continue
-            try:
-                amount = float(amount_str)
-            except ValueError:
+            amount = parse_money(kv.get("usdprize") or slot_prize)
+            if not name or amount is None:
                 continue
             result[name] = result.get(name, 0) + amount
     return result
@@ -637,18 +664,12 @@ def parse_team_prize_pool(wikitext, total_prize, games):
         roster.update(g.get("teammates") or [])
 
     def slot_reward(slot_block):
-        usd = block_field(slot_block, "usdprize")
-        if usd:
-            try:
-                return float(usd)
-            except ValueError:
-                return None
-        pct = block_field(slot_block, "percentage")
-        if pct and total_prize:
-            try:
-                return float(pct) / 100 * total_prize
-            except ValueError:
-                return None
+        usd = parse_money(block_field(slot_block, "usdprize"))
+        if usd is not None:
+            return usd
+        pct = parse_money(block_field(slot_block, "percentage"))
+        if pct is not None and total_prize:
+            return pct / 100 * total_prize
         return None
 
     result = {}
@@ -657,7 +678,7 @@ def parse_team_prize_pool(wikitext, total_prize, games):
     # 12.5% tier covering two separately-listed 3rd/4th-place ties).
     pending = []
     for slot_block in find_templates(blocks[0], "Slot"):
-        opp_blocks = find_templates(slot_block, "Opponent")
+        opp_blocks = top_level_templates(find_templates(slot_block, "Opponent"))
         own_reward = slot_reward(slot_block)
         if not opp_blocks:
             count_str = block_field(slot_block, "count")
@@ -902,30 +923,43 @@ def load_cache():
     whose tournament has clearly ended (>3 days ago) is treated as
     permanent and never re-fetched again - completed results don't change.
     Out-of-scope pages (tournament is None) are permanent under the
-    SINCE_DATE that was active when they were checked.
+    SINCE_DATE that was active when they were checked; real tournaments
+    are permanent under the PRIZE_PARSER_VERSION that was active when
+    their prize pool was parsed.
 
-    If SINCE_DATE has since moved (normally earlier, to backfill more
-    history - see the comment above TIERS/SINCE_DATE), only those
-    out-of-scope entries are dropped so they get re-evaluated against the
-    new window; anything already parsed as a real tournament stays cached
-    as-is; page content and category membership don't depend on
-    SINCE_DATE, only the date-cutoff verdict does. This avoids re-fetching
-    the entire multi-day backfill just to widen the window."""
+    If either has since moved, only the entries it actually governs are
+    dropped so they get re-evaluated - SINCE_DATE moving only affects
+    out-of-scope (tournament: None) verdicts, PRIZE_PARSER_VERSION moving
+    only affects already-parsed real tournaments (prize pool parsing runs
+    on the raw wikitext, which isn't cached, so a parser fix can't
+    self-heal retroactively the way name/tier fixes do). Everything else
+    stays cached as-is - page content and category membership depend on
+    neither, only these two verdicts do."""
     if not CACHE_PATH.exists():
         return {}
     try:
         raw = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
-    pages = raw.get("pages", {})
-    if raw.get("since_date") != SINCE_DATE:
-        pages = {p: e for p, e in pages.items() if e.get("tournament") is not None}
-    return pages
+    since_ok = raw.get("since_date") == SINCE_DATE
+    version_ok = raw.get("prize_parser_version") == PRIZE_PARSER_VERSION
+
+    def keep(entry):
+        if not since_ok and entry.get("tournament") is None:
+            return False
+        if not version_ok and entry.get("tournament") is not None:
+            return False
+        return True
+
+    return {p: e for p, e in raw.get("pages", {}).items() if keep(e)}
 
 
 def save_cache(cache):
     CACHE_PATH.write_text(
-        json.dumps({"since_date": SINCE_DATE, "pages": cache}, indent=2, ensure_ascii=False),
+        json.dumps(
+            {"since_date": SINCE_DATE, "prize_parser_version": PRIZE_PARSER_VERSION, "pages": cache},
+            indent=2, ensure_ascii=False,
+        ),
         encoding="utf-8",
     )
 
