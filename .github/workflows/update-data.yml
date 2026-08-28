@@ -26,6 +26,23 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/tournaments.json data/matches.json data/_page_cache.json
-          git diff --staged --quiet || git commit -m "Update tournament data"
-          git push
+          git add data/tournaments.json data/matches.json data/_page_cache.json data/_name_cache.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update tournament data"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $i/5) - another run landed on main first; merging and retrying..."
+            git fetch origin main
+            git reset --soft origin/main
+            python scripts/merge_and_regenerate.py
+            git add data/tournaments.json data/matches.json data/_page_cache.json data/_name_cache.json
+            git commit -m "Update tournament data"
+            sleep $((i * 5))
+          done
+          echo "::error::Failed to push after 5 attempts - manual intervention needed."
+          exit 1
