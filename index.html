@@ -521,6 +521,7 @@ function normalizeTournaments(raw) {
       region: t.region || '', type: t.type || '',
       players: t.players, organizer: t.organizer || '',
       p1: t.first || '', p2: t.second || '', p3: t.third || '',
+      prizeByPlayer: t.prizeByPlayer || {},
     };
   }).sort((a, b) => {
     const o = { live: 0, upcoming: 1, completed: 2 };
@@ -710,33 +711,56 @@ function renderStatsView() {
     <thead><tr><th>Year</th><th class="num">Tournaments</th><th class="num">Prize Pool</th></tr></thead>
     <tbody>${sortedYears.map(y => `<tr><td>${y}</td><td class="num">${yearGroups[y].count}</td><td class="num">${fmtPrize(yearGroups[y].prize, 'USD')}</td></tr>`).join('')}</tbody>`;
 
+  // Total earnings per player across every placement they've had in any
+  // tournament (not just the ones they won) - prizeByPlayer holds each
+  // tournament's actual per-placement payouts (see the prize-pool parser
+  // notes in the Python pipeline for how solo vs. team payouts differ).
+  const totalEarningsByPlayer = {};
+  scopedTournaments.forEach(t => {
+    Object.entries(t.prizeByPlayer || {}).forEach(([player, amount]) => {
+      totalEarningsByPlayer[player] = (totalEarningsByPlayer[player] || 0) + amount;
+    });
+  });
+
+  // Distinct tournaments each player actually competed in, for the
+  // "Entered" column next to their win count.
+  const tournamentsEnteredByPlayer = {};
+  scopedGamesForStats.forEach(g => {
+    [g.player1, g.player2, ...(g.teammates || [])].filter(Boolean).forEach(n => {
+      (tournamentsEnteredByPlayer[n] = tournamentsEnteredByPlayer[n] || new Set()).add(g.tournament);
+    });
+  });
+
   // ── Most Tournament Wins ── generic team-format placeholders ("Team 1"/
   // "Team 2", used when a bracket template never resolved a real team
   // name) are excluded since they aren't a real identity to rank.
   // Players with exactly 1 win are left off too - with 167 different
   // tournament winners overall, a full list would mostly be a long tail
-  // of one-offs rather than a meaningful leaderboard. Sorted by winnings,
-  // not win count, since that's what "most tournament wins" ends up
-  // meaning in practice once prize money is on the table.
+  // of one-offs rather than a meaningful leaderboard. Sorted by total
+  // earnings (all placements), not win count, since that's what "most
+  // tournament wins" ends up meaning in practice once prize money is on
+  // the table.
   const PLACEHOLDER_TEAMS = new Set(['Team 1', 'Team 2']);
   const winsByPlayer = {};
   scopedTournaments.forEach(t => {
     if (t.status !== 'completed' || !t.p1 || PLACEHOLDER_TEAMS.has(t.p1)) return;
-    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0, prize: 0, wins: [] };
+    const w = winsByPlayer[t.p1] = winsByPlayer[t.p1] || { S: 0, A: 0, B: 0, C: 0, total: 0, wins: [] };
     if (w[t.tier] !== undefined) w[t.tier]++;
     w.total++;
-    w.prize += (t.prize || 0);
     w.wins.push(t);
   });
   Object.values(winsByPlayer).forEach(w => w.wins.sort((a, b) => b.start - a.start));
-  const winsRows = Object.entries(winsByPlayer).filter(([, w]) => w.total >= 2).sort((a, b) => b[1].prize - a[1].prize);
+  const winsRows = Object.entries(winsByPlayer)
+    .filter(([, w]) => w.total >= 2)
+    .sort((a, b) => (totalEarningsByPlayer[b[0]] || 0) - (totalEarningsByPlayer[a[0]] || 0));
   document.getElementById('stats-wins-table').innerHTML = winsRows.length ? `
-    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th class="num">Winnings</th><th>Tournaments Won</th></tr></thead>
+    <thead><tr><th>Player</th><th class="num">S</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">Total</th><th class="num">Entered</th><th class="num">Winnings</th><th>Tournaments Won</th></tr></thead>
     <tbody>${winsRows.map(([name, w], i) => `<tr>
       <td><a href="javascript:void(0)" onclick="goToPlayer('${name.replace(/'/g, "\\'")}')">${esc(name)}</a></td>
       <td class="num">${w.S || ''}</td><td class="num">${w.A || ''}</td><td class="num">${w.B || ''}</td><td class="num">${w.C || ''}</td>
       <td class="num"><b>${w.total}</b></td>
-      <td class="num">${fmtPrize(w.prize, 'USD')}</td>
+      <td class="num">${tournamentsEnteredByPlayer[name] ? tournamentsEnteredByPlayer[name].size : '—'}</td>
+      <td class="num">${fmtPrize(totalEarningsByPlayer[name] || 0, 'USD')}</td>
       <td class="wins-list">${winsListHTML(w.wins, `stats-wins-${i}`)}</td>
     </tr>`).join('')}</tbody>
   ` : `<tbody><tr><td>No data.</td></tr></tbody>`;
