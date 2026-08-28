@@ -1,7 +1,404 @@
 {
-  "generatedAt": "2026-08-26T07:15:41.797450+00:00",
-  "sinceDate": "2023-01-01",
+  "generatedAt": "2026-08-28T01:31:30.548153+00:00",
+  "sinceDate": "2020-01-01",
   "tournaments": [
+    {
+      "id": "Brazilian Dynasty",
+      "name": "Brazilian Dynasty",
+      "url": "https://liquipedia.net/ageofempires/Brazilian_Dynasty",
+      "tier": "S-Tier",
+      "start": "2026-07-01",
+      "end": "2026-07-05",
+      "prize": 45500,
+      "currency": "USD",
+      "organizer": "Onimaru Esports",
+      "format": "1v1, Swiss System & Single Elimination",
+      "type": "Offline",
+      "region": "Brazil",
+      "players": 12,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 45500
+      }
+    },
+    {
+      "id": "Hidden Cup/5",
+      "name": "Hidden Cup V",
+      "url": "https://liquipedia.net/ageofempires/Hidden_Cup/5",
+      "tier": "S-Tier",
+      "start": "2024-02-25",
+      "end": "2024-03-03",
+      "prize": 70624,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 70624
+      }
+    },
+    {
+      "id": "King of the Desert/5",
+      "name": "King of the Desert V",
+      "url": "https://liquipedia.net/ageofempires/King_of_the_Desert/5",
+      "tier": "S-Tier",
+      "start": "2023-05-09",
+      "end": "2023-05-28",
+      "prize": 80000,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1, GSL, Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 32,
+      "first": "Hera",
+      "second": "TheViper",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 80000
+      }
+    },
+    {
+      "id": "King of the Desert/6",
+      "name": "King of the Desert VI",
+      "url": "https://liquipedia.net/ageofempires/King_of_the_Desert/6",
+      "tier": "S-Tier",
+      "start": "2025-12-02",
+      "end": "2025-12-21",
+      "prize": 50000,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1, Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 64,
+      "first": "Hera",
+      "second": "TheViper",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 50000
+      }
+    },
+    {
+      "id": "LingYuan Cup",
+      "name": "LingYuan Cup",
+      "url": "https://liquipedia.net/ageofempires/LingYuan_Cup",
+      "tier": "S-Tier",
+      "start": "2025-10-22",
+      "end": "2025-10-26",
+      "prize": 45000,
+      "currency": "USD",
+      "organizer": "LingYuan",
+      "format": "1v1, Swiss System & Single Elimination",
+      "type": "Offline",
+      "region": "China",
+      "players": 10,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 45000
+      }
+    },
+    {
+      "id": "Nili's Apartment Cup/4",
+      "name": "Nili's Apartment Cup 4",
+      "url": "https://liquipedia.net/ageofempires/Nili's_Apartment_Cup/4",
+      "tier": "S-Tier",
+      "start": "2023-03-11",
+      "end": "2023-03-19",
+      "prize": 85747,
+      "currency": "USD",
+      "organizer": "Nili_AoE",
+      "format": "1v1, Swiss Stage & Single Elimination",
+      "type": "Offline",
+      "region": "Germany",
+      "players": 10,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 85747
+      }
+    },
+    {
+      "id": "Nili's Apartment Cup/5",
+      "name": "Nili's Apartment Cup 5",
+      "url": "https://liquipedia.net/ageofempires/Nili's_Apartment_Cup/5",
+      "tier": "S-Tier",
+      "start": "2024-01-06",
+      "end": "2024-01-14",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Nili_AoE",
+      "format": "1v1, Swiss Stage & Single Elimination",
+      "type": "Offline",
+      "region": "Germany",
+      "players": 10,
+      "first": "Hera",
+      "second": "Yo",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Noble Apartment Cup",
+      "name": "Noble Apartment Cup",
+      "url": "https://liquipedia.net/ageofempires/Noble_Apartment_Cup",
+      "tier": "S-Tier",
+      "start": "2024-12-15",
+      "end": "2024-12-22",
+      "prize": 50637,
+      "currency": "USD",
+      "organizer": "GamerLegion",
+      "format": "1v1",
+      "type": "Offline",
+      "region": "Germany",
+      "players": 10,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 50637
+      }
+    },
+    {
+      "id": "Red Bull Wololo/El Reinado/AoE2",
+      "name": "Red Bull Wololo: El Reinado Age of Empires II",
+      "url": "https://liquipedia.net/ageofempires/Red_Bull_Wololo/El_Reinado/AoE2",
+      "tier": "S-Tier",
+      "start": "2024-10-03",
+      "end": "2024-10-06",
+      "prize": 138000,
+      "currency": "USD",
+      "organizer": "Red Bull",
+      "format": "1v1, Double & Single Elimination",
+      "type": "Offline",
+      "region": "Spain",
+      "players": 8,
+      "first": "Hera",
+      "second": "TheViper",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 138000
+      }
+    },
+    {
+      "id": "Red Bull Wololo/Londinium/AoE2",
+      "name": "Red Bull Wololo: Londinium Age of Empires II",
+      "url": "https://liquipedia.net/ageofempires/Red_Bull_Wololo/Londinium/AoE2",
+      "tier": "S-Tier",
+      "start": "2026-04-01",
+      "end": "2026-04-06",
+      "prize": 170000,
+      "currency": "USD",
+      "organizer": "Red Bull",
+      "format": "1v1, Round Robin & Single Elimination",
+      "type": "Offline",
+      "region": "UK",
+      "players": 8,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 170000
+      }
+    },
+    {
+      "id": "T90 Titans League/2/Platinum League",
+      "name": "T90 Titans League 2: Platinum League",
+      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/2/Platinum_League",
+      "tier": "S-Tier",
+      "start": "2023-01-02",
+      "end": "2023-02-12",
+      "prize": 17300,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Round Robin & Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "TheViper",
+      "second": "Hera",
+      "third": "",
+      "prizeByPlayer": {
+        "TheViper": 17300
+      }
+    },
+    {
+      "id": "T90 Titans League/3/Platinum League",
+      "name": "T90 Titans League 3: Platinum League",
+      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/3/Platinum_League",
+      "tier": "S-Tier",
+      "start": "2023-09-04",
+      "end": "2023-10-19",
+      "prize": 17300,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Round Robin & Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "Hera",
+      "second": "TheViper",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 17300
+      }
+    },
+    {
+      "id": "T90 Titans League/4/Platinum League",
+      "name": "T90 Titans League 4: Platinum League",
+      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/4/Platinum_League",
+      "tier": "S-Tier",
+      "start": "2025-01-13",
+      "end": "2025-03-02",
+      "prize": 32800,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Round Robin & Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 32800
+      }
+    },
+    {
+      "id": "T90 Titans League/5/Platinum League",
+      "name": "T90 Titans League 5: Platinum League",
+      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/5/Platinum_League",
+      "tier": "S-Tier",
+      "start": "2026-02-06",
+      "end": "2026-03-22",
+      "prize": 64000,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Round Robin & Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 64000
+      }
+    },
+    {
+      "id": "The Garrison",
+      "name": "The Garrison",
+      "url": "https://liquipedia.net/ageofempires/The_Garrison",
+      "tier": "S-Tier",
+      "start": "2025-03-13",
+      "end": "2025-03-16",
+      "prize": 40000,
+      "currency": "USD",
+      "organizer": "BEING ESPORTS",
+      "format": "1v1, Double Elimination",
+      "type": "Offline",
+      "region": "Germany",
+      "players": 8,
+      "first": "Hera",
+      "second": "Liereyy",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 40000
+      }
+    },
+    {
+      "id": "Warlords/2",
+      "name": "Warlords II",
+      "url": "https://liquipedia.net/ageofempires/Warlords/2",
+      "tier": "S-Tier",
+      "start": "2023-11-01",
+      "end": "2023-11-19",
+      "prize": 50000,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1, Swiss & Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "Hera",
+      "second": "TaToH",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 50000
+      }
+    },
+    {
+      "id": "Warlords/3",
+      "name": "Warlords III",
+      "url": "https://liquipedia.net/ageofempires/Warlords/3",
+      "tier": "S-Tier",
+      "start": "2024-06-02",
+      "end": "2024-06-09",
+      "prize": 50147,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1, Single Elimination",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "Hera",
+      "second": "TheViper",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 50147
+      }
+    },
+    {
+      "id": "Warlords/4",
+      "name": "Warlords IV",
+      "url": "https://liquipedia.net/ageofempires/Warlords/4",
+      "tier": "S-Tier",
+      "start": "2025-05-18",
+      "end": "2025-06-01",
+      "prize": 64000,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "Hera",
+      "second": "Yo",
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 64000
+      }
+    },
+    {
+      "id": "Warlords/5",
+      "name": "MembTV Warlords V",
+      "url": "https://liquipedia.net/ageofempires/Warlords/5",
+      "tier": "S-Tier",
+      "start": "2026-05-07",
+      "end": "2026-05-24",
+      "prize": 70200,
+      "currency": "USD",
+      "organizer": "MembTV",
+      "format": "1v1",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "Liereyy",
+      "second": "ACCM",
+      "third": "",
+      "prizeByPlayer": {
+        "Liereyy": 70200
+      }
+    },
     {
       "id": "1v1 Arabia HunCup 2024",
       "name": "1v1 Arabia HunCup 2024",
@@ -18,7 +415,8 @@
       "players": 16,
       "first": "Sziky",
       "second": "Dave hun",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "1v1 HunCup 2025",
@@ -36,235 +434,8 @@
       "players": 36,
       "first": "Sziky",
       "second": "Dave hun",
-      "third": ""
-    },
-    {
-      "id": "2v2 Enigma Cup",
-      "name": "2v2 Enigma Cup",
-      "url": "https://liquipedia.net/ageofempires/2v2_Enigma_Cup",
-      "tier": "C-Tier",
-      "start": "2023-10-01",
-      "end": "2023-12-27",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "The Hermetica Clan",
-      "format": "2v2, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "LOUISIANA",
-      "second": "LEFTNATICS",
-      "third": ""
-    },
-    {
-      "id": "2v2 HunCup 2024",
-      "name": "2v2 HunCup 2024",
-      "url": "https://liquipedia.net/ageofempires/2v2_HunCup_2024",
-      "tier": "C-Tier",
-      "start": "2024-08-12",
-      "end": "2024-12-07",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Rideg",
-      "format": "2v2, 3v3, Swiss System & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Hungary",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "2v2 Huşaşmifer Kupası",
-      "name": "2v2 Huşaşmifer Kupası",
-      "url": "https://liquipedia.net/ageofempires/2v2_Huşaşmifer_Kupası",
-      "tier": "B-Tier",
-      "start": "2026-08-08",
-      "end": "2026-09-06",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "AOE2Turk",
-      "format": "2v2, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Turkey",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "2v2 Michi Grand Tournament",
-      "name": "2v2 Michi Grand Tournament",
-      "url": "https://liquipedia.net/ageofempires/2v2_Michi_Grand_Tournament",
-      "tier": "C-Tier",
-      "start": "2023-07-30",
-      "end": "2023-09-30",
-      "prize": 150,
-      "currency": "USD",
-      "organizer": "Michi Dynasty",
-      "format": "2v2, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": 26,
-      "first": "Nova & Matopaloma",
-      "second": "Shakibi & Amoor",
-      "third": ""
-    },
-    {
-      "id": "2v2 Spectator Cup",
-      "name": "2v2 Spectator Cup",
-      "url": "https://liquipedia.net/ageofempires/2v2_Spectator_Cup",
-      "tier": "B-Tier",
-      "start": "2024-06-16",
-      "end": "2024-08-18",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "SP Bro",
-      "format": "2v2, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Oceania",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "3v3 Golden Bough Cup",
-      "name": "3v3 Golden Bough Cup",
-      "url": "https://liquipedia.net/ageofempires/3v3_Golden_Bough_Cup",
-      "tier": "C-Tier",
-      "start": "2024-03-18",
-      "end": "2024-04-14",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Hermetica",
-      "format": "3v3, Double Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "3v3 Ita Invitational",
-      "name": "3v3 Ita Invitational",
-      "url": "https://liquipedia.net/ageofempires/3v3_Ita_Invitational",
-      "tier": "B-Tier",
-      "start": "2024-01-30",
-      "end": "2024-03-25",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "AgeOfEmpiresItalia",
-      "format": "3v3, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Italia Cavaliers",
-      "second": "Denmark A",
-      "third": ""
-    },
-    {
-      "id": "4v4 Arena Clash",
-      "name": "4v4 Arena Clash",
-      "url": "https://liquipedia.net/ageofempires/4v4_Arena_Clash",
-      "tier": "C-Tier",
-      "start": "2024-03-18",
-      "end": "2024-05-27",
-      "prize": 500,
-      "currency": "USD",
-      "organizer": "Conigz",
-      "format": "4v4, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "4v4 Summer Smash",
-      "name": "4v4 Summer Smash",
-      "url": "https://liquipedia.net/ageofempires/4v4_Summer_Smash",
-      "tier": "C-Tier",
-      "start": "2024-05-30",
-      "end": "2024-08-17",
-      "prize": 250,
-      "currency": "USD",
-      "organizer": "Conigz",
-      "format": "4v4, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "4v4 Winter Smash Cup",
-      "name": "4v4 Winter Smash Cup",
-      "url": "https://liquipedia.net/ageofempires/4v4_Winter_Smash_Cup",
-      "tier": "C-Tier",
-      "start": "2025-12-08",
-      "end": "2026-01-18",
-      "prize": 300,
-      "currency": "USD",
-      "organizer": "big Conigz",
-      "format": "4v4, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "A Thousand Blades",
-      "name": "A Thousand Blades",
-      "url": "https://liquipedia.net/ageofempires/A_Thousand_Blades",
-      "tier": "C-Tier",
-      "start": "2024-11-23",
-      "end": "2024-12-01",
-      "prize": 350,
-      "currency": "USD",
-      "organizer": "The Otter One",
-      "format": "1v1v1v1v1v1v1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 8,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "A4G Nomadic Cup",
-      "name": "A4G Nomadic Cup",
-      "url": "https://liquipedia.net/ageofempires/A4G_Nomadic_Cup",
-      "tier": "B-Tier",
-      "start": "2023-09-18",
-      "end": "2024-01-16",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Age4greeks",
-      "format": "3v3, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "The Amigos",
-      "second": "MYinsanity",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AA League México",
@@ -282,7 +453,10 @@
       "players": 7,
       "first": "MrOsoVC8",
       "second": "Caguamas",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "MrOsoVC8": 50
+      }
     },
     {
       "id": "AOEliga/6",
@@ -300,7 +474,8 @@
       "players": 9,
       "first": "Offico",
       "second": "kLnek",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AOEliga/7",
@@ -318,26 +493,8 @@
       "players": 6,
       "first": "The Illusionist",
       "second": "Dratek",
-      "third": ""
-    },
-    {
-      "id": "Age2 Xbox Fight Club/4",
-      "name": "Age2 Xbox Fight Club #4",
-      "url": "https://liquipedia.net/ageofempires/Age2_Xbox_Fight_Club/4",
-      "tier": "C-Tier",
-      "start": "2023-02-25",
-      "end": "2023-02-26",
-      "prize": 50,
-      "currency": "USD",
-      "organizer": "Yodesla",
-      "format": "1v1, Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 13,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Alchemy League/1",
@@ -355,121 +512,8 @@
       "players": 8,
       "first": "WaRRioR",
       "second": "develement",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/2/Sprint/1",
-      "name": "Alchemy League Season 2 Sprint 1",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/2/Sprint/1",
-      "tier": "C-Tier",
-      "start": "2024-04-03",
-      "end": "2024-05-14",
-      "prize": 50,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/2/Sprint/2",
-      "name": "Alchemy League Season 2 Sprint 2",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/2/Sprint/2",
-      "tier": "C-Tier",
-      "start": "2024-05-15",
-      "end": "2024-06-18",
-      "prize": 50,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/3/Sprint/1",
-      "name": "Alchemy League Season 3 Sprint 1",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/3/Sprint/1",
-      "tier": "C-Tier",
-      "start": "2024-06-26",
-      "end": "2024-08-06",
-      "prize": 80,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 22,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/3/Sprint/2",
-      "name": "Alchemy League Season 3 Sprint 2",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/3/Sprint/2",
-      "tier": "C-Tier",
-      "start": "2024-08-07",
-      "end": "2024-09-17",
-      "prize": 160,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 22,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/4/Sprint/1",
-      "name": "Alchemy League Season 4 Sprint 1",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/4/Sprint/1",
-      "tier": "C-Tier",
-      "start": "2024-09-25",
-      "end": "2024-11-05",
-      "prize": 80,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 27,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/4/Sprint/2",
-      "name": "Alchemy League Season 4 Sprint 2",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/4/Sprint/2",
-      "tier": "C-Tier",
-      "start": "2024-11-06",
-      "end": "2024-12-17",
-      "prize": 160,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 23,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Alchemy League/5/Sprint/1",
@@ -487,7 +531,10 @@
       "players": 28,
       "first": "maxymczech",
       "second": "TheNapoleon",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "maxymczech": 80
+      }
     },
     {
       "id": "Alchemy League/5/Sprint/2",
@@ -505,83 +552,10 @@
       "players": 27,
       "first": "harooooo",
       "second": "Chanchilaru",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/6/Sprint/1",
-      "name": "Alchemy League Season 6 Sprint 1",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/6/Sprint/1",
-      "tier": "C-Tier",
-      "start": "2025-04-02",
-      "end": "2025-05-06",
-      "prize": 80,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 42,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/6/Sprint/2",
-      "name": "Alchemy League Season 6 Sprint 2",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/6/Sprint/2",
-      "tier": "C-Tier",
-      "start": "2025-05-14",
-      "end": "2025-06-17",
-      "prize": 160,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 36,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/7/Sprint/1",
-      "name": "Alchemy League Season 7 Sprint 1",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/7/Sprint/1",
-      "tier": "C-Tier",
-      "start": "2025-06-26",
-      "end": "2025-07-29",
-      "prize": 80,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 32,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Alchemy League/7/Sprint/2",
-      "name": "Alchemy League Season 7 Sprint 2",
-      "url": "https://liquipedia.net/ageofempires/Alchemy_League/7/Sprint/2",
-      "tier": "C-Tier",
-      "start": "2025-08-06",
-      "end": "2025-09-09",
-      "prize": 160,
-      "currency": "USD",
-      "organizer": "Alchemy AOE Community",
-      "format": "1v1",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 30,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "harooooo": 160
+      }
     },
     {
       "id": "All Visible Cup",
@@ -599,121 +573,8 @@
       "players": 57,
       "first": "Dark",
       "second": "Saymyname",
-      "third": ""
-    },
-    {
-      "id": "Amigo Wars/1",
-      "name": "Amigo Wars",
-      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/1",
-      "tier": "C-Tier",
-      "start": "2023-09-09",
-      "end": "2023-09-10",
-      "prize": 1000,
-      "currency": "USD",
-      "organizer": "Villiams",
-      "format": "4v4, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team slam",
-      "second": "Team Valas",
-      "third": ""
-    },
-    {
-      "id": "Amigo Wars/2",
-      "name": "Amigo Wars II",
-      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/2",
-      "tier": "B-Tier",
-      "start": "2024-02-28",
-      "end": "2024-03-24",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Villiams",
-      "format": "4v4, Swiss System & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "Amigo Wars/3",
-      "name": "Amigo Wars III",
-      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/3",
-      "tier": "B-Tier",
-      "start": "2025-09-15",
-      "end": "2025-10-12",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Somero",
-      "format": "4v4, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "Amigo Wars/4",
-      "name": "Amigo Wars IV",
-      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/4",
-      "tier": "C-Tier",
-      "start": "2026-03-26",
-      "end": "2026-04-26",
-      "prize": 1000,
-      "currency": "USD",
-      "organizer": "Somero",
-      "format": "4v4, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "Andreu's Master Series Peru",
-      "name": "Andreu's Master Series Peru",
-      "url": "https://liquipedia.net/ageofempires/Andreu's_Master_Series_Peru",
-      "tier": "C-Tier",
-      "start": "2024-03-18",
-      "end": "2024-06-05",
-      "prize": 50,
-      "currency": "USD",
-      "organizer": "Andreu.Imperi",
-      "format": "1v1, Swiss Stage & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "Peru",
-      "players": 10,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Ankka Cup 2024",
-      "name": "Ankka Cup 2024",
-      "url": "https://liquipedia.net/ageofempires/Ankka_Cup_2024",
-      "tier": "C-Tier",
-      "start": "2024-02-18",
-      "end": "2024-03-24",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Juyhou",
-      "format": "1v1, Swiss System & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 34,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Anti-Meta Tournament",
@@ -731,7 +592,10 @@
       "players": 8,
       "first": "LobodeLaNieve",
       "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "LobodeLaNieve": 1000
+      }
     },
     {
       "id": "Anti-Meta Tournament/2",
@@ -749,7 +613,10 @@
       "players": 8,
       "first": "Survivalist",
       "second": "Matze",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Survivalist": 1000
+      }
     },
     {
       "id": "AoC Classic 2025",
@@ -767,26 +634,8 @@
       "players": 60,
       "first": "TaToH",
       "second": "ACCM",
-      "third": ""
-    },
-    {
-      "id": "AoE Authority Open Cup/1",
-      "name": "AoE Authority Open Cup: Season 1",
-      "url": "https://liquipedia.net/ageofempires/AoE_Authority_Open_Cup/1",
-      "tier": "C-Tier",
-      "start": "2026-09-01",
-      "end": "2026-09-28",
-      "prize": 85,
-      "currency": "USD",
-      "organizer": "AoE Authority",
-      "format": "1v1, Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoE2 Admirals Cup",
@@ -804,7 +653,10 @@
       "players": 20,
       "first": "ACCM",
       "second": "TheViper",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "ACCM": 500
+      }
     },
     {
       "id": "AoE2 Admirals League",
@@ -822,7 +674,8 @@
       "players": 32,
       "first": "TaToH",
       "second": "Vinchester",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoE2 Admirals League/2",
@@ -840,7 +693,8 @@
       "players": 32,
       "first": "JorDan AoE",
       "second": "ACCM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoE2 Bogotá DC",
@@ -858,26 +712,8 @@
       "players": 21,
       "first": "Ozone",
       "second": "AngelR",
-      "third": ""
-    },
-    {
-      "id": "AoE2 Bogotá DC 2026",
-      "name": "AoE2 Bogotá DC 2026",
-      "url": "https://liquipedia.net/ageofempires/AoE2_Bogotá_DC_2026",
-      "tier": "B-Tier",
-      "start": "2026-08-10",
-      "end": "2026-09-27",
-      "prize": 400,
-      "currency": "USD",
-      "organizer": "Joldix",
-      "format": "1v1, Swiss System, Single Elimination",
-      "formatType": "unknown",
-      "type": "Online/Offline",
-      "region": "Colombia",
-      "players": null,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoE2 Middle East Tournament",
@@ -895,7 +731,8 @@
       "players": 32,
       "first": "TheViper",
       "second": "Hera",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoE2 Specialist Cup/2/Continental",
@@ -914,7 +751,10 @@
       "players": 40,
       "first": "StonePleaseAoE",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "StonePleaseAoE": 350
+      }
     },
     {
       "id": "AoE2 Specialist Cup/2/Nomad",
@@ -933,7 +773,10 @@
       "players": 40,
       "first": "FreakinAndy",
       "second": "Running",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 350
+      }
     },
     {
       "id": "AoE2 Specialist Cup/2/Stronghold",
@@ -952,7 +795,10 @@
       "players": 40,
       "first": "FreakinAndy",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 350
+      }
     },
     {
       "id": "AoE2 Specialist Cup/2/Thalassocracy",
@@ -970,7 +816,10 @@
       "players": 40,
       "first": "FreakinAndy",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 350
+      }
     },
     {
       "id": "AoELeagues/10",
@@ -988,7 +837,8 @@
       "players": 12,
       "first": "Ciskhan",
       "second": "El Matador",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/11",
@@ -1006,7 +856,8 @@
       "players": 12,
       "first": "Monoz",
       "second": "Faneth",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/12",
@@ -1024,7 +875,8 @@
       "players": 12,
       "first": "El Matador",
       "second": "Rayz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/13",
@@ -1042,7 +894,8 @@
       "players": 12,
       "first": "NeoZz",
       "second": "Rodrixs",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/14",
@@ -1060,7 +913,8 @@
       "players": 12,
       "first": "Rodrixs",
       "second": "NeoZz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/16",
@@ -1078,7 +932,8 @@
       "players": 11,
       "first": "Rodrixs",
       "second": "Umdeuter",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/8",
@@ -1096,7 +951,8 @@
       "players": 12,
       "first": "The Dragonstar",
       "second": "El Matador",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "AoELeagues/9",
@@ -1114,7 +970,330 @@
       "players": 12,
       "first": "Z40",
       "second": "Ciskhan",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Z40": 250
+      }
+    },
+    {
+      "id": "3v3 Golden Bough Cup",
+      "name": "3v3 Golden Bough Cup",
+      "url": "https://liquipedia.net/ageofempires/3v3_Golden_Bough_Cup",
+      "tier": "C-Tier",
+      "start": "2024-03-18",
+      "end": "2024-04-14",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Hermetica",
+      "format": "3v3, Double Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "A Thousand Blades",
+      "name": "A Thousand Blades",
+      "url": "https://liquipedia.net/ageofempires/A_Thousand_Blades",
+      "tier": "C-Tier",
+      "start": "2024-11-23",
+      "end": "2024-12-01",
+      "prize": 350,
+      "currency": "USD",
+      "organizer": "The Otter One",
+      "format": "1v1v1v1v1v1v1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Age2 Xbox Fight Club/4",
+      "name": "Age2 Xbox Fight Club #4",
+      "url": "https://liquipedia.net/ageofempires/Age2_Xbox_Fight_Club/4",
+      "tier": "C-Tier",
+      "start": "2023-02-25",
+      "end": "2023-02-26",
+      "prize": 50,
+      "currency": "USD",
+      "organizer": "Yodesla",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 13,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/2/Sprint/1",
+      "name": "Alchemy League Season 2 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/2/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2024-04-03",
+      "end": "2024-05-14",
+      "prize": 50,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/2/Sprint/2",
+      "name": "Alchemy League Season 2 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/2/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2024-05-15",
+      "end": "2024-06-18",
+      "prize": 50,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 24,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/3/Sprint/1",
+      "name": "Alchemy League Season 3 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/3/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2024-06-26",
+      "end": "2024-08-06",
+      "prize": 80,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 22,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/3/Sprint/2",
+      "name": "Alchemy League Season 3 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/3/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2024-08-07",
+      "end": "2024-09-17",
+      "prize": 160,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 22,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/4/Sprint/1",
+      "name": "Alchemy League Season 4 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/4/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2024-09-25",
+      "end": "2024-11-05",
+      "prize": 80,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 27,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/4/Sprint/2",
+      "name": "Alchemy League Season 4 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/4/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2024-11-06",
+      "end": "2024-12-17",
+      "prize": 160,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 23,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/6/Sprint/1",
+      "name": "Alchemy League Season 6 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/6/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2025-04-02",
+      "end": "2025-05-06",
+      "prize": 80,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 42,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/6/Sprint/2",
+      "name": "Alchemy League Season 6 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/6/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2025-05-14",
+      "end": "2025-06-17",
+      "prize": 160,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 36,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/7/Sprint/1",
+      "name": "Alchemy League Season 7 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/7/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2025-06-26",
+      "end": "2025-07-29",
+      "prize": 80,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 32,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/7/Sprint/2",
+      "name": "Alchemy League Season 7 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/7/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2025-08-06",
+      "end": "2025-09-09",
+      "prize": 160,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 30,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Andreu's Master Series Peru",
+      "name": "Andreu's Master Series Peru",
+      "url": "https://liquipedia.net/ageofempires/Andreu's_Master_Series_Peru",
+      "tier": "C-Tier",
+      "start": "2024-03-18",
+      "end": "2024-06-05",
+      "prize": 50,
+      "currency": "USD",
+      "organizer": "Andreu.Imperi",
+      "format": "1v1, Swiss Stage & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Peru",
+      "players": 10,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Ankka Cup 2024",
+      "name": "Ankka Cup 2024",
+      "url": "https://liquipedia.net/ageofempires/Ankka_Cup_2024",
+      "tier": "C-Tier",
+      "start": "2024-02-18",
+      "end": "2024-03-24",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Juyhou",
+      "format": "1v1, Swiss System & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 34,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "AoE2 Bogotá DC 2026",
+      "name": "AoE2 Bogotá DC 2026",
+      "url": "https://liquipedia.net/ageofempires/AoE2_Bogotá_DC_2026",
+      "tier": "B-Tier",
+      "start": "2026-08-10",
+      "end": "2026-09-27",
+      "prize": 400,
+      "currency": "USD",
+      "organizer": "Joldix",
+      "format": "1v1, Swiss System, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online/Offline",
+      "region": "Colombia",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Argeking Cup/5",
@@ -1133,7 +1312,8 @@
       "players": 16,
       "first": "Nicov",
       "second": "Capoch",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Argeking Cup/6",
@@ -1152,7 +1332,8 @@
       "players": 20,
       "first": "Capoch",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "ArgenLeague 3: 2da Division",
@@ -1171,7 +1352,10 @@
       "players": 16,
       "first": "Eskabe",
       "second": "Anakin",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Eskabe": 75
+      }
     },
     {
       "id": "ArgenLeague/1",
@@ -1190,7 +1374,8 @@
       "players": 16,
       "first": "Lucky Rox",
       "second": "Twigg",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "ArgenLeague/2",
@@ -1209,7 +1394,8 @@
       "players": 16,
       "first": "DeaKer",
       "second": "Lucky Rox",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "ArgenLeague/3",
@@ -1228,102 +1414,10 @@
       "players": 16,
       "first": "Nicov",
       "second": "Lucho",
-      "third": ""
-    },
-    {
-      "id": "Assassins Cup",
-      "name": "Assassins Cup",
-      "url": "https://liquipedia.net/ageofempires/Assassins_Cup",
-      "tier": "C-Tier",
-      "start": "2023-02-20",
-      "end": "2023-05-05",
-      "prize": 190,
-      "currency": "USD",
-      "organizer": "ImComing",
-      "format": "2v2, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Black Forest Stars",
-      "second": "Shadowfax",
-      "third": ""
-    },
-    {
-      "id": "AusDraft/2",
-      "name": "AusDraft #2",
-      "url": "https://liquipedia.net/ageofempires/AusDraft/2",
-      "tier": "B-Tier",
-      "start": "2023-08-30",
-      "end": "2023-10-29",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "y hello there",
-      "format": "4v4, Swiss Stage, Single Elim",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Oceania",
-      "players": null,
-      "first": "Team Tulendeena",
-      "second": "Team Liam",
-      "third": ""
-    },
-    {
-      "id": "AusDraft/3",
-      "name": "AusDraft 3",
-      "url": "https://liquipedia.net/ageofempires/AusDraft/3",
-      "tier": "B-Tier",
-      "start": "2024-10-21",
-      "end": "2024-12-14",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Tulendeena",
-      "format": "4v4, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Oceania",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "AusDraft/4",
-      "name": "AusDraft 4",
-      "url": "https://liquipedia.net/ageofempires/AusDraft/4",
-      "tier": "C-Tier",
-      "start": "2025-09-22",
-      "end": "2025-11-09",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Tulendeena",
-      "format": "4v4, Round Robin & Guantlet",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Oceania",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "AusDraft/4/Division 2",
-      "name": "AusDraft 4: Div 2",
-      "url": "https://liquipedia.net/ageofempires/AusDraft/4/Division_2",
-      "tier": "C-Tier",
-      "start": "2025-09-22",
-      "end": "2025-11-23",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Tulendeena",
-      "format": "4v4, Swiss & Single Elim",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Oceania",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Nicov": 300
+      }
     },
     {
       "id": "Aussie Ascension",
@@ -1342,7 +1436,8 @@
       "players": 16,
       "first": "Noszombie",
       "second": "Socksyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "BELCup/2024",
@@ -1361,7 +1456,8 @@
       "players": 34,
       "first": "Kevin Hubris",
       "second": "MIPS",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Balkan Battlefields",
@@ -1380,7 +1476,8 @@
       "players": 40,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Battle of Realms",
@@ -1399,7 +1496,8 @@
       "players": 15,
       "first": "Target331",
       "second": "Wisenatic",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Battle of Scandinavia",
@@ -1418,7 +1516,8 @@
       "players": 16,
       "first": "TheViper",
       "second": "Ganji",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Battle of Scandinavia/2",
@@ -1437,7 +1536,8 @@
       "players": 32,
       "first": "Barles",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Battle of the Maharajas/2",
@@ -1456,7 +1556,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Best Old School of the Year 2025",
@@ -1475,7 +1576,8 @@
       "players": 12,
       "first": "Chart",
       "second": "NeoZz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Blue Carbon Cup",
@@ -1494,44 +1596,10 @@
       "players": 31,
       "first": "FreakinAndy",
       "second": "Dogao",
-      "third": ""
-    },
-    {
-      "id": "Blue Carbon Cup/2",
-      "name": "Blue Carbon Cup 2",
-      "url": "https://liquipedia.net/ageofempires/Blue_Carbon_Cup/2",
-      "tier": "B-Tier",
-      "start": "2024-11-25",
-      "end": "2025-03-02",
-      "prize": 300,
-      "currency": "USD",
-      "organizer": "Huehuecoyotl22",
-      "format": "2v2, Double & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "Brazilian Dynasty",
-      "name": "Brazilian Dynasty",
-      "url": "https://liquipedia.net/ageofempires/Brazilian_Dynasty",
-      "tier": "S-Tier",
-      "start": "2026-07-01",
-      "end": "2026-07-05",
-      "prize": 45500,
-      "currency": "USD",
-      "organizer": "Onimaru Esports",
-      "format": "1v1, Swiss System & Single Elimination",
-      "type": "Offline",
-      "region": "Brazil",
-      "players": 12,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 190
+      }
     },
     {
       "id": "CZ/SK AoE Liga",
@@ -1550,7 +1618,8 @@
       "players": 6,
       "first": "Somero",
       "second": "The Illusionist",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "CZ/SK AoE Liga/2",
@@ -1569,26 +1638,8 @@
       "players": 8,
       "first": "Somero",
       "second": "Šteukoo",
-      "third": ""
-    },
-    {
-      "id": "CZ/SK AoE Liga/3v3",
-      "name": "CZ/SK AoE Liga: 3v3",
-      "url": "https://liquipedia.net/ageofempires/CZ/SK_AoE_Liga/3v3",
-      "tier": "C-Tier",
-      "start": "2026-09-15",
-      "end": "2026-11-30",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "SponQbob",
-      "format": "3v3, Round Robin & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "Czech Republic",
-      "players": null,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Cake Cup/1",
@@ -1607,7 +1658,8 @@
       "players": 16,
       "first": "IAnTaGoNiStI",
       "second": "Speedlimit",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Cake Cup/2",
@@ -1626,7 +1678,8 @@
       "players": 12,
       "first": "Vinchester",
       "second": "Classicpro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Cake Cup/3",
@@ -1645,7 +1698,8 @@
       "players": 8,
       "first": "Vinchester",
       "second": "Repard",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Cake Cup/3/Qualification",
@@ -1664,7 +1718,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Cake Cup/3/Wildcard",
@@ -1683,45 +1738,8 @@
       "players": 8,
       "first": "Repard",
       "second": "Wide",
-      "third": ""
-    },
-    {
-      "id": "Campeonato Argentino AoE/1/Primera División",
-      "name": "Campeonato Argentino AoE 2026: Primera División",
-      "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Primera_División",
-      "tier": "B-Tier",
-      "start": "2026-12-04",
-      "end": "2026-12-13",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Mercado del Age",
-      "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "Argentina",
-      "players": 10,
-      "first": "",
-      "second": "",
-      "third": ""
-    },
-    {
-      "id": "Campeonato Argentino AoE/1/Segunda División",
-      "name": "Campeonato Argentino AoE 2026: Segunda División",
-      "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Segunda_División",
-      "tier": "C-Tier",
-      "start": "2026-08-10",
-      "end": "2026-12-13",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Mercado del Age",
-      "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "1v1",
-      "type": "Online",
-      "region": "Argentina",
-      "players": 10,
-      "first": "ElMiller",
-      "second": "Tatengue",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Carry Me Or Die",
@@ -1740,26 +1758,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
-    },
-    {
-      "id": "Carry Me Or Die/2",
-      "name": "Carry Me Or Die 2: United Front",
-      "url": "https://liquipedia.net/ageofempires/Carry_Me_Or_Die/2",
-      "tier": "B-Tier",
-      "start": "2025-10-06",
-      "end": "2025-11-22",
-      "prize": 800,
-      "currency": "USD",
-      "organizer": "MaJoR_Kd",
-      "format": "3v3, Swiss & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Carry Me Or Die/Silver League",
@@ -1778,7 +1778,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "ChampionSheep/1",
@@ -1797,7 +1798,8 @@
       "players": 27,
       "first": "Nicov",
       "second": "Dogao",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "ChampionSheep/2",
@@ -1816,7 +1818,8 @@
       "players": 8,
       "first": "Dogao",
       "second": "Miguel",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/10",
@@ -1835,7 +1838,8 @@
       "players": 5,
       "first": "Sitaux",
       "second": "Leonidas",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/11",
@@ -1854,7 +1858,8 @@
       "players": 4,
       "first": "Nono",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/5",
@@ -1873,7 +1878,8 @@
       "players": 4,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/6",
@@ -1892,7 +1898,8 @@
       "players": 5,
       "first": "Margougou",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/7",
@@ -1911,7 +1918,8 @@
       "players": 4,
       "first": "PLP",
       "second": "Dfx2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/8",
@@ -1930,7 +1938,8 @@
       "players": 3,
       "first": "Sitaux",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Championnat Francophone/9",
@@ -1949,7 +1958,8 @@
       "players": 4,
       "first": "Sitaux",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Chile League/1",
@@ -1968,7 +1978,10 @@
       "players": 16,
       "first": "Sobek",
       "second": "DreamCl",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sobek": 115
+      }
     },
     {
       "id": "Chilean Cup/2023",
@@ -1987,7 +2000,8 @@
       "players": 72,
       "first": "Whitecourt",
       "second": "Sobek",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Chilean Cup/2025",
@@ -2006,7 +2020,10 @@
       "players": 32,
       "first": "Whitecourt",
       "second": "Sobek",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Whitecourt": 500
+      }
     },
     {
       "id": "Chipmunk King's League/2",
@@ -2025,7 +2042,8 @@
       "players": 49,
       "first": "Sora Kuma",
       "second": "Youpudding",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Civil War: Portuguese",
@@ -2044,26 +2062,10 @@
       "players": 31,
       "first": "FreakinAndy",
       "second": "Survivalist",
-      "third": ""
-    },
-    {
-      "id": "Clan Wars Spain",
-      "name": "Clan Wars Spain",
-      "url": "https://liquipedia.net/ageofempires/Clan_Wars_Spain",
-      "tier": "C-Tier",
-      "start": "2026-01-12",
-      "end": "2026-02-26",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "",
-      "format": "3v3, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Spain",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 500
+      }
     },
     {
       "id": "Clash of Empires",
@@ -2082,7 +2084,8 @@
       "players": 16,
       "first": "Liereyy",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Clash of the Titans/2",
@@ -2101,7 +2104,8 @@
       "players": 44,
       "first": "Classicpro",
       "second": "IBUYPOWER",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Clown Christmas Championship",
@@ -2120,7 +2124,8 @@
       "players": 14,
       "first": "FreakinAndy",
       "second": "IAnTaGoNiStI",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Clown Christmas Championship/2",
@@ -2139,7 +2144,10 @@
       "players": 15,
       "first": "FreakinAndy",
       "second": "The Bloodless",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 70
+      }
     },
     {
       "id": "Clowns Of Arena Duos",
@@ -2158,45 +2166,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
-    },
-    {
-      "id": "Coma Cup",
-      "name": "Coma Cup",
-      "url": "https://liquipedia.net/ageofempires/Coma_Cup",
-      "tier": "B-Tier",
-      "start": "2023-10-28",
-      "end": "2023-12-20",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Mununez",
-      "format": "4v4, Round Robin & Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team IamZak",
-      "second": "Team Mo_Tastic",
-      "third": ""
-    },
-    {
-      "id": "Coma Cup/2",
-      "name": "Coma Cup 2",
-      "url": "https://liquipedia.net/ageofempires/Coma_Cup/2",
-      "tier": "B-Tier",
-      "start": "2024-10-18",
-      "end": "2024-11-24",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Mununez",
-      "format": "4v4, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Coma Cup/3",
@@ -2215,7 +2186,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Conquis Cup/1",
@@ -2234,45 +2206,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
-    },
-    {
-      "id": "Conquis Cup/2",
-      "name": "Conquis Cup: Revenge Edition 2",
-      "url": "https://liquipedia.net/ageofempires/Conquis_Cup/2",
-      "tier": "C-Tier",
-      "start": "2025-05-06",
-      "end": "2025-06-19",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Revenge",
-      "format": "3v3, Round Robin & Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Spain",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "Console Conquest Trios",
-      "name": "Console Conquest Trios",
-      "url": "https://liquipedia.net/ageofempires/Console_Conquest_Trios",
-      "tier": "C-Tier",
-      "start": "2024-04-26",
-      "end": "2024-06-08",
-      "prize": 100,
-      "currency": "USD",
-      "organizer": "Azu",
-      "format": "3v3, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "World",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Controller Champions",
@@ -2291,7 +2226,10 @@
       "players": 32,
       "first": "SoloGhostAK47",
       "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "SoloGhostAK47": 1050
+      }
     },
     {
       "id": "Copa 3k Libertadores",
@@ -2310,7 +2248,10 @@
       "players": 16,
       "first": "Hearttt",
       "second": "Nicov",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hearttt": 2840
+      }
     },
     {
       "id": "Copa Aconcagua/2",
@@ -2329,7 +2270,10 @@
       "players": 20,
       "first": "KingstoNe",
       "second": "LobodeLaNieve",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "KingstoNe": 300
+      }
     },
     {
       "id": "Copa Amazonia/2",
@@ -2348,45 +2292,10 @@
       "players": 20,
       "first": "Dogao",
       "second": "St4rk",
-      "third": ""
-    },
-    {
-      "id": "Copa América/2025",
-      "name": "Copa América 2025",
-      "url": "https://liquipedia.net/ageofempires/Copa_América/2025",
-      "tier": "A-Tier",
-      "start": "2025-04-07",
-      "end": "2025-04-13",
-      "prize": 2000,
-      "currency": "USD",
-      "organizer": "Mario Ovalle",
-      "format": "2v2, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Latin America",
-      "players": null,
-      "first": "Team 2",
-      "second": "Team 1",
-      "third": ""
-    },
-    {
-      "id": "Copa Drama",
-      "name": "Copa Drama",
-      "url": "https://liquipedia.net/ageofempires/Copa_Drama",
-      "tier": "B-Tier",
-      "start": "2024-03-04",
-      "end": "2024-04-23",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "NegoDrama",
-      "format": "2v2, Single Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Brazil",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dogao": 300
+      }
     },
     {
       "id": "Copa Eden 2025",
@@ -2405,7 +2314,10 @@
       "players": 8,
       "first": "Lucho",
       "second": "Capoch",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucho": 500
+      }
     },
     {
       "id": "Copa Eden 2025: Division Principes",
@@ -2424,7 +2336,10 @@
       "players": 16,
       "first": "Rodrixs",
       "second": "IXAM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Rodrixs": 200
+      }
     },
     {
       "id": "Copa Intercontinental",
@@ -2443,45 +2358,10 @@
       "players": 4,
       "first": "Sebastian",
       "second": "TaToH",
-      "third": ""
-    },
-    {
-      "id": "Copa Interestatal Mexico",
-      "name": "Copa Interestatal Mexico",
-      "url": "https://liquipedia.net/ageofempires/Copa_Interestatal_Mexico",
-      "tier": "C-Tier",
-      "start": "2023-09-26",
-      "end": "2023-11-12",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Yavierus",
-      "format": "4v4, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Mexico",
-      "players": null,
-      "first": "Veracruz A",
-      "second": "Jalisco A",
-      "third": ""
-    },
-    {
-      "id": "Copa Invisivel Fs",
-      "name": "Copa Invisivel Fs",
-      "url": "https://liquipedia.net/ageofempires/Copa_Invisivel_Fs",
-      "tier": "C-Tier",
-      "start": "2025-05-05",
-      "end": "2025-08-10",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "FellowSheep Gaming",
-      "format": "2v2, Double Elimination",
-      "formatType": "team",
-      "type": "Online",
-      "region": "Brazil",
-      "players": null,
-      "first": "Team 1",
-      "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 700
+      }
     },
     {
       "id": "Copa Latino Americana",
@@ -2500,7 +2380,10 @@
       "players": 8,
       "first": "Sebastian",
       "second": "Hearttt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 2000
+      }
     },
     {
       "id": "Copa México/2024",
@@ -2519,7 +2402,8 @@
       "players": 32,
       "first": "KingstoNe",
       "second": "LobodeLaNieve",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Copa Supremacia/2",
@@ -2538,7 +2422,10 @@
       "players": 16,
       "first": "LaN",
       "second": "Gabi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "LaN": 900
+      }
     },
     {
       "id": "Copa XEVER 2025",
@@ -2557,7 +2444,612 @@
       "players": 36,
       "first": "Cona Imperial",
       "second": "Gaucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Cona Imperial": 100
+      }
+    },
+    {
+      "id": "2v2 Enigma Cup",
+      "name": "2v2 Enigma Cup",
+      "url": "https://liquipedia.net/ageofempires/2v2_Enigma_Cup",
+      "tier": "C-Tier",
+      "start": "2023-10-01",
+      "end": "2023-12-27",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "The Hermetica Clan",
+      "format": "2v2, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "LOUISIANA",
+      "second": "LEFTNATICS",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "2v2 HunCup 2024",
+      "name": "2v2 HunCup 2024",
+      "url": "https://liquipedia.net/ageofempires/2v2_HunCup_2024",
+      "tier": "C-Tier",
+      "start": "2024-08-12",
+      "end": "2024-12-07",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Rideg",
+      "format": "2v2, 3v3, Swiss System & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Hungary",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "2v2 Michi Grand Tournament",
+      "name": "2v2 Michi Grand Tournament",
+      "url": "https://liquipedia.net/ageofempires/2v2_Michi_Grand_Tournament",
+      "tier": "C-Tier",
+      "start": "2023-07-30",
+      "end": "2023-09-30",
+      "prize": 150,
+      "currency": "USD",
+      "organizer": "Michi Dynasty",
+      "format": "2v2, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": 26,
+      "first": "Nova & Matopaloma",
+      "second": "Shakibi & Amoor",
+      "third": "",
+      "prizeByPlayer": {
+        "Nova & Matopaloma": 150
+      }
+    },
+    {
+      "id": "2v2 Spectator Cup",
+      "name": "2v2 Spectator Cup",
+      "url": "https://liquipedia.net/ageofempires/2v2_Spectator_Cup",
+      "tier": "B-Tier",
+      "start": "2024-06-16",
+      "end": "2024-08-18",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "SP Bro",
+      "format": "2v2, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "3v3 Ita Invitational",
+      "name": "3v3 Ita Invitational",
+      "url": "https://liquipedia.net/ageofempires/3v3_Ita_Invitational",
+      "tier": "B-Tier",
+      "start": "2024-01-30",
+      "end": "2024-03-25",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "AgeOfEmpiresItalia",
+      "format": "3v3, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Italia Cavaliers",
+      "second": "Denmark A",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "4v4 Arena Clash",
+      "name": "4v4 Arena Clash",
+      "url": "https://liquipedia.net/ageofempires/4v4_Arena_Clash",
+      "tier": "C-Tier",
+      "start": "2024-03-18",
+      "end": "2024-05-27",
+      "prize": 500,
+      "currency": "USD",
+      "organizer": "Conigz",
+      "format": "4v4, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 500
+      }
+    },
+    {
+      "id": "4v4 Summer Smash",
+      "name": "4v4 Summer Smash",
+      "url": "https://liquipedia.net/ageofempires/4v4_Summer_Smash",
+      "tier": "C-Tier",
+      "start": "2024-05-30",
+      "end": "2024-08-17",
+      "prize": 250,
+      "currency": "USD",
+      "organizer": "Conigz",
+      "format": "4v4, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 250
+      }
+    },
+    {
+      "id": "4v4 Winter Smash Cup",
+      "name": "4v4 Winter Smash Cup",
+      "url": "https://liquipedia.net/ageofempires/4v4_Winter_Smash_Cup",
+      "tier": "C-Tier",
+      "start": "2025-12-08",
+      "end": "2026-01-18",
+      "prize": 300,
+      "currency": "USD",
+      "organizer": "big Conigz",
+      "format": "4v4, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 300
+      }
+    },
+    {
+      "id": "A4G Nomadic Cup",
+      "name": "A4G Nomadic Cup",
+      "url": "https://liquipedia.net/ageofempires/A4G_Nomadic_Cup",
+      "tier": "B-Tier",
+      "start": "2023-09-18",
+      "end": "2024-01-16",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Age4greeks",
+      "format": "3v3, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "The Amigos",
+      "second": "MYinsanity",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Amigo Wars/1",
+      "name": "Amigo Wars",
+      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/1",
+      "tier": "C-Tier",
+      "start": "2023-09-09",
+      "end": "2023-09-10",
+      "prize": 1000,
+      "currency": "USD",
+      "organizer": "Villiams",
+      "format": "4v4, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team slam",
+      "second": "Team Valas",
+      "third": "",
+      "prizeByPlayer": {
+        "Team slam": 1000
+      }
+    },
+    {
+      "id": "Amigo Wars/2",
+      "name": "Amigo Wars II",
+      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/2",
+      "tier": "B-Tier",
+      "start": "2024-02-28",
+      "end": "2024-03-24",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Villiams",
+      "format": "4v4, Swiss System & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Amigo Wars/3",
+      "name": "Amigo Wars III",
+      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/3",
+      "tier": "B-Tier",
+      "start": "2025-09-15",
+      "end": "2025-10-12",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Somero",
+      "format": "4v4, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Amigo Wars/4",
+      "name": "Amigo Wars IV",
+      "url": "https://liquipedia.net/ageofempires/Amigo_Wars/4",
+      "tier": "C-Tier",
+      "start": "2026-03-26",
+      "end": "2026-04-26",
+      "prize": 1000,
+      "currency": "USD",
+      "organizer": "Somero",
+      "format": "4v4, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 1000
+      }
+    },
+    {
+      "id": "Assassins Cup",
+      "name": "Assassins Cup",
+      "url": "https://liquipedia.net/ageofempires/Assassins_Cup",
+      "tier": "C-Tier",
+      "start": "2023-02-20",
+      "end": "2023-05-05",
+      "prize": 190,
+      "currency": "USD",
+      "organizer": "ImComing",
+      "format": "2v2, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Black Forest Stars",
+      "second": "Shadowfax",
+      "third": "",
+      "prizeByPlayer": {
+        "Black Forest Stars": 190
+      }
+    },
+    {
+      "id": "AusDraft/2",
+      "name": "AusDraft #2",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/2",
+      "tier": "B-Tier",
+      "start": "2023-08-30",
+      "end": "2023-10-29",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "y hello there",
+      "format": "4v4, Swiss Stage, Single Elim",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "Team Tulendeena",
+      "second": "Team Liam",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "AusDraft/3",
+      "name": "AusDraft 3",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/3",
+      "tier": "B-Tier",
+      "start": "2024-10-21",
+      "end": "2024-12-14",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Tulendeena",
+      "format": "4v4, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "AusDraft/4",
+      "name": "AusDraft 4",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/4",
+      "tier": "C-Tier",
+      "start": "2025-09-22",
+      "end": "2025-11-09",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Tulendeena",
+      "format": "4v4, Round Robin & Guantlet",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "AusDraft/4/Division 2",
+      "name": "AusDraft 4: Div 2",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/4/Division_2",
+      "tier": "C-Tier",
+      "start": "2025-09-22",
+      "end": "2025-11-23",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Tulendeena",
+      "format": "4v4, Swiss & Single Elim",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Blue Carbon Cup/2",
+      "name": "Blue Carbon Cup 2",
+      "url": "https://liquipedia.net/ageofempires/Blue_Carbon_Cup/2",
+      "tier": "B-Tier",
+      "start": "2024-11-25",
+      "end": "2025-03-02",
+      "prize": 300,
+      "currency": "USD",
+      "organizer": "Huehuecoyotl22",
+      "format": "2v2, Double & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 300
+      }
+    },
+    {
+      "id": "Carry Me Or Die/2",
+      "name": "Carry Me Or Die 2: United Front",
+      "url": "https://liquipedia.net/ageofempires/Carry_Me_Or_Die/2",
+      "tier": "B-Tier",
+      "start": "2025-10-06",
+      "end": "2025-11-22",
+      "prize": 800,
+      "currency": "USD",
+      "organizer": "MaJoR_Kd",
+      "format": "3v3, Swiss & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 800
+      }
+    },
+    {
+      "id": "Clan Wars Spain",
+      "name": "Clan Wars Spain",
+      "url": "https://liquipedia.net/ageofempires/Clan_Wars_Spain",
+      "tier": "C-Tier",
+      "start": "2026-01-12",
+      "end": "2026-02-26",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "",
+      "format": "3v3, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Spain",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Coma Cup",
+      "name": "Coma Cup",
+      "url": "https://liquipedia.net/ageofempires/Coma_Cup",
+      "tier": "B-Tier",
+      "start": "2023-10-28",
+      "end": "2023-12-20",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Mununez",
+      "format": "4v4, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team IamZak",
+      "second": "Team Mo_Tastic",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Coma Cup/2",
+      "name": "Coma Cup 2",
+      "url": "https://liquipedia.net/ageofempires/Coma_Cup/2",
+      "tier": "B-Tier",
+      "start": "2024-10-18",
+      "end": "2024-11-24",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Mununez",
+      "format": "4v4, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Conquis Cup/2",
+      "name": "Conquis Cup: Revenge Edition 2",
+      "url": "https://liquipedia.net/ageofempires/Conquis_Cup/2",
+      "tier": "C-Tier",
+      "start": "2025-05-06",
+      "end": "2025-06-19",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Revenge",
+      "format": "3v3, Round Robin & Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Spain",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Console Conquest Trios",
+      "name": "Console Conquest Trios",
+      "url": "https://liquipedia.net/ageofempires/Console_Conquest_Trios",
+      "tier": "C-Tier",
+      "start": "2024-04-26",
+      "end": "2024-06-08",
+      "prize": 100,
+      "currency": "USD",
+      "organizer": "Azu",
+      "format": "3v3, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 100
+      }
+    },
+    {
+      "id": "Copa América/2025",
+      "name": "Copa América 2025",
+      "url": "https://liquipedia.net/ageofempires/Copa_América/2025",
+      "tier": "A-Tier",
+      "start": "2025-04-07",
+      "end": "2025-04-13",
+      "prize": 2000,
+      "currency": "USD",
+      "organizer": "Mario Ovalle",
+      "format": "2v2, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Latin America",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 2000
+      }
+    },
+    {
+      "id": "Copa Drama",
+      "name": "Copa Drama",
+      "url": "https://liquipedia.net/ageofempires/Copa_Drama",
+      "tier": "B-Tier",
+      "start": "2024-03-04",
+      "end": "2024-04-23",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "NegoDrama",
+      "format": "2v2, Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Brazil",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Copa Interestatal Mexico",
+      "name": "Copa Interestatal Mexico",
+      "url": "https://liquipedia.net/ageofempires/Copa_Interestatal_Mexico",
+      "tier": "C-Tier",
+      "start": "2023-09-26",
+      "end": "2023-11-12",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Yavierus",
+      "format": "4v4, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Mexico",
+      "players": null,
+      "first": "Veracruz A",
+      "second": "Jalisco A",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Copa Invisivel Fs",
+      "name": "Copa Invisivel Fs",
+      "url": "https://liquipedia.net/ageofempires/Copa_Invisivel_Fs",
+      "tier": "C-Tier",
+      "start": "2025-05-05",
+      "end": "2025-08-10",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "FellowSheep Gaming",
+      "format": "2v2, Double Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Brazil",
+      "players": null,
+      "first": "Team 1",
+      "second": "Team 2",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Coupe de France/2023",
@@ -2576,7 +3068,8 @@
       "players": 92,
       "first": "Babaorum",
       "second": "Cl3m3nT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Coupe de France/2024",
@@ -2595,7 +3088,8 @@
       "players": 33,
       "first": "Cl3m3nT",
       "second": "NeoZz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Crap Map Cup/2",
@@ -2614,7 +3108,10 @@
       "players": 92,
       "first": "DuDuZhu",
       "second": "Acro17",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "DuDuZhu": 130
+      }
     },
     {
       "id": "Cronicas de guerra",
@@ -2633,7 +3130,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 300
+      }
     },
     {
       "id": "Cruzadas de Hierro",
@@ -2652,7 +3152,10 @@
       "players": 55,
       "first": "Lucho",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucho": 70
+      }
     },
     {
       "id": "Cổng VNS/2024",
@@ -2671,7 +3174,8 @@
       "players": 2,
       "first": "Saymyname",
       "second": "Thành Cổ Quảng Trị",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "DM Michi/The Gauntlet",
@@ -2690,7 +3194,8 @@
       "players": 22,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "DM Nations Cup/2026",
@@ -2709,7 +3214,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 500
+      }
     },
     {
       "id": "DM Unity Cup",
@@ -2728,26 +3236,10 @@
       "players": 25,
       "first": "Frost 9",
       "second": "FreakinAndy",
-      "third": ""
-    },
-    {
-      "id": "DS League",
-      "name": "DS_League",
-      "url": "https://liquipedia.net/ageofempires/DS_League",
-      "tier": "B-Tier",
-      "start": "2026-08-15",
-      "end": "2026-10-25",
-      "prize": 650,
-      "currency": "USD",
-      "organizer": "DarkSidE",
-      "format": "1v1, Round Robin",
-      "formatType": "1v1",
-      "type": "Online",
-      "region": "World",
-      "players": 10,
-      "first": "Overtaken",
-      "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 270
+      }
     },
     {
       "id": "Danmarksmesterskaberne/2024",
@@ -2766,7 +3258,8 @@
       "players": 12,
       "first": "Emil :D",
       "second": "Good luck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Danmarksmesterskaberne/2025",
@@ -2785,7 +3278,8 @@
       "players": 16,
       "first": "Harty",
       "second": "Flempopo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "DarkSidE Hidden Cup",
@@ -2804,7 +3298,8 @@
       "players": 16,
       "first": "Patán",
       "second": "Pierre Nodoyuna",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "DarkSidE Invitational Team Game League",
@@ -2823,7 +3318,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 1500
+      }
     },
     {
       "id": "Dears Wololo Special 3: Single Civilization",
@@ -2842,7 +3340,8 @@
       "players": 16,
       "first": "DuDuZhu",
       "second": "Togawa Sakikoi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Delicious Whirled Cup 2023",
@@ -2861,7 +3360,10 @@
       "players": null,
       "first": "GamerLegion",
       "second": "Aftermath",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GamerLegion": 23172
+      }
     },
     {
       "id": "Dignitas Conquest",
@@ -2880,7 +3382,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 730
+      }
     },
     {
       "id": "Douyu Invitational",
@@ -2899,7 +3404,10 @@
       "players": null,
       "first": "GamerLegion",
       "second": "Suomi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GamerLegion": 4000
+      }
     },
     {
       "id": "Duo Showdown",
@@ -2918,7 +3426,8 @@
       "players": null,
       "first": "Fox (French team)",
       "second": "Dolbojobs",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Dynamic Battle/1",
@@ -2937,7 +3446,8 @@
       "players": 32,
       "first": "FreakinAndy",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Dynamic Battle/2",
@@ -2956,7 +3466,8 @@
       "players": 16,
       "first": "FreakinAndy",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Dynamic Battle/3",
@@ -2975,7 +3486,8 @@
       "players": 4,
       "first": "FreakinAndy",
       "second": "TaToH",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Dynamic Battle/4",
@@ -2994,7 +3506,8 @@
       "players": 4,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Empires Village Cup 2026",
@@ -3013,7 +3526,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Empires of Chaos and Chance",
@@ -3032,7 +3546,8 @@
       "players": 10,
       "first": "Salted Pepper",
       "second": "AR12",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "EndoWar/4",
@@ -3051,7 +3566,8 @@
       "players": 8,
       "first": "TaToH",
       "second": "Yo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Fanta Age/2024",
@@ -3070,7 +3586,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Fanta Age/2025",
@@ -3089,7 +3606,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Fanta Age/3",
@@ -3108,7 +3626,8 @@
       "players": null,
       "first": "Team Apo",
       "second": "Team P3rk",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Fight Club Monthly/2",
@@ -3127,7 +3646,10 @@
       "players": 26,
       "first": "Faith2Adventure",
       "second": "Zotico3",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Faith2Adventure": 60
+      }
     },
     {
       "id": "Fight Club Monthly/3",
@@ -3146,7 +3668,10 @@
       "players": 18,
       "first": "Faith2Adventure",
       "second": "SoloGhostAK47",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Faith2Adventure": 60
+      }
     },
     {
       "id": "Founders Legacy Cup",
@@ -3165,7 +3690,10 @@
       "players": 16,
       "first": "MrOsoVC8",
       "second": "Rodrixs",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "MrOsoVC8": 120
+      }
     },
     {
       "id": "Fox Invitational",
@@ -3184,7 +3712,10 @@
       "players": null,
       "first": "Team Taiwan",
       "second": "HOWL Esports",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team Taiwan": 280
+      }
     },
     {
       "id": "Fox Invitational Berlin",
@@ -3203,7 +3734,10 @@
       "players": null,
       "first": "Nocturna eSports",
       "second": "Fox (French team)",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Nocturna eSports": 120
+      }
     },
     {
       "id": "Fox Invitational Buenos Aires",
@@ -3222,7 +3756,10 @@
       "players": null,
       "first": "Fox (French team)",
       "second": "Team Russia",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Fox (French team)": 140
+      }
     },
     {
       "id": "Fox Invitational Copenhagen",
@@ -3241,7 +3778,10 @@
       "players": null,
       "first": "PUB",
       "second": "Fox (French team)",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "PUB": 120
+      }
     },
     {
       "id": "Fox Invitational Paris",
@@ -3260,7 +3800,10 @@
       "players": null,
       "first": "Fox (French team)",
       "second": "Italy A",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Fox (French team)": 120
+      }
     },
     {
       "id": "Fox Invitational Phuket",
@@ -3279,7 +3822,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 120
+      }
     },
     {
       "id": "Fox Invitational SD2100",
@@ -3298,7 +3844,10 @@
       "players": 8,
       "first": "Saps",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Saps": 100
+      }
     },
     {
       "id": "Fox Invitational SD2400",
@@ -3317,7 +3866,10 @@
       "players": 8,
       "first": "Ciskhan",
       "second": "Ozone",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Ciskhan": 100
+      }
     },
     {
       "id": "Fox Invitational Yaoundé",
@@ -3336,7 +3888,10 @@
       "players": 16,
       "first": "Nyusika",
       "second": "Madtomski",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Nyusika": 100
+      }
     },
     {
       "id": "FrontLine",
@@ -3355,7 +3910,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Futebol Hidden Cup",
@@ -3374,7 +3930,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 500
+      }
     },
     {
       "id": "GB Auction",
@@ -3393,7 +3952,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "GB Cup/2025",
@@ -3412,7 +3972,10 @@
       "players": 20,
       "first": "Lewis",
       "second": "Fanjita",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lewis": 1000
+      }
     },
     {
       "id": "GB Draft/2",
@@ -3431,7 +3994,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "GB Hidden Cup/2",
@@ -3450,7 +4014,8 @@
       "players": 16,
       "first": "Hallis",
       "second": "Darvoi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "GB Hidden Cup/3",
@@ -3469,7 +4034,8 @@
       "players": 16,
       "first": "Dave hun",
       "second": "Noszombie",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "GG Winter Cup",
@@ -3488,7 +4054,8 @@
       "players": 13,
       "first": "Biry",
       "second": "Pela",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Gamers Assembly/Festival Edition/2023",
@@ -3507,7 +4074,8 @@
       "players": 13,
       "first": "Sitaux",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Gamescom LAN",
@@ -3526,7 +4094,8 @@
       "players": 12,
       "first": "Sitaux",
       "second": "champsdugros",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Girt By Sea",
@@ -3545,7 +4114,8 @@
       "players": 8,
       "first": "Noszombie",
       "second": "Socksyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Glitched AoE2 Masters 2026",
@@ -3564,7 +4134,8 @@
       "players": 8,
       "first": "TaToH",
       "second": "Benanji",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Glitched Nordic Masters AoE",
@@ -3583,7 +4154,8 @@
       "players": 8,
       "first": "Valas",
       "second": "Ganji",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "GoKu's Invitational",
@@ -3602,7 +4174,8 @@
       "players": 16,
       "first": "Dogao",
       "second": "St4rk",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Great British Discord Community Cup/2025",
@@ -3621,7 +4194,8 @@
       "players": 32,
       "first": "Terz",
       "second": "Noszombie",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Gringo Cup",
@@ -3640,7 +4214,10 @@
       "players": null,
       "first": "Team Matt107",
       "second": "Team Fresh",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team Matt107": 1640
+      }
     },
     {
       "id": "Gringo Wars",
@@ -3659,7 +4236,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 804
+      }
     },
     {
       "id": "Guerra del Dragón",
@@ -3678,7 +4258,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Hamsters vs Clowns",
@@ -3697,7 +4278,10 @@
       "players": 32,
       "first": "Lucho",
       "second": "Barles",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucho": 700
+      }
     },
     {
       "id": "Heaven & Hell",
@@ -3716,7 +4300,10 @@
       "players": 64,
       "first": "Barles",
       "second": "Lewis",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Barles": 1000
+      }
     },
     {
       "id": "Hidden Cup 2vs2",
@@ -3735,7 +4322,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Hidden Cup Guerrero Edition",
@@ -3754,7 +4342,8 @@
       "players": 24,
       "first": "M0re",
       "second": "ReyO",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Hidden Cup Italia/2",
@@ -3773,7 +4362,8 @@
       "players": 16,
       "first": "Vodka L",
       "second": "Kamigawa",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Hidden Cup Türkiye",
@@ -3792,25 +4382,8 @@
       "players": 16,
       "first": "Kasva",
       "second": "Dr.Kozmonot",
-      "third": ""
-    },
-    {
-      "id": "Hidden Cup/5",
-      "name": "Hidden Cup V",
-      "url": "https://liquipedia.net/ageofempires/Hidden_Cup/5",
-      "tier": "S-Tier",
-      "start": "2024-02-25",
-      "end": "2024-03-03",
-      "prize": 70624,
-      "currency": "USD",
-      "organizer": "T90Official",
-      "format": "1v1, Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 16,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Hidden zZ",
@@ -3829,7 +4402,10 @@
       "players": 8,
       "first": "Lucky Rox",
       "second": "Fedex",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucky Rox": 200
+      }
     },
     {
       "id": "Holly Jolly Christmas Cup/2",
@@ -3848,7 +4424,8 @@
       "players": 16,
       "first": "FreakinAndy",
       "second": "IAnTaGoNiStI",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Aquarius",
@@ -3867,7 +4444,8 @@
       "players": 16,
       "first": "Biry",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Aquarius 2",
@@ -3886,7 +4464,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Aries 1",
@@ -3905,7 +4484,8 @@
       "players": 16,
       "first": "Pela",
       "second": "Bl4ck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Aries 2",
@@ -3924,7 +4504,8 @@
       "players": 16,
       "first": "Nahuel05",
       "second": "Bl4ck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Aries 3",
@@ -3943,7 +4524,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Cancer 1",
@@ -3962,7 +4544,8 @@
       "players": 16,
       "first": "Lucky Rox",
       "second": "Bl4ck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Cancer 2",
@@ -3981,7 +4564,8 @@
       "players": 16,
       "first": "Biry",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Capricorn",
@@ -4000,7 +4584,8 @@
       "players": 16,
       "first": "Biry",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Capricorn 2",
@@ -4019,7 +4604,8 @@
       "players": 16,
       "first": "Nahuel05",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Gemini 1",
@@ -4038,7 +4624,8 @@
       "players": 16,
       "first": "Lucky Rox",
       "second": "Redlash",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Gemini 2",
@@ -4057,7 +4644,8 @@
       "players": 16,
       "first": "Lucky Rox",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Leo 1",
@@ -4076,7 +4664,8 @@
       "players": 16,
       "first": "Biry",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Leo 2",
@@ -4095,7 +4684,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Libra 1",
@@ -4114,7 +4704,8 @@
       "players": 16,
       "first": "Bl4ck",
       "second": "CHELOOO",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Libra 2",
@@ -4133,7 +4724,8 @@
       "players": 16,
       "first": "Prisma09",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Pisces",
@@ -4152,7 +4744,8 @@
       "players": 16,
       "first": "Biry",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Pisces 2",
@@ -4171,7 +4764,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Sagittarius 1",
@@ -4190,7 +4784,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Tatengue",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Sagittarius 2",
@@ -4209,7 +4804,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Scorpio 1",
@@ -4228,7 +4824,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "DeaKer",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Scorpio 2",
@@ -4247,7 +4844,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Taurus 1",
@@ -4266,7 +4864,8 @@
       "players": 8,
       "first": "Pela",
       "second": "Bl4ck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Taurus 2",
@@ -4285,7 +4884,8 @@
       "players": 16,
       "first": "CHELOOO",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Taurus 3",
@@ -4304,7 +4904,8 @@
       "players": 16,
       "first": "Lucho",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Virgo 1",
@@ -4323,7 +4924,8 @@
       "players": 16,
       "first": "Lucky Rox",
       "second": "Bl4ck",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "House of Virgo 2",
@@ -4342,7 +4944,8 @@
       "players": 16,
       "first": "Twigg",
       "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Imperial Clash",
@@ -4361,7 +4964,10 @@
       "players": 7,
       "first": "IAnTaGoNiStI",
       "second": "Lamo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "IAnTaGoNiStI": 80
+      }
     },
     {
       "id": "India 1v1 Cup",
@@ -4380,7 +4986,10 @@
       "players": 13,
       "first": "The Dragonstar",
       "second": "DOOMSTER",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "The Dragonstar": 300
+      }
     },
     {
       "id": "Inversus Cup",
@@ -4399,7 +5008,8 @@
       "players": 32,
       "first": "Dark",
       "second": "Classicpro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Ivanenko's Arabia Cup",
@@ -4418,7 +5028,10 @@
       "players": 32,
       "first": "Hera",
       "second": "Nicov",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 400
+      }
     },
     {
       "id": "JorDan's Medieval Brawl/Season 2/Finals",
@@ -4437,7 +5050,10 @@
       "players": 8,
       "first": "Hera",
       "second": "ACCM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 1500
+      }
     },
     {
       "id": "Justas Criollas 2024",
@@ -4456,7 +5072,8 @@
       "players": 16,
       "first": "Capoch",
       "second": "Lucky Rox",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "KCIP",
@@ -4475,7 +5092,8 @@
       "players": 16,
       "first": "Vinchester",
       "second": "Sitaux",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Kindle of Genie Cup",
@@ -4494,7 +5112,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "King of Aravalis",
@@ -4513,7 +5132,10 @@
       "players": 16,
       "first": "The Dragonstar",
       "second": "Dr.Kozmonot",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "The Dragonstar": 400
+      }
     },
     {
       "id": "King of Poland/3",
@@ -4532,7 +5154,8 @@
       "players": 8,
       "first": "Barles",
       "second": "Argh",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "King of the Desert AiM",
@@ -4551,43 +5174,8 @@
       "players": 14,
       "first": "DreamCl",
       "second": "Whitecourt",
-      "third": ""
-    },
-    {
-      "id": "King of the Desert/5",
-      "name": "King of the Desert V",
-      "url": "https://liquipedia.net/ageofempires/King_of_the_Desert/5",
-      "tier": "S-Tier",
-      "start": "2023-05-09",
-      "end": "2023-05-28",
-      "prize": 80000,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1, GSL, Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 32,
-      "first": "Hera",
-      "second": "TheViper",
-      "third": ""
-    },
-    {
-      "id": "King of the Desert/6",
-      "name": "King of the Desert VI",
-      "url": "https://liquipedia.net/ageofempires/King_of_the_Desert/6",
-      "tier": "S-Tier",
-      "start": "2025-12-02",
-      "end": "2025-12-21",
-      "prize": 50000,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1, Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 64,
-      "first": "Hera",
-      "second": "TheViper",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "King of the Hippo/10",
@@ -4606,7 +5194,8 @@
       "players": 64,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Kings of the Mountains",
@@ -4625,7 +5214,10 @@
       "players": 18,
       "first": "KingstoNe",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "KingstoNe": 110
+      }
     },
     {
       "id": "Kingsnipe Cup/2",
@@ -4644,7 +5236,10 @@
       "players": 32,
       "first": "FreakinAndy",
       "second": "Margougou",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 500
+      }
     },
     {
       "id": "Kiritastrich Cup",
@@ -4663,7 +5258,8 @@
       "players": 30,
       "first": "Wide",
       "second": "IAnTaGoNiStI",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Kiritastrich Cup/2",
@@ -4682,7 +5278,8 @@
       "players": 29,
       "first": "IAnTaGoNiStI",
       "second": "Wide",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Kraken Slayer",
@@ -4701,7 +5298,8 @@
       "players": 64,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "LACA Anniversary",
@@ -4720,7 +5318,10 @@
       "players": null,
       "first": "Fox (French Team)",
       "second": "Team Down Under",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Fox (French Team)": 120
+      }
     },
     {
       "id": "LACA German Teamgame Clash",
@@ -4739,7 +5340,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 150
+      }
     },
     {
       "id": "LANDON Cup",
@@ -4758,7 +5362,10 @@
       "players": 16,
       "first": "Hera",
       "second": "Nicov",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 300
+      }
     },
     {
       "id": "La Alianza Eterna: La Batalla por el Futuro",
@@ -4777,7 +5384,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "La Caída del Estandarte",
@@ -4796,7 +5404,10 @@
       "players": 11,
       "first": "Biry",
       "second": "Eskabe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Biry": 100
+      }
     },
     {
       "id": "Latam of the Desert",
@@ -4815,7 +5426,10 @@
       "players": 24,
       "first": "Lucho",
       "second": "Hearttt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucho": 2200
+      }
     },
     {
       "id": "Latin Age Cup",
@@ -4834,7 +5448,10 @@
       "players": 16,
       "first": "Prisma09",
       "second": "Ozone",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Prisma09": 90
+      }
     },
     {
       "id": "Latin Champions",
@@ -4853,7 +5470,10 @@
       "players": 16,
       "first": "Sebastian",
       "second": "Nicov",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 2300
+      }
     },
     {
       "id": "Lidl Tic Cup 2",
@@ -4872,7 +5492,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Continental de AoE2",
@@ -4891,7 +5512,10 @@
       "players": 16,
       "first": "KingstoNe",
       "second": "Uzzi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "KingstoNe": 1000
+      }
     },
     {
       "id": "Liga Desembarco",
@@ -4910,7 +5534,10 @@
       "players": 13,
       "first": "Uzzi",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Uzzi": 100
+      }
     },
     {
       "id": "Liga Desierto",
@@ -4929,7 +5556,10 @@
       "players": 20,
       "first": "F1Re",
       "second": "Uzzi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "F1Re": 100
+      }
     },
     {
       "id": "Liga Desierto/2",
@@ -4948,7 +5578,8 @@
       "players": 12,
       "first": "Nahuel05",
       "second": "ZARC",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/10",
@@ -4967,7 +5598,8 @@
       "players": 10,
       "first": "TaToH",
       "second": "Tomate",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/11",
@@ -4986,7 +5618,8 @@
       "players": 10,
       "first": "Jorge Garcia",
       "second": "holland89",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/6",
@@ -5005,7 +5638,8 @@
       "players": 8,
       "first": "Gauss",
       "second": "OSO_CT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/7",
@@ -5024,7 +5658,8 @@
       "players": 8,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/8",
@@ -5043,7 +5678,8 @@
       "players": 8,
       "first": "Barrufet",
       "second": "Chini",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Española AoE2/9",
@@ -5062,7 +5698,8 @@
       "players": 10,
       "first": "M0re",
       "second": "PoXoLo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Fortaleza",
@@ -5081,7 +5718,10 @@
       "players": 22,
       "first": "Dogao",
       "second": "LobodeLaNieve",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dogao": 100
+      }
     },
     {
       "id": "Liga Fortaleza/2",
@@ -5100,7 +5740,8 @@
       "players": 15,
       "first": "Ozone",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Interna HK",
@@ -5119,7 +5760,10 @@
       "players": 10,
       "first": "Eren",
       "second": "Puerco Black",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Eren": 500
+      }
     },
     {
       "id": "Liga Invernal CL",
@@ -5138,7 +5782,8 @@
       "players": 12,
       "first": "Biel",
       "second": "AboKeiTo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Liga Mesopotamia",
@@ -5157,7 +5802,10 @@
       "players": 21,
       "first": "Lucky Rox",
       "second": "St4rk",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lucky Rox": 100
+      }
     },
     {
       "id": "Liga Midgard",
@@ -5176,7 +5824,10 @@
       "players": 18,
       "first": "Dogao",
       "second": "Eskabe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dogao": 100
+      }
     },
     {
       "id": "Liga Midgard/3",
@@ -5195,7 +5846,10 @@
       "players": 11,
       "first": "Biry",
       "second": "AboKeiTo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Biry": 50
+      }
     },
     {
       "id": "Liga Uxmal Diciembre 2025",
@@ -5214,7 +5868,10 @@
       "players": 5,
       "first": "LobodeLaNieve",
       "second": "Gali",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "LobodeLaNieve": 100
+      }
     },
     {
       "id": "LingHe Asian Duo Invitational 2v2",
@@ -5233,7 +5890,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "LingHe Cup",
@@ -5252,25 +5910,8 @@
       "players": 16,
       "first": "Lyx",
       "second": "Sora Kuma",
-      "third": ""
-    },
-    {
-      "id": "LingYuan Cup",
-      "name": "LingYuan Cup",
-      "url": "https://liquipedia.net/ageofempires/LingYuan_Cup",
-      "tier": "S-Tier",
-      "start": "2025-10-22",
-      "end": "2025-10-26",
-      "prize": 45000,
-      "currency": "USD",
-      "organizer": "LingYuan",
-      "format": "1v1, Swiss System & Single Elimination",
-      "type": "Offline",
-      "region": "China",
-      "players": 10,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Lock and Load/16",
@@ -5289,7 +5930,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "MEGA LAN 2025/Buenos Aires",
@@ -5308,7 +5950,10 @@
       "players": 64,
       "first": "Sebastian",
       "second": "Lucho",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 3800
+      }
     },
     {
       "id": "MEGA LAN 2025/Mexico City",
@@ -5327,7 +5972,10 @@
       "players": 64,
       "first": "KingstoNe",
       "second": "Dogao",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "KingstoNe": 3800
+      }
     },
     {
       "id": "Mad Forest CIS",
@@ -5346,7 +5994,8 @@
       "players": null,
       "first": "Team Vinchester",
       "second": "Team IAnTaGoNiStI",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Mad Random Cup/2",
@@ -5365,7 +6014,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 546
+      }
     },
     {
       "id": "Make DarkSidE Great Again/1",
@@ -5384,7 +6036,8 @@
       "players": 10,
       "first": "Sobek",
       "second": "Twigg",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Master 16",
@@ -5403,7 +6056,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Master 8",
@@ -5422,7 +6076,8 @@
       "players": null,
       "first": "XEVER",
       "second": "DarkSidE",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Master of HyperRandom/2",
@@ -5441,7 +6096,10 @@
       "players": 28,
       "first": "Vinchester",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Vinchester": 1600
+      }
     },
     {
       "id": "Master of HyperRandom/3",
@@ -5460,7 +6118,10 @@
       "players": 16,
       "first": "MbL",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "MbL": 10000
+      }
     },
     {
       "id": "Master of the Circus/3",
@@ -5479,7 +6140,10 @@
       "players": 16,
       "first": "Ganji",
       "second": "DracKeN",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Ganji": 1000
+      }
     },
     {
       "id": "Master of the Huns/2024",
@@ -5498,7 +6162,8 @@
       "players": 35,
       "first": "TaToH",
       "second": "Capoch",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Masters of Arena/7",
@@ -5517,7 +6182,10 @@
       "players": 32,
       "first": "TaToH",
       "second": "Vinchester",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TaToH": 10000
+      }
     },
     {
       "id": "Masters of Arena/7/Silver League",
@@ -5536,7 +6204,10 @@
       "players": 54,
       "first": "Darknoob",
       "second": "Cloud",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Darknoob": 150
+      }
     },
     {
       "id": "Medieval Masters",
@@ -5555,7 +6226,10 @@
       "players": 16,
       "first": "Yo",
       "second": "Hera",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Yo": 10000
+      }
     },
     {
       "id": "Medieval Masters/2",
@@ -5574,7 +6248,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "MembTV Event - TBA",
@@ -5593,7 +6268,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Meow Cup",
@@ -5612,7 +6288,8 @@
       "players": 16,
       "first": "Vinchester",
       "second": "Dark",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "MetaWorldTour",
@@ -5631,7 +6308,10 @@
       "players": 16,
       "first": "TaToH",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TaToH": 1000
+      }
     },
     {
       "id": "Midweek Madness/2025/August/1",
@@ -5650,7 +6330,8 @@
       "players": 16,
       "first": "ACCM",
       "second": "Running",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Midweek Madness/2025/August/2",
@@ -5669,7 +6350,8 @@
       "players": 16,
       "first": "ACCM",
       "second": "KingstoNe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Midweek Madness/2025/August/3",
@@ -5688,7 +6370,8 @@
       "players": 16,
       "first": "TheViper",
       "second": "Mihai06",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Midweek Madness/2025/September/1",
@@ -5707,7 +6390,10 @@
       "players": 32,
       "first": "ACCM",
       "second": "Lewis",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "ACCM": 300
+      }
     },
     {
       "id": "Midweek Madness/2025/September/2",
@@ -5726,7 +6412,10 @@
       "players": 27,
       "first": "Barles",
       "second": "Lewis",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Barles": 300
+      }
     },
     {
       "id": "Midweek Madness/2025/September/3",
@@ -5745,7 +6434,10 @@
       "players": 29,
       "first": "ACCM",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "ACCM": 300
+      }
     },
     {
       "id": "Nations Cup/2023",
@@ -5764,7 +6456,8 @@
       "players": null,
       "first": "Team China",
       "second": "Canada",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Nations Cup/2023/Silver League",
@@ -5783,61 +6476,8 @@
       "players": null,
       "first": "Poland A",
       "second": "India A",
-      "third": ""
-    },
-    {
-      "id": "Nili's Apartment Cup/4",
-      "name": "Nili's Apartment Cup 4",
-      "url": "https://liquipedia.net/ageofempires/Nili's_Apartment_Cup/4",
-      "tier": "S-Tier",
-      "start": "2023-03-11",
-      "end": "2023-03-19",
-      "prize": 85747,
-      "currency": "USD",
-      "organizer": "Nili_AoE",
-      "format": "1v1, Swiss Stage & Single Elimination",
-      "type": "Offline",
-      "region": "Germany",
-      "players": 10,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
-    },
-    {
-      "id": "Nili's Apartment Cup/5",
-      "name": "Nili's Apartment Cup 5",
-      "url": "https://liquipedia.net/ageofempires/Nili's_Apartment_Cup/5",
-      "tier": "S-Tier",
-      "start": "2024-01-06",
-      "end": "2024-01-14",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Nili_AoE",
-      "format": "1v1, Swiss Stage & Single Elimination",
-      "type": "Offline",
-      "region": "Germany",
-      "players": 10,
-      "first": "Hera",
-      "second": "Yo",
-      "third": ""
-    },
-    {
-      "id": "Noble Apartment Cup",
-      "name": "Noble Apartment Cup",
-      "url": "https://liquipedia.net/ageofempires/Noble_Apartment_Cup",
-      "tier": "S-Tier",
-      "start": "2024-12-15",
-      "end": "2024-12-22",
-      "prize": 50637,
-      "currency": "USD",
-      "organizer": "GamerLegion",
-      "format": "1v1",
-      "type": "Offline",
-      "region": "Germany",
-      "players": 10,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Nomad Cup",
@@ -5856,7 +6496,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 50
+      }
     },
     {
       "id": "Nomad Cup/2",
@@ -5875,7 +6518,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 50
+      }
     },
     {
       "id": "Nomad League: Relocated/1",
@@ -5894,26 +6540,10 @@
       "players": 8,
       "first": "ElNoniro",
       "second": "M0re",
-      "third": ""
-    },
-    {
-      "id": "Nomad League: Relocated/2",
-      "name": "Nomad League: Relocated - Season 2",
-      "url": "https://liquipedia.net/ageofempires/Nomad_League:_Relocated/2",
-      "tier": "C-Tier",
-      "start": "2026-08-24",
-      "end": "2026-11-15",
-      "prize": 100,
-      "currency": "USD",
-      "organizer": "Low Elo Legion",
-      "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "World",
-      "players": 8,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "ElNoniro": 130
+      }
     },
     {
       "id": "Nomad Rivals I",
@@ -5932,7 +6562,8 @@
       "players": 16,
       "first": "Monoz",
       "second": "Whitecourt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Noobs of Arena/2",
@@ -5951,7 +6582,10 @@
       "players": 10,
       "first": "IAnTaGoNiStI",
       "second": "Lamo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "IAnTaGoNiStI": 50
+      }
     },
     {
       "id": "Ogazjoker Professional League",
@@ -5970,7 +6604,8 @@
       "players": 9,
       "first": "Monoz",
       "second": "Gali",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Ogazjoker Professional League/Champion Division",
@@ -5989,7 +6624,8 @@
       "players": 9,
       "first": "ZARC",
       "second": "Felipe Besitos Ricos",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Onimaru Brasil Saga",
@@ -6008,7 +6644,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Only Land French Cup/2",
@@ -6027,7 +6664,8 @@
       "players": 16,
       "first": "Sitaux",
       "second": "Cl3m3nT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Open Royal SWB cup 2x2",
@@ -6046,7 +6684,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Open Royal SWB cup 2x2 Season 2",
@@ -6065,7 +6704,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Open Royal SWB cup 2x2/3",
@@ -6084,7 +6724,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Outback Legends/2",
@@ -6103,7 +6744,8 @@
       "players": 16,
       "first": "Rayzor",
       "second": "Socksyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Pablito's Invitational",
@@ -6122,7 +6764,10 @@
       "players": 8,
       "first": "TheViper",
       "second": "Yo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TheViper": 710
+      }
     },
     {
       "id": "Pangea/2",
@@ -6141,7 +6786,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Pelea de Gallos",
@@ -6160,7 +6806,8 @@
       "players": 11,
       "first": "DreamCl",
       "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Pete’s Serengeti tourney",
@@ -6179,7 +6826,8 @@
       "players": 11,
       "first": "Emalius2",
       "second": "Tomo Žeznati",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Pick Your Poison",
@@ -6198,7 +6846,10 @@
       "players": 8,
       "first": "Sitaux",
       "second": "Mihai06",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sitaux": 50
+      }
     },
     {
       "id": "Pleb Forest/2",
@@ -6217,7 +6868,10 @@
       "players": null,
       "first": "Team Jerry",
       "second": "Team Chrisyboo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team Jerry": 1300
+      }
     },
     {
       "id": "Plünderparty/6",
@@ -6236,7 +6890,8 @@
       "players": 6,
       "first": "Terz",
       "second": "Matze",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Plünderparty/7",
@@ -6255,7 +6910,8 @@
       "players": 6,
       "first": "FreakinAndy",
       "second": "Wean Dinchester",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Plünderparty/8",
@@ -6274,7 +6930,8 @@
       "players": 6,
       "first": "FreakinAndy",
       "second": "ShiXo.",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Plünderparty/9",
@@ -6293,7 +6950,8 @@
       "players": 8,
       "first": "Running",
       "second": "ShiXo.",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Polish Masters",
@@ -6312,7 +6970,8 @@
       "players": 8,
       "first": "Barles",
       "second": "ElNoniro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Professional Forest",
@@ -6331,7 +6990,10 @@
       "players": null,
       "first": "Team SavvyEmpire",
       "second": "Team Kazi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team SavvyEmpire": 1000
+      }
     },
     {
       "id": "Professional Forest/2",
@@ -6350,7 +7012,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 2000
+      }
     },
     {
       "id": "Professional Forest/3",
@@ -6369,7 +7034,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Queen's Clash/2/Bronze League",
@@ -6388,7 +7054,10 @@
       "players": 17,
       "first": "Salchigoddess",
       "second": "stellarMeesh",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Salchigoddess": 80
+      }
     },
     {
       "id": "Queen's Clash/2/Gold League",
@@ -6407,7 +7076,10 @@
       "players": 8,
       "first": "Gabi",
       "second": "Mica",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Gabi": 1097
+      }
     },
     {
       "id": "Queen's Clash/2/Silver League",
@@ -6426,7 +7098,10 @@
       "players": 16,
       "first": "GUKI",
       "second": "CharChar",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GUKI": 274
+      }
     },
     {
       "id": "Queen's Clash/3/Gold League",
@@ -6445,7 +7120,8 @@
       "players": 8,
       "first": "GUKI",
       "second": "Gabi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Queen's Clash/3/Silver League",
@@ -6464,7 +7140,8 @@
       "players": 16,
       "first": "CharChar",
       "second": "Kanete",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Queen's Clash/4",
@@ -6483,7 +7160,10 @@
       "players": 16,
       "first": "Gabi",
       "second": "Luna",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Gabi": 827
+      }
     },
     {
       "id": "Queen's Clash/5/Gold League",
@@ -6502,7 +7182,10 @@
       "players": 7,
       "first": "Gabi",
       "second": "Mica",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Gabi": 600
+      }
     },
     {
       "id": "Queen's Clash/5/Silver League",
@@ -6521,7 +7204,10 @@
       "players": 8,
       "first": "BlackBaby",
       "second": "Babylon Vampire",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "BlackBaby": 240
+      }
     },
     {
       "id": "Quintessential Cookout",
@@ -6540,7 +7226,10 @@
       "players": 28,
       "first": "TheViper",
       "second": "Sebastian",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TheViper": 2500
+      }
     },
     {
       "id": "R1 BarruCup",
@@ -6559,7 +7248,8 @@
       "players": 24,
       "first": "Moneimon",
       "second": "Pume",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rage Arena",
@@ -6578,7 +7268,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 900
+      }
     },
     {
       "id": "Rage Forest/4",
@@ -6597,7 +7290,10 @@
       "players": null,
       "first": "Team Barles",
       "second": "Team Valas",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team Barles": 10000
+      }
     },
     {
       "id": "Rage Forest/5",
@@ -6616,7 +7312,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 10000
+      }
     },
     {
       "id": "Rage Forest/6",
@@ -6635,7 +7334,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 5939
+      }
     },
     {
       "id": "Rage Forest/Masters",
@@ -6654,43 +7356,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
-    },
-    {
-      "id": "Red Bull Wololo/El Reinado/AoE2",
-      "name": "Red Bull Wololo: El Reinado Age of Empires II",
-      "url": "https://liquipedia.net/ageofempires/Red_Bull_Wololo/El_Reinado/AoE2",
-      "tier": "S-Tier",
-      "start": "2024-10-03",
-      "end": "2024-10-06",
-      "prize": 138000,
-      "currency": "USD",
-      "organizer": "Red Bull",
-      "format": "1v1, Double & Single Elimination",
-      "type": "Offline",
-      "region": "Spain",
-      "players": 8,
-      "first": "Hera",
-      "second": "TheViper",
-      "third": ""
-    },
-    {
-      "id": "Red Bull Wololo/Londinium/AoE2",
-      "name": "Red Bull Wololo: Londinium Age of Empires II",
-      "url": "https://liquipedia.net/ageofempires/Red_Bull_Wololo/Londinium/AoE2",
-      "tier": "S-Tier",
-      "start": "2026-04-01",
-      "end": "2026-04-06",
-      "prize": 170000,
-      "currency": "USD",
-      "organizer": "Red Bull",
-      "format": "1v1, Round Robin & Single Elimination",
-      "type": "Offline",
-      "region": "UK",
-      "players": 8,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 10000
+      }
     },
     {
       "id": "Regicide Rumble/5",
@@ -6709,7 +7378,8 @@
       "players": 64,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Regicide Rumble/6",
@@ -6728,7 +7398,8 @@
       "players": 64,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Regicide Rumble/7",
@@ -6747,7 +7418,8 @@
       "players": 64,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Return of Reverse Pick",
@@ -6766,7 +7438,8 @@
       "players": 32,
       "first": "Margougou",
       "second": "Mihai06",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rey de Socotra 2025",
@@ -6785,7 +7458,10 @@
       "players": 16,
       "first": "Monoz",
       "second": "ChrisB",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Monoz": 50
+      }
     },
     {
       "id": "Rey del Claro Africano",
@@ -6804,7 +7480,8 @@
       "players": 16,
       "first": "Ciskhan",
       "second": "Rodrixs",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rise of the Underdogs",
@@ -6823,7 +7500,8 @@
       "players": 31,
       "first": "Thành Cổ Quảng Trị",
       "second": "Hoang",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rising Cup (French tournament)",
@@ -6842,7 +7520,8 @@
       "players": 26,
       "first": "Cl3m3nT",
       "second": "C.salette",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rising Teams",
@@ -6861,7 +7540,8 @@
       "players": null,
       "first": "All Around The World",
       "second": "MYinsanity",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Road to Hidden Cup Italia/Autunno",
@@ -6880,7 +7560,8 @@
       "players": 20,
       "first": "Salsicciotto1999",
       "second": "Vodka L",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Royal Blood/AoE2",
@@ -6899,7 +7580,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rulers of Rome 3vs3 Training Tournament 2026",
@@ -6918,7 +7600,8 @@
       "players": 4,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rusaoc Cup/125",
@@ -6937,7 +7620,8 @@
       "players": 16,
       "first": "Vinchester",
       "second": "Classicpro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Rusaoc Cup/150",
@@ -6956,7 +7640,8 @@
       "players": 16,
       "first": "Dark",
       "second": "Classicpro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Russia F Cup/4",
@@ -6975,7 +7660,8 @@
       "players": 12,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Russia F Cup/5",
@@ -6994,7 +7680,8 @@
       "players": 10,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Russia F Cup/6",
@@ -7013,7 +7700,8 @@
       "players": 8,
       "first": "OLADUSHEK",
       "second": "Bourbon",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "SAX Nations Cup",
@@ -7032,7 +7720,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 46000
+      }
     },
     {
       "id": "SalzZ Cup/4",
@@ -7051,7 +7742,8 @@
       "players": 16,
       "first": "Vinchester",
       "second": "Classicpro",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Saló del Gaming/2023/Copa Banda Catalana",
@@ -7070,7 +7762,8 @@
       "players": null,
       "first": "Equip TaToH",
       "second": "Duke y los petes",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Saló del Gaming/2023/Trofeu Sant Jordi",
@@ -7089,7 +7782,8 @@
       "players": 32,
       "first": "TaToH",
       "second": "M0re",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Saló del Gaming/2024/Copa Banda Catalana/2",
@@ -7108,7 +7802,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Saló del Gaming/2025/Copa Catalana/3",
@@ -7127,7 +7822,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Schloss LANzBURG/2024",
@@ -7146,7 +7842,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Schloss LANzBURG/2025",
@@ -7165,7 +7862,8 @@
       "players": 9,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Shadow Cup",
@@ -7184,7 +7882,10 @@
       "players": 16,
       "first": "Eskabe",
       "second": "Mica",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Eskabe": 100
+      }
     },
     {
       "id": "ShenAiXie Cup",
@@ -7203,7 +7904,10 @@
       "players": 32,
       "first": "Sebastian",
       "second": "Vinchester",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 20000
+      }
     },
     {
       "id": "Shider Games",
@@ -7222,7 +7926,8 @@
       "players": 14,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Showdown Cup",
@@ -7241,7 +7946,10 @@
       "players": 38,
       "first": "Togawa Sakikoi",
       "second": "Vollkhornekeks",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Togawa Sakikoi": 720
+      }
     },
     {
       "id": "Shrouded Deathmatch",
@@ -7260,7 +7968,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Sisallissota",
@@ -7279,7 +7988,8 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Spice War",
@@ -7298,7 +8008,8 @@
       "players": 16,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Spring Festival Invitational of Nostalgic Games",
@@ -7317,7 +8028,8 @@
       "players": 8,
       "first": "Yo",
       "second": "Vivi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Stronghold Frenzy",
@@ -7336,7 +8048,8 @@
       "players": 16,
       "first": "IAnTaGoNiStI",
       "second": "Target331",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Stronghold Frenzy/2",
@@ -7355,7 +8068,10 @@
       "players": 32,
       "first": "FreakinAndy",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 600
+      }
     },
     {
       "id": "Stronghold Frenzy/2/Silver League",
@@ -7374,7 +8090,10 @@
       "players": 8,
       "first": "Chanchilaru",
       "second": "Breakfast",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Chanchilaru": 100
+      }
     },
     {
       "id": "Sudden Death Showdown",
@@ -7393,7 +8112,8 @@
       "players": 9,
       "first": "Darkwynn",
       "second": "esjb",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Sudden Death Showdown/2",
@@ -7412,7 +8132,8 @@
       "players": 10,
       "first": "TeMo",
       "second": "AngelR",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Sudden Dessaster",
@@ -7431,7 +8152,10 @@
       "players": 64,
       "first": "Yo",
       "second": "Vinchester",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Yo": 2500
+      }
     },
     {
       "id": "Sudden Dessaster/2",
@@ -7450,7 +8174,10 @@
       "players": 128,
       "first": "Lewis",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Lewis": 10000
+      }
     },
     {
       "id": "Sudden Dessaster/3",
@@ -7469,7 +8196,8 @@
       "players": 128,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Sudden Dessaster/Silver League",
@@ -7488,7 +8216,10 @@
       "players": 20,
       "first": "IAnTaGoNiStI",
       "second": "King Boo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "IAnTaGoNiStI": 100
+      }
     },
     {
       "id": "Summer Classic Jab",
@@ -7507,7 +8238,28 @@
       "players": 16,
       "first": "Tointoin",
       "second": "PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "2v2 Huşaşmifer Kupası",
+      "name": "2v2 Huşaşmifer Kupası",
+      "url": "https://liquipedia.net/ageofempires/2v2_Huşaşmifer_Kupası",
+      "tier": "B-Tier",
+      "start": "2026-08-08",
+      "end": "2026-09-06",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "AOE2Turk",
+      "format": "2v2, Round Robin & Single Elimination",
+      "formatType": "team",
+      "type": "Online",
+      "region": "Turkey",
+      "players": null,
+      "first": "Team 2",
+      "second": "Team 1",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Summer Slapdown/2",
@@ -7526,7 +8278,8 @@
       "players": null,
       "first": "MalaysiaGate Oceanlines Titan370",
       "second": "Meta Players",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Summer Slapdown/3",
@@ -7545,7 +8298,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 130
+      }
     },
     {
       "id": "Suomi Hidden Cup/5",
@@ -7564,7 +8320,8 @@
       "players": 22,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "SuperDr4ft/Pro Edition",
@@ -7583,7 +8340,10 @@
       "players": 15,
       "first": "Hera",
       "second": "TaToH",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 864
+      }
     },
     {
       "id": "Survivors of Bazirandom/2",
@@ -7602,7 +8362,10 @@
       "players": 16,
       "first": "GGOut",
       "second": "Acro17",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GGOut": 70
+      }
     },
     {
       "id": "Survivors of Bazirandom/3",
@@ -7621,7 +8384,10 @@
       "players": 32,
       "first": "NeoZz",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "NeoZz": 300
+      }
     },
     {
       "id": "Svenska Age-Ligan/2025/Fall",
@@ -7640,7 +8406,8 @@
       "players": 8,
       "first": "Spaden",
       "second": "GGOut",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Svenska Age-Ligan/2026/Fall",
@@ -7659,7 +8426,8 @@
       "players": 8,
       "first": "Spaden",
       "second": "Davve02",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Svenska Age-Ligan/2026/Spring",
@@ -7678,7 +8446,8 @@
       "players": 8,
       "first": "Davve02",
       "second": "OG DADDY",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Svenska TG-ligan/2026/Höst",
@@ -7697,7 +8466,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Svenska cirkusspelen/2025",
@@ -7716,7 +8486,8 @@
       "players": 16,
       "first": "GGOut",
       "second": "Frost 9",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Swegames 2023",
@@ -7735,7 +8506,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Swidden Cup",
@@ -7754,7 +8526,8 @@
       "players": 20,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "T90 Community Cup 2/TTL5",
@@ -7773,7 +8546,10 @@
       "players": 10,
       "first": "Thofou",
       "second": "T90Official",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Thofou": 50
+      }
     },
     {
       "id": "T90 Titans League/2/Gold League",
@@ -7792,25 +8568,10 @@
       "players": 24,
       "first": "Margougou",
       "second": "LaN",
-      "third": ""
-    },
-    {
-      "id": "T90 Titans League/2/Platinum League",
-      "name": "T90 Titans League 2: Platinum League",
-      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/2/Platinum_League",
-      "tier": "S-Tier",
-      "start": "2023-01-02",
-      "end": "2023-02-12",
-      "prize": 17300,
-      "currency": "USD",
-      "organizer": "T90Official",
-      "format": "1v1, Round Robin & Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "TheViper",
-      "second": "Hera",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Margougou": 5200
+      }
     },
     {
       "id": "T90 Titans League/2/Silver League",
@@ -7829,7 +8590,8 @@
       "players": 166,
       "first": "Z40",
       "second": "Eli",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "T90 Titans League/3/Gold League",
@@ -7848,25 +8610,10 @@
       "players": 24,
       "first": "Dark",
       "second": "Slam",
-      "third": ""
-    },
-    {
-      "id": "T90 Titans League/3/Platinum League",
-      "name": "T90 Titans League 3: Platinum League",
-      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/3/Platinum_League",
-      "tier": "S-Tier",
-      "start": "2023-09-04",
-      "end": "2023-10-19",
-      "prize": 17300,
-      "currency": "USD",
-      "organizer": "T90Official",
-      "format": "1v1, Round Robin & Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "Hera",
-      "second": "TheViper",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dark": 6100
+      }
     },
     {
       "id": "T90 Titans League/4/Gold League",
@@ -7885,25 +8632,10 @@
       "players": 24,
       "first": "Running",
       "second": "Kasva",
-      "third": ""
-    },
-    {
-      "id": "T90 Titans League/4/Platinum League",
-      "name": "T90 Titans League 4: Platinum League",
-      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/4/Platinum_League",
-      "tier": "S-Tier",
-      "start": "2025-01-13",
-      "end": "2025-03-02",
-      "prize": 32800,
-      "currency": "USD",
-      "organizer": "T90Official",
-      "format": "1v1, Round Robin & Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Running": 15000
+      }
     },
     {
       "id": "T90 Titans League/4/Silver League",
@@ -7922,7 +8654,10 @@
       "players": 88,
       "first": "Wide",
       "second": "Sora Kuma",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Wide": 2200
+      }
     },
     {
       "id": "T90 Titans League/5/Bronze League",
@@ -7941,7 +8676,10 @@
       "players": 124,
       "first": "DuDuZhu",
       "second": "Chart",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "DuDuZhu": 1600
+      }
     },
     {
       "id": "T90 Titans League/5/Gold League",
@@ -7960,25 +8698,10 @@
       "players": 24,
       "first": "StonePleaseAoE",
       "second": "Margougou",
-      "third": ""
-    },
-    {
-      "id": "T90 Titans League/5/Platinum League",
-      "name": "T90 Titans League 5: Platinum League",
-      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/5/Platinum_League",
-      "tier": "S-Tier",
-      "start": "2026-02-06",
-      "end": "2026-03-22",
-      "prize": 64000,
-      "currency": "USD",
-      "organizer": "T90Official",
-      "format": "1v1, Round Robin & Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 24,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "StonePleaseAoE": 25000
+      }
     },
     {
       "id": "T90 Titans League/5/Silver League",
@@ -7997,7 +8720,10 @@
       "players": 24,
       "first": "Bad Koala",
       "second": "Gabi",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Bad Koala": 10000
+      }
     },
     {
       "id": "T90 Titans League/6/Platinum League",
@@ -8016,26 +8742,8 @@
       "players": 24,
       "first": "",
       "second": "",
-      "third": ""
-    },
-    {
-      "id": "TC LAN",
-      "name": "TC LAN",
-      "url": "https://liquipedia.net/ageofempires/TC_LAN",
-      "tier": "B-Tier",
-      "start": "2026-10-05",
-      "end": "2026-10-31",
-      "prize": null,
-      "currency": "USD",
-      "organizer": "Uxmal Esports",
-      "format": "1v1, Single Elimination",
-      "formatType": "unknown",
-      "type": "Online/Offline",
-      "region": "Mexico",
-      "players": 64,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "TOURNOI 3V3",
@@ -8054,7 +8762,8 @@
       "players": null,
       "first": "Team Capout",
       "second": "Team PLP",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Taiwan Arena Clown Cup/3",
@@ -8073,7 +8782,8 @@
       "players": 43,
       "first": "Sora Kuma",
       "second": "Z40",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Taiwan Arena Clown Cup/4",
@@ -8092,7 +8802,8 @@
       "players": 41,
       "first": "Sora Kuma",
       "second": "Z40",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Taiwan Arena Clown Cup/5",
@@ -8111,7 +8822,8 @@
       "players": 32,
       "first": "Sora Kuma",
       "second": "Blve",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Tarnished Death Match/1",
@@ -8130,7 +8842,10 @@
       "players": 34,
       "first": "Frost 9",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 190
+      }
     },
     {
       "id": "Tarnished Death Match/2",
@@ -8149,7 +8864,10 @@
       "players": 5,
       "first": "TwEpY",
       "second": "Maldhar",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TwEpY": 165
+      }
     },
     {
       "id": "Tarnished Death Match/3",
@@ -8168,7 +8886,10 @@
       "players": 5,
       "first": "Frost 9",
       "second": "HazZy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 125
+      }
     },
     {
       "id": "Tarnished Death Match/4",
@@ -8187,7 +8908,10 @@
       "players": 5,
       "first": "Frost 9",
       "second": "HazZy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 140
+      }
     },
     {
       "id": "Tarnished Death Match/5",
@@ -8206,7 +8930,10 @@
       "players": 10,
       "first": "Frost 9",
       "second": "Ganji",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 137
+      }
     },
     {
       "id": "Tarnished Death Match/6",
@@ -8225,7 +8952,10 @@
       "players": 10,
       "first": "Frost 9",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 140
+      }
     },
     {
       "id": "Tarnished Death Match/7",
@@ -8244,7 +8974,10 @@
       "players": 12,
       "first": "FreakinAndy",
       "second": "Kelar",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 700
+      }
     },
     {
       "id": "Templar Tournament",
@@ -8263,7 +8996,10 @@
       "players": 13,
       "first": "LobodeLaNieve",
       "second": "Biry",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "LobodeLaNieve": 200
+      }
     },
     {
       "id": "Terra Magna Cup",
@@ -8282,7 +9018,10 @@
       "players": 16,
       "first": "AngelR",
       "second": "IamAlextremo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "AngelR": 120
+      }
     },
     {
       "id": "Thalassocracy Cup",
@@ -8301,7 +9040,10 @@
       "players": 128,
       "first": "Sebastian",
       "second": "DauT",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Sebastian": 3400
+      }
     },
     {
       "id": "Thalassocracy/2",
@@ -8320,7 +9062,10 @@
       "players": 128,
       "first": "Hera",
       "second": "Hearttt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 25000
+      }
     },
     {
       "id": "The Bastion",
@@ -8339,26 +9084,8 @@
       "players": 8,
       "first": "FreakinAndy",
       "second": "Running",
-      "third": ""
-    },
-    {
-      "id": "The Bastion/2",
-      "name": "The Bastion: Season 2",
-      "url": "https://liquipedia.net/ageofempires/The_Bastion/2",
-      "tier": "B-Tier",
-      "start": "2026-09-14",
-      "end": "2026-11-30",
-      "prize": 500,
-      "currency": "USD",
-      "organizer": "BEING ESPORTS",
-      "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
-      "type": "Online",
-      "region": "Germany",
-      "players": 8,
-      "first": "",
-      "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Brotherhood Of Empire Wars",
@@ -8377,7 +9104,10 @@
       "players": null,
       "first": "MYinsanity",
       "second": "Gandy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "MYinsanity": 400
+      }
     },
     {
       "id": "The Cartographers",
@@ -8396,7 +9126,10 @@
       "players": null,
       "first": "GamerLegion",
       "second": "Aftermath",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GamerLegion": 15000
+      }
     },
     {
       "id": "The Cartographers/2",
@@ -8415,7 +9148,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 14221
+      }
     },
     {
       "id": "The Cartographers/2/Silver League",
@@ -8434,7 +9170,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 1016
+      }
     },
     {
       "id": "The Champions Invitational",
@@ -8453,7 +9192,10 @@
       "players": 5,
       "first": "TheViper",
       "second": "Yo",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TheViper": 11000
+      }
     },
     {
       "id": "The Chaos Cup",
@@ -8472,7 +9214,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Chosen Ones/2",
@@ -8491,7 +9234,10 @@
       "players": 32,
       "first": "Dr.Kozmonot",
       "second": "Tomate",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dr.Kozmonot": 150
+      }
     },
     {
       "id": "The Chosen Ones/3",
@@ -8510,7 +9256,8 @@
       "players": 32,
       "first": "The Dragonstar",
       "second": "KingstoNe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Clash of Anatolia/2",
@@ -8529,7 +9276,8 @@
       "players": 10,
       "first": "Yasin",
       "second": "Cyclops",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Clash of Anatolia/3",
@@ -8548,7 +9296,8 @@
       "players": 16,
       "first": "Kasva",
       "second": "Yasin",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Fastest Chaos",
@@ -8567,7 +9316,10 @@
       "players": 32,
       "first": "Frost 9",
       "second": "Daywalker",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Frost 9": 825
+      }
     },
     {
       "id": "The Fastest Chaos/Silver League",
@@ -8586,25 +9338,10 @@
       "players": 17,
       "first": "L3af",
       "second": "The Otter One",
-      "third": ""
-    },
-    {
-      "id": "The Garrison",
-      "name": "The Garrison",
-      "url": "https://liquipedia.net/ageofempires/The_Garrison",
-      "tier": "S-Tier",
-      "start": "2025-03-13",
-      "end": "2025-03-16",
-      "prize": 40000,
-      "currency": "USD",
-      "organizer": "BEING ESPORTS",
-      "format": "1v1, Double Elimination",
-      "type": "Offline",
-      "region": "Germany",
-      "players": 8,
-      "first": "Hera",
-      "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "L3af": 55
+      }
     },
     {
       "id": "The Garrison/2026",
@@ -8623,7 +9360,8 @@
       "players": 8,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Garrison/Amateur Event/AoE2/1v1",
@@ -8642,7 +9380,10 @@
       "players": 77,
       "first": "Mihai06",
       "second": "Running",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Mihai06": 2500
+      }
     },
     {
       "id": "The Garrison/Amateur Event/AoE2/2v2",
@@ -8661,7 +9402,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 1500
+      }
     },
     {
       "id": "The Holly Jolly Christmas Cup",
@@ -8680,7 +9424,8 @@
       "players": 50,
       "first": "Margougou",
       "second": "KingstoNe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The League",
@@ -8699,7 +9444,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 58500
+      }
     },
     {
       "id": "The League/Division 2",
@@ -8718,7 +9466,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 16500
+      }
     },
     {
       "id": "The Most Powerful Knight 1",
@@ -8737,7 +9488,8 @@
       "players": 8,
       "first": "Biry",
       "second": "Monoz",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Most Powerful Knight 2",
@@ -8756,7 +9508,8 @@
       "players": 8,
       "first": "Prisma09",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Newbie and the Beast/High",
@@ -8775,7 +9528,8 @@
       "players": null,
       "first": "aleksanderG & Mihai06",
       "second": "GaeLife & ciskhan",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Newbie and the Beast/Mid",
@@ -8794,7 +9548,10 @@
       "players": null,
       "first": "BasicallyBebe & Salted Pepper",
       "second": "Huni & Daniel",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "BasicallyBebe & Salted Pepper": 100
+      }
     },
     {
       "id": "The Pick and Mixer/1",
@@ -8813,7 +9570,8 @@
       "players": 16,
       "first": "FreakinAndy",
       "second": "IAnTaGoNiStI",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Pick and Mixer/2",
@@ -8832,7 +9590,8 @@
       "players": 20,
       "first": "FreakinAndy",
       "second": "KingstoNe",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Tea Party",
@@ -8851,7 +9610,8 @@
       "players": null,
       "first": "MYinsanity",
       "second": "Vietnam Legends",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Unexpected Summer Cup",
@@ -8870,7 +9630,10 @@
       "players": null,
       "first": "Suomi",
       "second": "FoxBzh",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Suomi": 250
+      }
     },
     {
       "id": "Three Swords Cup",
@@ -8889,7 +9652,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 350
+      }
     },
     {
       "id": "Top Experts League/6",
@@ -8908,7 +9674,10 @@
       "players": 4,
       "first": "Liereyy",
       "second": "FreakinAndy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Liereyy": 1000
+      }
     },
     {
       "id": "Torneo BancoEstado Gamer Saga",
@@ -8927,7 +9696,8 @@
       "players": 18,
       "first": "Sobek",
       "second": "Whitecourt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Torneo Cuadrangular de Verano",
@@ -8946,7 +9716,8 @@
       "players": 4,
       "first": "Biry",
       "second": "Survivalist",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Torneo Express HyperRandom",
@@ -8965,7 +9736,8 @@
       "players": 16,
       "first": "PoXoLo",
       "second": "Albaricoque",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Torneo Nacional Español/2025",
@@ -8984,7 +9756,8 @@
       "players": 32,
       "first": "M0re",
       "second": "Tomate",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Tournoi TOP FR/2",
@@ -9003,7 +9776,8 @@
       "players": 5,
       "first": "C.salette",
       "second": "Ciskhan",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Town Center Tango",
@@ -9022,7 +9796,10 @@
       "players": null,
       "first": "GamerLegion",
       "second": "All Around the World",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GamerLegion": 1500
+      }
     },
     {
       "id": "Town Center Tango/2",
@@ -9041,7 +9818,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 1500
+      }
     },
     {
       "id": "Triumvirat cup",
@@ -9060,7 +9840,8 @@
       "players": 27,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Two Knights Cup",
@@ -9079,7 +9860,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Two Knights Cup/Group Stage",
@@ -9098,7 +9880,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Two Knights Cup/Silver League",
@@ -9117,7 +9900,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "USA Cup/2026",
@@ -9136,7 +9920,10 @@
       "players": 20,
       "first": "Daniel",
       "second": "Smokey",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Daniel": 3026
+      }
     },
     {
       "id": "Unus Imperium",
@@ -9155,7 +9942,10 @@
       "players": 24,
       "first": "Hera",
       "second": "TaToH",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Hera": 1000
+      }
     },
     {
       "id": "Valhalla Cup/2",
@@ -9174,7 +9964,8 @@
       "players": 17,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Vico House Cup/2",
@@ -9193,7 +9984,8 @@
       "players": 16,
       "first": "Hadeo",
       "second": "Nyusika",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Vico House Cup/3",
@@ -9212,7 +10004,8 @@
       "players": 16,
       "first": "Leonidas",
       "second": "MoJRiM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Vivir o morir",
@@ -9231,7 +10024,8 @@
       "players": 16,
       "first": "Sobek",
       "second": "Whitecourt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Wallapalooza",
@@ -9250,7 +10044,10 @@
       "players": 16,
       "first": "IAnTaGoNiStI",
       "second": "Target331",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "IAnTaGoNiStI": 50
+      }
     },
     {
       "id": "Wallhalla/2",
@@ -9269,7 +10066,10 @@
       "players": 32,
       "first": "TheViper",
       "second": "ACCM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TheViper": 10000
+      }
     },
     {
       "id": "Wallhalla/2/Silver League",
@@ -9288,7 +10088,8 @@
       "players": 16,
       "first": "Wean Dinchester",
       "second": "The Bloodless",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Wandering Warriors Cup/2",
@@ -9307,7 +10108,10 @@
       "players": 128,
       "first": "ACCM",
       "second": "Liereyy",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "ACCM": 22500
+      }
     },
     {
       "id": "Warlords Waiting Room",
@@ -9326,79 +10130,10 @@
       "players": 16,
       "first": "TaToH",
       "second": "TheViper",
-      "third": ""
-    },
-    {
-      "id": "Warlords/2",
-      "name": "Warlords II",
-      "url": "https://liquipedia.net/ageofempires/Warlords/2",
-      "tier": "S-Tier",
-      "start": "2023-11-01",
-      "end": "2023-11-19",
-      "prize": 50000,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1, Swiss & Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 16,
-      "first": "Hera",
-      "second": "TaToH",
-      "third": ""
-    },
-    {
-      "id": "Warlords/3",
-      "name": "Warlords III",
-      "url": "https://liquipedia.net/ageofempires/Warlords/3",
-      "tier": "S-Tier",
-      "start": "2024-06-02",
-      "end": "2024-06-09",
-      "prize": 50147,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1, Single Elimination",
-      "type": "Online",
-      "region": "World",
-      "players": 16,
-      "first": "Hera",
-      "second": "TheViper",
-      "third": ""
-    },
-    {
-      "id": "Warlords/4",
-      "name": "Warlords IV",
-      "url": "https://liquipedia.net/ageofempires/Warlords/4",
-      "tier": "S-Tier",
-      "start": "2025-05-18",
-      "end": "2025-06-01",
-      "prize": 64000,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1",
-      "type": "Online",
-      "region": "World",
-      "players": 16,
-      "first": "Hera",
-      "second": "Yo",
-      "third": ""
-    },
-    {
-      "id": "Warlords/5",
-      "name": "MembTV Warlords V",
-      "url": "https://liquipedia.net/ageofempires/Warlords/5",
-      "tier": "S-Tier",
-      "start": "2026-05-07",
-      "end": "2026-05-24",
-      "prize": 70200,
-      "currency": "USD",
-      "organizer": "MembTV",
-      "format": "1v1",
-      "type": "Online",
-      "region": "World",
-      "players": 16,
-      "first": "Liereyy",
-      "second": "ACCM",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "TaToH": 6000
+      }
     },
     {
       "id": "WeChatDCupS1",
@@ -9417,7 +10152,8 @@
       "players": null,
       "first": "离欢",
       "second": "你说的都队",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Weekend Warlords: New Horizons",
@@ -9436,7 +10172,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 415
+      }
     },
     {
       "id": "Winter Crown Slapdown",
@@ -9455,7 +10194,8 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Winter Cup 2022",
@@ -9474,7 +10214,8 @@
       "players": null,
       "first": "József AtlAtl",
       "second": "Sárgahó",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Winter Cup 2025",
@@ -9493,7 +10234,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 520
+      }
     },
     {
       "id": "Workshop Wars",
@@ -9512,7 +10256,10 @@
       "players": 20,
       "first": "FreakinAndy",
       "second": "Overtaken",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "FreakinAndy": 719
+      }
     },
     {
       "id": "World Desert Championship/2",
@@ -9531,7 +10278,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 30000
+      }
     },
     {
       "id": "World Desert Championship/2/Sand League",
@@ -9550,7 +10300,10 @@
       "players": null,
       "first": "Team 1",
       "second": "Team 2",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 1": 1050
+      }
     },
     {
       "id": "World Rumble/2",
@@ -9569,7 +10322,10 @@
       "players": 16,
       "first": "Dark",
       "second": "Hearttt",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Dark": 11111
+      }
     },
     {
       "id": "World Team League/2026/Invitational Season",
@@ -9588,7 +10344,10 @@
       "players": null,
       "first": "Team 2",
       "second": "Team 1",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Team 2": 400
+      }
     },
     {
       "id": "Wrang of Fire/4",
@@ -9607,7 +10366,8 @@
       "players": 91,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Wrang of Fire/5",
@@ -9626,7 +10386,8 @@
       "players": 81,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Wrang of Fire/5/2v2v2 Tournament",
@@ -9645,7 +10406,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Wrang of Fire/6",
@@ -9664,7 +10426,8 @@
       "players": null,
       "first": "",
       "second": "",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "XEVER Cup 1",
@@ -9683,7 +10446,8 @@
       "players": 8,
       "first": "Bl4ck",
       "second": "Nahuel05",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Xbox 2v2 Masters Cup",
@@ -9702,7 +10466,10 @@
       "players": null,
       "first": "GL (Good Luck)",
       "second": "Auto Eco",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "GL (Good Luck)": 175
+      }
     },
     {
       "id": "Xbox Anniversary Invitational",
@@ -9721,7 +10488,10 @@
       "players": 7,
       "first": "Faith2Adventure",
       "second": "SoloGhostAK47",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Faith2Adventure": 72
+      }
     },
     {
       "id": "Xbox Wololo Controller Only",
@@ -9740,7 +10510,10 @@
       "players": 28,
       "first": "Faith2Adventure",
       "second": "Turtle tank3344",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {
+        "Faith2Adventure": 140
+      }
     },
     {
       "id": "Xever Cup 2",
@@ -9759,7 +10532,170 @@
       "players": 16,
       "first": "Nahuel05",
       "second": "Prisma09",
-      "third": ""
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "AoE Authority Open Cup/1",
+      "name": "AoE Authority Open Cup: Season 1",
+      "url": "https://liquipedia.net/ageofempires/AoE_Authority_Open_Cup/1",
+      "tier": "C-Tier",
+      "start": "2026-09-01",
+      "end": "2026-09-28",
+      "prize": 85,
+      "currency": "USD",
+      "organizer": "AoE Authority",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "DS League",
+      "name": "DS_League",
+      "url": "https://liquipedia.net/ageofempires/DS_League",
+      "tier": "B-Tier",
+      "start": "2026-08-15",
+      "end": "2026-10-25",
+      "prize": 650,
+      "currency": "USD",
+      "organizer": "DarkSidE",
+      "format": "1v1, Round Robin",
+      "formatType": "1v1",
+      "type": "Online",
+      "region": "World",
+      "players": 10,
+      "first": "Overtaken",
+      "second": "Biry",
+      "third": "",
+      "prizeByPlayer": {
+        "Overtaken": 650
+      }
+    },
+    {
+      "id": "Campeonato Argentino AoE/1/Primera División",
+      "name": "Campeonato Argentino AoE 2026: Primera División",
+      "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Primera_División",
+      "tier": "B-Tier",
+      "start": "2026-12-04",
+      "end": "2026-12-13",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Mercado del Age",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Argentina",
+      "players": 10,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Campeonato Argentino AoE/1/Segunda División",
+      "name": "Campeonato Argentino AoE 2026: Segunda División",
+      "url": "https://liquipedia.net/ageofempires/Campeonato_Argentino_AoE/1/Segunda_División",
+      "tier": "C-Tier",
+      "start": "2026-08-10",
+      "end": "2026-12-13",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Mercado del Age",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "1v1",
+      "type": "Online",
+      "region": "Argentina",
+      "players": 10,
+      "first": "ElMiller",
+      "second": "Tatengue",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "The Bastion/2",
+      "name": "The Bastion: Season 2",
+      "url": "https://liquipedia.net/ageofempires/The_Bastion/2",
+      "tier": "B-Tier",
+      "start": "2026-09-14",
+      "end": "2026-11-30",
+      "prize": 500,
+      "currency": "USD",
+      "organizer": "BEING ESPORTS",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Germany",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Nomad League: Relocated/2",
+      "name": "Nomad League: Relocated - Season 2",
+      "url": "https://liquipedia.net/ageofempires/Nomad_League:_Relocated/2",
+      "tier": "C-Tier",
+      "start": "2026-08-24",
+      "end": "2026-11-15",
+      "prize": 100,
+      "currency": "USD",
+      "organizer": "Low Elo Legion",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "CZ/SK AoE Liga/3v3",
+      "name": "CZ/SK AoE Liga: 3v3",
+      "url": "https://liquipedia.net/ageofempires/CZ/SK_AoE_Liga/3v3",
+      "tier": "C-Tier",
+      "start": "2026-09-15",
+      "end": "2026-11-30",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "SponQbob",
+      "format": "3v3, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Czech Republic",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "TC LAN",
+      "name": "TC LAN",
+      "url": "https://liquipedia.net/ageofempires/TC_LAN",
+      "tier": "B-Tier",
+      "start": "2026-10-05",
+      "end": "2026-10-31",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Uxmal Esports",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online/Offline",
+      "region": "Mexico",
+      "players": 64,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     }
   ]
 }
