@@ -53,7 +53,7 @@ SINCE_DATE = "2020-01-01"
 # Bump this whenever that parsing logic changes meaningfully; load_cache()
 # then forces a re-fetch of every already-parsed tournament (not just
 # out-of-scope ones) so the fix actually reaches already-cached data.
-PRIZE_PARSER_VERSION = 2
+PRIZE_PARSER_VERSION = 3
 
 QUERY_INTERVAL = 2.0
 PARSE_INTERVAL = 30.0
@@ -125,6 +125,26 @@ def api_parse_wikitext(page):
     if "error" in data:
         return None
     return data["parse"]["wikitext"]["*"]
+
+
+def api_parse_html(page):
+    """Rendered page HTML, not wikitext - only fetched as a fallback (see
+    prize_pool_needs_html_fallback) when a tournament's prize pool has no
+    static per-player/team data in the wikitext at all. Liquipedia's own
+    prize pool template computes and renders a USD-equivalent column even
+    for a purely local-currency tournament, and separately can derive
+    placements from the bracket at render time (import=true) rather than
+    listing them statically - in both cases the wikitext genuinely has
+    nothing to parse, only the rendered output does. Shares the same 30s
+    throttle as api_parse_wikitext since it's the same action=parse
+    endpoint, just a different prop=."""
+    data = _throttled_get(
+        {"action": "parse", "page": page, "prop": "text", "format": "json"},
+        PARSE_INTERVAL, _parse_ts_holder,
+    )
+    if "error" in data:
+        return None
+    return data["parse"]["text"]["*"]
 
 
 def category_members(category):
@@ -635,6 +655,78 @@ def parse_solo_prize_pool(wikitext):
     return result
 
 
+def build_team_rosters(games):
+    """team_name -> set of players who actually appear under that team in
+    this tournament's own parsed game log (player1's own side is always
+    normalized to team1 regardless of which bracket side they started on -
+    see the team-format match parsing below)."""
+    rosters = {}
+    for g in games:
+        team = g.get("team1")
+        if not team:
+            continue
+        roster = rosters.setdefault(team, set())
+        if g.get("player1"):
+            roster.add(g["player1"])
+        roster.update(g.get("teammates") or [])
+    return rosters
+
+
+def prize_pool_needs_html_fallback(tournament, wikitext):
+    """True when the wikitext has a prize pool template but it yielded
+    nothing - either a purely local-currency tournament (no usdprize/
+    percentage anywhere) or one using import=true to derive placements
+    from the bracket at render time instead of listing them statically.
+    Either way the wikitext has nothing left to parse; only the rendered
+    page does (see api_parse_html/parse_prize_pool_html)."""
+    if not tournament or tournament.get("prizeByPlayer"):
+        return False
+    return re.search(r"\{\{(Solo|Team)PrizePool", wikitext) is not None
+
+
+def parse_prize_pool_html(html):
+    """{name: usd} from the *rendered* prize pool table - name is a player
+    for a solo tournament, a team for a team one (the caller decides which
+    and, for team, splits each amount across that team's actual roster via
+    build_team_rosters(), same as parse_team_prize_pool()).
+
+    Only used as a fallback (see prize_pool_needs_html_fallback) when the
+    wikitext itself has no static prize data - Liquipedia's prize pool
+    template still computes and displays a USD-equivalent column even for
+    a tournament priced entirely in a local currency, and the wikitext
+    never stores that computed value.
+
+    Tied placements share one prize cell spanning multiple table rows via
+    rowspan, rendered on the first tied row only - identified by a
+    class="prizepooltable-place" cell, present on every group-starting row
+    (tied or not) and absent from every continuation row. Carries that
+    row's amount forward across the group's continuation rows; resets to
+    None on the next group-starting row that has no money cell of its own
+    (an unpaid placement tier, e.g. everyone eliminated in groups) rather
+    than incorrectly carrying a prior tier's amount into it."""
+    table_start = html.find("prizepooltable")
+    if table_start == -1:
+        return {}
+    table_end = html.find("</table>", table_start)
+    table_html = html[table_start:table_end] if table_end != -1 else html[table_start:]
+
+    result = {}
+    current_amount = None
+    for row in re.findall(r"<tr\b.*?</tr>", table_html, re.S):
+        if 'class="prizepooltable-place"' in row:
+            m = re.search(r'data-toggle-area-content="1"[^>]*>\$([\d,.]+)<', row)
+            current_amount = parse_money(m.group(1)) if m else None
+        if current_amount is None:
+            continue
+        names = [n.strip() for n in re.findall(r'<span class="name"[^>]*><a[^>]*>([^<]+)</a>', row)]
+        if not names:
+            continue
+        share = current_amount / len(names)
+        for name in names:
+            result[name] = result.get(name, 0) + share
+    return result
+
+
 def parse_team_prize_pool(wikitext, total_prize, games):
     """{player_name: total_usd} from a {{TeamPrizePool}}. The wiki only
     records each team's own share - a flat usdprize or a percentage of the
@@ -653,15 +745,7 @@ def parse_team_prize_pool(wikitext, total_prize, games):
     blocks = find_templates(wikitext, "TeamPrizePool")
     if not blocks:
         return {}
-    team_rosters = {}
-    for g in games:
-        team = g.get("team1")
-        if not team:
-            continue
-        roster = team_rosters.setdefault(team, set())
-        if g.get("player1"):
-            roster.add(g["player1"])
-        roster.update(g.get("teammates") or [])
+    team_rosters = build_team_rosters(games)
 
     def slot_reward(slot_block):
         usd = parse_money(block_field(slot_block, "usdprize"))
@@ -1060,6 +1144,29 @@ def main():
             print("  -> could not fetch, will retry next run")
             continue
         tournament, games = parse_tournament(page, wikitext)
+        if prize_pool_needs_html_fallback(tournament, wikitext):
+            html = api_parse_html(page)
+            if html:
+                html_prizes = parse_prize_pool_html(html)
+                if html_prizes:
+                    is_team = any(g.get("format") == "team" for g in games)
+                    if is_team:
+                        rosters = build_team_rosters(games)
+                        merged = {}
+                        for team_name, amount in html_prizes.items():
+                            roster = rosters.get(team_name)
+                            if not roster:
+                                continue  # team never appears in the parsed game log - can't attribute
+                            share = amount / len(roster)
+                            for player in roster:
+                                merged[player] = merged.get(player, 0) + share
+                        html_prizes = merged
+                    else:
+                        html_prizes = {resolve_player_name(n): v for n, v in html_prizes.items()}
+                    tournament["prizeByPlayer"] = html_prizes
+                    if html_prizes and not tournament.get("prize"):
+                        tournament["prize"] = round(sum(html_prizes.values()))
+                    print(f"  -> recovered prize data from rendered page (local currency or auto-imported placements)")
         cache[page] = {"tournament": tournament, "games": games}
         if tournament is None:
             print(f"  -> out of scope (wrong game or before {SINCE_DATE})")
