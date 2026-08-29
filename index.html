@@ -541,7 +541,7 @@ function fmtPrize(prize, currency) {
   const sym = currency === 'EUR' ? '€' : '$';
   if (prize >= 1_000_000) return sym + (prize / 1_000_000).toFixed(1) + 'M';
   if (prize >= 1_000)     return sym + (prize / 1_000).toFixed(0) + 'K';
-  return sym + prize;
+  return sym + Math.round(prize);
 }
 
 function fmtDateRange(start, end) {
