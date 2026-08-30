@@ -1001,6 +1001,15 @@ CACHE_PATH = DATA_DIR / "_page_cache.json"
 # resume across runs without losing progress or redoing work.
 MAX_PAGES_PER_RUN = 500
 
+# Belt-and-suspenders alongside MAX_PAGES_PER_RUN, not instead of it: a page
+# needing the prize-pool HTML fallback (see prize_pool_needs_html_fallback)
+# costs a *second* 30s-throttled action=parse call, so actual per-page cost
+# varies - a run unlucky enough to hit mostly HTML-fallback pages could
+# still blow well past 6h even under the page cap. This tracks real
+# wall-clock time instead and stops early with whatever's been checkpointed
+# so far, leaving headroom for the final write_outputs()/commit/push.
+MAX_RUN_SECONDS = 5.25 * 3600
+
 
 def load_cache():
     """page title -> {"tournament": {...}|None, "games": [...]}. A page
@@ -1137,7 +1146,12 @@ def main():
           f"processing {len(todo)} this run (cap={MAX_PAGES_PER_RUN}).")
 
     unclassified_maps = set()
+    run_start = time.monotonic()
     for i, page in enumerate(todo, 1):
+        if time.monotonic() - run_start > MAX_RUN_SECONDS:
+            print(f"\nApproaching the {MAX_RUN_SECONDS / 3600:.2f}h time budget - "
+                  f"stopping after {i - 1}/{len(todo)} pages this run; the rest continues next run.")
+            break
         print(f"[{i}/{len(todo)}] Fetching {page} ...")
         wikitext = api_parse_wikitext(page)
         if wikitext is None:
@@ -1177,6 +1191,9 @@ def main():
             print(f"  -> {tournament['name']}: {len(games)} game(s)")
         if i % 5 == 0 or i == len(todo):
             save_cache(cache)  # checkpoint - safe to interrupt/timeout at any point
+
+    save_cache(cache)  # unconditional final save - the time-budget break above can
+                        # land between checkpoints, unlike a normal i == len(todo) finish
 
     if unclassified_maps:
         print("\nMaps with no entry in data/map_types.json (mapTypes will be empty):")
