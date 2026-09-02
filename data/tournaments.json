@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T14:30:06.296945+00:00",
+  "generatedAt": "2026-09-02T11:36:35.516835+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -133,10 +133,10 @@
       "prizeByPlayer": {
         "Jrfear": 310.96,
         "Dr.Kozmonot": 310.96,
-        "AntiMetaist": 207.31,
         "Theos": 207.31,
-        "koteshii": 103.655,
-        "zankoku": 103.655
+        "AntiMetaist": 207.31,
+        "zankoku": 103.655,
+        "koteshii": 103.655
       }
     },
     {
@@ -5796,11 +5796,11 @@
       "type": "Online",
       "region": "World",
       "players": 10,
-      "first": "Ciskhan",
-      "second": "Biry",
+      "first": "StonePleaseAoE",
+      "second": "Pela",
       "third": "",
       "prizeByPlayer": {
-        "Ciskhan": 650
+        "StonePleaseAoE": 650
       }
     },
     {
@@ -11146,7 +11146,7 @@
       "url": "https://liquipedia.net/ageofempires/Liga_Interna_HK",
       "tier": "C-Tier",
       "start": "2026-06-15",
-      "end": "2026-08-30",
+      "end": "2026-09-02",
       "prize": 500,
       "currency": "USD",
       "organizer": "Holkan Nuukuli",
@@ -11155,11 +11155,11 @@
       "type": "Online",
       "region": "Mexico",
       "players": 10,
-      "first": "Eren",
-      "second": "Puerco Black",
+      "first": "Keno",
+      "second": "Eren",
       "third": "",
       "prizeByPlayer": {
-        "Eren": 500
+        "Keno": 500
       }
     },
     {
@@ -14699,48 +14699,48 @@
       "second": "Team Valas",
       "third": "",
       "prizeByPlayer": {
-        "Steak": 312.5,
         "Frost 9": 312.5,
-        "Kelar": 312.5,
-        "Mo Tastic": 312.5,
         "TheViper": 312.5,
+        "Mo Tastic": 312.5,
+        "Steak": 312.5,
+        "Kelar": 312.5,
         "Tiggerr": 260.4166666666667,
-        "Fedex": 260.4166666666667,
         "Slam": 260.4166666666667,
         "Ovenka": 260.4166666666667,
-        "Uzzi": 260.4166666666667,
         "OG DADDY": 260.4166666666667,
-        "dog9you": 156.25,
-        "KingstoNe": 156.25,
-        "PhilippHJS": 156.25,
+        "Fedex": 260.4166666666667,
+        "Uzzi": 260.4166666666667,
         "Dogao": 156.25,
+        "KingstoNe": 156.25,
+        "dog9you": 156.25,
         "Dobbs351": 156.25,
+        "PhilippHJS": 156.25,
+        "BuLLeT": 130.20833333333334,
         "NoLo": 130.20833333333334,
         "Rodney McKay": 130.20833333333334,
         "Benanji": 130.20833333333334,
-        "BuLLeT": 130.20833333333334,
         "Aten": 130.20833333333334,
         "Ganji": 130.20833333333334,
-        "DanMT": 78.125,
         "Sora Kuma": 78.125,
-        "Smokealot": 78.125,
         "Mihai06": 78.125,
         "Kamigawa": 78.125,
+        "DanMT": 78.125,
+        "Smokealot": 78.125,
         "Loris": 78.125,
         "TheKroks": 78.125,
+        "NeoZz": 78.125,
         "JorDan AoE": 78.125,
         "ShiXo.": 78.125,
-        "NeoZz": 78.125,
-        "R4v3N": 78.125,
-        "Dziamdziak": 78.125,
         "Matze": 78.125,
-        "Miguel": 78.125,
         "DauT": 78.125,
-        "Lewis": 78.125,
-        "Firebeer": 78.125,
+        "R4v3N": 78.125,
+        "Miguel": 78.125,
+        "Dziamdziak": 78.125,
+        "Tulendeena": 78.125,
         "Acro17": 78.125,
+        "Firebeer": 78.125,
         "Ciskhan": 78.125,
-        "Tulendeena": 78.125
+        "Lewis": 78.125
       }
     },
     {
@@ -16260,7 +16260,7 @@
       "url": "https://liquipedia.net/ageofempires/Shrouded_Deathmatch",
       "tier": "B-Tier",
       "start": "2026-09-28",
-      "end": "TBA",
+      "end": "2026-11-08",
       "prize": 750,
       "currency": "USD",
       "organizer": "Xardas_AoE",
@@ -17855,11 +17855,11 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "FreakinAndy",
-      "second": "Kelar",
+      "first": "Kelar",
+      "second": "HazZy",
       "third": "",
       "prizeByPlayer": {
-        "FreakinAndy": 700
+        "Kelar": 700
       }
     },
     {
