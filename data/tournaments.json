@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T11:36:35.516835+00:00",
+  "generatedAt": "2026-09-03T11:34:32.921792+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -1521,7 +1521,7 @@
       "formatType": "unknown",
       "type": "Online",
       "region": "World",
-      "players": null,
+      "players": 30,
       "first": "",
       "second": "",
       "third": "",
@@ -13072,14 +13072,16 @@
       "currency": "USD",
       "organizer": "Low Elo Legion",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "",
-      "second": "",
+      "first": "HaraKiri",
+      "second": "Javisty",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "HaraKiri": 100
+      }
     },
     {
       "id": "Nomad Rivals I",
@@ -16867,8 +16869,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Goatmeister",
-      "second": "Frost 9",
+      "first": "Davve02",
+      "second": "Puttsson",
       "third": "",
       "prizeByPlayer": {}
     },
