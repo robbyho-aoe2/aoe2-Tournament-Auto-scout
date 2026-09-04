@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:34:32.921792+00:00",
+  "generatedAt": "2026-09-04T11:32:53.513875+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18733,11 +18733,11 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Onimaru Esports",
-      "second": "LingYuan",
+      "first": "Team Vitality",
+      "second": "SalZz",
       "third": "",
       "prizeByPlayer": {
-        "Onimaru Esports": 58500
+        "Team Vitality": 58500
       }
     },
     {
@@ -20085,7 +20085,7 @@
       "tier": "C-Tier",
       "start": "2026-08-17",
       "end": "2026-09-20",
-      "prize": 50,
+      "prize": 108,
       "currency": "USD",
       "organizer": "Marintho",
       "format": "1v1, Single Elimination",
@@ -20097,7 +20097,7 @@
       "second": "R4v3N",
       "third": "",
       "prizeByPlayer": {
-        "DuDuZhu": 50
+        "DuDuZhu": 108
       }
     },
     {
