@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T11:32:53.513875+00:00",
+  "generatedAt": "2026-09-05T10:55:15.456916+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18733,11 +18733,11 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Team Vitality",
-      "second": "SalZz",
+      "first": "LingYuan",
+      "second": "Nocturna eSports",
       "third": "",
       "prizeByPlayer": {
-        "Team Vitality": 58500
+        "LingYuan": 58500
       }
     },
     {
