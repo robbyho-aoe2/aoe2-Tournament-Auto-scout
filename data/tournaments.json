@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T10:55:15.456916+00:00",
+  "generatedAt": "2026-09-07T12:43:10.608959+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -11337,6 +11337,26 @@
       "prizeByPlayer": {}
     },
     {
+      "id": "LigaPeruana",
+      "name": "Liga Peruana 2026",
+      "url": "https://liquipedia.net/ageofempires/LigaPeruana",
+      "tier": "B-Tier",
+      "start": "2026-10-10",
+      "end": "2026-12-12",
+      "prize": 300,
+      "currency": "USD",
+      "organizer": "Andreu Imperi",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 12,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
       "id": "Lightning Fast 2v2 Christmas",
       "name": "Lightning Fast 2v2 Christmas",
       "url": "https://liquipedia.net/ageofempires/Lightning_Fast_2v2_Christmas",
@@ -18734,7 +18754,7 @@
       "region": "World",
       "players": null,
       "first": "LingYuan",
-      "second": "Nocturna eSports",
+      "second": "SalzZ",
       "third": "",
       "prizeByPlayer": {
         "LingYuan": 58500
@@ -20084,7 +20104,7 @@
       "url": "https://liquipedia.net/ageofempires/Wallapalooza",
       "tier": "C-Tier",
       "start": "2026-08-17",
-      "end": "2026-09-20",
+      "end": "2026-09-06",
       "prize": 108,
       "currency": "USD",
       "organizer": "Marintho",
@@ -20094,7 +20114,7 @@
       "region": "World",
       "players": 16,
       "first": "DuDuZhu",
-      "second": "R4v3N",
+      "second": "IAnTaGoNiStI",
       "third": "",
       "prizeByPlayer": {
         "DuDuZhu": 108
