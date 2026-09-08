@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T12:43:10.608959+00:00",
+  "generatedAt": "2026-09-08T11:32:43.742519+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3623,7 +3623,7 @@
       "type": "Online",
       "region": "Argentina",
       "players": 10,
-      "first": "Tatengue",
+      "first": "ElMiller",
       "second": "Feyern",
       "third": "",
       "prizeByPlayer": {}
@@ -13096,11 +13096,11 @@
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "HaraKiri",
+      "first": "wosm",
       "second": "Javisty",
       "third": "",
       "prizeByPlayer": {
-        "HaraKiri": 100
+        "wosm": 100
       }
     },
     {
