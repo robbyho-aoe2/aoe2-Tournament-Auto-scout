@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T11:32:43.742519+00:00",
+  "generatedAt": "2026-09-09T11:37:37.174939+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -9718,18 +9718,22 @@
       "tier": "B-Tier",
       "start": "2026-09-07",
       "end": "2026-09-17",
-      "prize": null,
+      "prize": 45,
       "currency": "USD",
       "organizer": "Loong Elite Youth",
       "format": "1v1, Single & Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "China",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "Day by Day",
+      "second": "Dennis",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Dooidy": 14.9,
+        "Starsky": 14.9,
+        "Dennis": 14.9
+      }
     },
     {
       "id": "King of Americas",
