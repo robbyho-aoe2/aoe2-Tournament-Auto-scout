@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T11:37:37.174939+00:00",
+  "generatedAt": "2026-09-10T11:33:15.034995+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -1518,14 +1518,16 @@
       "currency": "USD",
       "organizer": "AoE Authority",
       "format": "1v1, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 30,
-      "first": "",
-      "second": "",
+      "first": "Hornet-Wing",
+      "second": "Bleating_Goat",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Hornet-Wing": 85
+      }
     },
     {
       "id": "AoE2 Admirals Cup",
@@ -16893,8 +16895,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Davve02",
-      "second": "Puttsson",
+      "first": "Frost 9",
+      "second": "Davve02",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -17881,11 +17883,11 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "Kelar",
-      "second": "HazZy",
+      "first": "HazZy",
+      "second": "Zayu",
       "third": "",
       "prizeByPlayer": {
-        "Kelar": 700
+        "HazZy": 700
       }
     },
     {
