@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T11:33:15.034995+00:00",
+  "generatedAt": "2026-09-11T11:34:48.395862+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -865,6 +865,66 @@
         "Ivanenko": 19.46,
         "Wisenatic": 19.46
       }
+    },
+    {
+      "id": "Alchemy League/11/Sprint/1",
+      "name": "Alchemy League Season 11 Sprint 1",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/11/Sprint/1",
+      "tier": "C-Tier",
+      "start": "2026-08-26",
+      "end": "2026-09-15",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 36,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/11/Sprint/2",
+      "name": "Alchemy League Season 11 Sprint 2",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/11/Sprint/2",
+      "tier": "C-Tier",
+      "start": "2026-09-23",
+      "end": "2026-10-27",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 36,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "Alchemy League/11/Sprint/3",
+      "name": "Alchemy League Season 11 Sprint 3",
+      "url": "https://liquipedia.net/ageofempires/Alchemy_League/11/Sprint/3",
+      "tier": "C-Tier",
+      "start": "2026-11-04",
+      "end": "2026-12-08",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Alchemy AOE Community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 36,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Alchemy League/2/Sprint/1",
@@ -9732,9 +9792,9 @@
       "second": "Dennis",
       "third": "",
       "prizeByPlayer": {
-        "Dooidy": 14.9,
-        "Starsky": 14.9,
-        "Dennis": 14.9
+        "Dooidy": 14.91,
+        "Starsky": 14.91,
+        "Dennis": 14.91
       }
     },
     {
@@ -18760,7 +18820,7 @@
       "region": "World",
       "players": null,
       "first": "LingYuan",
-      "second": "SalzZ",
+      "second": "Taiwan Aoe Gamer",
       "third": "",
       "prizeByPlayer": {
         "LingYuan": 58500
