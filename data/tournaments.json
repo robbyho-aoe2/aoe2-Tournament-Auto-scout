@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:34:48.395862+00:00",
+  "generatedAt": "2026-09-12T11:03:45.463202+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18819,11 +18819,11 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "LingYuan",
-      "second": "Taiwan Aoe Gamer",
+      "first": "Onimaru Esports",
+      "second": "SalZz",
       "third": "",
       "prizeByPlayer": {
-        "LingYuan": 58500
+        "Onimaru Esports": 58500
       }
     },
     {
