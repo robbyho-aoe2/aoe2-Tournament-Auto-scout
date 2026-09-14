@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T12:07:03.779452+00:00",
+  "generatedAt": "2026-09-14T13:02:24.876117+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -17496,6 +17496,26 @@
       }
     },
     {
+      "id": "T90 Titans League/6/Bronze League",
+      "name": "T90 Titans League 6: Bronze League",
+      "url": "https://liquipedia.net/ageofempires/T90_Titans_League/6/Bronze_League",
+      "tier": "A-Tier",
+      "start": "2026-11-30",
+      "end": "2026-12-20",
+      "prize": 1600,
+      "currency": "USD",
+      "organizer": "T90Official",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 56,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
       "id": "T90 Titans League/6/Platinum League",
       "name": "T90 Titans League 6: Platinum League",
       "url": "https://liquipedia.net/ageofempires/T90_Titans_League/6/Platinum_League",
@@ -17904,11 +17924,11 @@
       "type": "Online",
       "region": "World",
       "players": 12,
-      "first": "FreakinAndy",
-      "second": "HazZy",
+      "first": "Frost 9",
+      "second": "FreakinAndy",
       "third": "",
       "prizeByPlayer": {
-        "FreakinAndy": 700
+        "Frost 9": 700
       }
     },
     {
@@ -18781,7 +18801,7 @@
       "region": "World",
       "players": null,
       "first": "Onimaru Esports",
-      "second": "DarkSidE",
+      "second": "Nocturna eSports",
       "third": "",
       "prizeByPlayer": {
         "Onimaru Esports": 58500
