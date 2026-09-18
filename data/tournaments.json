@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T11:58:12.534499+00:00",
+  "generatedAt": "2026-09-18T11:31:24.764821+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18883,11 +18883,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "DarkSidE",
-      "second": "Team Venon Esports",
+      "first": "Rulers of Rome",
+      "second": "CN ZhongSheng",
       "third": "",
       "prizeByPlayer": {
-        "DarkSidE": 16500
+        "Rulers of Rome": 16500
       }
     },
     {
