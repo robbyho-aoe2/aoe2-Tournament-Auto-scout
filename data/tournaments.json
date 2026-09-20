@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T11:16:01.606967+00:00",
+  "generatedAt": "2026-09-20T11:36:59.849273+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -6976,7 +6976,7 @@
       "region": "Italy",
       "players": 16,
       "first": "Sitaux",
-      "second": "MarknighT",
+      "second": "Vodka L",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -9799,8 +9799,8 @@
       "url": "https://liquipedia.net/ageofempires/Kindle_of_Genie_Cup",
       "tier": "B-Tier",
       "start": "2026-09-07",
-      "end": "2026-09-17",
-      "prize": 45,
+      "end": "2026-09-16",
+      "prize": null,
       "currency": "USD",
       "organizer": "Loong Elite Youth",
       "format": "1v1, Single & Double Elimination",
@@ -9808,14 +9808,10 @@
       "type": "Online",
       "region": "China",
       "players": 16,
-      "first": "Day by Day",
-      "second": "Dennis",
+      "first": "Blve",
+      "second": "CC",
       "third": "",
-      "prizeByPlayer": {
-        "Dooidy": 14.91,
-        "Starsky": 14.91,
-        "Dennis": 14.91
-      }
+      "prizeByPlayer": {}
     },
     {
       "id": "King of Americas",
@@ -18882,18 +18878,18 @@
       "region": "World",
       "players": null,
       "first": "Onimaru Esports",
-      "second": "Nocturna eSports",
+      "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
         "The Dragonstar": 1466.6666666666667,
-        "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
+        "Classicpro": 933.3333333333334,
         "Dark": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
@@ -18915,7 +18911,14 @@
       "second": "Rulers of Rome",
       "third": "",
       "prizeByPlayer": {
-        "Old School": 16500
+        "Daniel": 237.5,
+        "Bad Koala": 237.5,
+        "Jibatong": 237.5,
+        "XuanLv": 237.5,
+        "Prisma09": 237.5,
+        "Monoz": 237.5,
+        "Capoch": 237.5,
+        "Fedex": 237.5
       }
     },
     {
