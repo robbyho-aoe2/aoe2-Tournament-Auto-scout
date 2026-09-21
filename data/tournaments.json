@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T11:36:59.849273+00:00",
+  "generatedAt": "2026-09-21T13:05:36.628805+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4807,7 +4807,7 @@
       "tier": "B-Tier",
       "start": "2026-10-19",
       "end": "2026-11-15",
-      "prize": 694,
+      "prize": 790,
       "currency": "USD",
       "organizer": "Mununez",
       "format": "4v4, Round Robin & Single Elimination",
@@ -16612,9 +16612,9 @@
       }
     },
     {
-      "id": "Sudden Dessaster",
+      "id": "Sudden Dessaster/1",
       "name": "Sudden Dessaster",
-      "url": "https://liquipedia.net/ageofempires/Sudden_Dessaster",
+      "url": "https://liquipedia.net/ageofempires/Sudden_Dessaster/1",
       "tier": "A-Tier",
       "start": "2024-03-10",
       "end": "2024-04-07",
@@ -16971,8 +16971,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Frost 9",
-      "second": "Davve02",
+      "first": "BuLLeT",
+      "second": "Puttsson",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18877,19 +18877,19 @@
       "type": "Online/Offline",
       "region": "World",
       "players": null,
-      "first": "Onimaru Esports",
+      "first": "Team Vitality",
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
+        "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "StonePleaseAoE": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {
@@ -18911,14 +18911,14 @@
       "second": "Rulers of Rome",
       "third": "",
       "prizeByPlayer": {
-        "Daniel": 237.5,
-        "Bad Koala": 237.5,
-        "Jibatong": 237.5,
         "XuanLv": 237.5,
+        "Jibatong": 237.5,
+        "Bad Koala": 237.5,
+        "Daniel": 237.5,
+        "Fedex": 237.5,
         "Prisma09": 237.5,
-        "Monoz": 237.5,
         "Capoch": 237.5,
-        "Fedex": 237.5
+        "Monoz": 237.5
       }
     },
     {
