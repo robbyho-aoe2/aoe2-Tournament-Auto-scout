@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T11:57:22.116220+00:00",
+  "generatedAt": "2026-09-26T11:37:29.527998+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18821,23 +18821,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Lucho": 1250.0,
         "Nicov": 1250.0,
         "Sebastian": 1250.0,
+        "Lucho": 1250.0,
         "ACCM": 1250.0,
-        "Target331": 1187.5,
-        "Running": 1187.5,
-        "Terz": 1187.5,
         "Annotoph": 1187.5,
+        "Running": 1187.5,
+        "Target331": 1187.5,
+        "Terz": 1187.5,
         "The Dragonstar": 1466.6666666666667,
-        "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
-        "IAnTaGoNiStI": 933.3333333333334,
         "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Dark": 933.3333333333334,
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
