@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T11:37:29.527998+00:00",
+  "generatedAt": "2026-09-27T19:02:09.139473+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -1647,14 +1647,16 @@
       "currency": "USD",
       "organizer": "Joldix",
       "format": "1v1, Swiss System, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online/Offline",
       "region": "Colombia",
       "players": 10,
-      "first": "",
-      "second": "",
+      "first": "Toth",
+      "second": "Nicky",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Toth": 400
+      }
     },
     {
       "id": "AoE2 Middle East Tournament",
@@ -5882,6 +5884,26 @@
         "Fredoodle_": 34.96,
         "Dobbs351": 24.97
       }
+    },
+    {
+      "id": "Danmarksmesterskaberne/2026",
+      "name": "Danmarksmesterskaberne 2026",
+      "url": "https://liquipedia.net/ageofempires/Danmarksmesterskaberne/2026",
+      "tier": "C-Tier",
+      "start": "2026-10-05",
+      "end": "2026-11-22",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Danish AoE2 community",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online/Offline",
+      "region": "Denmark",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Danza de Dragones/2",
@@ -18172,15 +18194,15 @@
       "url": "https://liquipedia.net/ageofempires/The_Bastion/2",
       "tier": "B-Tier",
       "start": "2026-10-05",
-      "end": "2026-12-21",
+      "end": "2027-07-03",
       "prize": 500,
       "currency": "USD",
       "organizer": "BEING ESPORTS",
-      "format": "1v1, Round Robin & Single Elimination",
+      "format": "1v1, Round Robin & Double Elimination",
       "formatType": "unknown",
-      "type": "Online",
+      "type": "Online/Offline",
       "region": "Germany",
-      "players": 10,
+      "players": 9,
       "first": "",
       "second": "",
       "third": "",
@@ -18826,18 +18848,18 @@
         "Lucho": 1250.0,
         "ACCM": 1250.0,
         "Annotoph": 1187.5,
-        "Running": 1187.5,
         "Target331": 1187.5,
         "Terz": 1187.5,
+        "Running": 1187.5,
         "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {
@@ -19165,6 +19187,26 @@
         "BuloaSaky": 31.223333333333333,
         "Saymyname": 31.223333333333333
       }
+    },
+    {
+      "id": "The Transatlantic Cup",
+      "name": "The Transatlantic Cup",
+      "url": "https://liquipedia.net/ageofempires/The_Transatlantic_Cup",
+      "tier": "B-Tier",
+      "start": "2026-09-28",
+      "end": "2026-10-18",
+      "prize": 750,
+      "currency": "USD",
+      "organizer": "paradox303",
+      "format": "1v1, 2v2, 4v4",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "United Kingdom",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "The Unexpected Summer Cup",
