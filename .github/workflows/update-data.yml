@@ -2,12 +2,23 @@ name: Update tournament data
 
 on:
   schedule:
-    # Nightly at 06:00 UTC.
-    - cron: "0 6 * * *"
+    # Nightly at ~06:17 UTC. GitHub explicitly warns that top-of-the-hour
+    # schedules (0 6 * * *) hit peak scheduler load and can be delayed or
+    # dropped outright - confirmed here via silent gaps in the commit
+    # history (e.g. 2026-09-06, 2026-09-25 never ran). An off-the-hour
+    # minute avoids that congestion window.
+    - cron: "17 6 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  # Queue rather than skip if a previous run is still going (e.g. a manual
+  # trigger overlapping the nightly one) - don't cancel a fetch in
+  # progress, since that would throw away real API-throttled work.
+  group: update-tournament-data
+  cancel-in-progress: false
 
 jobs:
   update-data:
