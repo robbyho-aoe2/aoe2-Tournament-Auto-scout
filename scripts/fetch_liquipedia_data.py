@@ -65,7 +65,7 @@ _last_query_ts = 0.0
 _last_parse_ts = 0.0
 
 
-def _throttled_get(params, interval, last_ts_holder, retries=3):
+def _throttled_get(params, interval, last_ts_holder, retries=5, _attempt=0):
     elapsed = time.monotonic() - last_ts_holder[0]
     if elapsed < interval:
         time.sleep(interval - elapsed)
@@ -81,27 +81,34 @@ def _throttled_get(params, interval, last_ts_holder, retries=3):
                 import gzip
                 raw = gzip.decompress(raw)
     except urllib.error.HTTPError as e:
-        # 429s happen occasionally even with correct client-side throttling
-        # (their server-side limiter can trigger on shorter/cumulative
-        # windows) - back off and retry rather than losing the whole run
-        # over one transient hit. Respects their own Retry-After if given.
-        if e.code == 429 and retries > 0:
-            wait = int(e.headers.get("Retry-After", 60))
-            print(f"  (rate limited, waiting {wait}s before retry...)")
+        # 429s (their server-side limiter, which can trigger on shorter/
+        # cumulative windows than our own client-side throttle - and on
+        # shared GitHub runner IPs, depending on who else is hitting them)
+        # and 5xx (their CDN/backend hiccuping) are both transient. Back
+        # off with a growing wait rather than losing the whole run over
+        # one bad stretch. Retry-After is honored when it's a plain number
+        # of seconds - it can legally also be an HTTP-date, which int()
+        # would crash on, so anything non-numeric falls back to our own
+        # growing backoff instead.
+        transient = e.code == 429 or 500 <= e.code < 600
+        if transient and retries > 0:
+            retry_after = e.headers.get("Retry-After")
+            wait = int(retry_after) if retry_after and retry_after.isdigit() else 60 * (_attempt + 1)
+            print(f"  (HTTP {e.code}, waiting {wait}s before retry {_attempt + 1}...)")
             time.sleep(wait)
             last_ts_holder[0] = time.monotonic()
-            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1)
+            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1, _attempt=_attempt + 1)
         raise
     except (urllib.error.URLError, TimeoutError, OSError) as e:
         # transient network blips (DNS hiccup, connection timeout, brief
-        # drop) shouldn't cost hours of progress either - same retry
-        # treatment as a 429, just a fixed shorter backoff since there's no
-        # Retry-After to honor here.
+        # drop) get the same treatment as a 429, just a shorter growing
+        # backoff since there's no Retry-After to honor here.
         if retries > 0:
-            print(f"  (network error: {e}; waiting 30s before retry...)")
-            time.sleep(30)
+            wait = 30 * (_attempt + 1)
+            print(f"  (network error: {e}; waiting {wait}s before retry {_attempt + 1}...)")
+            time.sleep(wait)
             last_ts_holder[0] = time.monotonic()
-            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1)
+            return _throttled_get(params, interval, last_ts_holder, retries=retries - 1, _attempt=_attempt + 1)
         raise
     last_ts_holder[0] = time.monotonic()
     return json.loads(raw.decode("utf-8"))
@@ -1133,8 +1140,20 @@ def write_outputs(pages, cache):
 
 def main():
     print("Discovering tournament pages...")
-    pages = discover_tournament_pages()
     cache = load_cache()
+    try:
+        pages = discover_tournament_pages()
+    except Exception as e:
+        # Discovery only finds *new* pages - if it can't reach Liquipedia
+        # even after _throttled_get's retries, that shouldn't cost the whole
+        # run (it previously did: an unhandled exception here killed the job
+        # at the ~3m40s mark, before any fetch or commit). Fall back to the
+        # already-cached pages so the live/upcoming ones still get refreshed
+        # and outputs still regenerate; new tournaments are picked up on a
+        # later run instead.
+        print(f"WARNING: page discovery failed ({e!r}) - continuing with already-cached pages "
+              f"only; newly-listed tournaments will be picked up on a later run.")
+        pages = sorted(cache.keys())
 
     needs_fetch = [p for p in pages if p not in cache or not is_permanent(cache[p])]
     never_seen = [p for p in needs_fetch if p not in cache]
@@ -1153,13 +1172,25 @@ def main():
                   f"stopping after {i - 1}/{len(todo)} pages this run; the rest continues next run.")
             break
         print(f"[{i}/{len(todo)}] Fetching {page} ...")
-        wikitext = api_parse_wikitext(page)
+        try:
+            wikitext = api_parse_wikitext(page)
+        except Exception as e:
+            print(f"  -> fetch failed ({e!r}), will retry next run")
+            continue
         if wikitext is None:
             print("  -> could not fetch, will retry next run")
             continue
         tournament, games = parse_tournament(page, wikitext)
         if prize_pool_needs_html_fallback(tournament, wikitext):
-            html = api_parse_html(page)
+            try:
+                html = api_parse_html(page)
+            except Exception as e:
+                # skip caching entirely rather than caching this tournament
+                # with an empty prizeByPlayer - once it's old enough to be
+                # permanent it'd never get re-fetched, silently losing its
+                # prize data forever over one transient failure.
+                print(f"  -> prize-pool HTML fetch failed ({e!r}); not caching, will retry next run")
+                continue
             if html:
                 html_prizes = parse_prize_pool_html(html)
                 if html_prizes:
