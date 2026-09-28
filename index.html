@@ -489,6 +489,7 @@ async function loadData() {
       : `${GAMES.length} games across ${tournaments.length} tournaments`;
 
     renderGrid();
+    openPlayerFromUrl();
   } catch (e) {
     const badge = document.getElementById('src-badge');
     badge.textContent = 'DATA UNAVAILABLE';
@@ -1800,6 +1801,16 @@ function renderPlayerView() {
   ], 'No 1v1 games match the current filters.');
 }
 
+
+// Deep link: ?player=<name> opens that player's page (case-insensitive match on the
+// names in the data). Used by AoE2 Auto Scout's Player Spotlight to link straight here.
+function openPlayerFromUrl() {
+  const q = new URLSearchParams(location.search).get('player');
+  if (!q) return;
+  const want = q.trim().toLowerCase();
+  const match = uniquePlayerNames().find(n => n.toLowerCase() === want);
+  if (match) goToPlayer(match);
+}
 
 // ================================================================
 //  INIT
