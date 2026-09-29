@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:17:28.037214+00:00",
+  "generatedAt": "2026-09-29T13:17:17.800359+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -1651,11 +1651,11 @@
       "type": "Online/Offline",
       "region": "Colombia",
       "players": 10,
-      "first": "Toth",
-      "second": "Nicky",
+      "first": "AngelR",
+      "second": "Toth",
       "third": "",
       "prizeByPlayer": {
-        "Toth": 400
+        "AngelR": 400
       }
     },
     {
@@ -16933,8 +16933,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Spaden",
-      "second": "Puttsson",
+      "first": "Frost 9",
+      "second": "BuLLeT",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18843,23 +18843,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
         "Lucho": 1250.0,
         "Sebastian": 1250.0,
         "Nicov": 1250.0,
-        "Target331": 1187.5,
-        "Running": 1187.5,
+        "ACCM": 1250.0,
         "Annotoph": 1187.5,
         "Terz": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
+        "Running": 1187.5,
+        "Target331": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
+        "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
-        "Dark": 933.3333333333334,
+        "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {
@@ -19781,6 +19781,26 @@
       "prizeByPlayer": {
         "Rulers of Rome": 50
       }
+    },
+    {
+      "id": "Tryhard Cup/1",
+      "name": "Tryhard Cup - Prima edizione",
+      "url": "https://liquipedia.net/ageofempires/Tryhard_Cup/1",
+      "tier": "C-Tier",
+      "start": "2026-10-01",
+      "end": "TBA",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "AgeOfEmpiresItalia",
+      "format": "1v1",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Italy",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Turkish League",
