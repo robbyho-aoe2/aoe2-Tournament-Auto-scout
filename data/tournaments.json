@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T13:00:28.183576+00:00",
+  "generatedAt": "2026-10-01T13:37:07.983295+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -5820,11 +5820,11 @@
       "type": "Online",
       "region": "World",
       "players": 10,
-      "first": "Gali",
-      "second": "StonePleaseAoE",
+      "first": "StonePleaseAoE",
+      "second": "Overtaken",
       "third": "",
       "prizeByPlayer": {
-        "Gali": 650
+        "StonePleaseAoE": 650
       }
     },
     {
@@ -18845,21 +18845,21 @@
       "prizeByPlayer": {
         "Sebastian": 1250.0,
         "Nicov": 1250.0,
-        "ACCM": 1250.0,
         "Lucho": 1250.0,
-        "Target331": 1187.5,
+        "ACCM": 1250.0,
         "Terz": 1187.5,
+        "Target331": 1187.5,
         "Running": 1187.5,
         "Annotoph": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "Classicpro": 933.3333333333334
       }
     },
     {
