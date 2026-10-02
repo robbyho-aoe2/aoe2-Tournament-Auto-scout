@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T13:37:07.983295+00:00",
+  "generatedAt": "2026-10-02T12:57:15.061285+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -18843,23 +18843,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
+        "ACCM": 1250.0,
         "Sebastian": 1250.0,
         "Nicov": 1250.0,
         "Lucho": 1250.0,
-        "ACCM": 1250.0,
+        "Annotoph": 1187.5,
+        "Running": 1187.5,
         "Terz": 1187.5,
         "Target331": 1187.5,
-        "Running": 1187.5,
-        "Annotoph": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
+        "DauT": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Classicpro": 933.3333333333334,
+        "Dark": 933.3333333333334
       }
     },
     {
@@ -19796,7 +19796,7 @@
       "formatType": "unknown",
       "type": "Online",
       "region": "Italy",
-      "players": null,
+      "players": 14,
       "first": "",
       "second": "",
       "third": "",
