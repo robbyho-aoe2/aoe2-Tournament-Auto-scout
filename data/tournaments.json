@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T12:47:12.420100+00:00",
+  "generatedAt": "2026-10-05T15:01:21.753621+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -5895,7 +5895,7 @@
       "prize": null,
       "currency": "USD",
       "organizer": "Danish AoE2 community",
-      "format": "1v1",
+      "format": "1v1, Swiss System & Single Elimination",
       "formatType": "unknown",
       "type": "Online/Offline",
       "region": "Denmark",
@@ -16933,8 +16933,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Ganji",
-      "second": "Davve02",
+      "first": "Frost 9",
+      "second": "Spaden",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18691,6 +18691,26 @@
       }
     },
     {
+      "id": "The Goat Tournament",
+      "name": "The Goat Tournament",
+      "url": "https://liquipedia.net/ageofempires/The_Goat_Tournament",
+      "tier": "B-Tier",
+      "start": "2026-09-28",
+      "end": "2026-11-15",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Loris",
+      "format": "1v1, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 16,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
       "id": "The Grand Melee",
       "name": "The Grand Melee",
       "url": "https://liquipedia.net/ageofempires/The_Grand_Melee",
@@ -18843,19 +18863,19 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
+        "ACCM": 1250.0,
+        "Sebastian": 1250.0,
         "Lucho": 1250.0,
         "Nicov": 1250.0,
-        "Sebastian": 1250.0,
-        "ACCM": 1250.0,
+        "Target331": 1187.5,
+        "Terz": 1187.5,
         "Annotoph": 1187.5,
         "Running": 1187.5,
-        "Terz": 1187.5,
-        "Target331": 1187.5,
         "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "DauT": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
@@ -19203,11 +19223,11 @@
       "type": "Online",
       "region": "United Kingdom",
       "players": null,
-      "first": "United Kingdom",
-      "second": "United States",
+      "first": "United States",
+      "second": "United Kingdom",
       "third": "",
       "prizeByPlayer": {
-        "United Kingdom": 750
+        "United States": 750
       }
     },
     {
@@ -19799,8 +19819,8 @@
       "type": "Online",
       "region": "Italy",
       "players": 14,
-      "first": "VoNDutcH",
-      "second": "Nataniele",
+      "first": "IKill UDie",
+      "second": "Hydur",
       "third": "",
       "prizeByPlayer": {}
     },
