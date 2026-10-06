@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:01:21.753621+00:00",
+  "generatedAt": "2026-10-06T13:46:50.636119+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4225,7 +4225,7 @@
       "prize": null,
       "currency": "USD",
       "organizer": "Ogazjoker",
-      "format": "1v1, Round Robin & Double Elimination",
+      "format": "1v1, Round Robin & Single Elimination",
       "formatType": "unknown",
       "type": "Online/Offline",
       "region": "Chile",
@@ -4276,6 +4276,46 @@
       "prizeByPlayer": {
         "Yeon": 100
       }
+    },
+    {
+      "id": "China Zhongsheng Group International Invitational/2026/November",
+      "name": "China Zhongsheng Group International Invitational: November 2026",
+      "url": "https://liquipedia.net/ageofempires/China_Zhongsheng_Group_International_Invitational/2026/November",
+      "tier": "B-Tier",
+      "start": "2026-11-16",
+      "end": "2026-11-29",
+      "prize": 300,
+      "currency": "USD",
+      "organizer": "CN ZhongSheng",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": 8,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
+      "id": "China Zhongsheng Group International Invitational/2026/November/Domestic Stage",
+      "name": "China Zhongsheng Group International Invitational: November 2026: Domestic Stage",
+      "url": "https://liquipedia.net/ageofempires/China_Zhongsheng_Group_International_Invitational/2026/November/Domestic_Stage",
+      "tier": "C-Tier",
+      "start": "2026-11-02",
+      "end": "2026-11-15",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "CN ZhongSheng",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "China",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Chipmunk King's League/2",
@@ -16933,8 +16973,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Frost 9",
-      "second": "Spaden",
+      "first": "Ganji",
+      "second": "Puttsson",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18199,14 +18239,16 @@
       "currency": "USD",
       "organizer": "BEING ESPORTS",
       "format": "1v1, Round Robin & Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "",
-      "second": "",
+      "first": "Wean Dinchester",
+      "second": "Terz",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Wean Dinchester": 500
+      }
     },
     {
       "id": "The Brotherhood Of Empire Wars",
@@ -18701,12 +18743,12 @@
       "currency": "USD",
       "organizer": "Loris",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "Vodka L",
+      "second": "Salsicciotto1999",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18863,23 +18905,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
         "Sebastian": 1250.0,
-        "Lucho": 1250.0,
         "Nicov": 1250.0,
+        "Lucho": 1250.0,
+        "ACCM": 1250.0,
+        "Running": 1187.5,
+        "Annotoph": 1187.5,
         "Target331": 1187.5,
         "Terz": 1187.5,
-        "Annotoph": 1187.5,
-        "Running": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "DauT": 1316.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "Classicpro": 933.3333333333334,
+        "JorDan AoE": 1316.6666666666667,
+        "Dark": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Classicpro": 933.3333333333334
       }
     },
     {
