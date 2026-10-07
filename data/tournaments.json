@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:46:50.636119+00:00",
+  "generatedAt": "2026-10-07T13:50:16.873662+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -12853,6 +12853,26 @@
       }
     },
     {
+      "id": "Nations Cup Console",
+      "name": "Nations Cup Console",
+      "url": "https://liquipedia.net/ageofempires/Nations_Cup_Console",
+      "tier": "C-Tier",
+      "start": "2026-10-10",
+      "end": "TBA",
+      "prize": 200,
+      "currency": "USD",
+      "organizer": "Worst Underwear",
+      "format": "1v1, 2v2, 3v3 & 4v4, Round Robin",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
       "id": "Nations Cup/2023",
       "name": "Nations Cup 2023",
       "url": "https://liquipedia.net/ageofempires/Nations_Cup/2023",
@@ -16973,8 +16993,8 @@
       "type": "Online",
       "region": "Sweden",
       "players": 8,
-      "first": "Ganji",
-      "second": "Puttsson",
+      "first": "Spaden",
+      "second": "Goatmeister",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18905,22 +18925,22 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
-        "Nicov": 1250.0,
-        "Lucho": 1250.0,
         "ACCM": 1250.0,
+        "Lucho": 1250.0,
+        "Nicov": 1250.0,
+        "Sebastian": 1250.0,
         "Running": 1187.5,
         "Annotoph": 1187.5,
         "Target331": 1187.5,
         "Terz": 1187.5,
-        "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
-        "Dark": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
+        "Dark": 933.3333333333334,
         "Classicpro": 933.3333333333334
       }
     },
