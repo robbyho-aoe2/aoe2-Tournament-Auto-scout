@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T13:50:16.873662+00:00",
+  "generatedAt": "2026-10-08T13:56:32.779966+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3628,7 +3628,7 @@
       "region": "Argentina",
       "players": 10,
       "first": "ElMiller",
-      "second": "Feyern",
+      "second": "Tatengue",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -16984,8 +16984,8 @@
       "url": "https://liquipedia.net/ageofempires/Svenska_Age-Ligan/2026/Fall",
       "tier": "B-Tier",
       "start": "2026-08-17",
-      "end": "2026-10-25",
-      "prize": null,
+      "end": "2026-10-07",
+      "prize": 480,
       "currency": "USD",
       "organizer": "hadiraja12",
       "format": "1v1",
@@ -16996,7 +16996,15 @@
       "first": "Spaden",
       "second": "Goatmeister",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Ganji": 124.9,
+        "Goatmeister": 99.92,
+        "Frost 9": 74.94,
+        "Spaden": 59.95,
+        "Davve02": 49.96,
+        "BuLLeT": 39.97,
+        "Puttsson": 29.98
+      }
     },
     {
       "id": "Svenska Age-Ligan/2026/Spring",
@@ -18925,16 +18933,16 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
         "Lucho": 1250.0,
         "Nicov": 1250.0,
+        "ACCM": 1250.0,
         "Sebastian": 1250.0,
         "Running": 1187.5,
+        "Terz": 1187.5,
         "Annotoph": 1187.5,
         "Target331": 1187.5,
-        "Terz": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
