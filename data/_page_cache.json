@@ -350218,6 +350218,44 @@
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Sszafranko",
+          "player2": "LautaLk",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Byzantines",
+          "civ2": "Shu",
+          "map": "Bypass",
+          "mapTypes": [
+            "semi-open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Sszafranko",
+          "player2": "LautaLk",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Koreans",
+          "civ2": "Georgians",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
           "date": "October 7, 2026 - 21:15 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
@@ -350923,6 +350961,40 @@
           "mapTypes": [
             "chaotic"
           ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Kvothe",
+          "player2": "CaboBV",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Lithuanians",
+          "civ2": "Armenians",
+          "map": "Immersion",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Kvothe",
+          "player2": "CaboBV",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Sicilians",
+          "civ2": "Vikings",
+          "map": "Basmo",
+          "mapTypes": [],
           "winner": null
         },
         {
@@ -1738161,7 +1738233,7 @@
         "url": "https://liquipedia.net/ageofempires/The_Bastion/2",
         "tier": "B-Tier",
         "start": "2026-10-05",
-        "end": "2027-07-03",
+        "end": "2027-03-07",
         "prize": 500,
         "currency": "USD",
         "organizer": "BEING ESPORTS",
@@ -1738170,8 +1738242,8 @@
         "type": "Online/Offline",
         "region": "Germany",
         "players": 9,
-        "first": "Wean Dinchester",
-        "second": "Terz",
+        "first": "FreakinAndy",
+        "second": "Target331",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1738227,6 +1738299,62 @@
           "civ2": "Britons",
           "map": "ZeWall",
           "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 11, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Target331",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Georgians",
+          "civ2": "Wu",
+          "map": "Seychelles",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 11, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Target331",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Wei",
+          "civ2": "Italians",
+          "map": "Shoals",
+          "mapTypes": [
+            "hybrid",
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 11, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Target331",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Chinese",
+          "civ2": "Armenians",
+          "map": "Vulpine",
+          "mapTypes": [
+            "open"
+          ],
           "winner": "2"
         }
       ]
@@ -1807093,22 +1807221,22 @@
         "third": "",
         "prizeByPlayer": {
           "Lucho": 1250.0,
+          "Sebastian": 1250.0,
           "Nicov": 1250.0,
           "ACCM": 1250.0,
-          "Sebastian": 1250.0,
-          "Running": 1187.5,
           "Terz": 1187.5,
           "Annotoph": 1187.5,
+          "Running": 1187.5,
           "Target331": 1187.5,
-          "Ciskhan": 1466.6666666666667,
           "The Dragonstar": 1466.6666666666667,
+          "Ciskhan": 1466.6666666666667,
           "StonePleaseAoE": 1466.6666666666667,
           "JorDan AoE": 1316.6666666666667,
           "DauT": 1316.6666666666667,
           "FreakinAndy": 1316.6666666666667,
           "IAnTaGoNiStI": 933.3333333333334,
-          "Dark": 933.3333333333334,
-          "Classicpro": 933.3333333333334
+          "Classicpro": 933.3333333333334,
+          "Dark": 933.3333333333334
         }
       },
       "games": [
@@ -2183104,6 +2183232,1462 @@
         {
           "tournament": "The Transatlantic Cup",
           "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Alfred",
+          "player2": null,
+          "teammates": [
+            "Trundle the Great"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Trundle the Great",
+          "player2": null,
+          "teammates": [
+            "Alfred"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Italians",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "S0LAF1D3",
+          "player2": null,
+          "teammates": [
+            "develement"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "S0LAF1D3"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Alfred",
+          "player2": null,
+          "teammates": [
+            "Trundle the Great"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Trundle the Great",
+          "player2": null,
+          "teammates": [
+            "Alfred"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Chinese",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "S0LAF1D3",
+          "player2": null,
+          "teammates": [
+            "develement"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Huns",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "S0LAF1D3"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Alfred",
+          "player2": null,
+          "teammates": [
+            "Trundle the Great"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Trundle the Great",
+          "player2": null,
+          "teammates": [
+            "Alfred"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "S0LAF1D3",
+          "player2": null,
+          "teammates": [
+            "develement"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 9, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "S0LAF1D3"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Persians",
+          "civ2": null,
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "King Boo",
+          "player2": null,
+          "teammates": [
+            "Happytheandy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Dravidians",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Happytheandy",
+          "player2": null,
+          "teammates": [
+            "King Boo"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Chinese",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Deaf Vader",
+          "player2": null,
+          "teammates": [
+            "Kalpit00"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Vikings",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalpit00",
+          "player2": null,
+          "teammates": [
+            "Deaf Vader"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Chinese",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "King Boo",
+          "player2": null,
+          "teammates": [
+            "Happytheandy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Bohemians",
+          "civ2": null,
+          "map": "Basmo",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Happytheandy",
+          "player2": null,
+          "teammates": [
+            "King Boo"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Basmo",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Deaf Vader",
+          "player2": null,
+          "teammates": [
+            "Kalpit00"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Mapuche",
+          "civ2": null,
+          "map": "Basmo",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalpit00",
+          "player2": null,
+          "teammates": [
+            "Deaf Vader"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Wei",
+          "civ2": null,
+          "map": "Basmo",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "King Boo",
+          "player2": null,
+          "teammates": [
+            "Happytheandy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Franks",
+          "civ2": null,
+          "map": "Desert Slope",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Happytheandy",
+          "player2": null,
+          "teammates": [
+            "King Boo"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Britons",
+          "civ2": null,
+          "map": "Desert Slope",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Deaf Vader",
+          "player2": null,
+          "teammates": [
+            "Kalpit00"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Maya",
+          "civ2": null,
+          "map": "Desert Slope",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalpit00",
+          "player2": null,
+          "teammates": [
+            "Deaf Vader"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "Desert Slope",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Pete",
+          "player2": null,
+          "teammates": [
+            "Capy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Vikings",
+          "civ2": null,
+          "map": "Decentring",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Capy",
+          "player2": null,
+          "teammates": [
+            "Pete"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Georgians",
+          "civ2": null,
+          "map": "Decentring",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Escalus",
+          "player2": null,
+          "teammates": [
+            "Honeybadger"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Byzantines",
+          "civ2": null,
+          "map": "Decentring",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Honeybadger",
+          "player2": null,
+          "teammates": [
+            "Escalus"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Decentring",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Pete",
+          "player2": null,
+          "teammates": [
+            "Capy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Armenians",
+          "civ2": null,
+          "map": "Frazil",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Capy",
+          "player2": null,
+          "teammates": [
+            "Pete"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "Frazil",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Escalus",
+          "player2": null,
+          "teammates": [
+            "Honeybadger"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Vikings",
+          "civ2": null,
+          "map": "Frazil",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Honeybadger",
+          "player2": null,
+          "teammates": [
+            "Escalus"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Chinese",
+          "civ2": null,
+          "map": "Frazil",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Pete",
+          "player2": null,
+          "teammates": [
+            "Capy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Berbers",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Capy",
+          "player2": null,
+          "teammates": [
+            "Pete"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Burgundians",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Escalus",
+          "player2": null,
+          "teammates": [
+            "Honeybadger"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Dravidians",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Honeybadger",
+          "player2": null,
+          "teammates": [
+            "Escalus"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Celts",
+          "civ2": null,
+          "map": "Bog Islands",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Pete",
+          "player2": null,
+          "teammates": [
+            "Capy"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Dravidians",
+          "civ2": null,
+          "map": "Lagoon",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Capy",
+          "player2": null,
+          "teammates": [
+            "Pete"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Lagoon",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Escalus",
+          "player2": null,
+          "teammates": [
+            "Honeybadger"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Italians",
+          "civ2": null,
+          "map": "Lagoon",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Honeybadger",
+          "player2": null,
+          "teammates": [
+            "Escalus"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Lagoon",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Matt107",
+          "player2": null,
+          "teammates": [
+            "Satsuma"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Cumans",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Satsuma",
+          "player2": null,
+          "teammates": [
+            "Matt107"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Smokey",
+          "player2": null,
+          "teammates": [
+            "Mastyjames"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mastyjames",
+          "player2": null,
+          "teammates": [
+            "Smokey"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Matt107",
+          "player2": null,
+          "teammates": [
+            "Satsuma"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Malay",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Satsuma",
+          "player2": null,
+          "teammates": [
+            "Matt107"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Bengalis",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Smokey",
+          "player2": null,
+          "teammates": [
+            "Mastyjames"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Bohemians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mastyjames",
+          "player2": null,
+          "teammates": [
+            "Smokey"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Turks",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Matt107",
+          "player2": null,
+          "teammates": [
+            "Satsuma"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Bohemians",
+          "civ2": null,
+          "map": "ZeWall",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Satsuma",
+          "player2": null,
+          "teammates": [
+            "Matt107"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Teutons",
+          "civ2": null,
+          "map": "ZeWall",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Smokey",
+          "player2": null,
+          "teammates": [
+            "Mastyjames"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "ZeWall",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mastyjames",
+          "player2": null,
+          "teammates": [
+            "Smokey"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Cumans",
+          "civ2": null,
+          "map": "ZeWall",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Matt107",
+          "player2": null,
+          "teammates": [
+            "Satsuma"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Mapuche",
+          "civ2": null,
+          "map": "Hillfort",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Satsuma",
+          "player2": null,
+          "teammates": [
+            "Matt107"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Gurjaras",
+          "civ2": null,
+          "map": "Hillfort",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Smokey",
+          "player2": null,
+          "teammates": [
+            "Mastyjames"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Hillfort",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mastyjames",
+          "player2": null,
+          "teammates": [
+            "Smokey"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Hindustanis",
+          "civ2": null,
+          "map": "Hillfort",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Hallis",
+          "player2": null,
+          "teammates": [
+            "HiddenZebra"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "Border Dispute",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "HiddenZebra",
+          "player2": null,
+          "teammates": [
+            "Hallis"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Goths",
+          "civ2": null,
+          "map": "Border Dispute",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bubbagump",
+          "player2": null,
+          "teammates": [
+            "JadeArrowGamer"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Romans",
+          "civ2": null,
+          "map": "Border Dispute",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JadeArrowGamer",
+          "player2": null,
+          "teammates": [
+            "Bubbagump"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Maya",
+          "civ2": null,
+          "map": "Border Dispute",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Hallis",
+          "player2": null,
+          "teammates": [
+            "HiddenZebra"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Lithuanians",
+          "civ2": null,
+          "map": "Valley of Kings",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "HiddenZebra",
+          "player2": null,
+          "teammates": [
+            "Hallis"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Georgians",
+          "civ2": null,
+          "map": "Valley of Kings",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bubbagump",
+          "player2": null,
+          "teammates": [
+            "JadeArrowGamer"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Wei",
+          "civ2": null,
+          "map": "Valley of Kings",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JadeArrowGamer",
+          "player2": null,
+          "teammates": [
+            "Bubbagump"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Berbers",
+          "civ2": null,
+          "map": "Valley of Kings",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Hallis",
+          "player2": null,
+          "teammates": [
+            "HiddenZebra"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "HiddenZebra",
+          "player2": null,
+          "teammates": [
+            "Hallis"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Poles",
+          "civ2": null,
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bubbagump",
+          "player2": null,
+          "teammates": [
+            "JadeArrowGamer"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JadeArrowGamer",
+          "player2": null,
+          "teammates": [
+            "Bubbagump"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Persians",
+          "civ2": null,
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Hallis",
+          "player2": null,
+          "teammates": [
+            "HiddenZebra"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Shu",
+          "civ2": null,
+          "map": "Socotra",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "HiddenZebra",
+          "player2": null,
+          "teammates": [
+            "Hallis"
+          ],
+          "team1": "United Kingdom",
+          "team2": "United States",
+          "civ1": "Maya",
+          "civ2": null,
+          "map": "Socotra",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bubbagump",
+          "player2": null,
+          "teammates": [
+            "JadeArrowGamer"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Khmer",
+          "civ2": null,
+          "map": "Socotra",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
+          "date": "October 10, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JadeArrowGamer",
+          "player2": null,
+          "teammates": [
+            "Bubbagump"
+          ],
+          "team1": "United States",
+          "team2": "United Kingdom",
+          "civ1": "Sicilians",
+          "civ2": null,
+          "map": "Socotra",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Transatlantic Cup",
+          "tier": "B-Tier",
           "date": "October 03, 2026 - 16:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
@@ -2183446,7 +2185030,7 @@
           ],
           "team1": "United States",
           "team2": "United Kingdom",
-          "civ1": "Ge",
+          "civ1": "Georgians",
           "civ2": null,
           "map": "Black Forest",
           "mapTypes": [
@@ -2184931,8 +2186515,8 @@
         "type": "Online",
         "region": "Italy",
         "players": 14,
-        "first": "IKill UDie",
-        "second": "Hydur",
+        "first": "Null",
+        "second": "VoNDutcH",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2185052,6 +2186636,64 @@
             "open"
           ],
           "winner": "2"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 8, 2026 - 16:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "RaiD",
+          "player2": "Scranton Strangler",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Koreans",
+          "civ2": "Japanese",
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 8, 2026 - 16:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "RaiD",
+          "player2": "Scranton Strangler",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Burgundians",
+          "civ2": "Italians",
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 8, 2026 - 16:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "RaiD",
+          "player2": "Scranton Strangler",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
         },
         {
           "tournament": "Tryhard Cup - Prima edizione",
@@ -2185223,6 +2186865,179 @@
           "map": "Arabia",
           "mapTypes": [
             "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 18:45 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Mettiu",
+          "player2": "Boom",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Var",
+          "civ2": "Tatars",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 18:45 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Mettiu",
+          "player2": "Boom",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Muisca",
+          "civ2": "Bohemians",
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 18:45 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Mettiu",
+          "player2": "Boom",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 11:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "VoNDutcH",
+          "player2": "Null",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Var",
+          "civ2": "Chinese",
+          "map": "Land Madness",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 11:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "VoNDutcH",
+          "player2": "Null",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Cumans",
+          "civ2": "Bohemians",
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 11:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "VoNDutcH",
+          "player2": "Null",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "Hydur",
+          "player2": "Nataniele",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Khitans",
+          "civ2": "Jurchens",
+          "map": "Land Madness",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "Hydur",
+          "player2": "Nataniele",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Celts",
+          "civ2": "Khmer",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Tryhard Cup - Prima edizione",
+          "tier": "C-Tier",
+          "date": "October 10, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 1,
+          "format": "1v1",
+          "player1": "Hydur",
+          "player2": "Nataniele",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
           ],
           "winner": null
         }
@@ -2186366,12 +2188181,12 @@
         "url": "https://liquipedia.net/ageofempires/Nations_Cup_Console",
         "tier": "C-Tier",
         "start": "2026-10-10",
-        "end": "TBA",
-        "prize": 200,
+        "end": "2026-11-01",
+        "prize": 450,
         "currency": "USD",
         "organizer": "Worst Underwear",
         "format": "1v1, 2v2, 3v3 & 4v4, Round Robin",
-        "formatType": "unknown",
+        "formatType": "team",
         "type": "Online",
         "region": "World",
         "players": null,
@@ -2186380,6 +2188195,149 @@
         "third": "",
         "prizeByPlayer": {}
       },
+      "games": [
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "volcanloup",
+          "player2": null,
+          "teammates": [],
+          "team1": "Canada",
+          "team2": "PS5",
+          "civ1": null,
+          "civ2": null,
+          "map": "Oasis",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "ItsGutsAoE",
+          "player2": null,
+          "teammates": [],
+          "team1": "PS5",
+          "team2": "Canada",
+          "civ1": null,
+          "civ2": null,
+          "map": "Oasis",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "volcanloup",
+          "player2": null,
+          "teammates": [
+            "Dbs Elm"
+          ],
+          "team1": "Canada",
+          "team2": "PS5",
+          "civ1": null,
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Dbs Elm",
+          "player2": null,
+          "teammates": [
+            "volcanloup"
+          ],
+          "team1": "Canada",
+          "team2": "PS5",
+          "civ1": null,
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "CrustyPotato313",
+          "player2": null,
+          "teammates": [
+            "ItsGutsAoE"
+          ],
+          "team1": "PS5",
+          "team2": "Canada",
+          "civ1": null,
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "ItsGutsAoE",
+          "player2": null,
+          "teammates": [
+            "CrustyPotato313"
+          ],
+          "team1": "PS5",
+          "team2": "Canada",
+          "civ1": null,
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        }
+      ]
+    },
+    "2nd MS Korea AOK tournament": {
+      "tournament": null,
+      "games": []
+    },
+    "4th MS Korea AOK tournament": {
+      "tournament": null,
+      "games": []
+    },
+    "CastleRush Solo Clash/12": {
+      "tournament": null,
+      "games": []
+    },
+    "Korea AoK 2v2 Tourney": {
+      "tournament": null,
+      "games": []
+    },
+    "Reign of Kings": {
+      "tournament": null,
       "games": []
     }
   }
