@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:18:33.518105+00:00",
+  "generatedAt": "2026-10-12T15:49:42.942691+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -12867,10 +12867,12 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "",
-      "second": "",
+      "first": "USA",
+      "second": "Mexico",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "USA": 450
+      }
     },
     {
       "id": "Nations Cup/2023",
@@ -18271,11 +18273,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "FreakinAndy",
-      "second": "Target331",
+      "first": "Running",
+      "second": "JorDan AoE",
       "third": "",
       "prizeByPlayer": {
-        "FreakinAndy": 500
+        "Running": 500
       }
     },
     {
@@ -18933,23 +18935,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Lucho": 1250.0,
-        "Sebastian": 1250.0,
         "Nicov": 1250.0,
+        "Sebastian": 1250.0,
         "ACCM": 1250.0,
-        "Terz": 1187.5,
-        "Annotoph": 1187.5,
+        "Lucho": 1250.0,
         "Running": 1187.5,
         "Target331": 1187.5,
+        "Annotoph": 1187.5,
+        "Terz": 1187.5,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Dark": 933.3333333333334,
+        "Classicpro": 933.3333333333334
       }
     },
     {
