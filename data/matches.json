@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T12:18:18.597679+00:00",
+  "generatedAt": "2026-10-15T11:55:40.993622+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -538198,6 +538198,99 @@
       "map": "African Clearing",
       "mapTypes": [
         "nomad"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Overtaken",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Maya",
+      "civ2": "Bulgarians",
+      "map": "Morass",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Overtaken",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Georgians",
+      "map": "Kawasan",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Overtaken",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vikings",
+      "civ2": "Wu",
+      "map": "Immersion",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Overtaken",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Overtaken",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
       ],
       "winner": null
     },
@@ -1098984,6 +1099077,448 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "DarK Slaayer",
+      "player2": null,
+      "teammates": [],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Glade",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "x FalKo i",
+      "player2": null,
+      "teammates": [],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Sicilians",
+      "civ2": null,
+      "map": "Glade",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "DarK Slaayer",
+      "player2": null,
+      "teammates": [
+        "Fiz 98"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Bohemians",
+      "civ2": null,
+      "map": "Steppe",
+      "mapTypes": [
+        "nomad",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Fiz 98",
+      "player2": null,
+      "teammates": [
+        "DarK Slaayer"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "Steppe",
+      "mapTypes": [
+        "nomad",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "supercharlie12",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Steppe",
+      "mapTypes": [
+        "nomad",
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Saymyname3451",
+      "player2": null,
+      "teammates": [
+        "supercharlie12"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Khitans",
+      "civ2": null,
+      "map": "Steppe",
+      "mapTypes": [
+        "nomad",
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Fiz 98",
+      "player2": null,
+      "teammates": [
+        "DarK Slaayer",
+        "Calum1Ltv"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "DarK Slaayer",
+      "player2": null,
+      "teammates": [
+        "Fiz 98",
+        "Calum1Ltv"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Britons",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Calum1Ltv",
+      "player2": null,
+      "teammates": [
+        "Fiz 98",
+        "DarK Slaayer"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Inca",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Saymyname3451",
+      "player2": null,
+      "teammates": [
+        "supercharlie12",
+        "MeliodasAoe2"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "supercharlie12",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451",
+        "MeliodasAoe2"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Britons",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "MeliodasAoe2",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451",
+        "supercharlie12"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Varangians",
+      "civ2": null,
+      "map": "Oasis",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Fiz 98",
+      "player2": null,
+      "teammates": [
+        "DarK Slaayer",
+        "ALPO4769",
+        "Calum1Ltv"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "DarK Slaayer",
+      "player2": null,
+      "teammates": [
+        "Fiz 98",
+        "ALPO4769",
+        "Calum1Ltv"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ALPO4769",
+      "player2": null,
+      "teammates": [
+        "Fiz 98",
+        "DarK Slaayer",
+        "Calum1Ltv"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Calum1Ltv",
+      "player2": null,
+      "teammates": [
+        "Fiz 98",
+        "DarK Slaayer",
+        "ALPO4769"
+      ],
+      "team1": "United Kingdom",
+      "team2": "France",
+      "civ1": "Koreans",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Saymyname3451",
+      "player2": null,
+      "teammates": [
+        "supercharlie12",
+        "x FalKo i",
+        "vN eRaaz"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "supercharlie12",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451",
+        "x FalKo i",
+        "vN eRaaz"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "x FalKo i",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451",
+        "supercharlie12",
+        "vN eRaaz"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "vN eRaaz",
+      "player2": null,
+      "teammates": [
+        "Saymyname3451",
+        "supercharlie12",
+        "x FalKo i"
+      ],
+      "team1": "France",
+      "team2": "United Kingdom",
+      "civ1": "Magyars",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
       "date": "October 10, 2026",
       "round": 0,
       "format": "team",
@@ -1099205,8 +1099740,8 @@
       "player2": null,
       "teammates": [
         "MORIS0202",
-        "Raggz",
-        "Dora"
+        "RKs Raggz",
+        "UxDora"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099228,8 +1099763,8 @@
       "player2": null,
       "teammates": [
         "Liho",
-        "Raggz",
-        "Dora"
+        "RKs Raggz",
+        "UxDora"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099247,12 +1099782,12 @@
       "date": "October 10, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Raggz",
+      "player1": "RKs Raggz",
       "player2": null,
       "teammates": [
         "Liho",
         "MORIS0202",
-        "Dora"
+        "UxDora"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099270,12 +1099805,12 @@
       "date": "October 10, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Dora",
+      "player1": "UxDora",
       "player2": null,
       "teammates": [
         "Liho",
         "MORIS0202",
-        "Raggz"
+        "RKs Raggz"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099363,7 +1099898,7 @@
       "player2": null,
       "teammates": [
         "Liho",
-        "Dora"
+        "UxDora"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099385,7 +1099920,7 @@
       "player2": null,
       "teammates": [
         "MORIS0202",
-        "Dora"
+        "UxDora"
       ],
       "team1": "Mexico",
       "team2": "USA",
@@ -1099403,7 +1099938,7 @@
       "date": "October 10, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Dora",
+      "player1": "UxDora",
       "player2": null,
       "teammates": [
         "MORIS0202",
@@ -1840934,6 +1841469,78 @@
     {
       "tournament": "The Transatlantic Cup",
       "tier": "B-Tier",
+      "date": "October 14, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Hallis",
+      "player2": "Daniel",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Chinese",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Transatlantic Cup",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Hallis",
+      "player2": "Daniel",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Maya",
+      "map": "Rocky Forest",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Transatlantic Cup",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Hallis",
+      "player2": "Daniel",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Romans",
+      "civ2": "Wu",
+      "map": "Morass",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Transatlantic Cup",
+      "tier": "B-Tier",
+      "date": "October 14, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Hallis",
+      "player2": "Daniel",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Spanish",
+      "civ2": "Wei",
+      "map": "South Dakota Badlands",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Transatlantic Cup",
+      "tier": "B-Tier",
       "date": "October 12, 2026 - 17:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -1931521,6 +1932128,25 @@
       "civ2": "Bengalis",
       "map": "Grand Bara",
       "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 14, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Scatterbrained",
+      "player2": "DzeDanik",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bengalis",
+      "civ2": "Spanish",
+      "map": "Copenhagen",
+      "mapTypes": [
+        "hybrid"
+      ],
       "winner": "1"
     },
     {
