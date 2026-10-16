@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T11:55:40.993622+00:00",
+  "generatedAt": "2026-10-16T11:50:07.671837+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -538022,6 +538022,100 @@
     {
       "tournament": "DS_League",
       "tier": "B-Tier",
+      "date": "October 15, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malians",
+      "civ2": "Spanish",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Wei",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Sicilians",
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Hindustanis",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Murkwood",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
       "date": "September 30, 2026 - 17:30 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -538108,6 +538202,99 @@
         "hybrid",
         "nomad"
       ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 16:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Khmer",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 16:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Hindustanis",
+      "civ2": "Romans",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 16:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Mapuche",
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 16:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 15, 2026 - 16:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Immersion",
+      "mapTypes": [],
       "winner": null
     },
     {
@@ -1100073,6 +1100260,138 @@
       "map": "Arena",
       "mapTypes": [
         "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "volcanloup",
+      "player2": null,
+      "teammates": [
+        "GOAT Gobz",
+        "Im2Good4YoMoma"
+      ],
+      "team1": "Canada",
+      "team2": "PS5",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "GOAT Gobz",
+      "player2": null,
+      "teammates": [
+        "volcanloup",
+        "Im2Good4YoMoma"
+      ],
+      "team1": "Canada",
+      "team2": "PS5",
+      "civ1": "Mongols",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Im2Good4YoMoma",
+      "player2": null,
+      "teammates": [
+        "volcanloup",
+        "GOAT Gobz"
+      ],
+      "team1": "Canada",
+      "team2": "PS5",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ItsGutsAoE",
+      "player2": null,
+      "teammates": [
+        "CrustyPotato313",
+        "Prop1aNea"
+      ],
+      "team1": "PS5",
+      "team2": "Canada",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "CrustyPotato313",
+      "player2": null,
+      "teammates": [
+        "ItsGutsAoE",
+        "Prop1aNea"
+      ],
+      "team1": "PS5",
+      "team2": "Canada",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nations Cup Console",
+      "tier": "C-Tier",
+      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Prop1aNea",
+      "player2": null,
+      "teammates": [
+        "ItsGutsAoE",
+        "CrustyPotato313"
+      ],
+      "team1": "PS5",
+      "team2": "Canada",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
       ],
       "winner": "1"
     },
@@ -1841659,7 +1841978,7 @@
       "player1": "T90Official",
       "player2": null,
       "teammates": [
-        "GodsPrisoner"
+        "godsprisoner"
       ],
       "team1": "United States",
       "team2": "United Kingdom",
@@ -1841677,7 +1841996,7 @@
       "date": "October 7, 2026 - 19:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "GodsPrisoner",
+      "player1": "godsprisoner",
       "player2": null,
       "teammates": [
         "T90Official"
@@ -1841743,7 +1842062,7 @@
       "player1": "T90Official",
       "player2": null,
       "teammates": [
-        "GodsPrisoner"
+        "godsprisoner"
       ],
       "team1": "United States",
       "team2": "United Kingdom",
@@ -1841761,7 +1842080,7 @@
       "date": "October 7, 2026 - 19:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "GodsPrisoner",
+      "player1": "godsprisoner",
       "player2": null,
       "teammates": [
         "T90Official"
@@ -1932152,6 +1932471,23 @@
     {
       "tournament": "Vanguard",
       "tier": "C-Tier",
+      "date": "October 15, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "DzeDanik",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Spanish",
+      "map": "Tiergarten",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
       "date": "October 13, 2026",
       "round": 0,
       "format": "1v1",
@@ -1932165,6 +1932501,77 @@
       "map": "Grand Bara",
       "mapTypes": [],
       "winner": "2"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 15, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Kiritastrich",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wu",
+      "civ2": "Lithuanians",
+      "map": "Grand Bara",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 15, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Kiritastrich",
+      "player2": "Lamo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wu",
+      "civ2": "Persians",
+      "map": "Murkwood",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 15, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Lamo",
+      "player2": "Karabas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Aztecs",
+      "map": "Grand Bara",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 15, 2026",
+      "round": 0,
+      "format": "1v1",
+      "player1": "OLADUSHEK",
+      "player2": "Karabas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Aztecs",
+      "map": "Tiergarten",
+      "mapTypes": [],
+      "winner": "1"
     },
     {
       "tournament": "Vico House Cup II",
