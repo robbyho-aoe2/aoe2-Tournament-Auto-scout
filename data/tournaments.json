@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:50:07.671837+00:00",
+  "generatedAt": "2026-10-17T11:13:02.159484+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4226,12 +4226,12 @@
       "currency": "USD",
       "organizer": "Ogazjoker",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online/Offline",
       "region": "Chile",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "Partyman96",
+      "second": "Chanchilaru",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4872,6 +4872,26 @@
       "prizeByPlayer": {
         "Faith Gang": 100
       }
+    },
+    {
+      "id": "Continental Cup: The Nomads",
+      "name": "Continental Cup: The Nomads",
+      "url": "https://liquipedia.net/ageofempires/Continental_Cup:_The_Nomads",
+      "tier": "B-Tier",
+      "start": "2026-10-26",
+      "end": "2026-12-13",
+      "prize": 350,
+      "currency": "USD",
+      "organizer": "ScORpIoN",
+      "format": "2v2 & 3v3, Double Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Controller Champions",
@@ -18273,11 +18293,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "Running",
-      "second": "Terz",
+      "first": "TheViper",
+      "second": "JorDan AoE",
       "third": "",
       "prizeByPlayer": {
-        "Running": 500
+        "TheViper": 500
       }
     },
     {
@@ -18935,23 +18955,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Lucho": 1250.0,
         "ACCM": 1250.0,
-        "Sebastian": 1250.0,
         "Nicov": 1250.0,
+        "Sebastian": 1250.0,
+        "Lucho": 1250.0,
+        "Running": 1187.5,
         "Terz": 1187.5,
         "Annotoph": 1187.5,
-        "Running": 1187.5,
         "Target331": 1187.5,
         "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334,
+        "Classicpro": 933.3333333333334
       }
     },
     {
