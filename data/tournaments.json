@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T11:13:02.159484+00:00",
+  "generatedAt": "2026-10-18T11:32:25.026545+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4880,7 +4880,7 @@
       "tier": "B-Tier",
       "start": "2026-10-26",
       "end": "2026-12-13",
-      "prize": 350,
+      "prize": 450,
       "currency": "USD",
       "organizer": "ScORpIoN",
       "format": "2v2 & 3v3, Double Elimination",
@@ -12887,11 +12887,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "PS5",
+      "first": "Mexico",
       "second": "Canada",
       "third": "",
       "prizeByPlayer": {
-        "PS5": 450
+        "Mexico": 450
       }
     },
     {
@@ -18955,23 +18955,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
-        "Nicov": 1250.0,
         "Sebastian": 1250.0,
+        "Nicov": 1250.0,
+        "ACCM": 1250.0,
         "Lucho": 1250.0,
-        "Running": 1187.5,
-        "Terz": 1187.5,
         "Annotoph": 1187.5,
+        "Terz": 1187.5,
+        "Running": 1187.5,
         "Target331": 1187.5,
         "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "Dark": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Classicpro": 933.3333333333334,
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
@@ -19911,8 +19911,8 @@
       "type": "Online",
       "region": "Italy",
       "players": 14,
-      "first": "Hellequinn",
-      "second": "IKill UDie",
+      "first": "P3rk",
+      "second": "Hydur",
       "third": "",
       "prizeByPlayer": {}
     },
