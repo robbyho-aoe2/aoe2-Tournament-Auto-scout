@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:32:25.026545+00:00",
+  "generatedAt": "2026-10-19T13:40:55.041207+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -12887,11 +12887,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Mexico",
-      "second": "Canada",
+      "first": "Canada",
+      "second": "Mexico",
       "third": "",
       "prizeByPlayer": {
-        "Mexico": 450
+        "Canada": 450
       }
     },
     {
@@ -18955,23 +18955,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
         "Nicov": 1250.0,
         "ACCM": 1250.0,
         "Lucho": 1250.0,
-        "Annotoph": 1187.5,
+        "Sebastian": 1250.0,
         "Terz": 1187.5,
         "Running": 1187.5,
+        "Annotoph": 1187.5,
         "Target331": 1187.5,
         "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "Classicpro": 933.3333333333334
       }
     },
     {
@@ -19307,7 +19307,7 @@
       "tier": "B-Tier",
       "start": "2026-09-28",
       "end": "2026-10-18",
-      "prize": 750,
+      "prize": 2750,
       "currency": "USD",
       "organizer": "paradox303",
       "format": "1v1, 2v2, 4v4",
@@ -19319,7 +19319,7 @@
       "second": "United Kingdom",
       "third": "",
       "prizeByPlayer": {
-        "United States": 750
+        "United States": 2750
       }
     },
     {
