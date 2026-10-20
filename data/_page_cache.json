@@ -349510,7 +349510,7 @@
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 21:45 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Black Monk",
@@ -349524,12 +349524,12 @@
           "mapTypes": [
             "open"
           ],
-          "winner": null
+          "winner": "2"
         },
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 21:45 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Black Monk",
@@ -349541,12 +349541,12 @@
           "civ2": "Hindustanis",
           "map": "Golden Lakes",
           "mapTypes": [],
-          "winner": null
+          "winner": "1"
         },
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 21:45 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Black Monk",
@@ -349560,6 +349560,40 @@
           "mapTypes": [
             "chaotic"
           ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 21:45 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Black Monk",
+          "player2": "Tumber",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Skukuza",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 21:45 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Black Monk",
+          "player2": "Tumber",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Basmo",
+          "mapTypes": [],
           "winner": null
         },
         {
@@ -350274,7 +350308,7 @@
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 19:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Sszafranko",
@@ -350288,12 +350322,12 @@
           "mapTypes": [
             "semi-open"
           ],
-          "winner": null
+          "winner": "2"
         },
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 19:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Sszafranko",
@@ -350306,6 +350340,64 @@
           "map": "Arabia",
           "mapTypes": [
             "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Sszafranko",
+          "player2": "LautaLk",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Sszafranko",
+          "player2": "LautaLk",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Morass",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Sszafranko",
+          "player2": "LautaLk",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
           ],
           "winner": null
         },
@@ -351022,7 +351114,7 @@
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Kvothe",
@@ -351034,12 +351126,12 @@
           "civ2": "Armenians",
           "map": "Immersion",
           "mapTypes": [],
-          "winner": null
+          "winner": "2"
         },
         {
           "tournament": "Campeonato Argentino AoE 2026: Segunda División",
           "tier": "C-Tier",
-          "date": "October 19, 2026 - 20:00 {{abbr/GMT}}",
+          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
           "player1": "Kvothe",
@@ -351050,6 +351142,61 @@
           "civ1": "Sicilians",
           "civ2": "Vikings",
           "map": "Basmo",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Kvothe",
+          "player2": "CaboBV",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Kvothe",
+          "player2": "CaboBV",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Morass",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Kvothe",
+          "player2": "CaboBV",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Golden Lake",
           "mapTypes": [],
           "winner": null
         },
@@ -392517,6 +392664,62 @@
         {
           "tournament": "Chilean Cup 2026",
           "tier": "B-Tier",
+          "date": "October 19, 2026 - 01:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pinkman",
+          "player2": "FelipeBesitosRicos",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Armenians",
+          "civ2": "Mongols",
+          "map": "Steppe",
+          "mapTypes": [
+            "nomad",
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 01:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pinkman",
+          "player2": "FelipeBesitosRicos",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Japanese",
+          "civ2": "Byzantines",
+          "map": "Immersion",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 01:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pinkman",
+          "player2": "FelipeBesitosRicos",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Berbers",
+          "civ2": "Saracens",
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
           "date": "October 13, 2026 - 17:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
@@ -392567,6 +392770,238 @@
           "team2": null,
           "civ1": "Malay",
           "civ2": "Hindustanis",
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "nomadplayer",
+          "player2": "Jürgen",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Byzantines",
+          "civ2": "Yur",
+          "map": "Steppe",
+          "mapTypes": [
+            "nomad",
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "nomadplayer",
+          "player2": "Jürgen",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Khmer",
+          "civ2": "Magyars",
+          "map": "Crownwood",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "nomadplayer",
+          "player2": "Jürgen",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Berbers",
+          "civ2": "Chinese",
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "NecksZy",
+          "player2": "Darkjosh89",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Berbers",
+          "civ2": "Japanese",
+          "map": "Steppe",
+          "mapTypes": [
+            "nomad",
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "NecksZy",
+          "player2": "Darkjosh89",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Khitans",
+          "civ2": "Magyars",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "NecksZy",
+          "player2": "Darkjosh89",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Lithuanians",
+          "civ2": "Georgians",
+          "map": "Crownwood",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 00:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pain",
+          "player2": "Neromelnick",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Vietnamese",
+          "civ2": "Mongols",
+          "map": "Immersion",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 00:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pain",
+          "player2": "Neromelnick",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Georgians",
+          "civ2": "Huns",
+          "map": "Four Lakes",
+          "mapTypes": [
+            "chaotic",
+            "hybrid",
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 00:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Pain",
+          "player2": "Neromelnick",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Portuguese",
+          "civ2": "Lithuanians",
+          "map": "Hideout",
+          "mapTypes": [
+            "chaotic",
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "AboKeiTo",
+          "player2": "itu",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Italians",
+          "civ2": "Dravidians",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "AboKeiTo",
+          "player2": "itu",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Malay",
+          "civ2": "Britons",
+          "map": "Black Forest",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Chilean Cup 2026",
+          "tier": "B-Tier",
+          "date": "October 18, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "AboKeiTo",
+          "player2": "itu",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Turks",
+          "civ2": "Berbers",
           "map": "Arena",
           "mapTypes": [
             "closed"
@@ -1739096,8 +1739531,8 @@
         "type": "Online/Offline",
         "region": "Germany",
         "players": 9,
-        "first": "TheViper",
-        "second": "JorDan AoE",
+        "first": "FreakinAndy",
+        "second": "Running",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1739537,6 +1739972,62 @@
           "civ1": "Koreans",
           "civ2": "Japanese",
           "map": "Typhoon",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Running",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Var",
+          "civ2": "Magyars",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Running",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Koreans",
+          "civ2": "Vikings",
+          "map": "Copenhagen",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 19, 2026 - 17:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FreakinAndy",
+          "player2": "Running",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Celts",
+          "civ2": "Burgundians",
+          "map": "Monte Pascoal",
           "mapTypes": [],
           "winner": "1"
         }
@@ -1808403,23 +1808894,23 @@
         "second": "LingYuan",
         "third": "",
         "prizeByPlayer": {
+          "Lucho": 1250.0,
           "Nicov": 1250.0,
           "ACCM": 1250.0,
-          "Lucho": 1250.0,
           "Sebastian": 1250.0,
-          "Terz": 1187.5,
-          "Running": 1187.5,
           "Annotoph": 1187.5,
           "Target331": 1187.5,
+          "Running": 1187.5,
+          "Terz": 1187.5,
+          "Ciskhan": 1466.6666666666667,
           "The Dragonstar": 1466.6666666666667,
           "StonePleaseAoE": 1466.6666666666667,
-          "Ciskhan": 1466.6666666666667,
-          "DauT": 1316.6666666666667,
-          "FreakinAndy": 1316.6666666666667,
           "JorDan AoE": 1316.6666666666667,
+          "FreakinAndy": 1316.6666666666667,
+          "DauT": 1316.6666666666667,
           "IAnTaGoNiStI": 933.3333333333334,
-          "Dark": 933.3333333333334,
-          "Classicpro": 933.3333333333334
+          "Classicpro": 933.3333333333334,
+          "Dark": 933.3333333333334
         }
       },
       "games": [
@@ -2191037,8 +2191528,8 @@
         "type": "Online",
         "region": "World",
         "players": null,
-        "first": "Canada",
-        "second": "Mexico",
+        "first": "Mexico",
+        "second": "PS5",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2193696,6 +2194187,44 @@
           "mapTypes": [
             "nomad",
             "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Dora",
+          "player2": null,
+          "teammates": [],
+          "team1": "Mexico",
+          "team2": "PS5",
+          "civ1": "Bohemians",
+          "civ2": null,
+          "map": "Black Forest",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "ItsGutsAoE",
+          "player2": null,
+          "teammates": [],
+          "team1": "PS5",
+          "team2": "Mexico",
+          "civ1": "Khmer",
+          "civ2": null,
+          "map": "Black Forest",
+          "mapTypes": [
+            "closed"
           ],
           "winner": "2"
         }
