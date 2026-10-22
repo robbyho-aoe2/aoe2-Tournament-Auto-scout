@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T12:18:20.536553+00:00",
+  "generatedAt": "2026-10-22T12:19:09.640522+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -539441,6 +539441,103 @@
         "open"
       ],
       "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Armenians",
+      "civ2": "Portuguese",
+      "map": "Kawasan",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bohemians",
+      "civ2": "Lithuanians",
+      "map": "Murkwood",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Magyars",
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Hindustanis",
+      "civ2": "Vietnamese",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Ciskhan",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Romans",
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "Danmarksmesterskaberne 2024",
@@ -1100225,10 +1100322,10 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [],
       "team1": "United Kingdom",
@@ -1100244,7 +1100341,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "x FalKo i",
@@ -1100263,10 +1100360,10 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [
         "Fiz 98"
@@ -1100285,13 +1100382,13 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Fiz 98",
       "player2": null,
       "teammates": [
-        "Slaayer"
+        "DarK Slaayer"
       ],
       "team1": "United Kingdom",
       "team2": "France",
@@ -1100307,7 +1100404,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1100329,7 +1100426,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1100351,13 +1100448,13 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Fiz 98",
       "player2": null,
       "teammates": [
-        "Slaayer",
+        "DarK Slaayer",
         "Calum1Ltv"
       ],
       "team1": "United Kingdom",
@@ -1100373,10 +1100470,10 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [
         "Fiz 98",
@@ -1100395,14 +1100492,14 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Calum1Ltv",
       "player2": null,
       "teammates": [
         "Fiz 98",
-        "Slaayer"
+        "DarK Slaayer"
       ],
       "team1": "United Kingdom",
       "team2": "France",
@@ -1100417,7 +1100514,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1100439,7 +1100536,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1100461,7 +1100558,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "MeliodasAoe2",
@@ -1100483,13 +1100580,13 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Fiz 98",
       "player2": null,
       "teammates": [
-        "Slaayer",
+        "DarK Slaayer",
         "ALPO4769",
         "Calum1Ltv"
       ],
@@ -1100506,10 +1100603,10 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [
         "Fiz 98",
@@ -1100529,14 +1100626,14 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "ALPO4769",
       "player2": null,
       "teammates": [
         "Fiz 98",
-        "Slaayer",
+        "DarK Slaayer",
         "Calum1Ltv"
       ],
       "team1": "United Kingdom",
@@ -1100552,14 +1100649,14 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Calum1Ltv",
       "player2": null,
       "teammates": [
         "Fiz 98",
-        "Slaayer",
+        "DarK Slaayer",
         "ALPO4769"
       ],
       "team1": "United Kingdom",
@@ -1100575,7 +1100672,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1100583,7 +1100680,7 @@
       "teammates": [
         "supercharlie12",
         "x FalKo i",
-        "vN eRaaz"
+        "eRaaz"
       ],
       "team1": "France",
       "team2": "United Kingdom",
@@ -1100598,7 +1100695,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1100606,7 +1100703,7 @@
       "teammates": [
         "Saymyname3451",
         "x FalKo i",
-        "vN eRaaz"
+        "eRaaz"
       ],
       "team1": "France",
       "team2": "United Kingdom",
@@ -1100621,7 +1100718,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
       "player1": "x FalKo i",
@@ -1100629,7 +1100726,7 @@
       "teammates": [
         "Saymyname3451",
         "supercharlie12",
-        "vN eRaaz"
+        "eRaaz"
       ],
       "team1": "France",
       "team2": "United Kingdom",
@@ -1100644,10 +1100741,10 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 13, 2026 - 18:00 {{abbr/GMT}}",
+      "date": "October 13, 2026",
       "round": 0,
       "format": "team",
-      "player1": "vN eRaaz",
+      "player1": "eRaaz",
       "player2": null,
       "teammates": [
         "Saymyname3451",
@@ -1101105,7 +1101202,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1101124,7 +1101221,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1101143,7 +1101240,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1101164,7 +1101261,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dbs Elm",
@@ -1101185,7 +1101282,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "CrustyPotato313",
@@ -1101206,7 +1101303,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1101227,7 +1101324,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1101249,7 +1101346,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "GOAT Gobz",
@@ -1101271,7 +1101368,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Im2Good4YoMoma",
@@ -1101293,7 +1101390,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1101315,7 +1101412,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "CrustyPotato313",
@@ -1101337,7 +1101434,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Prop1aNea",
@@ -1101359,7 +1101456,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dbs Elm",
@@ -1101382,7 +1101479,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Arbiters Son",
@@ -1101405,7 +1101502,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1101428,7 +1101525,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "GOAT Gobz",
@@ -1101451,7 +1101548,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "Prop1aNea",
@@ -1101474,7 +1101571,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "BillieDown",
@@ -1101497,7 +1101594,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1101520,7 +1101617,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 9, 2026 - 23:00 {{abbr/GMT}}",
+      "date": "October 9, 2026",
       "round": 0,
       "format": "team",
       "player1": "CrustyPotato313",
@@ -1101546,7 +1101643,7 @@
       "date": "October 18, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [],
       "team1": "United Kingdom",
@@ -1101672,7 +1101769,7 @@
       "player2": null,
       "teammates": [
         "Fiz 98",
-        "Slaayer"
+        "DarK Slaayer"
       ],
       "team1": "United Kingdom",
       "team2": "PS5",
@@ -1101694,7 +1101791,7 @@
       "player2": null,
       "teammates": [
         "D4NI3L J0N35",
-        "Slaayer"
+        "DarK Slaayer"
       ],
       "team1": "United Kingdom",
       "team2": "PS5",
@@ -1101712,7 +1101809,7 @@
       "date": "October 18, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [
         "D4NI3L J0N35",
@@ -1101800,7 +1101897,7 @@
       "date": "October 18, 2026",
       "round": 0,
       "format": "team",
-      "player1": "Slaayer",
+      "player1": "DarK Slaayer",
       "player2": null,
       "teammates": [
         "Huskarls4",
@@ -1101827,7 +1101924,7 @@
       "player1": "Huskarls4",
       "player2": null,
       "teammates": [
-        "Slaayer",
+        "DarK Slaayer",
         "Fiz 98",
         "D4NI3L J0N35"
       ],
@@ -1101851,7 +1101948,7 @@
       "player1": "Fiz 98",
       "player2": null,
       "teammates": [
-        "Slaayer",
+        "DarK Slaayer",
         "Huskarls4",
         "D4NI3L J0N35"
       ],
@@ -1101875,7 +1101972,7 @@
       "player1": "D4NI3L J0N35",
       "player2": null,
       "teammates": [
-        "Slaayer",
+        "DarK Slaayer",
         "Huskarls4",
         "Fiz 98"
       ],
@@ -1101989,7 +1102086,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "SoloGhostAK47",
@@ -1102008,7 +1102105,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "x FalKo i",
@@ -1102027,7 +1102124,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Faith2Adventure",
@@ -1102048,7 +1102145,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "SoloGhostAK47",
@@ -1102069,7 +1102166,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1102090,7 +1102187,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1102111,7 +1102208,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Faith2Adventure",
@@ -1102133,7 +1102230,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "SoloGhostAK47",
@@ -1102155,7 +1102252,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Donald2O16Trump",
@@ -1102177,7 +1102274,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1102199,7 +1102296,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1102221,7 +1102318,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "x FalKo i",
@@ -1102243,7 +1102340,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Faith2Adventure",
@@ -1102267,7 +1102364,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "SoloGhostAK47",
@@ -1102291,7 +1102388,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Donald2O16Trump",
@@ -1102315,7 +1102412,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Zotico3",
@@ -1102339,7 +1102436,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "supercharlie12",
@@ -1102363,7 +1102460,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Saymyname3451",
@@ -1102387,7 +1102484,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "x FalKo i",
@@ -1102411,7 +1102508,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 17:00 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "eRaaz",
@@ -1102435,7 +1102532,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1102454,7 +1102551,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102473,7 +1102570,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1102494,7 +1102591,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "GOAT Gobz",
@@ -1102515,7 +1102612,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "MORIS0202",
@@ -1102536,7 +1102633,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102557,7 +1102654,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dbs Elm",
@@ -1102579,7 +1102676,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1102601,7 +1102698,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Arbiters Son",
@@ -1102623,7 +1102720,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Raggz",
@@ -1102645,7 +1102742,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "MORIS0202",
@@ -1102667,7 +1102764,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102689,7 +1102786,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "volcanloup",
@@ -1102713,7 +1102810,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "GOAT Gobz",
@@ -1102737,7 +1102834,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Arbiters Son",
@@ -1102761,7 +1102858,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dbs Elm",
@@ -1102785,7 +1102882,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "kobyrobys",
@@ -1102809,7 +1102906,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Raggz",
@@ -1102833,7 +1102930,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "moramora48",
@@ -1102857,7 +1102954,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 17, 2026 - 23:39 {{abbr/GMT}}",
+      "date": "October 17, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102881,7 +1102978,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102900,7 +1102997,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1102919,7 +1103016,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "MORIS0202",
@@ -1102940,7 +1103037,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "Dora",
@@ -1102961,7 +1103058,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "ItsGutsAoE",
@@ -1102982,7 +1103079,7 @@
     {
       "tournament": "Nations Cup Console",
       "tier": "C-Tier",
-      "date": "October 19, 2026 - 20:30 {{abbr/GMT}}",
+      "date": "October 19, 2026",
       "round": 0,
       "format": "team",
       "player1": "CrustyPotato313",
@@ -1553626,6 +1553723,94 @@
     {
       "tournament": "Sudden Dessaster 3",
       "tier": "A-Tier",
+      "date": "October 22, 2026 - 7:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Valas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Jurchens",
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 22, 2026 - 7:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Valas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Burgundians",
+      "civ2": "Bohemians",
+      "map": "Holy Hollow",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 22, 2026 - 7:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Valas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Romans",
+      "map": "Thin Ice",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 22, 2026 - 7:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Valas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Mesa Verde",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 22, 2026 - 7:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Valas",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Mountain Forward",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
       "date": "October 21, 2026 - 10:30 {{abbr/GMT}}",
       "round": 1,
       "format": "1v1",
@@ -1553640,7 +1553825,160 @@
       "mapTypes": [
         "closed"
       ],
-      "winner": null
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Goths",
+      "map": "Mauerfall",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Huns",
+      "civ2": "Turks",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Huns",
+      "civ2": "Turks",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Britons",
+      "map": "Holy Hollow",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "MbL",
+      "player2": "IBUYPOWER",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Khmer",
+      "civ2": "Romans",
+      "map": "Mesa Verde",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "MbL",
+      "player2": "IBUYPOWER",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Byzantines",
+      "civ2": "Armenians",
+      "map": "Holy Hollow",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "MbL",
+      "player2": "IBUYPOWER",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Berbers",
+      "map": "Mountain Forward",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "MbL",
+      "player2": "IBUYPOWER",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Poles",
+      "civ2": "Maya",
+      "map": "Monkey Island",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 21, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "MbL",
+      "player2": "IBUYPOWER",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bengalis",
+      "civ2": "Japanese",
+      "map": "Mauerfall",
+      "mapTypes": [],
+      "winner": "1"
     },
     {
       "tournament": "Sudden Dessaster: Silver League",
@@ -1587661,6 +1587999,408 @@
         "nomad"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Mongols",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmaster",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0addy",
+      "player2": null,
+      "teammates": [
+        "ImSimon",
+        "Zanato"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ImSimon",
+      "player2": null,
+      "teammates": [
+        "r0addy",
+        "Zanato"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Zanato",
+      "player2": null,
+      "teammates": [
+        "r0addy",
+        "ImSimon"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Wei",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmaster",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "r0addy",
+        "ImSimon"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Koreans",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0addy",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "ImSimon"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Wu",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ImSimon",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "r0addy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Bengalis",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "Goatmaster"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Turks",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmaster",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Norsemen",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "r0addy",
+        "Laksen"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0addy",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "Laksen"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Britons",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "October 21, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Laksen",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "r0addy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Svea Invictus",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
     },
     {
       "tournament": "Svenska cirkusspelen 2025",
@@ -1905511,7 +1906251,45 @@
         "hybrid",
         "water"
       ],
-      "winner": null
+      "winner": "1"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "October 20, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Mettiu",
+      "player2": "RaiD",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mapuche",
+      "civ2": "Chinese",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "October 20, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Mettiu",
+      "player2": "RaiD",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Burgundians",
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "Tryhard Cup - Prima edizione",
@@ -1936509,6 +1937287,43 @@
         "nomad"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 21, 2026",
+      "round": 2,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "DzeDanik",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Spanish",
+      "map": "Tiergarten",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Vanguard",
+      "tier": "C-Tier",
+      "date": "October 21, 2026",
+      "round": 2,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "DzeDanik",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Murkwood",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "Vico House Cup II",
