@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T12:19:09.640522+00:00",
+  "generatedAt": "2026-10-23T12:04:49.903552+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4311,7 +4311,7 @@
       "formatType": "unknown",
       "type": "Online",
       "region": "China",
-      "players": null,
+      "players": 10,
       "first": "",
       "second": "",
       "third": "",
@@ -16714,11 +16714,11 @@
       "type": "Online",
       "region": "World",
       "players": 128,
-      "first": "MbL",
-      "second": "IBUYPOWER",
+      "first": "Sitaux",
+      "second": "Capoch",
       "third": "",
       "prizeByPlayer": {
-        "MbL": 20000
+        "Sitaux": 20000
       }
     },
     {
@@ -18295,11 +18295,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "FreakinAndy",
-      "second": "Running",
+      "first": "Benanji",
+      "second": "ShiXo.",
       "third": "",
       "prizeByPlayer": {
-        "FreakinAndy": 500
+        "Benanji": 500
       }
     },
     {
@@ -18957,23 +18957,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
         "Lucho": 1250.0,
+        "Sebastian": 1250.0,
         "Nicov": 1250.0,
         "ACCM": 1250.0,
         "Annotoph": 1187.5,
         "Terz": 1187.5,
         "Running": 1187.5,
         "Target331": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
+        "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Classicpro": 933.3333333333334,
+        "Dark": 933.3333333333334
       }
     },
     {
