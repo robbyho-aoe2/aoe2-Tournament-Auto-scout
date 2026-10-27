@@ -1572778,7 +1572778,7 @@
         "region": "World",
         "players": 128,
         "first": "Sitaux",
-        "second": "Capoch",
+        "second": "Vinchester",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1574161,6 +1574161,91 @@
           "map": "Mesa Verde",
           "mapTypes": [],
           "winner": null
+        },
+        {
+          "tournament": "Sudden Dessaster 3",
+          "tier": "A-Tier",
+          "date": "October 26, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "Sitaux",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Georgians",
+          "civ2": "Portuguese",
+          "map": "Canberra",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Sudden Dessaster 3",
+          "tier": "A-Tier",
+          "date": "October 26, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "Sitaux",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Burgundians",
+          "civ2": "Huns",
+          "map": "Kerak",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Sudden Dessaster 3",
+          "tier": "A-Tier",
+          "date": "October 26, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "Sitaux",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Jurchens",
+          "civ2": "Malians",
+          "map": "Mountain Forward",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Sudden Dessaster 3",
+          "tier": "A-Tier",
+          "date": "October 26, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "Sitaux",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Magyars",
+          "civ2": "Tupi",
+          "map": "ZeWalls",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Sudden Dessaster 3",
+          "tier": "A-Tier",
+          "date": "October 26, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "Sitaux",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Chinese",
+          "civ2": "Armenians",
+          "map": "Thin Ice",
+          "mapTypes": [],
+          "winner": "2"
         }
       ]
     },
@@ -1742705,8 +1742790,8 @@
         "type": "Online/Offline",
         "region": "Germany",
         "players": 9,
-        "first": "Benanji",
-        "second": "ShiXo.",
+        "first": "Target331",
+        "second": "Wean Dinchester",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1743152,6 +1743237,59 @@
         {
           "tournament": "The Bastion: Season 2",
           "tier": "B-Tier",
+          "date": "October 27, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Terz",
+          "player2": "TheViper",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Muisca",
+          "civ2": "Georgians",
+          "map": "Badlands",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 27, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Terz",
+          "player2": "TheViper",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Goths",
+          "civ2": "Var",
+          "map": "Vulpine",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 27, 2026 - 9:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Terz",
+          "player2": "TheViper",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Bohemians",
+          "civ2": "Dan",
+          "map": "Moats",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
           "date": "October 19, 2026 - 17:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
@@ -1743260,6 +1743398,65 @@
             "open"
           ],
           "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 26, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Target331",
+          "player2": "Wean Dinchester",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Persians",
+          "civ2": "Magyars",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 26, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Target331",
+          "player2": "Wean Dinchester",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Armenians",
+          "civ2": "Mongols",
+          "map": "Vulpine",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 26, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Target331",
+          "player2": "Wean Dinchester",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Japanese",
+          "civ2": "Sax",
+          "map": "Shoals",
+          "mapTypes": [
+            "hybrid",
+            "open"
+          ],
+          "winner": "1"
         }
       ]
     },
@@ -1812125,22 +1812322,22 @@
         "third": "",
         "prizeByPlayer": {
           "Sebastian": 1250.0,
-          "Lucho": 1250.0,
-          "Nicov": 1250.0,
           "ACCM": 1250.0,
-          "Annotoph": 1187.5,
-          "Target331": 1187.5,
+          "Nicov": 1250.0,
+          "Lucho": 1250.0,
           "Running": 1187.5,
+          "Target331": 1187.5,
+          "Annotoph": 1187.5,
           "Terz": 1187.5,
-          "StonePleaseAoE": 1466.6666666666667,
-          "The Dragonstar": 1466.6666666666667,
           "Ciskhan": 1466.6666666666667,
+          "The Dragonstar": 1466.6666666666667,
+          "StonePleaseAoE": 1466.6666666666667,
           "JorDan AoE": 1316.6666666666667,
           "DauT": 1316.6666666666667,
           "FreakinAndy": 1316.6666666666667,
-          "IAnTaGoNiStI": 933.3333333333334,
+          "Dark": 933.3333333333334,
           "Classicpro": 933.3333333333334,
-          "Dark": 933.3333333333334
+          "IAnTaGoNiStI": 933.3333333333334
         }
       },
       "games": [
@@ -2196722,8 +2196919,8 @@
         "url": "https://liquipedia.net/ageofempires/Vanguard",
         "tier": "C-Tier",
         "start": "2026-10-12",
-        "end": "2026-10-25",
-        "prize": 25,
+        "end": "2026-10-26",
+        "prize": 90,
         "currency": "USD",
         "organizer": "Tralfamador",
         "format": "1v1, Round Robin & Single Elimination",
@@ -2196731,12 +2196928,14 @@
         "type": "Online",
         "region": "CIS",
         "players": 8,
-        "first": "Lamo",
-        "second": "The Beatleman",
+        "first": "IAnTaGoNiStI",
+        "second": "Lamo",
         "third": "",
         "prizeByPlayer": {
-          "OLADUSHEK": 12.45,
-          "The Beatleman": 12.45
+          "IAnTaGoNiStI": 42.37,
+          "Lamo": 22.43,
+          "OLADUSHEK": 12.46,
+          "The Beatleman": 12.46
         }
       },
       "games": [
@@ -2197230,6 +2197429,42 @@
           "team2": null,
           "civ1": "Persians",
           "civ2": "Wei",
+          "map": "Tiergarten",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Vanguard",
+          "tier": "C-Tier",
+          "date": "October 26, 2026 - 18:30 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "IAnTaGoNiStI",
+          "player2": "Lamo",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Malay",
+          "civ2": "Persians",
+          "map": "Copenhagen",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Vanguard",
+          "tier": "C-Tier",
+          "date": "October 26, 2026 - 18:30 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "IAnTaGoNiStI",
+          "player2": "Lamo",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Malay",
+          "civ2": "Persians",
           "map": "Tiergarten",
           "mapTypes": [],
           "winner": "1"
@@ -2200405,6 +2200640,44 @@
           "map": "Arena",
           "mapTypes": [
             "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 25, 2026",
+          "round": 0,
+          "format": "team",
+          "player1": "volcanloup",
+          "player2": null,
+          "teammates": [],
+          "team1": "Canada",
+          "team2": "France",
+          "civ1": "Persians",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Nations Cup Console",
+          "tier": "C-Tier",
+          "date": "October 25, 2026",
+          "round": 0,
+          "format": "team",
+          "player1": "x FalKo i",
+          "player2": null,
+          "teammates": [],
+          "team1": "France",
+          "team2": "Canada",
+          "civ1": "Slavs",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
           ],
           "winner": "2"
         },

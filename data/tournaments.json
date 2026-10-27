@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T13:29:32.663116+00:00",
+  "generatedAt": "2026-10-27T12:39:33.502665+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -16757,7 +16757,7 @@
       "region": "World",
       "players": 128,
       "first": "Sitaux",
-      "second": "Capoch",
+      "second": "Vinchester",
       "third": "",
       "prizeByPlayer": {
         "Sitaux": 20000
@@ -18337,11 +18337,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "Benanji",
-      "second": "ShiXo.",
+      "first": "Target331",
+      "second": "Wean Dinchester",
       "third": "",
       "prizeByPlayer": {
-        "Benanji": 500
+        "Target331": 500
       }
     },
     {
@@ -19000,22 +19000,22 @@
       "third": "",
       "prizeByPlayer": {
         "Sebastian": 1250.0,
-        "Lucho": 1250.0,
-        "Nicov": 1250.0,
         "ACCM": 1250.0,
-        "Annotoph": 1187.5,
-        "Target331": 1187.5,
+        "Nicov": 1250.0,
+        "Lucho": 1250.0,
         "Running": 1187.5,
+        "Target331": 1187.5,
+        "Annotoph": 1187.5,
         "Terz": 1187.5,
-        "StonePleaseAoE": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "IAnTaGoNiStI": 933.3333333333334,
+        "Dark": 933.3333333333334,
         "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
@@ -20226,8 +20226,8 @@
       "url": "https://liquipedia.net/ageofempires/Vanguard",
       "tier": "C-Tier",
       "start": "2026-10-12",
-      "end": "2026-10-25",
-      "prize": 25,
+      "end": "2026-10-26",
+      "prize": 90,
       "currency": "USD",
       "organizer": "Tralfamador",
       "format": "1v1, Round Robin & Single Elimination",
@@ -20235,12 +20235,14 @@
       "type": "Online",
       "region": "CIS",
       "players": 8,
-      "first": "Lamo",
-      "second": "The Beatleman",
+      "first": "IAnTaGoNiStI",
+      "second": "Lamo",
       "third": "",
       "prizeByPlayer": {
-        "OLADUSHEK": 12.45,
-        "The Beatleman": 12.45
+        "IAnTaGoNiStI": 42.37,
+        "Lamo": 22.43,
+        "OLADUSHEK": 12.46,
+        "The Beatleman": 12.46
       }
     },
     {
