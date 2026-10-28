@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T12:39:33.502665+00:00",
+  "generatedAt": "2026-10-28T13:23:44.723365+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -1726770,6 +1726770,59 @@
         "open"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "ShiXo.",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Khmer",
+      "map": "Badlands",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "ShiXo.",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Britons",
+      "civ2": "Burgundians",
+      "map": "ZeWall",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "ShiXo.",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Aztecs",
+      "civ2": "Magyars",
+      "map": "Valley",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
     },
     {
       "tournament": "The Brotherhood Of Empire Wars",

@@ -1742790,8 +1742790,8 @@
         "type": "Online/Offline",
         "region": "Germany",
         "players": 9,
-        "first": "Target331",
-        "second": "Wean Dinchester",
+        "first": "JorDan AoE",
+        "second": "ShiXo.",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1743457,6 +1743457,59 @@
             "open"
           ],
           "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "ShiXo.",
+          "player2": "JorDan AoE",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Mongols",
+          "civ2": "Khmer",
+          "map": "Badlands",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "ShiXo.",
+          "player2": "JorDan AoE",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Britons",
+          "civ2": "Burgundians",
+          "map": "ZeWall",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "October 27, 2026 - 17:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "ShiXo.",
+          "player2": "JorDan AoE",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Aztecs",
+          "civ2": "Magyars",
+          "map": "Valley",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
         }
       ]
     },
@@ -1812321,22 +1812374,22 @@
         "second": "LingYuan",
         "third": "",
         "prizeByPlayer": {
-          "Sebastian": 1250.0,
-          "ACCM": 1250.0,
           "Nicov": 1250.0,
+          "ACCM": 1250.0,
+          "Sebastian": 1250.0,
           "Lucho": 1250.0,
-          "Running": 1187.5,
-          "Target331": 1187.5,
-          "Annotoph": 1187.5,
           "Terz": 1187.5,
+          "Annotoph": 1187.5,
+          "Target331": 1187.5,
+          "Running": 1187.5,
+          "StonePleaseAoE": 1466.6666666666667,
           "Ciskhan": 1466.6666666666667,
           "The Dragonstar": 1466.6666666666667,
-          "StonePleaseAoE": 1466.6666666666667,
+          "FreakinAndy": 1316.6666666666667,
           "JorDan AoE": 1316.6666666666667,
           "DauT": 1316.6666666666667,
-          "FreakinAndy": 1316.6666666666667,
-          "Dark": 933.3333333333334,
           "Classicpro": 933.3333333333334,
+          "Dark": 933.3333333333334,
           "IAnTaGoNiStI": 933.3333333333334
         }
       },
@@ -2201042,6 +2201095,18 @@
         "third": "",
         "prizeByPlayer": {}
       },
+      "games": []
+    },
+    "Age of Empires: Chieftain's Battle": {
+      "tournament": null,
+      "games": []
+    },
+    "Cable TV Cup": {
+      "tournament": null,
+      "games": []
+    },
+    "CastleRush Duo Clash/15": {
+      "tournament": null,
       "games": []
     }
   }
