@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T13:23:44.723365+00:00",
+  "generatedAt": "2026-10-29T13:28:55.364161+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -386333,6 +386333,65 @@
     {
       "tournament": "Chilean Cup 2026",
       "tier": "B-Tier",
+      "date": "October 26, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Saracens",
+      "civ2": "Mongols",
+      "map": "Steppe",
+      "mapTypes": [
+        "nomad",
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "October 26, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Byzantines",
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "October 26, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bohemians",
+      "civ2": "Persians",
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
       "date": "October 25, 2026 - 16:30 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -437645,7 +437704,7 @@
       "player1": "Matze",
       "player2": null,
       "teammates": [
-        "TheYuki",
+        "TheVuki",
         "odemeister",
         "Multimorbid"
       ],
@@ -437665,7 +437724,7 @@
       "date": "October 25, 2026 - 19:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "TheYuki",
+      "player1": "TheVuki",
       "player2": null,
       "teammates": [
         "Matze",
@@ -437692,7 +437751,7 @@
       "player2": null,
       "teammates": [
         "Matze",
-        "TheYuki",
+        "TheVuki",
         "Multimorbid"
       ],
       "team1": "Team Matze",
@@ -437715,7 +437774,7 @@
       "player2": null,
       "teammates": [
         "Matze",
-        "TheYuki",
+        "TheVuki",
         "odemeister"
       ],
       "team1": "Team Matze",
@@ -437830,7 +437889,7 @@
       "player2": null,
       "teammates": [
         "odemeister",
-        "TheYuki",
+        "TheVuki",
         "Multimorbid"
       ],
       "team1": "Team Matze",
@@ -437853,7 +437912,7 @@
       "player2": null,
       "teammates": [
         "Matze",
-        "TheYuki",
+        "TheVuki",
         "Multimorbid"
       ],
       "team1": "Team Matze",
@@ -437872,7 +437931,7 @@
       "date": "October 25, 2026 - 19:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "TheYuki",
+      "player1": "TheVuki",
       "player2": null,
       "teammates": [
         "Matze",
@@ -437900,7 +437959,7 @@
       "teammates": [
         "Matze",
         "odemeister",
-        "TheYuki"
+        "TheVuki"
       ],
       "team1": "Team Matze",
       "team2": "Team DanMT",
@@ -438289,7 +438348,7 @@
       "player1": "Tiggerr",
       "player2": null,
       "teammates": [
-        "Salva.dopa",
+        "Salva.dope",
         "Johan",
         "triiitCH2"
       ],
@@ -438309,7 +438368,7 @@
       "date": "October 25, 2026 - 17:30 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "Salva.dopa",
+      "player1": "Salva.dope",
       "player2": null,
       "teammates": [
         "Tiggerr",
@@ -438336,7 +438395,7 @@
       "player2": null,
       "teammates": [
         "Tiggerr",
-        "Salva.dopa",
+        "Salva.dope",
         "triiitCH2"
       ],
       "team1": "Team Tiggerr",
@@ -438359,7 +438418,7 @@
       "player2": null,
       "teammates": [
         "Tiggerr",
-        "Salva.dopa",
+        "Salva.dope",
         "Johan"
       ],
       "team1": "Team Tiggerr",
@@ -438473,7 +438532,7 @@
       "player1": "Tiggerr",
       "player2": null,
       "teammates": [
-        "Salva.dopa",
+        "Salva.dope",
         "Johan",
         "triiitCH2"
       ],
@@ -438493,7 +438552,7 @@
       "date": "October 25, 2026 - 17:30 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "Salva.dopa",
+      "player1": "Salva.dope",
       "player2": null,
       "teammates": [
         "Tiggerr",
@@ -438520,7 +438579,7 @@
       "player2": null,
       "teammates": [
         "Tiggerr",
-        "Salva.dopa",
+        "Salva.dope",
         "triiitCH2"
       ],
       "team1": "Team Tiggerr",
@@ -438543,7 +438602,7 @@
       "player2": null,
       "teammates": [
         "Tiggerr",
-        "Salva.dopa",
+        "Salva.dope",
         "Johan"
       ],
       "team1": "Team Tiggerr",
@@ -438746,7 +438805,7 @@
       "date": "October 24, 2026 - 17:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "widewire",
+      "player1": "sidewire",
       "player2": null,
       "teammates": [
         "Mycroft",
@@ -438772,7 +438831,7 @@
       "player1": "Mycroft",
       "player2": null,
       "teammates": [
-        "widewire",
+        "sidewire",
         "OG DADDY",
         "Mo Tastic"
       ],
@@ -438795,7 +438854,7 @@
       "player1": "OG DADDY",
       "player2": null,
       "teammates": [
-        "widewire",
+        "sidewire",
         "Mycroft",
         "Mo Tastic"
       ],
@@ -438818,7 +438877,7 @@
       "player1": "Mo Tastic",
       "player2": null,
       "teammates": [
-        "widewire",
+        "sidewire",
         "Mycroft",
         "OG DADDY"
       ],
@@ -439026,6 +439085,7 @@
       "player2": null,
       "teammates": [
         "aoclearnrageforest",
+        "Juyhou",
         "FloDuFive"
       ],
       "team1": "Team Juyhou",
@@ -439048,6 +439108,7 @@
       "player2": null,
       "teammates": [
         "Scandalf",
+        "Juyhou",
         "FloDuFive"
       ],
       "team1": "Team Juyhou",
@@ -439066,15 +439127,39 @@
       "date": "October 24, 2026 - 17:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
-      "player1": "FloDuFive",
+      "player1": "Juyhou",
       "player2": null,
       "teammates": [
         "Scandalf",
-        "aoclearnrageforest"
+        "aoclearnrageforest",
+        "FloDuFive"
       ],
       "team1": "Team Juyhou",
       "team2": "Team Mo_Tastic",
       "civ1": "Bengalis",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "October 24, 2026 - 17:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "FloDuFive",
+      "player2": null,
+      "teammates": [
+        "Scandalf",
+        "aoclearnrageforest",
+        "Juyhou"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Italians",
       "civ2": null,
       "map": "Black Forest",
       "mapTypes": [
@@ -542158,6 +542243,99 @@
     {
       "tournament": "DS_League",
       "tier": "B-Tier",
+      "date": "October 28, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "The Dragonstar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Goths",
+      "civ2": "Dravidians",
+      "map": "Cliffbound",
+      "mapTypes": [
+        "chaotic"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "The Dragonstar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Celts",
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "The Dragonstar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malians",
+      "civ2": "Spanish",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "The Dragonstar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 17:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "The Dragonstar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
       "date": "October 21, 2026 - 14:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -542251,6 +542429,98 @@
         "nomad"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 20:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Biry",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Spanish",
+      "civ2": "Wu",
+      "map": "Murkwood",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 20:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Biry",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Poles",
+      "civ2": "Wei",
+      "map": "Basmo",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 20:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Biry",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Tupi",
+      "civ2": "Burgundians",
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 20:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Biry",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 20:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Biry",
+      "player2": "Gali",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": null
     },
     {
       "tournament": "Danmarksmesterskaberne 2024",
@@ -1726823,6 +1727093,62 @@
         "open"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 9:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Wean Dinchester",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Italians",
+      "civ2": "Wu",
+      "map": "Copenhagen",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 9:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Wean Dinchester",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Armenians",
+      "civ2": "Bengalis",
+      "map": "Basmo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "October 28, 2026 - 9:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Wean Dinchester",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Var",
+      "civ2": "Magyars",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "The Brotherhood Of Empire Wars",
