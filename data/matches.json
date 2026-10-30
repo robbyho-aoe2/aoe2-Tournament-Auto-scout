@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T13:28:55.364161+00:00",
+  "generatedAt": "2026-10-30T13:22:25.019456+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -344210,6 +344210,42 @@
     {
       "tournament": "Campeonato Argentino AoE 2026: Segunda División",
       "tier": "C-Tier",
+      "date": "2026-08-10",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Tobi",
+      "player2": "LautaLk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Koreans",
+      "civ2": "Portuguese",
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+      "tier": "C-Tier",
+      "date": "2026-08-10",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Tobi",
+      "player2": "LautaLk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wu",
+      "civ2": "Goths",
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+      "tier": "C-Tier",
       "date": "August 21, 2026 - 00:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -457434,6 +457470,382 @@
       "map": "Arabia",
       "mapTypes": [
         "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Eli",
+      "player2": null,
+      "teammates": [
+        "Bel",
+        "Chris",
+        "Dracarys"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Bel",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Chris",
+        "Dracarys"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Chris",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel",
+        "Dracarys"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Dracarys",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel",
+        "Chris"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Bohemians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "develement",
+      "player2": null,
+      "teammates": [
+        "Bread Pudding",
+        "Collllin",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Bread Pudding",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Collllin",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Malay",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Collllin",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Armazmar",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding",
+        "Collllin"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Eli",
+      "player2": null,
+      "teammates": [
+        "Bel",
+        "Chris",
+        "Mojo Jijo"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Bel",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Chris",
+        "Mojo Jijo"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Bengalis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Chris",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel",
+        "Mojo Jijo"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Saracens",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Mojo Jijo",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel",
+        "Chris"
+      ],
+      "team1": "Team Eli",
+      "team2": "Team develement",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "develement",
+      "player2": null,
+      "teammates": [
+        "Bread Pudding",
+        "Collllin",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Bread Pudding",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Collllin",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Wei",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Collllin",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding",
+        "Armazmar"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "October 29, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "team",
+      "player1": "Armazmar",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding",
+        "Collllin"
+      ],
+      "team1": "Team develement",
+      "team2": "Team Eli",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
       ],
       "winner": "2"
     },
@@ -1558611,6 +1559023,94 @@
       "map": "Mesa Verde",
       "mapTypes": [],
       "winner": null
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 30, 2026 - 11:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bengalis",
+      "civ2": "Dravidians",
+      "map": "Thin Ice",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 30, 2026 - 11:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vikings",
+      "civ2": "Celts",
+      "map": "Mauerfall",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 30, 2026 - 11:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Portuguese",
+      "civ2": "Berbers",
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 30, 2026 - 11:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Vietnamese",
+      "map": "Mountain Forward",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "October 30, 2026 - 11:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheViper",
+      "player2": "Mihai06",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Byzantines",
+      "civ2": "Maya",
+      "map": "Holy Hollow",
+      "mapTypes": [],
+      "winner": "1"
     },
     {
       "tournament": "Sudden Dessaster 3",
