@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T13:22:25.019456+00:00",
+  "generatedAt": "2026-10-31T12:56:26.574610+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2474,9 +2474,9 @@
       }
     },
     {
-      "id": "AusDraft",
+      "id": "AusDraft/1",
       "name": "AusDraft",
-      "url": "https://liquipedia.net/ageofempires/AusDraft",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/1",
       "tier": "B-Tier",
       "start": "2022-07-11",
       "end": "2022-09-04",
@@ -2622,6 +2622,26 @@
         "hank": 55.88333333333333,
         "Alian713": 27.941666666666666
       }
+    },
+    {
+      "id": "AusDraft/5",
+      "name": "AusDraft 5",
+      "url": "https://liquipedia.net/ageofempires/AusDraft/5",
+      "tier": "C-Tier",
+      "start": "2026-11-16",
+      "end": "2026-12-07",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "DounutNinja",
+      "format": "4v4, Round Robin & Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "Oceania",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Aussie Ascension",
@@ -18999,23 +19019,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
-        "Sebastian": 1250.0,
         "Nicov": 1250.0,
+        "ACCM": 1250.0,
         "Lucho": 1250.0,
+        "Sebastian": 1250.0,
+        "Annotoph": 1187.5,
+        "Target331": 1187.5,
         "Terz": 1187.5,
         "Running": 1187.5,
-        "Target331": 1187.5,
-        "Annotoph": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
-        "IAnTaGoNiStI": 933.3333333333334,
+        "JorDan AoE": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Dark": 933.3333333333334,
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
