@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T15:09:35.378183+00:00",
+  "generatedAt": "2026-11-06T14:47:08.655722+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 48,
+      "prize": 49,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,8 +3671,8 @@
       "second": "Feyern",
       "third": "",
       "prizeByPlayer": {
-        "Tobi": 19.39,
-        "Black Monk": 19.39,
+        "Tobi": 19.42,
+        "Black Monk": 19.42,
         "RivuxTV": 4.85,
         "Sszafranko": 4.85
       }
@@ -16480,14 +16480,16 @@
       "currency": "USD",
       "organizer": "Xardas_AoE",
       "format": "1v1, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "La Llorona",
+      "second": "Headless Horseman",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "La Llorona": 750
+      }
     },
     {
       "id": "Sink or Swim",
@@ -16801,11 +16803,11 @@
       "type": "Online",
       "region": "World",
       "players": 128,
-      "first": "TheViper",
-      "second": "Lucho",
+      "first": "Barles",
+      "second": "Sora Kuma",
       "third": "",
       "prizeByPlayer": {
-        "TheViper": 20000
+        "Barles": 20000
       }
     },
     {
@@ -17161,7 +17163,7 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Frosty Night",
+      "first": "Bästföre: 2025",
       "second": "Norsemen",
       "third": "",
       "prizeByPlayer": {}
@@ -19065,22 +19067,22 @@
       "third": "",
       "prizeByPlayer": {
         "Nicov": 1250.0,
-        "Sebastian": 1250.0,
         "Lucho": 1250.0,
         "ACCM": 1250.0,
+        "Sebastian": 1250.0,
         "Running": 1187.5,
-        "Annotoph": 1187.5,
         "Target331": 1187.5,
+        "Annotoph": 1187.5,
         "Terz": 1187.5,
         "Ciskhan": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
-        "Classicpro": 933.3333333333334,
+        "Dark": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Classicpro": 933.3333333333334
       }
     },
     {

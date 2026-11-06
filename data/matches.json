@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T15:09:35.378183+00:00",
+  "generatedAt": "2026-11-06T14:47:08.655722+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -1529141,6 +1529141,256 @@
       "winner": "1"
     },
     {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Portuguese",
+      "civ2": "Huns",
+      "map": "Frisia",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Bohemians",
+      "map": "Terrace",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Tatars",
+      "civ2": "Cumans",
+      "map": "Tidepool",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bulgarians",
+      "civ2": "Slavs",
+      "map": "Runestones",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Magyars",
+      "map": "Fez",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Japanese",
+      "map": "Spiral",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Bloody Mary",
+      "player2": "Blinky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Italians",
+      "civ2": "Byzantines",
+      "map": "Golden Swamp",
+      "mapTypes": [
+        "hybrid",
+        "open",
+        "semi-open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Mongols",
+      "map": "Spiral",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Cumans",
+      "civ2": "Jurchens",
+      "map": "Frisia",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Tatars",
+      "map": "Runestones",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bohemians",
+      "civ2": "Khmer",
+      "map": "Acaray",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Fez",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Tidepool",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Headless Horseman",
+      "player2": "La Llorona",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Golden Swamp",
+      "mapTypes": [
+        "hybrid",
+        "open",
+        "semi-open"
+      ],
+      "winner": null
+    },
+    {
       "tournament": "Sink or Swim",
       "tier": "C-Tier",
       "date": "April 8, 2022 - 13:10 {{abbr/GMT}}",
@@ -1564400,6 +1564650,91 @@
       "map": "Mauerfall",
       "mapTypes": [],
       "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sora Kuma",
+      "player2": "Barles",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Portuguese",
+      "civ2": "Lithuanians",
+      "map": "Mountain Forward",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sora Kuma",
+      "player2": "Barles",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Tupi",
+      "civ2": "Romans",
+      "map": "Mesa Verde",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sora Kuma",
+      "player2": "Barles",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Var",
+      "civ2": "Persians",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sora Kuma",
+      "player2": "Barles",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Japanese",
+      "map": "Mauerfall",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 5, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sora Kuma",
+      "player2": "Barles",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Canberra",
+      "mapTypes": [],
+      "winner": null
     },
     {
       "tournament": "Sudden Dessaster: Silver League",
@@ -1600400,6 +1600735,390 @@
         "closed"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "Zanato",
+        "r0adyy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Koreans",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Zanato",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "r0adyy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0adyy",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "Zanato"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Bohemians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "Kaeften",
+        "GGOut"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Saxons",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kaeften",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "GGOut"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "GGOut",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Bengalis",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "r0adyy",
+        "Laksen"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0adyy",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "Laksen"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Laksen",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "r0adyy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Yakui",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Mratin"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "SleepySwede",
+      "player2": null,
+      "teammates": [
+        "Yakui",
+        "Mratin"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Magyars",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "Yakui",
+        "SleepySwede"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Spanish",
+      "civ2": null,
+      "map": "Frontline",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "Zanato",
+        "r0adyy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Saracens",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Zanato",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "r0adyy"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "r0adyy",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "Zanato"
+      ],
+      "team1": "Norsemen",
+      "team2": "Bästföre: 2025",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "SleepySwede",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 05, 2026 - 19:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kaeften",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Mratin"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Norsemen",
+      "civ1": "Shu",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "Svenska cirkusspelen 2025",
@@ -1734135,6 +1734854,62 @@
         "nomad"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Target331",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Byzantines",
+      "map": "Typhoon",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Target331",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Sax",
+      "map": "Copenhagen",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Target331",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Mapuche",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": null
     },
     {
       "tournament": "The Bastion: Season 2",
