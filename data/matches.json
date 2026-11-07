@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:47:08.655722+00:00",
+  "generatedAt": "2026-11-07T13:30:33.972553+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -387229,6 +387229,66 @@
     {
       "tournament": "Chilean Cup 2026",
       "tier": "B-Tier",
+      "date": "October 31, 2026 - 23:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Tatars",
+      "civ2": "Bengalis",
+      "map": "Four Lakes",
+      "mapTypes": [
+        "chaotic",
+        "hybrid",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "October 31, 2026 - 23:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Saracens",
+      "civ2": "Dravidians",
+      "map": "Isthmus",
+      "mapTypes": [
+        "hybrid",
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "October 31, 2026 - 23:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vietnamese",
+      "civ2": "Turks",
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
       "date": "October 29, 2026 - 0:30 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -387283,6 +387343,122 @@
         "nomad"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 1, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Persians",
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 1, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Byzantines",
+      "civ2": "Turks",
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 1, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Pain",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Hollow Woodlands",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 2, 2026 - 0:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Khmer",
+      "map": "Four Lakes",
+      "mapTypes": [
+        "chaotic",
+        "hybrid",
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 2, 2026 - 0:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Hindustanis",
+      "civ2": "Bohemians",
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 2, 2026 - 0:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "NecksZy",
+      "player2": "Neromelnick",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Turks",
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": "2"
     },
     {
       "tournament": "Chilean Cup 2026",
@@ -387455,6 +387631,103 @@
         "closed"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 0:50 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Neromelnick",
+      "player2": "Jürgen",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Khmer",
+      "civ2": "Georgians",
+      "map": "Crownwood",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 0:50 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Neromelnick",
+      "player2": "Jürgen",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Cumans",
+      "civ2": "Spanish",
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 0:50 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Neromelnick",
+      "player2": "Jürgen",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Maya",
+      "civ2": "Japanese",
+      "map": "Isthmus",
+      "mapTypes": [
+        "hybrid",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 0:50 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Neromelnick",
+      "player2": "Jürgen",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Huns",
+      "civ2": "Jurchens",
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Chilean Cup 2026",
+      "tier": "B-Tier",
+      "date": "November 5, 2026 - 0:50 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Neromelnick",
+      "player2": "Jürgen",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Hideout",
+      "mapTypes": [
+        "chaotic",
+        "closed"
+      ],
+      "winner": null
     },
     {
       "tournament": "Chilean League 2021: Primera Division",
@@ -546799,6 +547072,99 @@
       "civ2": null,
       "map": "Skukuza",
       "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 16:55 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Dragonstar",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Mapuche",
+      "map": "Golden Lakes",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 16:55 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Dragonstar",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Wei",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 16:55 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Dragonstar",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Armenians",
+      "civ2": "Hindustanis",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 16:55 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Dragonstar",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Celts",
+      "civ2": "Magyars",
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "DS_League",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 16:55 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Dragonstar",
+      "player2": "Overtaken",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
       "winner": null
     },
     {
@@ -1529391,6 +1529757,260 @@
       "winner": null
     },
     {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Byzantines",
+      "civ2": "Shu",
+      "map": "Team Islands",
+      "mapTypes": [
+        "water"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Huns",
+      "map": "Golden Swamp",
+      "mapTypes": [
+        "hybrid",
+        "open",
+        "semi-open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Gurjaras",
+      "civ2": "Magyars",
+      "map": "Terrace",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Koreans",
+      "civ2": "Tatars",
+      "map": "Frisia",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Tidepool",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Runestones",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Drury Lane Ghost",
+      "player2": "King Boo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Plateau",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Chinese",
+      "map": "Team Islands",
+      "mapTypes": [
+        "water"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Khmer",
+      "civ2": "Bulgarians",
+      "map": "Fez",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Byzantines",
+      "map": "Golden Swamp",
+      "mapTypes": [
+        "hybrid",
+        "open",
+        "semi-open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bohemians",
+      "civ2": "Persians",
+      "map": "Acaray",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Gurjaras",
+      "civ2": "Japanese",
+      "map": "Runestones",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Frisia",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Shrouded Deathmatch",
+      "tier": "B-Tier",
+      "date": "November 6, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "Poltergeist",
+      "player2": "Bell Witch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Outcrop",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
       "tournament": "Sink or Swim",
       "tier": "C-Tier",
       "date": "April 8, 2022 - 13:10 {{abbr/GMT}}",
@@ -1551202,6 +1551822,116 @@
       "winner": "1"
     },
     {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 7, 2026 - 01:00 {{abbr/UTC}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Chinese",
+      "map": "Canals",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 7, 2026 - 01:00 {{abbr/UTC}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Khmer",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 7, 2026 - 01:00 {{abbr/UTC}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Bengalis",
+      "map": "Sardis",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 4, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Starsky",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Tupi",
+      "civ2": "Mapuche",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 4, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Starsky",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Koreans",
+      "civ2": "Dan",
+      "map": "Bog Islands",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 4, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Starsky",
+      "player2": "Togawa Sakikoi",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Sardis",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
       "tournament": "Sudden Dessaster",
       "tier": "A-Tier",
       "date": "March 14, 2024 - 14:00 {{abbr/GMT}}",
@@ -1564733,6 +1565463,91 @@
       "civ1": null,
       "civ2": null,
       "map": "Canberra",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sebastian",
+      "player2": "Sitaux",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Shu",
+      "civ2": "Malay",
+      "map": "Canberra",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sebastian",
+      "player2": "Sitaux",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Romans",
+      "civ2": "Berbers",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sebastian",
+      "player2": "Sitaux",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Dravidians",
+      "map": "Thin Ice",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sebastian",
+      "player2": "Sitaux",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vietnamese",
+      "civ2": "Italians",
+      "map": "Mountain Forward",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Dessaster 3",
+      "tier": "A-Tier",
+      "date": "November 6, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 3,
+      "format": "1v1",
+      "player1": "Sebastian",
+      "player2": "Sitaux",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Holy Hollow",
       "mapTypes": [],
       "winner": null
     },
@@ -1734909,7 +1735724,7 @@
         "hybrid",
         "nomad"
       ],
-      "winner": null
+      "winner": "1"
     },
     {
       "tournament": "The Bastion: Season 2",
@@ -1920135,6 +1920950,63 @@
         "closed"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "November 6, 2026",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Null",
+      "player2": "KilleR_StorM_",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Maya",
+      "civ2": "Malians",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "November 6, 2026",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Null",
+      "player2": "KilleR_StorM_",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Italians",
+      "civ2": "Turks",
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "November 6, 2026",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Null",
+      "player2": "KilleR_StorM_",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
     },
     {
       "tournament": "Turkish League",
