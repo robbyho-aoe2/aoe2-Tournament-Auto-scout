@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T13:30:33.972553+00:00",
+  "generatedAt": "2026-11-08T13:54:56.451792+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2629,7 +2629,7 @@
       "url": "https://liquipedia.net/ageofempires/AusDraft/5",
       "tier": "C-Tier",
       "start": "2026-11-16",
-      "end": "2026-12-07",
+      "end": "2026-12-20",
       "prize": null,
       "currency": "USD",
       "organizer": "DounutNinja",
@@ -4275,8 +4275,8 @@
       "type": "Online/Offline",
       "region": "Chile",
       "players": 16,
-      "first": "Neromelnick",
-      "second": "Jürgen",
+      "first": "Felipe Besitos Ricos",
+      "second": "Partyman96",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -11518,14 +11518,16 @@
       "currency": "USD",
       "organizer": "Andreu Imperi",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Peru",
       "players": 12,
-      "first": "",
-      "second": "",
+      "first": "Dimo",
+      "second": "Renzo",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Dimo": 750
+      }
     },
     {
       "id": "Lightning Fast 2v2 Christmas",
@@ -16484,11 +16486,11 @@
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "Poltergeist",
-      "second": "Bell Witch",
+      "first": "King Hamlet",
+      "second": "Onryō",
       "third": "",
       "prizeByPlayer": {
-        "Poltergeist": 750
+        "King Hamlet": 750
       }
     },
     {
@@ -16804,7 +16806,7 @@
       "region": "World",
       "players": 128,
       "first": "Sebastian",
-      "second": "Sitaux",
+      "second": "Barles",
       "third": "",
       "prizeByPlayer": {
         "Sebastian": 20000
@@ -19066,22 +19068,22 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
+        "Nicov": 1250.0,
         "Sebastian": 1250.0,
         "Lucho": 1250.0,
         "ACCM": 1250.0,
-        "Nicov": 1250.0,
-        "Target331": 1187.5,
-        "Terz": 1187.5,
-        "Running": 1187.5,
         "Annotoph": 1187.5,
+        "Running": 1187.5,
+        "Terz": 1187.5,
+        "Target331": 1187.5,
+        "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "StonePleaseAoE": 1466.6666666666667,
         "DauT": 1316.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "Dark": 933.3333333333334,
+        "JorDan AoE": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
+        "Dark": 933.3333333333334,
         "Classicpro": 933.3333333333334
       }
     },
