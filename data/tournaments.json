@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T13:54:56.451792+00:00",
+  "generatedAt": "2026-11-09T16:48:55.793720+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2853,12 +2853,12 @@
       "currency": "USD",
       "organizer": "",
       "format": "1v1, Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "",
-      "second": "",
+      "first": "the_belgian",
+      "second": "welcometorapture",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4842,8 +4842,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team Mo_Tastic",
-      "second": "Team Coolcat23",
+      "first": "Team Juyhou",
+      "second": "Team Ceepki",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4933,11 +4933,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team Eli",
-      "second": "Team develement",
+      "first": "Team Rodrixs",
+      "second": "Team Eli",
       "third": "",
       "prizeByPlayer": {
-        "Team Eli": 450
+        "Team Rodrixs": 450
       }
     },
     {
@@ -6918,6 +6918,26 @@
       "prizeByPlayer": {
         "TheViper": 2000
       }
+    },
+    {
+      "id": "Elysium (tournament)",
+      "name": "Elysium",
+      "url": "https://liquipedia.net/ageofempires/Elysium_(tournament)",
+      "tier": "B-Tier",
+      "start": "2026-11-09",
+      "end": "2026-12-27",
+      "prize": null,
+      "currency": "USD",
+      "organizer": "Tralfamador",
+      "format": "1v1, Round Robin & Double Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "CIS",
+      "players": 12,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "Empire Wars Arena Mini-Cup",
@@ -16486,11 +16506,11 @@
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "King Hamlet",
-      "second": "Onryō",
+      "first": "Slimer",
+      "second": "Vanishing Hitchhiker",
       "third": "",
       "prizeByPlayer": {
-        "King Hamlet": 750
+        "Slimer": 750
       }
     },
     {
@@ -16806,7 +16826,7 @@
       "region": "World",
       "players": 128,
       "first": "Sebastian",
-      "second": "Barles",
+      "second": "TheViper",
       "third": "",
       "prizeByPlayer": {
         "Sebastian": 20000
@@ -19005,6 +19025,26 @@
       "prizeByPlayer": {}
     },
     {
+      "id": "The Great Clownage",
+      "name": "The Great Clownage",
+      "url": "https://liquipedia.net/ageofempires/The_Great_Clownage",
+      "tier": "C-Tier",
+      "start": "2026-11-09",
+      "end": "2027-01-10",
+      "prize": 200,
+      "currency": "USD",
+      "organizer": "Arena Addicts",
+      "format": "3v3, Round Robin",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
+    },
+    {
       "id": "The Greatt Cup",
       "name": "The Greatt Cup",
       "url": "https://liquipedia.net/ageofempires/The_Greatt_Cup",
@@ -19068,23 +19108,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Nicov": 1250.0,
-        "Sebastian": 1250.0,
         "Lucho": 1250.0,
+        "Sebastian": 1250.0,
         "ACCM": 1250.0,
-        "Annotoph": 1187.5,
-        "Running": 1187.5,
-        "Terz": 1187.5,
+        "Nicov": 1250.0,
         "Target331": 1187.5,
+        "Annotoph": 1187.5,
+        "Terz": 1187.5,
+        "Running": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
+        "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {
