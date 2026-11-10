@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T16:48:55.793720+00:00",
+  "generatedAt": "2026-11-10T15:26:03.292414+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3671,10 +3671,10 @@
       "second": "Feyern",
       "third": "",
       "prizeByPlayer": {
-        "Tobi": 19.43,
-        "Black Monk": 19.43,
-        "RivuxTV": 4.86,
-        "Sszafranko": 4.86
+        "Tobi": 19.41,
+        "Black Monk": 19.41,
+        "RivuxTV": 4.85,
+        "Sszafranko": 4.85
       }
     },
     {
@@ -4933,11 +4933,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team Rodrixs",
-      "second": "Team Eli",
+      "first": "Tacos, Asado and Encebollado",
+      "second": "HARD MEN",
       "third": "",
       "prizeByPlayer": {
-        "Team Rodrixs": 450
+        "Tacos, Asado and Encebollado": 450
       }
     },
     {
@@ -6930,12 +6930,12 @@
       "currency": "USD",
       "organizer": "Tralfamador",
       "format": "1v1, Round Robin & Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "CIS",
       "players": 12,
-      "first": "",
-      "second": "",
+      "first": "IAnTaGoNiStI",
+      "second": "DzeDanik",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -16506,11 +16506,11 @@
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "Slimer",
-      "second": "Vanishing Hitchhiker",
+      "first": "Christmas Past",
+      "second": "The Flying Dutchman",
       "third": "",
       "prizeByPlayer": {
-        "Slimer": 750
+        "Christmas Past": 750
       }
     },
     {
@@ -18426,11 +18426,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "Running",
-      "second": "Wean Dinchester",
+      "first": "Benanji",
+      "second": "Running",
       "third": "",
       "prizeByPlayer": {
-        "Running": 500
+        "Benanji": 500
       }
     },
     {
@@ -19110,18 +19110,18 @@
       "prizeByPlayer": {
         "Lucho": 1250.0,
         "Sebastian": 1250.0,
-        "ACCM": 1250.0,
         "Nicov": 1250.0,
-        "Target331": 1187.5,
-        "Annotoph": 1187.5,
-        "Terz": 1187.5,
+        "ACCM": 1250.0,
         "Running": 1187.5,
+        "Terz": 1187.5,
+        "Annotoph": 1187.5,
+        "Target331": 1187.5,
+        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
         "Dark": 933.3333333333334
