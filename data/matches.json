@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T15:26:03.292414+00:00",
+  "generatedAt": "2026-11-11T14:52:45.593765+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -272643,6 +272643,57 @@
       "winner": "2"
     },
     {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "SenorBonas",
+      "player2": "Kastaar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Georgians",
+      "map": "Pairi Daiza",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "SenorBonas",
+      "player2": "Kastaar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Persians",
+      "map": "Verdronken Land",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "SenorBonas",
+      "player2": "Kastaar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Khmer",
+      "map": "Doel",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
       "tournament": "Baby Cup 2021: Paladins",
       "tier": "C-Tier",
       "date": "February 04, 2021 - 21:30 {{abbr/GMT}}",
@@ -441327,6 +441378,558 @@
     {
       "tournament": "Coma Cup 4",
       "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Yakul",
+      "player2": null,
+      "teammates": [
+        "KnightLifeAoC",
+        "Rodney McKay",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Wei",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "KnightLifeAoC",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "Rodney McKay",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Rodney McKay",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "KnightLifeAoC",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Saracens",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "C3mbrich",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "KnightLifeAoC",
+        "Rodney McKay"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Shu",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Matze",
+      "player2": null,
+      "teammates": [
+        "TheVuki",
+        "odemeister",
+        "Multimorbid"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TheVuki",
+      "player2": null,
+      "teammates": [
+        "Matze",
+        "odemeister",
+        "Multimorbid"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Goths",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "odemeister",
+      "player2": null,
+      "teammates": [
+        "Matze",
+        "TheVuki",
+        "Multimorbid"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Multimorbid",
+      "player2": null,
+      "teammates": [
+        "Matze",
+        "TheVuki",
+        "odemeister"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Sax",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Yakul",
+      "player2": null,
+      "teammates": [
+        "KnightLifeAoC",
+        "Rodney McKay",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Portuguese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "KnightLifeAoC",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "Rodney McKay",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Magyars",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Rodney McKay",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "KnightLifeAoC",
+        "C3mbrich"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "C3mbrich",
+      "player2": null,
+      "teammates": [
+        "Yakul",
+        "KnightLifeAoC",
+        "Rodney McKay"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Muisca",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Multimorbid",
+      "player2": null,
+      "teammates": [
+        "odemeister",
+        "TheVuki",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "odemeister",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "TheVuki",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Celts",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TheVuki",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "odemeister",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Tatars",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Matze",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "odemeister",
+        "TheVuki"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "C3mbrich",
+      "player2": null,
+      "teammates": [
+        "KnightLifeAoC",
+        "Rodney McKay",
+        "Yakul"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Spanish",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "KnightLifeAoC",
+      "player2": null,
+      "teammates": [
+        "C3mbrich",
+        "Rodney McKay",
+        "Yakul"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Cumans",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Rodney McKay",
+      "player2": null,
+      "teammates": [
+        "C3mbrich",
+        "KnightLifeAoC",
+        "Yakul"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Yakul",
+      "player2": null,
+      "teammates": [
+        "C3mbrich",
+        "KnightLifeAoC",
+        "Rodney McKay"
+      ],
+      "team1": "Team C3mbrich",
+      "team2": "Team Matze",
+      "civ1": "Aztecs",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Multimorbid",
+      "player2": null,
+      "teammates": [
+        "TheVuki",
+        "odemeister",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TheVuki",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "odemeister",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Bengalis",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "odemeister",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "TheVuki",
+        "Matze"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Turks",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Matze",
+      "player2": null,
+      "teammates": [
+        "Multimorbid",
+        "TheVuki",
+        "odemeister"
+      ],
+      "team1": "Team Matze",
+      "team2": "Team C3mbrich",
+      "civ1": "Bulgarians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
       "date": "October 24, 2026 - 17:00 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
@@ -443525,6 +444128,1110 @@
       "team1": "Team Coolcat23",
       "team2": "Team Mo_Tastic",
       "civ1": "Aztecs",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Juyhou",
+      "player2": null,
+      "teammates": [
+        "aoclearnrageforest",
+        "RageOfEmpires",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Sax",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "aoclearnrageforest",
+      "player2": null,
+      "teammates": [
+        "Juyhou",
+        "RageOfEmpires",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "RageOfEmpires",
+      "player2": null,
+      "teammates": [
+        "Juyhou",
+        "aoclearnrageforest",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Scandalf",
+      "player2": null,
+      "teammates": [
+        "Juyhou",
+        "aoclearnrageforest",
+        "RageOfEmpires"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Romans",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Lion",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Vikings",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Lion",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Bulgarians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "Lion",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Burgundians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "Lion",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "FloDuFive",
+      "player2": null,
+      "teammates": [
+        "Juyhou",
+        "thepitzaboy",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Juyhou",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "thepitzaboy",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Sicilians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "thepitzaboy",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "Juyhou",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Scandalf",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "Juyhou",
+        "thepitzaboy"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "J_",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Bohemians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Muisca",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "FloDuFive",
+      "player2": null,
+      "teammates": [
+        "Juyhou",
+        "RageOfEmpires",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Var",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Juyhou",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "RageOfEmpires",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Bengalis",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "RageOfEmpires",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "Juyhou",
+        "Scandalf"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Spanish",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Scandalf",
+      "player2": null,
+      "teammates": [
+        "FloDuFive",
+        "Juyhou",
+        "RageOfEmpires"
+      ],
+      "team1": "Team Juyhou",
+      "team2": "Team Ceepki",
+      "civ1": "Aztecs",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "J_",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Teutons",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Juyhou",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mo Tastic",
+      "player2": null,
+      "teammates": [
+        "Mycroft",
+        "OG DADDY",
+        "Kongensgade"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Khitans",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mycroft",
+      "player2": null,
+      "teammates": [
+        "Mo Tastic",
+        "OG DADDY",
+        "Kongensgade"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Saracens",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "Mo Tastic",
+        "Mycroft",
+        "Kongensgade"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Slavs",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kongensgade",
+      "player2": null,
+      "teammates": [
+        "Mo Tastic",
+        "Mycroft",
+        "OG DADDY"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "J_",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Koreans",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kongensgade",
+      "player2": null,
+      "teammates": [
+        "Mo Tastic",
+        "OG DADDY",
+        "Mycroft"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mo Tastic",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "OG DADDY",
+        "Mycroft"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "Mo Tastic",
+        "Mycroft"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mycroft",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "Mo Tastic",
+        "OG DADDY"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Var",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "J_",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Byzantines",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Tupi",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kongensgade",
+      "player2": null,
+      "teammates": [
+        "OG DADDY",
+        "Mycroft",
+        "Mo Tastic"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "OG DADDY",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "Mycroft",
+        "Mo Tastic"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Goths",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mycroft",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "OG DADDY",
+        "Mo Tastic"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Dan",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mo Tastic",
+      "player2": null,
+      "teammates": [
+        "Kongensgade",
+        "OG DADDY",
+        "Mycroft"
+      ],
+      "team1": "Team Mo_Tastic",
+      "team2": "Team Ceepki",
+      "civ1": "Malay",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "J_",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Portuguese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "Firebeer",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Firebeer",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "ceepki"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Mongols",
+      "civ2": null,
+      "map": "Black Forest",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Coma Cup 4",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "ceepki",
+      "player2": null,
+      "teammates": [
+        "J_",
+        "BuLLeT",
+        "Firebeer"
+      ],
+      "team1": "Team Ceepki",
+      "team2": "Team Mo_Tastic",
+      "civ1": "Muisca",
       "civ2": null,
       "map": "Black Forest",
       "mapTypes": [
@@ -662146,6 +663853,108 @@
       "civ1": null,
       "civ2": null,
       "map": "Seychelles",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "IAnTaGoNiStI",
+      "player2": "Lamo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Franks",
+      "civ2": "Romans",
+      "map": "Marshwood",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "IAnTaGoNiStI",
+      "player2": "Lamo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Portuguese",
+      "civ2": "Maya",
+      "map": "Festa da Pólvora",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 10, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "IAnTaGoNiStI",
+      "player2": "Lamo",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Quarry",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 12:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Kiritastrich",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Muisca",
+      "civ2": "Dravidians",
+      "map": "Ubari",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 12:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Kiritastrich",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Sax",
+      "map": "Basmo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 12:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "Kiritastrich",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Marshwood",
       "mapTypes": [],
       "winner": null
     },
@@ -1187631,6 +1189440,91 @@
       "map": "Bedouins",
       "mapTypes": [],
       "winner": "1"
+    },
+    {
+      "tournament": "Nomad League: Relocated - Season 2",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "wosm",
+      "player2": "Happytheandy",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Japanese",
+      "map": "Prospector's Grail",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nomad League: Relocated - Season 2",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "wosm",
+      "player2": "Happytheandy",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Italians",
+      "civ2": "Dravidians",
+      "map": "Island Hopping",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nomad League: Relocated - Season 2",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "wosm",
+      "player2": "Happytheandy",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Var",
+      "civ2": "Romans",
+      "map": "Bedouins",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Nomad League: Relocated - Season 2",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "wosm",
+      "player2": "Happytheandy",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Sax",
+      "civ2": "Bohemians",
+      "map": "Peace-O-Pizza",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Nomad League: Relocated - Season 2",
+      "tier": "C-Tier",
+      "date": "November 10, 2026 - 15:00 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "wosm",
+      "player2": "Happytheandy",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Persians",
+      "map": "Life Buoy Atoll",
+      "mapTypes": [],
+      "winner": "2"
     },
     {
       "tournament": "Nomad Rivals I",
@@ -1739151,9 +1741045,10 @@
       "team2": null,
       "civ1": "Var",
       "civ2": "Bengalis",
-      "map": "Socotra",
+      "map": "Nomad",
       "mapTypes": [
-        "chaotic"
+        "hybrid",
+        "nomad"
       ],
       "winner": "1"
     },
@@ -1739395,6 +1741290,62 @@
       "civ2": "Georgians",
       "map": "Moats",
       "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wean Dinchester",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Mongols",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wean Dinchester",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Britons",
+      "civ2": "Dravidians",
+      "map": "ZeWall",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 11, 2026 - 10:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wean Dinchester",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Armenians",
+      "civ2": "Mapuche",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
       "winner": "2"
     },
     {

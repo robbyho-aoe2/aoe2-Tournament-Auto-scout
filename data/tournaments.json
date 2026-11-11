@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T15:26:03.292414+00:00",
+  "generatedAt": "2026-11-11T14:52:45.593765+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2857,8 +2857,8 @@
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "the_belgian",
-      "second": "welcometorapture",
+      "first": "Kastaar",
+      "second": "SenorBonas",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4842,8 +4842,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team Juyhou",
-      "second": "Team Ceepki",
+      "first": "Team Ceepki",
+      "second": "Team Mo_Tastic",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -6934,8 +6934,8 @@
       "type": "Online",
       "region": "CIS",
       "players": 12,
-      "first": "IAnTaGoNiStI",
-      "second": "DzeDanik",
+      "first": "Wide",
+      "second": "Kiritastrich",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -13311,11 +13311,11 @@
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "HaraKiri",
-      "second": "JadeArrowGamer",
+      "first": "Happytheandy",
+      "second": "wosm",
       "third": "",
       "prizeByPlayer": {
-        "HaraKiri": 100
+        "Happytheandy": 100
       }
     },
     {
@@ -18426,11 +18426,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "Benanji",
-      "second": "Running",
+      "first": "TheViper",
+      "second": "Wean Dinchester",
       "third": "",
       "prizeByPlayer": {
-        "Benanji": 500
+        "TheViper": 500
       }
     },
     {
@@ -19108,23 +19108,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
+        "ACCM": 1250.0,
+        "Nicov": 1250.0,
         "Lucho": 1250.0,
         "Sebastian": 1250.0,
-        "Nicov": 1250.0,
-        "ACCM": 1250.0,
         "Running": 1187.5,
+        "Target331": 1187.5,
         "Terz": 1187.5,
         "Annotoph": 1187.5,
-        "Target331": 1187.5,
         "Ciskhan": 1466.6666666666667,
-        "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "DauT": 1316.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Dark": 933.3333333333334,
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
