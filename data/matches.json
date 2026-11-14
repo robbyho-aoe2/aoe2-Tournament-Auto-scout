@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T15:05:29.954896+00:00",
+  "generatedAt": "2026-11-14T14:03:03.878801+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -554088,6 +554088,60 @@
       "winner": "2"
     },
     {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 12, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "streetpete",
+      "player2": "The Night Panda",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Huns",
+      "map": "Scandinavia",
+      "mapTypes": [
+        "hybrid",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 12, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "streetpete",
+      "player2": "The Night Panda",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vietnamese",
+      "civ2": "Spanish",
+      "map": "Festa da Pólvora",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 12, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 1,
+      "format": "1v1",
+      "player1": "streetpete",
+      "player2": "The Night Panda",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "African Waters",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
       "tournament": "DarkSidE Hidden Cup",
       "tier": "C-Tier",
       "date": "February 14, 2026 - 18:00 {{abbr/GMT}}",
@@ -664847,6 +664901,59 @@
       "civ1": null,
       "civ2": null,
       "map": "Marshwood",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "DzeDanik",
+      "player2": "ANDÃO",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Aztecs",
+      "map": "Graveyards",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "DzeDanik",
+      "player2": "ANDÃO",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Poles",
+      "map": "Stonefront",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 18:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "DzeDanik",
+      "player2": "ANDÃO",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Vale da Selva",
       "mapTypes": [],
       "winner": null
     },
@@ -1557791,6 +1557898,63 @@
         "hybrid"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 14, 2026 - 3:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Starsky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Goths",
+      "civ2": "Inca",
+      "map": "Aftermath",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 14, 2026 - 3:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Starsky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Koreans",
+      "map": "Bog Islands",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Sudden Death Showdown III",
+      "tier": "C-Tier",
+      "date": "November 14, 2026 - 3:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Starsky",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
     },
     {
       "tournament": "Sudden Death Showdown III",
