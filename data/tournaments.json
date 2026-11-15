@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T14:03:03.878801+00:00",
+  "generatedAt": "2026-11-15T14:29:11.547995+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2857,8 +2857,8 @@
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "Kastaar",
-      "second": "SenorBonas",
+      "first": "The Barbarian",
+      "second": "the_belgian",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4275,8 +4275,8 @@
       "type": "Online/Offline",
       "region": "Chile",
       "players": 16,
-      "first": "Felipe Besitos Ricos",
-      "second": "Partyman96",
+      "first": "DreamCl",
+      "second": "Felipe Besitos Ricos",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -4842,8 +4842,8 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Team Ceepki",
-      "second": "Team Mo_Tastic",
+      "first": "Team Juyhou",
+      "second": "Team C3mbrich",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -6804,12 +6804,12 @@
       "currency": "USD",
       "organizer": "leonromaaoe",
       "format": "1v1, Round Robin",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Offline",
       "region": "Spain",
       "players": 4,
-      "first": "",
-      "second": "",
+      "first": "Barles",
+      "second": "TaToH",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -16526,11 +16526,11 @@
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "Christmas Past",
-      "second": "Casper",
+      "first": "King Hamlet",
+      "second": "Christmas Past",
       "third": "",
       "prizeByPlayer": {
-        "Christmas Past": 750
+        "King Hamlet": 750
       }
     },
     {
@@ -19130,23 +19130,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Lucho": 1250.0,
         "Nicov": 1250.0,
         "Sebastian": 1250.0,
         "ACCM": 1250.0,
-        "Annotoph": 1187.5,
-        "Target331": 1187.5,
-        "Terz": 1187.5,
+        "Lucho": 1250.0,
         "Running": 1187.5,
-        "StonePleaseAoE": 1466.6666666666667,
+        "Target331": 1187.5,
+        "Annotoph": 1187.5,
+        "Terz": 1187.5,
         "The Dragonstar": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
-        "Dark": 933.3333333333334,
+        "DauT": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334,
+        "Dark": 933.3333333333334
       }
     },
     {
