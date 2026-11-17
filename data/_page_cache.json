@@ -348939,16 +348939,16 @@
         "second": "Kvothe",
         "third": "",
         "prizeByPlayer": {
-          "Tumber": 19.4,
-          "ElMiller": 19.4,
-          "CesarFight": 19.4,
-          "Kvothe": 19.4,
-          "Tobi": 19.4,
-          "Cachivache": 19.4,
-          "Black Monk": 19.4,
-          "Feyern": 9.7,
-          "RivuxTV": 4.85,
-          "Sszafranko": 4.85
+          "Tumber": 19.36,
+          "ElMiller": 19.36,
+          "CesarFight": 19.36,
+          "Kvothe": 19.36,
+          "Tobi": 19.36,
+          "Cachivache": 19.36,
+          "Black Monk": 19.36,
+          "Feyern": 9.68,
+          "RivuxTV": 4.84,
+          "Sszafranko": 4.84
         }
       },
       "games": [
@@ -1193737,7 +1193737,7 @@
         "url": "https://liquipedia.net/ageofempires/Nomad_League:_Relocated/2",
         "tier": "C-Tier",
         "start": "2026-08-31",
-        "end": "2026-11-22",
+        "end": "2026-11-17",
         "prize": 100,
         "currency": "USD",
         "organizer": "Low Elo Legion",
@@ -1751113,8 +1751113,8 @@
         "type": "Online/Offline",
         "region": "Germany",
         "players": 9,
-        "first": "FreakinAndy",
-        "second": "ShiXo.",
+        "first": "Benanji",
+        "second": "Terz",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1752382,6 +1752382,64 @@
           "map": "Vulpine",
           "mapTypes": [
             "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Benanji",
+          "player2": "Terz",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Malay",
+          "civ2": "Burgundians",
+          "map": "Copenhagen",
+          "mapTypes": [
+            "hybrid"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Benanji",
+          "player2": "Terz",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Inca",
+          "civ2": "Armenians",
+          "map": "Vulpine",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Bastion: Season 2",
+          "tier": "B-Tier",
+          "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Benanji",
+          "player2": "Terz",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Berbers",
+          "civ2": "Koreans",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
           ],
           "winner": "1"
         }
@@ -1821248,19 +1821306,19 @@
         "second": "LingYuan",
         "third": "",
         "prizeByPlayer": {
-          "Sebastian": 1250.0,
-          "Nicov": 1250.0,
-          "ACCM": 1250.0,
           "Lucho": 1250.0,
+          "Sebastian": 1250.0,
+          "ACCM": 1250.0,
+          "Nicov": 1250.0,
+          "Annotoph": 1187.5,
           "Running": 1187.5,
           "Terz": 1187.5,
           "Target331": 1187.5,
-          "Annotoph": 1187.5,
-          "StonePleaseAoE": 1466.6666666666667,
-          "Ciskhan": 1466.6666666666667,
           "The Dragonstar": 1466.6666666666667,
-          "JorDan AoE": 1316.6666666666667,
+          "Ciskhan": 1466.6666666666667,
+          "StonePleaseAoE": 1466.6666666666667,
           "DauT": 1316.6666666666667,
+          "JorDan AoE": 1316.6666666666667,
           "FreakinAndy": 1316.6666666666667,
           "Classicpro": 933.3333333333334,
           "IAnTaGoNiStI": 933.3333333333334,
@@ -2193577,7 +2193635,7 @@
           "player1": "C3mbrich",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "Yakul"
           ],
@@ -2193597,7 +2193655,7 @@
           "date": "November 2, 2026 - 19:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "C3mbrich",
@@ -2193624,7 +2193682,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2193647,7 +2193705,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2193761,7 +2193819,7 @@
           "player1": "Yakul",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "C3mbrich"
           ],
@@ -2193781,7 +2193839,7 @@
           "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "Yakul",
@@ -2193808,7 +2193866,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "C3mbrich"
           ],
           "team1": "Team C3mbrich",
@@ -2193831,7 +2193889,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2193945,7 +2194003,7 @@
           "player1": "Yakul",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "C3mbrich"
           ],
@@ -2193965,7 +2194023,7 @@
           "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "Yakul",
@@ -2193992,7 +2194050,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "C3mbrich"
           ],
           "team1": "Team C3mbrich",
@@ -2194015,7 +2194073,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2194129,7 +2194187,7 @@
           "player1": "C3mbrich",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "Yakul"
           ],
@@ -2194149,7 +2194207,7 @@
           "date": "November 8, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "C3mbrich",
@@ -2194176,7 +2194234,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2194199,7 +2194257,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2198453,7 +2198511,7 @@
           "player1": "Yakul",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "C3mbrich"
           ],
@@ -2198473,7 +2198531,7 @@
           "date": "November 14, 2026 - 16:30 {{abbr/GMT}}",
           "round": 1,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "Yakul",
@@ -2198500,7 +2198558,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "C3mbrich"
           ],
           "team1": "Team C3mbrich",
@@ -2198523,7 +2198581,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2198637,7 +2198695,7 @@
           "player1": "C3mbrich",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "Yakul"
           ],
@@ -2198657,7 +2198715,7 @@
           "date": "November 14, 2026 - 16:30 {{abbr/GMT}}",
           "round": 1,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "C3mbrich",
@@ -2198684,7 +2198742,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2198707,7 +2198765,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2198822,7 +2198880,7 @@
           "player2": null,
           "teammates": [
             "Rodney McKay",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2198845,7 +2198903,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2198864,7 +2198922,7 @@
           "date": "November 14, 2026 - 16:30 {{abbr/GMT}}",
           "round": 1,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "C3mbrich",
@@ -2198892,7 +2198950,7 @@
           "teammates": [
             "C3mbrich",
             "Rodney McKay",
-            "KnightLifeAOC"
+            "KnightLifeAoC"
           ],
           "team1": "Team C3mbrich",
           "team2": "Team Juyhou",
@@ -2199006,7 +2199064,7 @@
           "player2": null,
           "teammates": [
             "Rodney McKay",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2199029,7 +2199087,7 @@
           "player2": null,
           "teammates": [
             "C3mbrich",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Yakul"
           ],
           "team1": "Team C3mbrich",
@@ -2199048,7 +2199106,7 @@
           "date": "November 14, 2026 - 16:30 {{abbr/GMT}}",
           "round": 1,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "C3mbrich",
@@ -2199076,7 +2199134,7 @@
           "teammates": [
             "C3mbrich",
             "Rodney McKay",
-            "KnightLifeAOC"
+            "KnightLifeAoC"
           ],
           "team1": "Team C3mbrich",
           "team2": "Team Juyhou",
@@ -2199189,7 +2199247,7 @@
           "player1": "Yakul",
           "player2": null,
           "teammates": [
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay",
             "C3mbrich"
           ],
@@ -2199209,7 +2199267,7 @@
           "date": "November 14, 2026 - 16:30 {{abbr/GMT}}",
           "round": 1,
           "format": "team",
-          "player1": "KnightLifeAOC",
+          "player1": "KnightLifeAoC",
           "player2": null,
           "teammates": [
             "Yakul",
@@ -2199236,7 +2199294,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "C3mbrich"
           ],
           "team1": "Team C3mbrich",
@@ -2199259,7 +2199317,7 @@
           "player2": null,
           "teammates": [
             "Yakul",
-            "KnightLifeAOC",
+            "KnightLifeAoC",
             "Rodney McKay"
           ],
           "team1": "Team C3mbrich",
@@ -2218006,7 +2218064,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Lithuanians",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218030,7 +2218088,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Malians",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218054,7 +2218112,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Inca",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218078,7 +2218136,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Koreans",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218102,7 +2218160,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Bohemians",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218126,7 +2218184,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Vikings",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218150,7 +2218208,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Portuguese",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218174,7 +2218232,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Turks",
           "civ2": null,
           "map": "Nomad",
           "mapTypes": [
@@ -2218198,7 +2218256,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Georgians",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218221,7 +2218279,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Chinese",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218244,7 +2218302,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Gurjaras",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218267,7 +2218325,7 @@
           ],
           "team1": "Los Bandoleros",
           "team2": "Pink Potatoes",
-          "civ1": null,
+          "civ1": "Saracens",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218290,7 +2218348,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Japanese",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218313,7 +2218371,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Hindustanis",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218336,7 +2218394,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Wei",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2218359,7 +2218417,7 @@
           ],
           "team1": "Pink Potatoes",
           "team2": "Los Bandoleros",
-          "civ1": null,
+          "civ1": "Magyars",
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
@@ -2228669,6 +2228727,74 @@
         {
           "tournament": "BELCup 2026",
           "tier": "C-Tier",
+          "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Pornstar Ernst",
+          "player2": "Nonkel Pipetios",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Celts",
+          "civ2": "Chinese",
+          "map": "Parkabdij",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "BELCup 2026",
+          "tier": "C-Tier",
+          "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Pornstar Ernst",
+          "player2": "Nonkel Pipetios",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Vikings",
+          "civ2": "Cumans",
+          "map": "Waterloo",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "BELCup 2026",
+          "tier": "C-Tier",
+          "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Pornstar Ernst",
+          "player2": "Nonkel Pipetios",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Ethiopians",
+          "civ2": "Persians",
+          "map": "Beringen",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "BELCup 2026",
+          "tier": "C-Tier",
+          "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Pornstar Ernst",
+          "player2": "Nonkel Pipetios",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Japanese",
+          "civ2": "Vietnamese",
+          "map": "Laken",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "BELCup 2026",
+          "tier": "C-Tier",
           "date": "November 14, 2026 - 19:00 {{abbr/GMT}}",
           "round": 2,
           "format": "1v1",
@@ -2228801,8 +2228927,8 @@
         "type": "Online",
         "region": "CIS",
         "players": 12,
-        "first": "Wide",
-        "second": "The Beatleman",
+        "first": "OLADUSHEK",
+        "second": "FStalker",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2229484,6 +2229610,57 @@
           "mapTypes": [
             "chaotic"
           ],
+          "winner": null
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FStalker",
+          "player2": "OLADUSHEK",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Chinese",
+          "civ2": "Sicilians",
+          "map": "Ubari",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FStalker",
+          "player2": "OLADUSHEK",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Persians",
+          "civ2": "Khmer",
+          "map": "Kerak",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "FStalker",
+          "player2": "OLADUSHEK",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Marshwood",
+          "mapTypes": [],
           "winner": null
         }
       ]
@@ -2231539,6 +2231716,33 @@
         "type": "Online",
         "region": "World",
         "players": 24,
+        "first": "",
+        "second": "",
+        "third": "",
+        "prizeByPlayer": {}
+      },
+      "games": []
+    },
+    "CastleRush Duo Clash/18": {
+      "tournament": null,
+      "games": []
+    },
+    "Unveiled Deathmatch": {
+      "tournament": {
+        "id": "Unveiled Deathmatch",
+        "name": "Unveiled Deathmatch",
+        "url": "https://liquipedia.net/ageofempires/Unveiled_Deathmatch",
+        "tier": "B-Tier",
+        "start": "2026-11-16",
+        "end": "2026-12-13",
+        "prize": 200,
+        "currency": "USD",
+        "organizer": "Xardas_AoE",
+        "format": "1v1, Single Elimination",
+        "formatType": "unknown",
+        "type": "Online",
+        "region": "World",
+        "players": null,
         "first": "",
         "second": "",
         "third": "",

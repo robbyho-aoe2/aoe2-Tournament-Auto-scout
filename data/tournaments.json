@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:16:43.287962+00:00",
+  "generatedAt": "2026-11-17T16:33:53.746784+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.4,
-        "ElMiller": 19.4,
-        "CesarFight": 19.4,
-        "Kvothe": 19.4,
-        "Tobi": 19.4,
-        "Cachivache": 19.4,
-        "Black Monk": 19.4,
-        "Feyern": 9.7,
-        "RivuxTV": 4.85,
-        "Sszafranko": 4.85
+        "Tumber": 19.36,
+        "ElMiller": 19.36,
+        "CesarFight": 19.36,
+        "Kvothe": 19.36,
+        "Tobi": 19.36,
+        "Cachivache": 19.36,
+        "Black Monk": 19.36,
+        "Feyern": 9.68,
+        "RivuxTV": 4.84,
+        "Sszafranko": 4.84
       }
     },
     {
@@ -6945,8 +6945,8 @@
       "type": "Online",
       "region": "CIS",
       "players": 12,
-      "first": "Wide",
-      "second": "The Beatleman",
+      "first": "OLADUSHEK",
+      "second": "FStalker",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -13333,7 +13333,7 @@
       "url": "https://liquipedia.net/ageofempires/Nomad_League:_Relocated/2",
       "tier": "C-Tier",
       "start": "2026-08-31",
-      "end": "2026-11-22",
+      "end": "2026-11-17",
       "prize": 100,
       "currency": "USD",
       "organizer": "Low Elo Legion",
@@ -18457,11 +18457,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "FreakinAndy",
-      "second": "ShiXo.",
+      "first": "Benanji",
+      "second": "Terz",
       "third": "",
       "prizeByPlayer": {
-        "FreakinAndy": 500
+        "Benanji": 500
       }
     },
     {
@@ -19141,19 +19141,19 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
-        "Nicov": 1250.0,
-        "ACCM": 1250.0,
         "Lucho": 1250.0,
+        "Sebastian": 1250.0,
+        "ACCM": 1250.0,
+        "Nicov": 1250.0,
+        "Annotoph": 1187.5,
         "Running": 1187.5,
         "Terz": 1187.5,
         "Target331": 1187.5,
-        "Annotoph": 1187.5,
-        "StonePleaseAoE": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
+        "Ciskhan": 1466.6666666666667,
+        "StonePleaseAoE": 1466.6666666666667,
         "DauT": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
@@ -20314,6 +20314,26 @@
         "TheViper": 200.0,
         "Vinchester": 150.0
       }
+    },
+    {
+      "id": "Unveiled Deathmatch",
+      "name": "Unveiled Deathmatch",
+      "url": "https://liquipedia.net/ageofempires/Unveiled_Deathmatch",
+      "tier": "B-Tier",
+      "start": "2026-11-16",
+      "end": "2026-12-13",
+      "prize": 200,
+      "currency": "USD",
+      "organizer": "Xardas_AoE",
+      "format": "1v1, Single Elimination",
+      "formatType": "unknown",
+      "type": "Online",
+      "region": "World",
+      "players": null,
+      "first": "",
+      "second": "",
+      "third": "",
+      "prizeByPlayer": {}
     },
     {
       "id": "V.Power Cup/2022",

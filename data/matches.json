@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:16:43.287962+00:00",
+  "generatedAt": "2026-11-17T16:33:53.746784+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -272764,6 +272764,74 @@
     {
       "tournament": "BELCup 2026",
       "tier": "C-Tier",
+      "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "Pornstar Ernst",
+      "player2": "Nonkel Pipetios",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Celts",
+      "civ2": "Chinese",
+      "map": "Parkabdij",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "Pornstar Ernst",
+      "player2": "Nonkel Pipetios",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vikings",
+      "civ2": "Cumans",
+      "map": "Waterloo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "Pornstar Ernst",
+      "player2": "Nonkel Pipetios",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Ethiopians",
+      "civ2": "Persians",
+      "map": "Beringen",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 16, 2026 - 17:30 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "Pornstar Ernst",
+      "player2": "Nonkel Pipetios",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Japanese",
+      "civ2": "Vietnamese",
+      "map": "Laken",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
       "date": "November 14, 2026 - 19:00 {{abbr/GMT}}",
       "round": 2,
       "format": "1v1",
@@ -466614,7 +466682,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Lithuanians",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466638,7 +466706,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Malians",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466662,7 +466730,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Inca",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466686,7 +466754,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Koreans",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466710,7 +466778,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Bohemians",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466734,7 +466802,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Vikings",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466758,7 +466826,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Portuguese",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466782,7 +466850,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Turks",
       "civ2": null,
       "map": "Nomad",
       "mapTypes": [
@@ -466806,7 +466874,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Georgians",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466829,7 +466897,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Chinese",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466852,7 +466920,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Gurjaras",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466875,7 +466943,7 @@
       ],
       "team1": "Los Bandoleros",
       "team2": "Pink Potatoes",
-      "civ1": null,
+      "civ1": "Saracens",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466898,7 +466966,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Japanese",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466921,7 +466989,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Hindustanis",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466944,7 +467012,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Wei",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -466967,7 +467035,7 @@
       ],
       "team1": "Pink Potatoes",
       "team2": "Los Bandoleros",
-      "civ1": null,
+      "civ1": "Magyars",
       "civ2": null,
       "map": "African Clearing",
       "mapTypes": [
@@ -667772,6 +667840,57 @@
       "mapTypes": [
         "chaotic"
       ],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FStalker",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Sicilians",
+      "map": "Ubari",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FStalker",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Khmer",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 17, 2026 - 13:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FStalker",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Marshwood",
+      "mapTypes": [],
       "winner": null
     },
     {
@@ -1746310,6 +1746429,64 @@
       "map": "Vulpine",
       "mapTypes": [
         "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Terz",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Burgundians",
+      "map": "Copenhagen",
+      "mapTypes": [
+        "hybrid"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Terz",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Inca",
+      "civ2": "Armenians",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 16, 2026 - 18:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "Terz",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Berbers",
+      "civ2": "Koreans",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
       ],
       "winner": "1"
     },
