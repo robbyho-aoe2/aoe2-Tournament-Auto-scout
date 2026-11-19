@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T16:12:56.751910+00:00",
+  "generatedAt": "2026-11-19T16:12:47.241933+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -272881,6 +272881,74 @@
       "winner": "1"
     },
     {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 18, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheLastBender",
+      "player2": "Mighty.Plumber",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Saracens",
+      "civ2": "Cumans",
+      "map": "Laken",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 18, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheLastBender",
+      "player2": "Mighty.Plumber",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Portuguese",
+      "civ2": "Poles",
+      "map": "Parkabdij",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 18, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheLastBender",
+      "player2": "Mighty.Plumber",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Varangians",
+      "civ2": "Japanse",
+      "map": "Elisabetheiland",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "BELCup 2026",
+      "tier": "C-Tier",
+      "date": "November 18, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "1v1",
+      "player1": "TheLastBender",
+      "player2": "Mighty.Plumber",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Huns",
+      "civ2": "Khmer",
+      "map": "Waterloo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
       "tournament": "Baby Cup 2021: Paladins",
       "tier": "C-Tier",
       "date": "February 04, 2021 - 21:30 {{abbr/GMT}}",
@@ -466110,6 +466178,382 @@
     {
       "tournament": "Continental Cup: The Nomads",
       "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Ceeelebrate",
+      "player2": null,
+      "teammates": [
+        "Dovecar",
+        "Prußen",
+        "QuatschmitSoße"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Dovecar",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Prußen",
+        "QuatschmitSoße"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Inca",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Prußen",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Dovecar",
+        "QuatschmitSoße"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "QuatschmitSoße",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Dovecar",
+        "Prußen"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Vikings",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "R4v3N",
+      "player2": null,
+      "teammates": [
+        "Jorge Garcia",
+        "murkbey",
+        "Never Began"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Jorge Garcia",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "murkbey",
+        "Never Began"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "murkbey",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "Jorge Garcia",
+        "Never Began"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Never Began",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "Jorge Garcia",
+        "murkbey"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Ceeelebrate",
+      "player2": null,
+      "teammates": [
+        "Dovecar",
+        "Prußen",
+        "P3RL"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Dovecar",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Prußen",
+        "P3RL"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Prußen",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Dovecar",
+        "P3RL"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "P3RL",
+      "player2": null,
+      "teammates": [
+        "Ceeelebrate",
+        "Dovecar",
+        "Prußen"
+      ],
+      "team1": "All the lobby smurfs",
+      "team2": "Los Bandoleros",
+      "civ1": "Turks",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "R4v3N",
+      "player2": null,
+      "teammates": [
+        "Jorge Garcia",
+        "murkbey",
+        "ROBIN_HOOD_YO"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Jorge Garcia",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "murkbey",
+        "ROBIN_HOOD_YO"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Jurchens",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "murkbey",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "Jorge Garcia",
+        "ROBIN_HOOD_YO"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 08, 2026 - 20:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "ROBIN_HOOD_YO",
+      "player2": null,
+      "teammates": [
+        "R4v3N",
+        "Jorge Garcia",
+        "murkbey"
+      ],
+      "team1": "Los Bandoleros",
+      "team2": "All the lobby smurfs",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
       "date": "November 07, 2026 - 20:00 {{abbr/GMT}}",
       "round": 1,
       "format": "team",
@@ -468248,6 +468692,414 @@
         "nomad"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Eli",
+      "player2": null,
+      "teammates": [
+        "Bel",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bel",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Dracarys",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "develement",
+      "player2": null,
+      "teammates": [
+        "Bread Pudding",
+        "Collllin"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Malay",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bread Pudding",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Collllin"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Malians",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Collllin",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Eli",
+      "player2": null,
+      "teammates": [
+        "Bel",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bel",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Dracarys",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "develement",
+      "player2": null,
+      "teammates": [
+        "Bread Pudding",
+        "Collllin"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Magyars",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bread Pudding",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Collllin"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Collllin",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Eli",
+      "player2": null,
+      "teammates": [
+        "Bel",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Britons",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bel",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Dracarys"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Celts",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Dracarys",
+      "player2": null,
+      "teammates": [
+        "Eli",
+        "Bel"
+      ],
+      "team1": "HARD MEN",
+      "team2": "Ctrl Alt Defeat",
+      "civ1": "Vikings",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "develement",
+      "player2": null,
+      "teammates": [
+        "Bread Pudding",
+        "Armazmar"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Bread Pudding",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Armazmar"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Wu",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Continental Cup: The Nomads",
+      "tier": "B-Tier",
+      "date": "November 18, 2026 - 00:00 {{abbr/GMT}}",
+      "round": 2,
+      "format": "team",
+      "player1": "Armazmar",
+      "player2": null,
+      "teammates": [
+        "develement",
+        "Bread Pudding"
+      ],
+      "team1": "Ctrl Alt Defeat",
+      "team2": "HARD MEN",
+      "civ1": "Saracens",
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "Controller Champions",
@@ -1611656,6 +1612508,402 @@
     {
       "tournament": "Svenska TG-ligan: Höst 2026",
       "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Malay",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "SleepySwede",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Cumans",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kaeften",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "SleepySwede"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Bohemians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "Goatmeister",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Teutons",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmeister",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Burgundians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "Goatmeister"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Turks",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "SleepySwede",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Ethiopians",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Kaeften"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Khmer",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Kaeften",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Mratin"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmeister",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Chinese",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "Goatmeister",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Goatmeister",
+        "Spaden"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Mongols",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Mratin",
+      "player2": null,
+      "teammates": [
+        "SleepySwede",
+        "Yakul"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "SleepySwede",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "Yakul"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Yakul",
+      "player2": null,
+      "teammates": [
+        "Mratin",
+        "SleepySwede"
+      ],
+      "team1": "Bästföre: 2025",
+      "team2": "Svea Invictus",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Spaden",
+      "player2": null,
+      "teammates": [
+        "BuLLeT",
+        "Goatmeister"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BuLLeT",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "Goatmeister"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
+      "date": "November 17, 2025 - 19:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Goatmeister",
+      "player2": null,
+      "teammates": [
+        "Spaden",
+        "BuLLeT"
+      ],
+      "team1": "Svea Invictus",
+      "team2": "Bästföre: 2025",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Svenska TG-ligan: Höst 2026",
+      "tier": "B-Tier",
       "date": "November 9, 2026 - 19:30 {{abbr/GMT}}",
       "round": 0,
       "format": "team",
@@ -1811295,6 +1812543,402 @@
         "closed"
       ],
       "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Tulendeena",
+      "player2": null,
+      "teammates": [
+        "Heidewolf",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Portuguese",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Heidewolf",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Poles",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "LeoABNV",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "Heidewolf"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Armenians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Klobaska",
+      "player2": null,
+      "teammates": [
+        "Antymon",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Antymon",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Britons",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "v",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "Antymon"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Burmese",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Tulendeena",
+      "player2": null,
+      "teammates": [
+        "Heidewolf",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Heidewolf",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Lithuanians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "LeoABNV",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "Heidewolf"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Klobaska",
+      "player2": null,
+      "teammates": [
+        "Antymon",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Magyars",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Antymon",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "v",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "Antymon"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Mapuche",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Tulendeena",
+      "player2": null,
+      "teammates": [
+        "Heidewolf",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Shu",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Heidewolf",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "LeoABNV"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Persians",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "LeoABNV",
+      "player2": null,
+      "teammates": [
+        "Tulendeena",
+        "Heidewolf"
+      ],
+      "team1": "Panda Panda Panda",
+      "team2": "Šašek's Nightmare",
+      "civ1": "Dan",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Klobaska",
+      "player2": null,
+      "teammates": [
+        "Antymon",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Wu",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Antymon",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "v"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Wei",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Great Clownage",
+      "tier": "C-Tier",
+      "date": "November 17, 2026 - 18:15 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "v",
+      "player2": null,
+      "teammates": [
+        "Klobaska",
+        "Antymon"
+      ],
+      "team1": "Šašek's Nightmare",
+      "team2": "Panda Panda Panda",
+      "civ1": "Muisca",
+      "civ2": null,
+      "map": "Arena",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
     },
     {
       "tournament": "The Greatt Cup",

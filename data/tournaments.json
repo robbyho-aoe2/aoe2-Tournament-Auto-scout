@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T16:12:56.751910+00:00",
+  "generatedAt": "2026-11-19T16:12:47.241933+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2857,8 +2857,8 @@
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "The Barbarian",
-      "second": "the_belgian",
+      "first": "TheLastBender",
+      "second": "Mighty.Plumber",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.36,
-        "ElMiller": 19.36,
-        "CesarFight": 19.36,
-        "Kvothe": 19.36,
-        "Tobi": 19.36,
-        "Cachivache": 19.36,
-        "Black Monk": 19.36,
-        "Feyern": 9.68,
-        "RivuxTV": 4.84,
-        "Sszafranko": 4.84
+        "Tumber": 19.33,
+        "ElMiller": 19.33,
+        "CesarFight": 19.33,
+        "Kvothe": 19.33,
+        "Tobi": 19.33,
+        "Cachivache": 19.33,
+        "Black Monk": 19.33,
+        "Feyern": 9.66,
+        "RivuxTV": 4.83,
+        "Sszafranko": 4.83
       }
     },
     {
@@ -4939,11 +4939,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Tacos, Asado and Encebollado",
+      "first": "Ctrl Alt Defeat",
       "second": "HARD MEN",
       "third": "",
       "prizeByPlayer": {
-        "Tacos, Asado and Encebollado": 450
+        "Ctrl Alt Defeat": 450
       }
     },
     {
@@ -19071,7 +19071,7 @@
       "region": "World",
       "players": null,
       "first": "Šašek's Nightmare",
-      "second": "The Real Clowns",
+      "second": "Panda Panda Panda",
       "third": "",
       "prizeByPlayer": {
         "Šašek's Nightmare": 200
@@ -19141,23 +19141,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
-        "Lucho": 1250.0,
-        "Nicov": 1250.0,
         "ACCM": 1250.0,
-        "Running": 1187.5,
-        "Target331": 1187.5,
-        "Annotoph": 1187.5,
+        "Sebastian": 1250.0,
+        "Nicov": 1250.0,
+        "Lucho": 1250.0,
         "Terz": 1187.5,
+        "Target331": 1187.5,
+        "Running": 1187.5,
+        "Annotoph": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
+        "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {
