@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T16:12:47.241933+00:00",
+  "generatedAt": "2026-11-20T15:55:14.039866+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 155,
+      "prize": 154,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.33,
-        "ElMiller": 19.33,
-        "CesarFight": 19.33,
-        "Kvothe": 19.33,
-        "Tobi": 19.33,
-        "Cachivache": 19.33,
-        "Black Monk": 19.33,
-        "Feyern": 9.66,
-        "RivuxTV": 4.83,
-        "Sszafranko": 4.83
+        "Tumber": 19.24,
+        "ElMiller": 19.24,
+        "CesarFight": 19.24,
+        "Kvothe": 19.24,
+        "Tobi": 19.24,
+        "Cachivache": 19.24,
+        "Black Monk": 19.24,
+        "Feyern": 9.62,
+        "RivuxTV": 4.81,
+        "Sszafranko": 4.81
       }
     },
     {
@@ -5944,7 +5944,7 @@
       "url": "https://liquipedia.net/ageofempires/DS_League",
       "tier": "B-Tier",
       "start": "2026-08-15",
-      "end": "2026-11-20",
+      "end": "2026-11-23",
       "prize": 650,
       "currency": "USD",
       "organizer": "DarkSidE",
@@ -19070,11 +19070,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Šašek's Nightmare",
-      "second": "Panda Panda Panda",
+      "first": "Panda Panda Panda",
+      "second": "The 105 Gang",
       "third": "",
       "prizeByPlayer": {
-        "Šašek's Nightmare": 200
+        "Panda Panda Panda": 200
       }
     },
     {
@@ -19141,23 +19141,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
         "Sebastian": 1250.0,
         "Nicov": 1250.0,
+        "ACCM": 1250.0,
         "Lucho": 1250.0,
+        "Running": 1187.5,
         "Terz": 1187.5,
         "Target331": 1187.5,
-        "Running": 1187.5,
         "Annotoph": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
+        "JorDan AoE": 1316.6666666666667,
+        "Dark": 933.3333333333334,
         "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
