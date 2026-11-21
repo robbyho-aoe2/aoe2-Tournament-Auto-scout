@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T15:55:14.039866+00:00",
+  "generatedAt": "2026-11-21T15:06:53.769762+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3643,7 +3643,7 @@
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Argentina",
       "players": 10,
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 154,
+      "prize": 153,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.24,
-        "ElMiller": 19.24,
-        "CesarFight": 19.24,
-        "Kvothe": 19.24,
-        "Tobi": 19.24,
-        "Cachivache": 19.24,
-        "Black Monk": 19.24,
-        "Feyern": 9.62,
-        "RivuxTV": 4.81,
-        "Sszafranko": 4.81
+        "Tumber": 19.17,
+        "ElMiller": 19.17,
+        "CesarFight": 19.17,
+        "Kvothe": 19.17,
+        "Tobi": 19.17,
+        "Cachivache": 19.17,
+        "Black Monk": 19.17,
+        "Feyern": 9.59,
+        "RivuxTV": 4.79,
+        "Sszafranko": 4.79
       }
     },
     {
@@ -4339,14 +4339,16 @@
       "currency": "USD",
       "organizer": "CN ZhongSheng",
       "format": "1v1, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "",
-      "second": "",
+      "first": "Demon",
+      "second": "Running",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Demon": 300
+      }
     },
     {
       "id": "China Zhongsheng Group International Invitational/2026/November/Domestic Stage",
@@ -6033,8 +6035,8 @@
       "type": "Online/Offline",
       "region": "Denmark",
       "players": 26,
-      "first": "streetpete",
-      "second": "The Night Panda",
+      "first": "Mauseren",
+      "second": "Kongensgade",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -19141,20 +19143,20 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
-        "Nicov": 1250.0,
         "ACCM": 1250.0,
+        "Nicov": 1250.0,
         "Lucho": 1250.0,
-        "Running": 1187.5,
+        "Sebastian": 1250.0,
+        "Annotoph": 1187.5,
         "Terz": 1187.5,
         "Target331": 1187.5,
-        "Annotoph": 1187.5,
+        "Running": 1187.5,
+        "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
         "Dark": 933.3333333333334,
         "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334
@@ -20329,7 +20331,7 @@
       "formatType": "unknown",
       "type": "Online",
       "region": "World",
-      "players": null,
+      "players": 16,
       "first": "",
       "second": "",
       "third": "",
