@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T15:06:53.769762+00:00",
+  "generatedAt": "2026-11-22T15:01:37.052696+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2634,12 +2634,12 @@
       "currency": "USD",
       "organizer": "DounutNinja",
       "format": "4v4, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "team",
       "type": "Online",
       "region": "Oceania",
       "players": null,
-      "first": "",
-      "second": "",
+      "first": "Team Tricky",
+      "second": "Team Harry",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3647,8 +3647,8 @@
       "type": "Online",
       "region": "Argentina",
       "players": 10,
-      "first": "",
-      "second": "",
+      "first": "Monoz",
+      "second": "Rodrixs",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.17,
-        "ElMiller": 19.17,
-        "CesarFight": 19.17,
-        "Kvothe": 19.17,
-        "Tobi": 19.17,
-        "Cachivache": 19.17,
-        "Black Monk": 19.17,
-        "Feyern": 9.59,
-        "RivuxTV": 4.79,
-        "Sszafranko": 4.79
+        "Tumber": 19.13,
+        "ElMiller": 19.13,
+        "CesarFight": 19.13,
+        "Kvothe": 19.13,
+        "Tobi": 19.13,
+        "Cachivache": 19.13,
+        "Black Monk": 19.13,
+        "Feyern": 9.57,
+        "RivuxTV": 4.78,
+        "Sszafranko": 4.78
       }
     },
     {
@@ -6035,8 +6035,8 @@
       "type": "Online/Offline",
       "region": "Denmark",
       "players": 26,
-      "first": "Mauseren",
-      "second": "Kongensgade",
+      "first": "Emil :D",
+      "second": "Mauseren",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -11555,11 +11555,11 @@
       "type": "Online",
       "region": "Peru",
       "players": 12,
-      "first": "Dimo",
-      "second": "Renzo",
+      "first": "Williams",
+      "second": "Kamayuk",
       "third": "",
       "prizeByPlayer": {
-        "Dimo": 750
+        "Williams": 750
       }
     },
     {
@@ -19143,23 +19143,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 1250.0,
-        "Nicov": 1250.0,
-        "Lucho": 1250.0,
         "Sebastian": 1250.0,
-        "Annotoph": 1187.5,
-        "Terz": 1187.5,
-        "Target331": 1187.5,
+        "Nicov": 1250.0,
+        "ACCM": 1250.0,
+        "Lucho": 1250.0,
         "Running": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
+        "Terz": 1187.5,
+        "Annotoph": 1187.5,
+        "Target331": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334
+        "Classicpro": 933.3333333333334
       }
     },
     {
@@ -20110,7 +20110,7 @@
       "url": "https://liquipedia.net/ageofempires/Tryhard_Cup/1",
       "tier": "C-Tier",
       "start": "2026-10-01",
-      "end": "2026-11-29",
+      "end": "2026-11-22",
       "prize": null,
       "currency": "USD",
       "organizer": "AgeOfEmpiresItalia",

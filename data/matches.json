@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T15:06:53.769762+00:00",
+  "generatedAt": "2026-11-22T15:01:37.052696+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -256631,6 +256631,542 @@
       "winner": "2"
     },
     {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Noszombie",
+      "player2": null,
+      "teammates": [
+        "PrancingPineapple",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Malay",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PrancingPineapple",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Dan",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Flightlessbird",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Jurchens",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TDI",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "Flightlessbird"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Turks",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Bog Sauce",
+      "player2": null,
+      "teammates": [
+        "BOT Marley",
+        "PiG",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Vietnamese",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BOT Marley",
+      "player2": null,
+      "teammates": [
+        "Bog Sauce",
+        "PiG",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Berbers",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PiG",
+      "player2": null,
+      "teammates": [
+        "Bog Sauce",
+        "BOT Marley",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Burgundians",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Robo",
+      "player2": null,
+      "teammates": [
+        "Bog Sauce",
+        "BOT Marley",
+        "PiG"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Italians",
+      "civ2": null,
+      "map": "Fortress",
+      "mapTypes": [
+        "closed"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Noszombie",
+      "player2": null,
+      "teammates": [
+        "PrancingPineapple",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Dravidians",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PrancingPineapple",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Hindustanis",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Flightlessbird",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Huns",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TDI",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "Flightlessbird"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Sax",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BOT Marley",
+      "player2": null,
+      "teammates": [
+        "Bog Sauce",
+        "PiG",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Portuguese",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Bog Sauce",
+      "player2": null,
+      "teammates": [
+        "BOT Marley",
+        "PiG",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Romans",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PiG",
+      "player2": null,
+      "teammates": [
+        "BOT Marley",
+        "Bog Sauce",
+        "Robo"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Khmer",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Robo",
+      "player2": null,
+      "teammates": [
+        "BOT Marley",
+        "Bog Sauce",
+        "PiG"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Noszombie",
+      "player2": null,
+      "teammates": [
+        "PrancingPineapple",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Maya",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PrancingPineapple",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "Flightlessbird",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Gurjaras",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Flightlessbird",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "TDI"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Georgians",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "TDI",
+      "player2": null,
+      "teammates": [
+        "Noszombie",
+        "PrancingPineapple",
+        "Flightlessbird"
+      ],
+      "team1": "Team Harry",
+      "team2": "Team Tricky",
+      "civ1": "Shu",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Robo",
+      "player2": null,
+      "teammates": [
+        "PiG",
+        "Bog Sauce",
+        "BOT Marley"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Inca",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "PiG",
+      "player2": null,
+      "teammates": [
+        "Robo",
+        "Bog Sauce",
+        "BOT Marley"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Wei",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "Bog Sauce",
+      "player2": null,
+      "teammates": [
+        "Robo",
+        "PiG",
+        "BOT Marley"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Franks",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "AusDraft 5",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "team",
+      "player1": "BOT Marley",
+      "player2": null,
+      "teammates": [
+        "Robo",
+        "PiG",
+        "Bog Sauce"
+      ],
+      "team1": "Team Tricky",
+      "team2": "Team Harry",
+      "civ1": "Japanese",
+      "civ2": null,
+      "map": "Dry Socotra",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
       "tournament": "Aussie Ascension",
       "tier": "C-Tier",
       "date": "2025-03-31",
@@ -342850,7 +343386,100 @@
     {
       "tournament": "Campeonato Argentino AoE 2026: Primera División",
       "tier": "B-Tier",
-      "date": "2026-11-20",
+      "date": "November 21, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Pela",
+      "player2": "Twigg",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bulgarians",
+      "civ2": "Armenians",
+      "map": "Morass",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Pela",
+      "player2": "Twigg",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Bengalis",
+      "civ2": "Georgians",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Pela",
+      "player2": "Twigg",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Spanish",
+      "civ2": "Vietnamese",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Pela",
+      "player2": "Twigg",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Khmer",
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Pela",
+      "player2": "Twigg",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Burgundians",
+      "civ2": "Magyars",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
       "player1": "Rodrixs",
@@ -342862,12 +343491,12 @@
       "civ2": "Koreans",
       "map": "Golden Lakes",
       "mapTypes": [],
-      "winner": null
+      "winner": "1"
     },
     {
       "tournament": "Campeonato Argentino AoE 2026: Primera División",
       "tier": "B-Tier",
-      "date": "2026-11-20",
+      "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
       "player1": "Rodrixs",
@@ -342881,12 +343510,12 @@
       "mapTypes": [
         "open"
       ],
-      "winner": null
+      "winner": "2"
     },
     {
       "tournament": "Campeonato Argentino AoE 2026: Primera División",
       "tier": "B-Tier",
-      "date": "2026-11-20",
+      "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
       "player1": "Rodrixs",
@@ -342898,12 +343527,12 @@
       "civ2": "Byzantines",
       "map": "Immersion",
       "mapTypes": [],
-      "winner": null
+      "winner": "2"
     },
     {
       "tournament": "Campeonato Argentino AoE 2026: Primera División",
       "tier": "B-Tier",
-      "date": "2026-11-20",
+      "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
       "player1": "Rodrixs",
@@ -342916,6 +343545,26 @@
       "map": "Arabia",
       "mapTypes": [
         "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Rodrixs",
+      "player2": "Monoz",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Stranded",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
       ],
       "winner": null
     },
@@ -558022,6 +558671,190 @@
     {
       "tournament": "Danmarksmesterskaberne 2026",
       "tier": "C-Tier",
+      "date": "November 21, 2026 - 20:10 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Emil :D",
+      "player2": "Mauseren",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Var",
+      "map": "Sacred Springs",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 20:10 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Emil :D",
+      "player2": "Mauseren",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Maya",
+      "map": "Socotra",
+      "mapTypes": [
+        "chaotic"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 20:10 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Emil :D",
+      "player2": "Mauseren",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Berbers",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 20:10 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Emil :D",
+      "player2": "Mauseren",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Festa da Pólvora",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 20:10 {{abbr/GMT}}",
+      "round": 4,
+      "format": "1v1",
+      "player1": "Emil :D",
+      "player2": "Mauseren",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 16:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Harty",
+      "player2": "Kongensgade",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wu",
+      "civ2": "Romans",
+      "map": "Fractal",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 16:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Harty",
+      "player2": "Kongensgade",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Malians",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 16:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Harty",
+      "player2": "Kongensgade",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Maya",
+      "civ2": "Chinese",
+      "map": "African Waters",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 16:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Harty",
+      "player2": "Kongensgade",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Cumans",
+      "map": "Festa da Pólvora",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 16:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Harty",
+      "player2": "Kongensgade",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Spanish",
+      "civ2": "Persians",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
       "date": "November 20, 2026 - 17:00 {{abbr/GMT}}",
       "round": 1,
       "format": "1v1",
@@ -558103,12 +558936,82 @@
       "teammates": [],
       "team1": null,
       "team2": null,
-      "civ1": null,
-      "civ2": null,
+      "civ1": "Georgians",
+      "civ2": "Armenians",
       "map": "Vulpine",
       "mapTypes": [
         "open"
       ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 14:45 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Sandland",
+      "player2": "Valdemar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Maya",
+      "civ2": "Malay",
+      "map": "African Waters",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 14:45 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Sandland",
+      "player2": "Valdemar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Huns",
+      "map": "Monte Pascoal",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 14:45 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Sandland",
+      "player2": "Valdemar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Sacred Springs",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Danmarksmesterskaberne 2026",
+      "tier": "C-Tier",
+      "date": "November 21, 2026 - 14:45 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Sandland",
+      "player2": "Valdemar",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Festa da Pólvora",
+      "mapTypes": [],
       "winner": null
     },
     {
@@ -669401,6 +670304,59 @@
       "civ2": null,
       "map": "Vale da Selva",
       "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Lamo",
+      "player2": "NoName1234",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Koreans",
+      "map": "Quarry",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Lamo",
+      "player2": "NoName1234",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Burmese",
+      "map": "Vale da Selva",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 22, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Lamo",
+      "player2": "NoName1234",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Graveyards",
+      "mapTypes": [
+        "open"
+      ],
       "winner": null
     },
     {
@@ -999353,6 +1000309,101 @@
       "civ1": null,
       "civ2": null,
       "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Liga Peruana 2026",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 0:20 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Williams",
+      "player2": "Kamayuk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Lithuanians",
+      "civ2": "Italians",
+      "map": "Land Nomad",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Liga Peruana 2026",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 0:20 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Williams",
+      "player2": "Kamayuk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Malians",
+      "map": "Serengeti",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Liga Peruana 2026",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 0:20 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Williams",
+      "player2": "Kamayuk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Hindustanis",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Liga Peruana 2026",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 0:20 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Williams",
+      "player2": "Kamayuk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Wei",
+      "civ2": "Khmer",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Liga Peruana 2026",
+      "tier": "B-Tier",
+      "date": "November 13, 2026 - 0:20 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Williams",
+      "player2": "Kamayuk",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Atacama",
       "mapTypes": [
         "open"
       ],
@@ -1749109,6 +1750160,62 @@
     {
       "tournament": "The Bastion: Season 2",
       "tier": "B-Tier",
+      "date": "November 22, 2026 - 13:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FreakinAndy",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Italians",
+      "civ2": "Koreans",
+      "map": "Shoals",
+      "mapTypes": [
+        "hybrid",
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 22, 2026 - 13:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FreakinAndy",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Mongols",
+      "civ2": "Jurchens",
+      "map": "Valley",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 22, 2026 - 13:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "FreakinAndy",
+      "player2": "JorDan AoE",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Chinese",
+      "civ2": "Vikings",
+      "map": "Monte Pascoal",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
       "date": "November 17, 2026 - 17:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -1937222,6 +1938329,45 @@
         "open"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 7,
+      "format": "1v1",
+      "player1": "Mettiu",
+      "player2": "Hellequinn",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Japanese",
+      "map": "Land Madness",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Tryhard Cup - Prima edizione",
+      "tier": "C-Tier",
+      "date": "November 22, 2026 - 14:00 {{abbr/GMT}}",
+      "round": 7,
+      "format": "1v1",
+      "player1": "Mettiu",
+      "player2": "Hellequinn",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Var",
+      "civ2": "Portuguese",
+      "map": "Migration",
+      "mapTypes": [
+        "hybrid",
+        "water"
+      ],
+      "winner": null
     },
     {
       "tournament": "Turkish League",
