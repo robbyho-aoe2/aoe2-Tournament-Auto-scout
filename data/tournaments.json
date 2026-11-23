@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T15:01:37.052696+00:00",
+  "generatedAt": "2026-11-23T18:32:48.118489+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -4343,11 +4343,11 @@
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "Demon",
-      "second": "Running",
+      "first": "Chart",
+      "second": "Starsky",
       "third": "",
       "prizeByPlayer": {
-        "Demon": 300
+        "Chart": 300
       }
     },
     {
@@ -19144,16 +19144,16 @@
       "third": "",
       "prizeByPlayer": {
         "Sebastian": 1250.0,
-        "Nicov": 1250.0,
         "ACCM": 1250.0,
+        "Nicov": 1250.0,
         "Lucho": 1250.0,
         "Running": 1187.5,
+        "Target331": 1187.5,
         "Terz": 1187.5,
         "Annotoph": 1187.5,
-        "Target331": 1187.5,
+        "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
-        "Ciskhan": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
         "DauT": 1316.6666666666667,
@@ -20111,7 +20111,7 @@
       "tier": "C-Tier",
       "start": "2026-10-01",
       "end": "2026-11-22",
-      "prize": null,
+      "prize": 77,
       "currency": "USD",
       "organizer": "AgeOfEmpiresItalia",
       "format": "1v1",
@@ -20119,10 +20119,13 @@
       "type": "Online",
       "region": "Italy",
       "players": 14,
-      "first": "Mettiu",
-      "second": "Hellequinn",
+      "first": "Hellequinn",
+      "second": "Mettiu",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Hellequinn": 54.86,
+        "Mettiu": 21.95
+      }
     },
     {
       "id": "Turkish League",
@@ -20328,14 +20331,16 @@
       "currency": "USD",
       "organizer": "Xardas_AoE",
       "format": "1v1, Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "World",
       "players": 16,
-      "first": "",
-      "second": "",
+      "first": "UNLeAsHeD",
+      "second": "Chart",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "UNLeAsHeD": 200
+      }
     },
     {
       "id": "V.Power Cup/2022",
