@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T18:32:48.118489+00:00",
+  "generatedAt": "2026-11-24T18:10:00.552375+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3647,8 +3647,8 @@
       "type": "Online",
       "region": "Argentina",
       "players": 10,
-      "first": "Monoz",
-      "second": "Rodrixs",
+      "first": "Lucho",
+      "second": "Carbo",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 153,
+      "prize": 152,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 19.13,
-        "ElMiller": 19.13,
-        "CesarFight": 19.13,
-        "Kvothe": 19.13,
-        "Tobi": 19.13,
-        "Cachivache": 19.13,
-        "Black Monk": 19.13,
-        "Feyern": 9.57,
-        "RivuxTV": 4.78,
-        "Sszafranko": 4.78
+        "Tumber": 18.99,
+        "ElMiller": 18.99,
+        "CesarFight": 18.99,
+        "Kvothe": 18.99,
+        "Tobi": 18.99,
+        "Cachivache": 18.99,
+        "Black Monk": 18.99,
+        "Feyern": 9.49,
+        "RivuxTV": 4.75,
+        "Sszafranko": 4.75
       }
     },
     {
@@ -6948,7 +6948,7 @@
       "region": "CIS",
       "players": 12,
       "first": "OLADUSHEK",
-      "second": "FStalker",
+      "second": "The Beatleman",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18459,11 +18459,11 @@
       "type": "Online/Offline",
       "region": "Germany",
       "players": 9,
-      "first": "ShiXo.",
-      "second": "Target331",
+      "first": "Benanji",
+      "second": "TheViper",
       "third": "",
       "prizeByPlayer": {
-        "ShiXo.": 500
+        "Benanji": 500
       }
     },
     {
@@ -19143,23 +19143,23 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Sebastian": 1250.0,
-        "ACCM": 1250.0,
-        "Nicov": 1250.0,
         "Lucho": 1250.0,
-        "Running": 1187.5,
-        "Target331": 1187.5,
+        "ACCM": 1250.0,
+        "Sebastian": 1250.0,
+        "Nicov": 1250.0,
         "Terz": 1187.5,
+        "Target331": 1187.5,
         "Annotoph": 1187.5,
+        "Running": 1187.5,
+        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "Classicpro": 933.3333333333334,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Dark": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "Dark": 933.3333333333334
       }
     },
     {

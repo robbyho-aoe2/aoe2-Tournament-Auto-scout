@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T18:32:48.118489+00:00",
+  "generatedAt": "2026-11-24T18:10:00.552375+00:00",
   "sinceDate": "2020-01-01",
   "games": [
     {
@@ -343479,6 +343479,99 @@
     {
       "tournament": "Campeonato Argentino AoE 2026: Primera División",
       "tier": "B-Tier",
+      "date": "November 23, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Nahuel05",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Saracens",
+      "civ2": "Vietnamese",
+      "map": "Arabia",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Nahuel05",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Berbers",
+      "civ2": "Romans",
+      "map": "African Clearing",
+      "mapTypes": [
+        "nomad"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Nahuel05",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Khitans",
+      "map": "Atacama",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Nahuel05",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Kawasan",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 22:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Nahuel05",
+      "player2": "Capoch",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
       "date": "November 21, 2026 - 21:00 {{abbr/GMT}}",
       "round": 0,
       "format": "1v1",
@@ -343564,6 +343657,99 @@
       "map": "Stranded",
       "mapTypes": [
         "hybrid",
+        "nomad"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 1:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Lucho",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Romans",
+      "civ2": "Vikings",
+      "map": "Cliffbound",
+      "mapTypes": [
+        "chaotic"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 1:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Lucho",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Dravidians",
+      "civ2": "Georgians",
+      "map": "Kawasan",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 1:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Lucho",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Malay",
+      "civ2": "Goths",
+      "map": "Skukuza",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 1:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Lucho",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Campeonato Argentino AoE 2026: Primera División",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 1:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Carbo",
+      "player2": "Lucho",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "African Clearing",
+      "mapTypes": [
         "nomad"
       ],
       "winner": null
@@ -670948,6 +671134,165 @@
       "map": "Marshwood",
       "mapTypes": [],
       "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Ethiopians",
+      "civ2": "Huns",
+      "map": "Quarry",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Saracens",
+      "civ2": "Lithuanians",
+      "map": "Kerak",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 19:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Wide",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Jurchens",
+      "civ2": "Goths",
+      "map": "Marshwood",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "OLADUSHEK",
+      "player2": "Scatterbrained",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Turks",
+      "civ2": "Sax",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "OLADUSHEK",
+      "player2": "Scatterbrained",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Bohemians",
+      "map": "Basmo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 23, 2026 - 20:30 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "OLADUSHEK",
+      "player2": "Scatterbrained",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": null,
+      "civ2": null,
+      "map": "Chaos Pit",
+      "mapTypes": [
+        "chaotic"
+      ],
+      "winner": null
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Burgundians",
+      "civ2": "Georgians",
+      "map": "Basmo",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Persians",
+      "civ2": "Var",
+      "map": "Marshwood",
+      "mapTypes": [],
+      "winner": "2"
+    },
+    {
+      "tournament": "Elysium",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 10:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "The Beatleman",
+      "player2": "OLADUSHEK",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Vietnamese",
+      "civ2": "Turks",
+      "map": "Bypass",
+      "mapTypes": [
+        "semi-open"
+      ],
+      "winner": "2"
     },
     {
       "tournament": "Empire Wars Arena Mini-Cup",
@@ -1750545,6 +1750890,62 @@
         "hybrid"
       ],
       "winner": "2"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Georgians",
+      "civ2": "Malay",
+      "map": "Moats",
+      "mapTypes": [],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Magyars",
+      "civ2": "Dan",
+      "map": "Nomad",
+      "mapTypes": [
+        "hybrid",
+        "nomad"
+      ],
+      "winner": "1"
+    },
+    {
+      "tournament": "The Bastion: Season 2",
+      "tier": "B-Tier",
+      "date": "November 24, 2026 - 8:00 {{abbr/GMT}}",
+      "round": 0,
+      "format": "1v1",
+      "player1": "Benanji",
+      "player2": "TheViper",
+      "teammates": [],
+      "team1": null,
+      "team2": null,
+      "civ1": "Armenians",
+      "civ2": "Mapuche",
+      "map": "Vulpine",
+      "mapTypes": [
+        "open"
+      ],
+      "winner": "1"
     },
     {
       "tournament": "The Brotherhood Of Empire Wars",
