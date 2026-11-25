@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T18:10:00.552375+00:00",
+  "generatedAt": "2026-11-25T17:40:22.936672+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2857,8 +2857,8 @@
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "TheLastBender",
-      "second": "Mighty.Plumber",
+      "first": "Dieterkiller",
+      "second": "The Barbarian",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 152,
+      "prize": 151,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 18.99,
-        "ElMiller": 18.99,
-        "CesarFight": 18.99,
-        "Kvothe": 18.99,
-        "Tobi": 18.99,
-        "Cachivache": 18.99,
-        "Black Monk": 18.99,
-        "Feyern": 9.49,
-        "RivuxTV": 4.75,
-        "Sszafranko": 4.75
+        "Tumber": 18.84,
+        "ElMiller": 18.84,
+        "CesarFight": 18.84,
+        "Kvothe": 18.84,
+        "Tobi": 18.84,
+        "Cachivache": 18.84,
+        "Black Monk": 18.84,
+        "Feyern": 9.42,
+        "RivuxTV": 4.71,
+        "Sszafranko": 4.71
       }
     },
     {
@@ -5800,12 +5800,12 @@
       "currency": "USD",
       "organizer": "Maztek Clan",
       "format": "1v1, Round Robin & Single Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Online",
       "region": "Mexico",
       "players": 48,
-      "first": "",
-      "second": "",
+      "first": "KingstoNe",
+      "second": "SoyLaHostia",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -18895,14 +18895,16 @@
       "currency": "USD",
       "organizer": "BEING ESPORTS",
       "format": "1v1, Double Elimination",
-      "formatType": "unknown",
+      "formatType": "1v1",
       "type": "Offline",
       "region": "Germany",
       "players": 8,
-      "first": "",
-      "second": "",
+      "first": "Vinchester",
+      "second": "Yo",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Vinchester": 46000
+      }
     },
     {
       "id": "The Garrison/Amateur Event/AoE2/1v1",
@@ -19143,22 +19145,22 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Lucho": 1250.0,
-        "ACCM": 1250.0,
-        "Sebastian": 1250.0,
         "Nicov": 1250.0,
+        "Lucho": 1250.0,
+        "Sebastian": 1250.0,
+        "ACCM": 1250.0,
+        "Running": 1187.5,
+        "Annotoph": 1187.5,
         "Terz": 1187.5,
         "Target331": 1187.5,
-        "Annotoph": 1187.5,
-        "Running": 1187.5,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "StonePleaseAoE": 1466.6666666666667,
-        "JorDan AoE": 1316.6666666666667,
         "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
-        "Classicpro": 933.3333333333334,
+        "JorDan AoE": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
+        "Classicpro": 933.3333333333334,
         "Dark": 933.3333333333334
       }
     },
