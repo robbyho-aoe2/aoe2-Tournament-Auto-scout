@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:40:22.936672+00:00",
+  "generatedAt": "2026-11-26T17:18:44.952115+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2857,8 +2857,8 @@
       "type": "Online",
       "region": "Belgium",
       "players": 25,
-      "first": "Dieterkiller",
-      "second": "The Barbarian",
+      "first": "Antocalyptica",
+      "second": "TheLastBender",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3659,7 +3659,7 @@
       "tier": "C-Tier",
       "start": "2026-08-10",
       "end": "2026-12-13",
-      "prize": 151,
+      "prize": 150,
       "currency": "USD",
       "organizer": "Mercado del Age",
       "format": "1v1, Round Robin & Single Elimination",
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 18.84,
-        "ElMiller": 18.84,
-        "CesarFight": 18.84,
-        "Kvothe": 18.84,
-        "Tobi": 18.84,
-        "Cachivache": 18.84,
-        "Black Monk": 18.84,
-        "Feyern": 9.42,
-        "RivuxTV": 4.71,
-        "Sszafranko": 4.71
+        "Tumber": 18.71,
+        "ElMiller": 18.71,
+        "CesarFight": 18.71,
+        "Kvothe": 18.71,
+        "Tobi": 18.71,
+        "Cachivache": 18.71,
+        "Black Monk": 18.71,
+        "Feyern": 9.36,
+        "RivuxTV": 4.68,
+        "Sszafranko": 4.68
       }
     },
     {
@@ -17209,8 +17209,8 @@
       "url": "https://liquipedia.net/ageofempires/Svenska_TG-ligan/2026/Höst",
       "tier": "B-Tier",
       "start": "2026-10-19",
-      "end": "2026-12-07",
-      "prize": null,
+      "end": "2026-11-25",
+      "prize": 488,
       "currency": "USD",
       "organizer": "hadiraja12",
       "format": "3v3, Round Robin",
@@ -17221,7 +17221,27 @@
       "first": "Bästföre: 2025",
       "second": "Norsemen",
       "third": "",
-      "prizeByPlayer": {}
+      "prizeByPlayer": {
+        "Acro17": 61.0,
+        "Frost 9": 61.0,
+        "Terz": 61.0,
+        "Nervkeks": 61.0,
+        "Yakul": 24.4,
+        "Kaeften": 24.4,
+        "GGOut": 24.4,
+        "SleepySwede": 24.4,
+        "Mratin": 24.4,
+        "Spaden": 18.3,
+        "BuLLeT": 18.3,
+        "Gripen": 18.3,
+        "Goatmeister": 18.3,
+        "Zanato": 8.133333333333333,
+        "OG DADDY": 8.133333333333333,
+        "ImSimon": 8.133333333333333,
+        "Laksen": 8.133333333333333,
+        "r0adyy": 8.133333333333333,
+        "Nope": 8.133333333333333
+      }
     },
     {
       "id": "Svenska cirkusspelen/2025",
@@ -18899,11 +18919,11 @@
       "type": "Offline",
       "region": "Germany",
       "players": 8,
-      "first": "Vinchester",
-      "second": "Yo",
+      "first": "Yo",
+      "second": "Sitaux",
       "third": "",
       "prizeByPlayer": {
-        "Vinchester": 46000
+        "Yo": 46000
       }
     },
     {
@@ -19146,22 +19166,22 @@
       "third": "",
       "prizeByPlayer": {
         "Nicov": 1250.0,
-        "Lucho": 1250.0,
         "Sebastian": 1250.0,
+        "Lucho": 1250.0,
         "ACCM": 1250.0,
-        "Running": 1187.5,
+        "Target331": 1187.5,
         "Annotoph": 1187.5,
         "Terz": 1187.5,
-        "Target331": 1187.5,
-        "Ciskhan": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
+        "Running": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
+        "Ciskhan": 1466.6666666666667,
         "FreakinAndy": 1316.6666666666667,
-        "DauT": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "DauT": 1316.6666666666667,
         "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334,
-        "Dark": 933.3333333333334
+        "Dark": 933.3333333333334,
+        "Classicpro": 933.3333333333334
       }
     },
     {
