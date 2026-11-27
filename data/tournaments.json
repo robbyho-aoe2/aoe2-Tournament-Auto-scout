@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:18:44.952115+00:00",
+  "generatedAt": "2026-11-27T17:03:48.522724+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -3671,14 +3671,14 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 18.71,
-        "ElMiller": 18.71,
-        "CesarFight": 18.71,
-        "Kvothe": 18.71,
-        "Tobi": 18.71,
-        "Cachivache": 18.71,
-        "Black Monk": 18.71,
-        "Feyern": 9.36,
+        "Tumber": 18.74,
+        "ElMiller": 18.74,
+        "CesarFight": 18.74,
+        "Kvothe": 18.74,
+        "Tobi": 18.74,
+        "Cachivache": 18.74,
+        "Black Monk": 18.74,
+        "Feyern": 9.37,
         "RivuxTV": 4.68,
         "Sszafranko": 4.68
       }
@@ -4343,11 +4343,11 @@
       "type": "Online",
       "region": "World",
       "players": 8,
-      "first": "Chart",
-      "second": "Starsky",
+      "first": "StonePleaseAoE",
+      "second": "Mihai06",
       "third": "",
       "prizeByPlayer": {
-        "Chart": 300
+        "StonePleaseAoE": 300
       }
     },
     {
@@ -5805,7 +5805,7 @@
       "region": "Mexico",
       "players": 48,
       "first": "KingstoNe",
-      "second": "SoyLaHostia",
+      "second": "MrOsoVC8",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -17222,24 +17222,24 @@
       "second": "Norsemen",
       "third": "",
       "prizeByPlayer": {
-        "Acro17": 61.0,
         "Frost 9": 61.0,
-        "Terz": 61.0,
+        "Acro17": 61.0,
         "Nervkeks": 61.0,
-        "Yakul": 24.4,
+        "Terz": 61.0,
         "Kaeften": 24.4,
+        "Yakul": 24.4,
         "GGOut": 24.4,
         "SleepySwede": 24.4,
         "Mratin": 24.4,
-        "Spaden": 18.3,
-        "BuLLeT": 18.3,
         "Gripen": 18.3,
+        "BuLLeT": 18.3,
         "Goatmeister": 18.3,
-        "Zanato": 8.133333333333333,
-        "OG DADDY": 8.133333333333333,
-        "ImSimon": 8.133333333333333,
+        "Spaden": 18.3,
         "Laksen": 8.133333333333333,
         "r0adyy": 8.133333333333333,
+        "OG DADDY": 8.133333333333333,
+        "Zanato": 8.133333333333333,
+        "ImSimon": 8.133333333333333,
         "Nope": 8.133333333333333
       }
     },
@@ -18919,11 +18919,11 @@
       "type": "Offline",
       "region": "Germany",
       "players": 8,
-      "first": "Yo",
-      "second": "Sitaux",
+      "first": "ACCM",
+      "second": "Vinchester",
       "third": "",
       "prizeByPlayer": {
-        "Yo": 46000
+        "ACCM": 46000
       }
     },
     {
@@ -19165,22 +19165,22 @@
       "second": "LingYuan",
       "third": "",
       "prizeByPlayer": {
-        "Nicov": 1250.0,
         "Sebastian": 1250.0,
+        "Nicov": 1250.0,
         "Lucho": 1250.0,
         "ACCM": 1250.0,
         "Target331": 1187.5,
         "Annotoph": 1187.5,
-        "Terz": 1187.5,
         "Running": 1187.5,
+        "Terz": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
         "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "JorDan AoE": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
-        "IAnTaGoNiStI": 933.3333333333334,
         "Dark": 933.3333333333334,
+        "IAnTaGoNiStI": 933.3333333333334,
         "Classicpro": 933.3333333333334
       }
     },
