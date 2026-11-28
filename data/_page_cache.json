@@ -349551,16 +349551,16 @@
         "second": "Kvothe",
         "third": "",
         "prizeByPlayer": {
-          "Tumber": 18.74,
-          "ElMiller": 18.74,
-          "CesarFight": 18.74,
-          "Kvothe": 18.74,
-          "Tobi": 18.74,
-          "Cachivache": 18.74,
-          "Black Monk": 18.74,
-          "Feyern": 9.37,
-          "RivuxTV": 4.68,
-          "Sszafranko": 4.68
+          "Tumber": 18.79,
+          "ElMiller": 18.79,
+          "CesarFight": 18.79,
+          "Kvothe": 18.79,
+          "Tobi": 18.79,
+          "Cachivache": 18.79,
+          "Black Monk": 18.79,
+          "Feyern": 9.4,
+          "RivuxTV": 4.7,
+          "Sszafranko": 4.7
         }
       },
       "games": [
@@ -353950,6 +353950,100 @@
           "civ1": null,
           "civ2": null,
           "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Tatengue",
+          "player2": "ddx",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Portuguese",
+          "civ2": "Spanish",
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Tatengue",
+          "player2": "ddx",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Vietnamese",
+          "civ2": "Japanese",
+          "map": "Stranded",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Tatengue",
+          "player2": "ddx",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Lithuanians",
+          "civ2": "Italians",
+          "map": "Golden Lakes",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Tatengue",
+          "player2": "ddx",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Turks",
+          "civ2": "Cumans",
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": null
+        },
+        {
+          "tournament": "Campeonato Argentino AoE 2026: Segunda División",
+          "tier": "C-Tier",
+          "date": "2026-08-10",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Tatengue",
+          "player2": "ddx",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Atacama",
           "mapTypes": [
             "open"
           ],
@@ -1615960,24 +1616054,24 @@
         "second": "Norsemen",
         "third": "",
         "prizeByPlayer": {
-          "Frost 9": 61.0,
+          "Terz": 61.0,
           "Acro17": 61.0,
           "Nervkeks": 61.0,
-          "Terz": 61.0,
-          "Kaeften": 24.4,
+          "Frost 9": 61.0,
+          "Mratin": 24.4,
           "Yakul": 24.4,
           "GGOut": 24.4,
           "SleepySwede": 24.4,
-          "Mratin": 24.4,
-          "Gripen": 18.3,
+          "Kaeften": 24.4,
           "BuLLeT": 18.3,
           "Goatmeister": 18.3,
           "Spaden": 18.3,
+          "Gripen": 18.3,
+          "Zanato": 8.133333333333333,
           "Laksen": 8.133333333333333,
           "r0adyy": 8.133333333333333,
-          "OG DADDY": 8.133333333333333,
-          "Zanato": 8.133333333333333,
           "ImSimon": 8.133333333333333,
+          "OG DADDY": 8.133333333333333,
           "Nope": 8.133333333333333
         }
       },
@@ -1810119,12 +1810213,12 @@
         "currency": "USD",
         "organizer": "BEING ESPORTS",
         "format": "1v1, Double Elimination",
-        "formatType": "1v1",
+        "formatType": "mixed",
         "type": "Offline",
         "region": "Germany",
         "players": 8,
-        "first": "ACCM",
-        "second": "Vinchester",
+        "first": "Hera",
+        "second": "Sebastian",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -1810665,6 +1810759,96 @@
         {
           "tournament": "The Garrison 2026",
           "tier": "S-Tier",
+          "date": "November 27, 2026- 18:20 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "Hera",
+          "player2": "Sebastian",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Wei",
+          "civ2": "Hindustanis",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026- 18:20 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "Hera",
+          "player2": "Sebastian",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Huns",
+          "civ2": "Bengalis",
+          "map": "Tidepool",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026- 18:20 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "Hera",
+          "player2": "Sebastian",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Wu",
+          "civ2": "Shu",
+          "map": "Chandalar Lake",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026- 18:20 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "Hera",
+          "player2": "Sebastian",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Italians",
+          "civ2": "Magyars",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026- 18:20 {{abbr/GMT}}",
+          "round": 4,
+          "format": "1v1",
+          "player1": "Hera",
+          "player2": "Sebastian",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Hammaburg",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
           "date": "November 26, 2026 - 12:20 {{abbr/GMT}}",
           "round": 1,
           "format": "1v1",
@@ -1810982,6 +1811166,762 @@
             "nomad"
           ],
           "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 15:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Italians",
+          "civ2": "Persians",
+          "map": "Tidepool",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 15:00 {{abbr/GMT}}",
+          "round": 2,
+          "format": "1v1",
+          "player1": "Vinchester",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Bohemians",
+          "civ2": "Turks",
+          "map": "King's Hill",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "1v1",
+          "player1": "Liereyy",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Magyars",
+          "civ2": "Koreans",
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "1v1",
+          "player1": "Liereyy",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Vietnamese",
+          "civ2": "Persians",
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "1v1",
+          "player1": "Liereyy",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Wei",
+          "civ2": "Turks",
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "1v1",
+          "player1": "Liereyy",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Khmer",
+          "civ2": "Tupi",
+          "map": "Altstadt",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 27, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "1v1",
+          "player1": "Liereyy",
+          "player2": "ACCM",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Xingu",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Target331",
+          "player2": null,
+          "teammates": [
+            "Terz",
+            "Annotoph"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Shu",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Terz",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Annotoph"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Annotoph",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Terz"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Gurjaras",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FreakinAndy",
+          "player2": null,
+          "teammates": [
+            "JorDan AoE",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JorDan AoE",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "DauT",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "JorDan AoE"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Tatars",
+          "civ2": null,
+          "map": "Tres Leches",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Target331",
+          "player2": null,
+          "teammates": [
+            "Annotoph",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Sax",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Annotoph",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Lithuanians",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Running",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Annotoph"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Turks",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FreakinAndy",
+          "player2": null,
+          "teammates": [
+            "DauT",
+            "JorDan AoE"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Britons",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "DauT",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "JorDan AoE"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Franks",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JorDan AoE",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Fortress",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Target331",
+          "player2": null,
+          "teammates": [
+            "Running",
+            "Terz"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Romans",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Running",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Terz"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Khitans",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Terz",
+          "player2": null,
+          "teammates": [
+            "Target331",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Huns",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JorDan AoE",
+          "player2": null,
+          "teammates": [
+            "DauT",
+            "FreakinAndy"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Portuguese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "DauT",
+          "player2": null,
+          "teammates": [
+            "JorDan AoE",
+            "FreakinAndy"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FreakinAndy",
+          "player2": null,
+          "teammates": [
+            "JorDan AoE",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Vikings",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Terz",
+          "player2": null,
+          "teammates": [
+            "Annotoph",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Tupi",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Annotoph",
+          "player2": null,
+          "teammates": [
+            "Terz",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Running",
+          "player2": null,
+          "teammates": [
+            "Terz",
+            "Annotoph"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FreakinAndy",
+          "player2": null,
+          "teammates": [
+            "JorDan AoE",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Muisca",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JorDan AoE",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Malay",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "DauT",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "JorDan AoE"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Burgundians",
+          "civ2": null,
+          "map": "Menindee",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Terz",
+          "player2": null,
+          "teammates": [
+            "Annotoph",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Annotoph",
+          "player2": null,
+          "teammates": [
+            "Terz",
+            "Running"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Running",
+          "player2": null,
+          "teammates": [
+            "Terz",
+            "Annotoph"
+          ],
+          "team1": "Nocturna eSports",
+          "team2": "Onimaru Vanguard",
+          "civ1": "Jurchens",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FreakinAndy",
+          "player2": null,
+          "teammates": [
+            "JorDan AoE",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Armenians",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "JorDan AoE",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "DauT"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Dravidians",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Garrison 2026",
+          "tier": "S-Tier",
+          "date": "November 28, 2026 - 12:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "DauT",
+          "player2": null,
+          "teammates": [
+            "FreakinAndy",
+            "JorDan AoE"
+          ],
+          "team1": "Onimaru Vanguard",
+          "team2": "Nocturna eSports",
+          "civ1": "Georgians",
+          "civ2": null,
+          "map": "Cape of Storms",
+          "mapTypes": [],
+          "winner": "1"
         }
       ]
     },
@@ -1824496,21 +1825436,21 @@
         "prizeByPlayer": {
           "Sebastian": 1250.0,
           "Nicov": 1250.0,
-          "Lucho": 1250.0,
           "ACCM": 1250.0,
-          "Target331": 1187.5,
-          "Annotoph": 1187.5,
-          "Running": 1187.5,
+          "Lucho": 1250.0,
           "Terz": 1187.5,
+          "Annotoph": 1187.5,
+          "Target331": 1187.5,
+          "Running": 1187.5,
           "StonePleaseAoE": 1466.6666666666667,
-          "The Dragonstar": 1466.6666666666667,
           "Ciskhan": 1466.6666666666667,
+          "The Dragonstar": 1466.6666666666667,
           "JorDan AoE": 1316.6666666666667,
-          "FreakinAndy": 1316.6666666666667,
           "DauT": 1316.6666666666667,
+          "FreakinAndy": 1316.6666666666667,
+          "Classicpro": 933.3333333333334,
           "Dark": 933.3333333333334,
-          "IAnTaGoNiStI": 933.3333333333334,
-          "Classicpro": 933.3333333333334
+          "IAnTaGoNiStI": 933.3333333333334
         }
       },
       "games": [
@@ -2221382,8 +2222322,8 @@
         "type": "Online",
         "region": "World",
         "players": null,
-        "first": "Ctrl Alt Defeat",
-        "second": "HARD MEN",
+        "first": "All the lobby smurfs",
+        "second": "Los Bandoleros",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2223448,6 +2224388,758 @@
           "civ2": null,
           "map": "African Clearing",
           "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Ceeelebrate",
+          "player2": null,
+          "teammates": [
+            "Dovecar",
+            "Prußen",
+            "QuatschmitSoße"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Persians",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Dovecar",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Prußen",
+            "QuatschmitSoße"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Inca",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Prußen",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "QuatschmitSoße"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Byzantines",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "QuatschmitSoße",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Prußen"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "R4v3N",
+          "player2": null,
+          "teammates": [
+            "Jorge Garcia",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Persians",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Jorge Garcia",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Aztecs",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "murkbey",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Never Began",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "murkbey"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Ceeelebrate",
+          "player2": null,
+          "teammates": [
+            "Dovecar",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Mayans",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Dovecar",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Berbers",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Prußen",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Turks",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Kark01",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Prußen"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Khmer",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "R4v3N",
+          "player2": null,
+          "teammates": [
+            "Jorge Garcia",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Jorge Garcia",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Chinese",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "murkbey",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Gurjaras",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Never Began",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "murkbey"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "African Clearing",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Ceeelebrate",
+          "player2": null,
+          "teammates": [
+            "Dovecar",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Franks",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Dovecar",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Wei",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Prußen",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Huns",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Kark01",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Prußen"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Saracens",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "R4v3N",
+          "player2": null,
+          "teammates": [
+            "Jorge Garcia",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Jurchens",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Jorge Garcia",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "murkbey",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Poles",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Never Began",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "murkbey"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Goths",
+          "civ2": null,
+          "map": "Land Nomad",
+          "mapTypes": [
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Ceeelebrate",
+          "player2": null,
+          "teammates": [
+            "Dovecar",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Lithuanians",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Dovecar",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Prußen",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Hindustanis",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Prußen",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Kark01"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Kark01",
+          "player2": null,
+          "teammates": [
+            "Ceeelebrate",
+            "Dovecar",
+            "Prußen"
+          ],
+          "team1": "All the lobby smurfs",
+          "team2": "Los Bandoleros",
+          "civ1": "Britons",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "R4v3N",
+          "player2": null,
+          "teammates": [
+            "Jorge Garcia",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Jorge Garcia",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "murkbey",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Bengalis",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "murkbey",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "Never Began"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Portuguese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
+            "nomad"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "Continental Cup: The Nomads",
+          "tier": "B-Tier",
+          "date": "November 21, 2026 - 19:00 {{abbr/GMT}}",
+          "round": 3,
+          "format": "team",
+          "player1": "Never Began",
+          "player2": null,
+          "teammates": [
+            "R4v3N",
+            "Jorge Garcia",
+            "murkbey"
+          ],
+          "team1": "Los Bandoleros",
+          "team2": "All the lobby smurfs",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "Nomad",
+          "mapTypes": [
+            "hybrid",
             "nomad"
           ],
           "winner": "2"
@@ -2235242,7 +2236934,7 @@
         "region": "Oceania",
         "players": null,
         "first": "Team Tricky",
-        "second": "Team Harry",
+        "second": "Team Pancho",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2235782,6 +2237474,550 @@
           "map": "Dry Socotra",
           "mapTypes": [],
           "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Fudge",
+          "player2": null,
+          "teammates": [
+            "Bog Sauce",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bog Sauce",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Romans",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Robo",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Franks",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "BOT Marley",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "Robo"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Portuguese",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bread Pudding",
+          "player2": null,
+          "teammates": [
+            "Kiwi",
+            "Tulendeena",
+            "Frédéric Chopin"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kiwi",
+          "player2": null,
+          "teammates": [
+            "Bread Pudding",
+            "Tulendeena",
+            "Frédéric Chopin"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Khmer",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Bread Pudding",
+            "Kiwi",
+            "Frédéric Chopin"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Maya",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Frédéric Chopin",
+          "player2": null,
+          "teammates": [
+            "Bread Pudding",
+            "Kiwi",
+            "Tulendeena"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "Mesa Verde",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Fudge",
+          "player2": null,
+          "teammates": [
+            "Bog Sauce",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Maya",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bog Sauce",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Robo",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Lithuanians",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "BOT Marley",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "Robo"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Inca",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Frédéric Chopin",
+            "Kiwi",
+            "Bread Pudding"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Shu",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Frédéric Chopin",
+          "player2": null,
+          "teammates": [
+            "Tulendeena",
+            "Kiwi",
+            "Bread Pudding"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Huns",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kiwi",
+          "player2": null,
+          "teammates": [
+            "Tulendeena",
+            "Frédéric Chopin",
+            "Bread Pudding"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Var",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bread Pudding",
+          "player2": null,
+          "teammates": [
+            "Tulendeena",
+            "Frédéric Chopin",
+            "Kiwi"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "Arabia",
+          "mapTypes": [
+            "open"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Fudge",
+          "player2": null,
+          "teammates": [
+            "Bog Sauce",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Bog Sauce",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Robo",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Bengalis",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Robo",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "BOT Marley"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Berbers",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "BOT Marley",
+          "player2": null,
+          "teammates": [
+            "Fudge",
+            "Bog Sauce",
+            "Robo"
+          ],
+          "team1": "Team Tricky",
+          "team2": "Team Pancho",
+          "civ1": "Armenians",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Ronnie Hotdogs",
+          "player2": null,
+          "teammates": [
+            "Frédéric Chopin",
+            "Kiwi",
+            "Tulendeena"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Vikings",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Frédéric Chopin",
+          "player2": null,
+          "teammates": [
+            "Ronnie Hotdogs",
+            "Kiwi",
+            "Tulendeena"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Burgundians",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kiwi",
+          "player2": null,
+          "teammates": [
+            "Ronnie Hotdogs",
+            "Frédéric Chopin",
+            "Tulendeena"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Hindustanis",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "AusDraft 5",
+          "tier": "C-Tier",
+          "date": "November 28, 2026 - 8:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Ronnie Hotdogs",
+            "Frédéric Chopin",
+            "Kiwi"
+          ],
+          "team1": "Team Pancho",
+          "team2": "Team Tricky",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Migration",
+          "mapTypes": [
+            "hybrid",
+            "water"
+          ],
+          "winner": "2"
         }
       ]
     },
@@ -2237208,6 +2239444,163 @@
         {
           "tournament": "Elysium",
           "tier": "B-Tier",
+          "date": "November 27, 2026 - 13:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "DzeDanik",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Mongols",
+          "civ2": "Celts",
+          "map": "Marshwood",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 13:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "DzeDanik",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Dravidians",
+          "civ2": "Koreans",
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 13:30 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "DzeDanik",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Stonefront",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 16:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "NoName1234",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Bohemians",
+          "civ2": "Gurjaras",
+          "map": "Wellsprings",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 16:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "NoName1234",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Armenians",
+          "civ2": "Koreans",
+          "map": "Quarry",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 16:15 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "WaRRioR",
+          "player2": "NoName1234",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Stonefront",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 17:10 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Lamo",
+          "player2": "WaRRioR",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Bohemians",
+          "civ2": "Vikings",
+          "map": "Quarry",
+          "mapTypes": [],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 17:10 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Lamo",
+          "player2": "WaRRioR",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": "Portuguese",
+          "civ2": "Var",
+          "map": "Chaos Pit",
+          "mapTypes": [
+            "chaotic"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
+          "date": "November 27, 2026 - 17:10 {{abbr/GMT}}",
+          "round": 0,
+          "format": "1v1",
+          "player1": "Lamo",
+          "player2": "WaRRioR",
+          "teammates": [],
+          "team1": null,
+          "team2": null,
+          "civ1": null,
+          "civ2": null,
+          "map": "Stonefront",
+          "mapTypes": [],
+          "winner": null
+        },
+        {
+          "tournament": "Elysium",
+          "tier": "B-Tier",
           "date": "November 11, 2026 - 12:00 {{abbr/GMT}}",
           "round": 0,
           "format": "1v1",
@@ -2237694,8 +2240087,8 @@
         "type": "Online",
         "region": "World",
         "players": null,
-        "first": "Panda Panda Panda",
-        "second": "The 105 Gang",
+        "first": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+        "second": "Team Loris",
         "third": "",
         "prizeByPlayer": {}
       },
@@ -2241135,29 +2243528,73 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "Váša",
+          "player1": "Heidewolf",
           "player2": null,
           "teammates": [
-            "Kazi",
-            "Ghusen"
+            "Tulendeena",
+            "LeoABNV"
           ],
-          "team1": "The 105 Gang",
-          "team2": "Panda Panda Panda",
-          "civ1": "Byzantines",
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Slavs",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
             "closed"
           ],
-          "winner": "2"
+          "winner": "1"
         },
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "LeoABNV"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LeoABNV",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "Tulendeena"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Bengalis",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Kazi",
@@ -2241179,14 +2243616,14 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "Ghusen",
+          "player1": "Váša",
           "player2": null,
           "teammates": [
-            "Váša",
-            "Kazi"
+            "Kazi",
+            "Ghusen"
           ],
           "team1": "The 105 Gang",
           "team2": "Panda Panda Panda",
@@ -2241201,84 +2243638,18 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "LeoABNV",
-          "player2": null,
-          "teammates": [
-            "Tulendeena",
-            "Heidewolf"
-          ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Malians",
-          "civ2": null,
-          "map": "Arena",
-          "mapTypes": [
-            "closed"
-          ],
-          "winner": "1"
-        },
-        {
-          "tournament": "The Great Clownage",
-          "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
-          "round": 0,
-          "format": "team",
-          "player1": "Tulendeena",
-          "player2": null,
-          "teammates": [
-            "LeoABNV",
-            "Heidewolf"
-          ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Bengalis",
-          "civ2": null,
-          "map": "Arena",
-          "mapTypes": [
-            "closed"
-          ],
-          "winner": "1"
-        },
-        {
-          "tournament": "The Great Clownage",
-          "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
-          "round": 0,
-          "format": "team",
-          "player1": "Heidewolf",
-          "player2": null,
-          "teammates": [
-            "LeoABNV",
-            "Tulendeena"
-          ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Slavs",
-          "civ2": null,
-          "map": "Arena",
-          "mapTypes": [
-            "closed"
-          ],
-          "winner": "1"
-        },
-        {
-          "tournament": "The Great Clownage",
-          "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
-          "round": 0,
-          "format": "team",
-          "player1": "Váša",
+          "player1": "Ghusen",
           "player2": null,
           "teammates": [
             "Kazi",
-            "Ghusen"
+            "Váša"
           ],
           "team1": "The 105 Gang",
           "team2": "Panda Panda Panda",
-          "civ1": "Vietnamese",
+          "civ1": "Byzantines",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
@@ -2241289,7 +2243660,73 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Heidewolf",
+          "player2": null,
+          "teammates": [
+            "Tulendeena",
+            "LeoABNV"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Poles",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "LeoABNV"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LeoABNV",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "Tulendeena"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Kazi",
@@ -2241311,14 +2243748,14 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "Ghusen",
+          "player1": "Váša",
           "player2": null,
           "teammates": [
-            "Váša",
-            "Kazi"
+            "Kazi",
+            "Ghusen"
           ],
           "team1": "The 105 Gang",
           "team2": "Panda Panda Panda",
@@ -2241333,62 +2243770,40 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "LeoABNV",
+          "player1": "Ghusen",
           "player2": null,
           "teammates": [
-            "Tulendeena",
-            "Heidewolf"
+            "Kazi",
+            "Váša"
           ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Spanish",
+          "team1": "The 105 Gang",
+          "team2": "Panda Panda Panda",
+          "civ1": "Vietnamese",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
             "closed"
           ],
-          "winner": "1"
+          "winner": "2"
         },
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
-          "round": 0,
-          "format": "team",
-          "player1": "Tulendeena",
-          "player2": null,
-          "teammates": [
-            "LeoABNV",
-            "Heidewolf"
-          ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Poles",
-          "civ2": null,
-          "map": "Arena",
-          "mapTypes": [
-            "closed"
-          ],
-          "winner": "1"
-        },
-        {
-          "tournament": "The Great Clownage",
-          "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Heidewolf",
           "player2": null,
           "teammates": [
-            "LeoABNV",
-            "Tulendeena"
+            "Tulendeena",
+            "LeoABNV"
           ],
           "team1": "Panda Panda Panda",
           "team2": "The 105 Gang",
-          "civ1": "Koreans",
+          "civ1": "Britons",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
@@ -2241399,7 +2243814,51 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Tulendeena",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "LeoABNV"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LeoABNV",
+          "player2": null,
+          "teammates": [
+            "Heidewolf",
+            "Tulendeena"
+          ],
+          "team1": "Panda Panda Panda",
+          "team2": "The 105 Gang",
+          "civ1": "Gurjaras",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Kazi",
@@ -2241421,7 +2243880,7 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Váša",
@@ -2241443,7 +2243902,7 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 19, 2026 - 18:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
           "player1": "Ghusen",
@@ -2241465,17 +2243924,589 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "Tulendeena",
+          "player1": "Fost",
           "player2": null,
           "teammates": [
-            "LeoABNV",
-            "Heidewolf"
+            "LobodeLaNieve",
+            "Mr. Adam"
           ],
-          "team1": "Panda Panda Panda",
+          "team1": "Thofou05GoatAndTeam",
           "team2": "The 105 Gang",
+          "civ1": "Lithuanians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LobodeLaNieve",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "Mr. Adam"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Bengalis",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mr. Adam",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "LobodeLaNieve"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Teutons",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kazi",
+          "player2": null,
+          "teammates": [
+            "Váša",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Spanish",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Váša",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Gurjaras",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Ghusen",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Váša"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Fost",
+          "player2": null,
+          "teammates": [
+            "LobodeLaNieve",
+            "Mr. Adam"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Poles",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LobodeLaNieve",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "Mr. Adam"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mr. Adam",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "LobodeLaNieve"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Celts",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kazi",
+          "player2": null,
+          "teammates": [
+            "Váša",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Váša",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Magyars",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Ghusen",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Váša"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Sax",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Fost",
+          "player2": null,
+          "teammates": [
+            "LobodeLaNieve",
+            "Mr. Adam"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Franks",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "LobodeLaNieve",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "Mr. Adam"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Berbers",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Mr. Adam",
+          "player2": null,
+          "teammates": [
+            "Fost",
+            "LobodeLaNieve"
+          ],
+          "team1": "Thofou05GoatAndTeam",
+          "team2": "The 105 Gang",
+          "civ1": "Portuguese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kazi",
+          "player2": null,
+          "teammates": [
+            "Váša",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Japanese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Váša",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Ghusen"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Georgians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 24, 2026 - 21:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Ghusen",
+          "player2": null,
+          "teammates": [
+            "Kazi",
+            "Váša"
+          ],
+          "team1": "The 105 Gang",
+          "team2": "Thofou05GoatAndTeam",
+          "civ1": "Dravidians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalamalahala",
+          "player2": null,
+          "teammates": [
+            "FloDuFive",
+            "UpsideDownCumbrian"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Hindustanis",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FloDuFive",
+          "player2": null,
+          "teammates": [
+            "Kalamalahala",
+            "UpsideDownCumbrian"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Wei",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "UpsideDownCumbrian",
+          "player2": null,
+          "teammates": [
+            "Kalamalahala",
+            "FloDuFive"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Shu",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Arcy",
+          "player2": null,
+          "teammates": [
+            "develement",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Slavs",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalamalahala",
+          "player2": null,
+          "teammates": [
+            "FloDuFive",
+            "UpsideDownCumbrian"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Var",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "FloDuFive",
+          "player2": null,
+          "teammates": [
+            "Kalamalahala",
+            "UpsideDownCumbrian"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Mapuche",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "UpsideDownCumbrian",
+          "player2": null,
+          "teammates": [
+            "Kalamalahala",
+            "FloDuFive"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
           "civ1": "Japanese",
           "civ2": null,
           "map": "Arena",
@@ -2241487,18 +2244518,84 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "LeoABNV",
+          "player1": "Arcy",
           "player2": null,
           "teammates": [
-            "Tulendeena",
-            "Heidewolf"
+            "develement",
+            "calypso1119"
           ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
-          "civ1": "Gurjaras",
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Dan",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Cumans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Kalamalahala",
+          "player2": null,
+          "teammates": [
+            "FloDuFive",
+            "UpsideDownCumbrian"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Poles",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
@@ -2241509,18 +2244606,502 @@
         {
           "tournament": "The Great Clownage",
           "tier": "C-Tier",
-          "date": "November 19, 2026 - 17:10 {{abbr/GMT}}",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
           "round": 0,
           "format": "team",
-          "player1": "Heidewolf",
+          "player1": "FloDuFive",
           "player2": null,
           "teammates": [
-            "Tulendeena",
-            "LeoABNV"
+            "Kalamalahala",
+            "UpsideDownCumbrian"
           ],
-          "team1": "Panda Panda Panda",
-          "team2": "The 105 Gang",
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "UpsideDownCumbrian",
+          "player2": null,
+          "teammates": [
+            "Kalamalahala",
+            "FloDuFive"
+          ],
+          "team1": "Team FloDuFive",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
           "civ1": "Britons",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Arcy",
+          "player2": null,
+          "teammates": [
+            "develement",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Celts",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Romans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 23:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team FloDuFive",
+          "civ1": "Burmese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Phish 'n' Tofu",
+          "player2": null,
+          "teammates": [
+            "Loris",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Vietnamese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Loris",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Khmer",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Feisty",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Loris"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Wu",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Arcy",
+          "player2": null,
+          "teammates": [
+            "develement",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Dan",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Ethiopians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Jurchens",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Phish 'n' Tofu",
+          "player2": null,
+          "teammates": [
+            "Loris",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Wei",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Loris",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Georgians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Feisty",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Loris"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Tupi",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Arcy",
+          "player2": null,
+          "teammates": [
+            "develement",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Britons",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Mongols",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Celts",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Phish 'n' Tofu",
+          "player2": null,
+          "teammates": [
+            "Loris",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Malians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Loris",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Feisty"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Slavs",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Feisty",
+          "player2": null,
+          "teammates": [
+            "Phish 'n' Tofu",
+            "Loris"
+          ],
+          "team1": "Team Loris",
+          "team2": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "civ1": "Italians",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "2"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "Arcy",
+          "player2": null,
+          "teammates": [
+            "develement",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Portuguese",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "develement",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "calypso1119"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Koreans",
+          "civ2": null,
+          "map": "Arena",
+          "mapTypes": [
+            "closed"
+          ],
+          "winner": "1"
+        },
+        {
+          "tournament": "The Great Clownage",
+          "tier": "C-Tier",
+          "date": "November 25, 2026 - 24:00 {{abbr/GMT}}",
+          "round": 0,
+          "format": "team",
+          "player1": "calypso1119",
+          "player2": null,
+          "teammates": [
+            "Arcy",
+            "develement"
+          ],
+          "team1": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+          "team2": "Team Loris",
+          "civ1": "Saracens",
           "civ2": null,
           "map": "Arena",
           "mapTypes": [
@@ -2242236,6 +2245817,30 @@
       "games": []
     },
     "CastleRush Duo Clash/19": {
+      "tournament": null,
+      "games": []
+    },
+    "CastleRush Solo Clash/19": {
+      "tournament": null,
+      "games": []
+    },
+    "Rusaoc Cup/196": {
+      "tournament": null,
+      "games": []
+    },
+    "Rusaoc Cup/197": {
+      "tournament": null,
+      "games": []
+    },
+    "Rusaoc Cup/198": {
+      "tournament": null,
+      "games": []
+    },
+    "Rusaoc Cup/199": {
+      "tournament": null,
+      "games": []
+    },
+    "Rusaoc Cup/200": {
       "tournament": null,
       "games": []
     }

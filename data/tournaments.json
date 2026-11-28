@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T17:03:48.522724+00:00",
+  "generatedAt": "2026-11-28T15:58:20.553159+00:00",
   "sinceDate": "2020-01-01",
   "tournaments": [
     {
@@ -2639,7 +2639,7 @@
       "region": "Oceania",
       "players": null,
       "first": "Team Tricky",
-      "second": "Team Harry",
+      "second": "Team Pancho",
       "third": "",
       "prizeByPlayer": {}
     },
@@ -3671,16 +3671,16 @@
       "second": "Kvothe",
       "third": "",
       "prizeByPlayer": {
-        "Tumber": 18.74,
-        "ElMiller": 18.74,
-        "CesarFight": 18.74,
-        "Kvothe": 18.74,
-        "Tobi": 18.74,
-        "Cachivache": 18.74,
-        "Black Monk": 18.74,
-        "Feyern": 9.37,
-        "RivuxTV": 4.68,
-        "Sszafranko": 4.68
+        "Tumber": 18.79,
+        "ElMiller": 18.79,
+        "CesarFight": 18.79,
+        "Kvothe": 18.79,
+        "Tobi": 18.79,
+        "Cachivache": 18.79,
+        "Black Monk": 18.79,
+        "Feyern": 9.4,
+        "RivuxTV": 4.7,
+        "Sszafranko": 4.7
       }
     },
     {
@@ -4941,11 +4941,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Ctrl Alt Defeat",
-      "second": "HARD MEN",
+      "first": "All the lobby smurfs",
+      "second": "Los Bandoleros",
       "third": "",
       "prizeByPlayer": {
-        "Ctrl Alt Defeat": 450
+        "All the lobby smurfs": 450
       }
     },
     {
@@ -17222,24 +17222,24 @@
       "second": "Norsemen",
       "third": "",
       "prizeByPlayer": {
-        "Frost 9": 61.0,
+        "Terz": 61.0,
         "Acro17": 61.0,
         "Nervkeks": 61.0,
-        "Terz": 61.0,
-        "Kaeften": 24.4,
+        "Frost 9": 61.0,
+        "Mratin": 24.4,
         "Yakul": 24.4,
         "GGOut": 24.4,
         "SleepySwede": 24.4,
-        "Mratin": 24.4,
-        "Gripen": 18.3,
+        "Kaeften": 24.4,
         "BuLLeT": 18.3,
         "Goatmeister": 18.3,
         "Spaden": 18.3,
+        "Gripen": 18.3,
+        "Zanato": 8.133333333333333,
         "Laksen": 8.133333333333333,
         "r0adyy": 8.133333333333333,
-        "OG DADDY": 8.133333333333333,
-        "Zanato": 8.133333333333333,
         "ImSimon": 8.133333333333333,
+        "OG DADDY": 8.133333333333333,
         "Nope": 8.133333333333333
       }
     },
@@ -18915,15 +18915,15 @@
       "currency": "USD",
       "organizer": "BEING ESPORTS",
       "format": "1v1, Double Elimination",
-      "formatType": "1v1",
+      "formatType": "mixed",
       "type": "Offline",
       "region": "Germany",
       "players": 8,
-      "first": "ACCM",
-      "second": "Vinchester",
+      "first": "Hera",
+      "second": "Sebastian",
       "third": "",
       "prizeByPlayer": {
-        "ACCM": 46000
+        "Hera": 46000
       }
     },
     {
@@ -19094,11 +19094,11 @@
       "type": "Online",
       "region": "World",
       "players": null,
-      "first": "Panda Panda Panda",
-      "second": "The 105 Gang",
+      "first": "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)",
+      "second": "Team Loris",
       "third": "",
       "prizeByPlayer": {
-        "Panda Panda Panda": 200
+        "WRX Dr.3AMK1LL3rs v5.5 (Unleashed)": 200
       }
     },
     {
@@ -19167,21 +19167,21 @@
       "prizeByPlayer": {
         "Sebastian": 1250.0,
         "Nicov": 1250.0,
-        "Lucho": 1250.0,
         "ACCM": 1250.0,
-        "Target331": 1187.5,
-        "Annotoph": 1187.5,
-        "Running": 1187.5,
+        "Lucho": 1250.0,
         "Terz": 1187.5,
+        "Annotoph": 1187.5,
+        "Target331": 1187.5,
+        "Running": 1187.5,
         "StonePleaseAoE": 1466.6666666666667,
-        "The Dragonstar": 1466.6666666666667,
         "Ciskhan": 1466.6666666666667,
+        "The Dragonstar": 1466.6666666666667,
         "JorDan AoE": 1316.6666666666667,
-        "FreakinAndy": 1316.6666666666667,
         "DauT": 1316.6666666666667,
+        "FreakinAndy": 1316.6666666666667,
+        "Classicpro": 933.3333333333334,
         "Dark": 933.3333333333334,
-        "IAnTaGoNiStI": 933.3333333333334,
-        "Classicpro": 933.3333333333334
+        "IAnTaGoNiStI": 933.3333333333334
       }
     },
     {
